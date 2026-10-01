@@ -10,8 +10,8 @@ generatedAt: 2026-05-28T16:01:41.641Z
 
 # Components/Card/Card
 
-The Card is a container that consists of a <b>Header</b>, <b>Extended Header</b>, <b>Numeric Content</b>, <b>Content</b> and <b>Footer area</b>. 
-    It takes the width of its parent. An additional Media Block is optional. The Header could be placed either above or below the Content and is not separated with a line. All building blocks are optional. 
+The Card is a container that consists of a <b>Header</b>, <b>Extended Header</b>, <b>Numeric Content</b>, <b>Content</b> and <b>Footer area</b>.
+    It takes the width of its parent. An additional Media Block is optional. The Header could be placed either above or below the Content and is not separated with a line. All building blocks are optional.
 
 **Cards can display different types of content, such as:**
 
@@ -27,13 +27,13 @@ Card sizes vary depending on the layout, and they are not editable. A card can f
 ##Card anatomy
 
 - <b>header</b> (optional): the card header is a flexible combination of 3 block areas: main header, numeric header and extended header. The header displays a mandatory title, indicating what the card is about and functions as a navigation control that directs the user to the parent app.
-  - <b>main header</b>: the main card header block shows the basic information of the card. It can contain <b>avatar</b> (optional), <b>title</b>, <b>subtitle</b> (optional), <b>counter</b> (optional), <b>button</b> (optional), timestamp (optional). If an additional action is part of the header, the timestamp is placed underneath. The timestamp doesn't wrap or truncate. 
+  - <b>main header</b>: the main card header block shows the basic information of the card. It can contain <b>avatar</b> (optional), <b>title</b>, <b>subtitle</b> (optional), <b>counter</b> (optional), <b>button</b> (optional), timestamp (optional). If an additional action is part of the header, the timestamp is placed underneath. The timestamp doesn't wrap or truncate.
   - <b>extended header</b>: the extended header is a flexible block to hold various other components, like time stamp, rating, tags, label/value, long text, numeric values, etc. The components can be arranged in left column or right column, each column is suggested to have maximum 3 lines for placing the components.
-  - <b>numeric header</b>: the numeric header block is designed for displaying numeric information. It consumes Numeric Content (Horizon) and can show additional qualifying information and side indicators, if required. 
+  - <b>numeric header</b>: the numeric header block is designed for displaying numeric information. It consumes Numeric Content (Horizon) and can show additional qualifying information and side indicators, if required.
 
 - <b>badge</b> (optional): The Badge for Cards can contain Icon and Text, Text only or Icon only. There are no interaction states on Badge for Cards. Badge on Cards consumes the <b>Inverted Object Status/Tag</b> with some modifications. A Badge can only expand to the max width of the card that it is applied to. Text on it will not wrap, but truncate. <b>There can be max 2 badges per Card.</b>
 - <b>content</b> (main): the content area is reserved for application content.
-    
+
 - <b>footer</b> (optional): the footer displays a list of actions that can be performed on the card. When link is too long, or there is no more place for actions, overflow button should appear.
 
 ## Installation
@@ -56,7 +56,7 @@ npm install fundamental-styles
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-roledescription="Card" aria-labelledby="card-title-1a">
-            
+
             <div class="fd-card__header" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main">
                     <div class="fd-card__header-main-container">
@@ -85,7 +85,7 @@ npm install fundamental-styles
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -135,7 +135,7 @@ npm install fundamental-styles
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -151,7 +151,7 @@ npm install fundamental-styles
 
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-roledescription="Card" aria-labelledby="card-title-3a">
-            
+
             <div class="fd-card__media" role="group" aria-roledescription="Card Media Block">
                 <div class="fd-card__media-image-container">
                     <img class="fd-card__media-image" src="/assets/images/landscape/L1.jpg"
@@ -189,7 +189,7 @@ npm install fundamental-styles
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -305,7 +305,7 @@ Non-interactive cards have <code>role="region"</code>. In this case the card can
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-roledescription="Card" aria-labelledby="card-title-1a">
-            
+
             <div class="fd-card__header" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main">
                     <div class="fd-card__header-main-container">
@@ -334,7 +334,7 @@ Non-interactive cards have <code>role="region"</code>. In this case the card can
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -384,7 +384,7 @@ Non-interactive cards have <code>role="region"</code>. In this case the card can
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -400,7 +400,7 @@ Non-interactive cards have <code>role="region"</code>. In this case the card can
 
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-roledescription="Card" aria-labelledby="card-title-3a">
-            
+
             <div class="fd-card__media" role="group" aria-roledescription="Card Media Block">
                 <div class="fd-card__media-image-container">
                     <img class="fd-card__media-image" src="/assets/images/landscape/L1.jpg"
@@ -438,7 +438,7 @@ Non-interactive cards have <code>role="region"</code>. In this case the card can
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -532,7 +532,7 @@ For interactive header use the modifier class <code>.fd-card__header--interactiv
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-roledescription="Card" aria-labelledby="card-title-4a">
-            
+
             <div class="fd-card__header fd-card__header--interactive" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main">
                     <div class="fd-card__header-main-container"role="button" tabindex="0" aria-description="Activate for action/navigation" aria-label="Activate for action/navigation" title="Activate for action/navigation">
@@ -555,7 +555,7 @@ For interactive header use the modifier class <code>.fd-card__header--interactiv
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -571,7 +571,7 @@ For interactive header use the modifier class <code>.fd-card__header--interactiv
 
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-roledescription="Card" aria-labelledby="card-title-4aa">
-            
+
             <div class="fd-card__header fd-card__header--interactive" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main is-hover">
                     <div class="fd-card__header-main-container"role="button" tabindex="0" aria-description="Activate for action/navigation" aria-label="Activate for action/navigation" title="Activate for action/navigation">
@@ -594,7 +594,7 @@ For interactive header use the modifier class <code>.fd-card__header--interactiv
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -632,7 +632,7 @@ For interactive header use the modifier class <code>.fd-card__header--interactiv
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -670,7 +670,7 @@ For interactive header use the modifier class <code>.fd-card__header--interactiv
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -713,7 +713,7 @@ For interactive header use the modifier class <code>.fd-card__header--interactiv
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -809,21 +809,21 @@ The role <b>button</b> can be assigned to an interactive card that has <b>NO</b>
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: fit-content; margin: 1rem;">
         <div class="fd-card">
-            <div 
-                class="fd-card__header fd-card__header--interactive" 
-                role="group" 
+            <div
+                class="fd-card__header fd-card__header--interactive"
+                role="group"
                 title="Activate for action/navigation"
                 aria-label="Activate for action/navigation"
                 aria-roledescription="Card Header">
-                
+
                 <div class="fd-card__header-main">
-                    <div 
-                        tabindex="0" 
-                        role="button" 
-                        aria-labelledby="card-title-1b" 
-                        class="fd-card__header-main-container" 
+                    <div
+                        tabindex="0"
+                        role="button"
+                        aria-labelledby="card-title-1b"
+                        class="fd-card__header-main-container"
                         aria-description="Activate for action/navigation">
-                        
+
                         <span
                             class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
                             style="background-image: url('/assets/images/backgrounds/city.jpg')"
@@ -846,23 +846,23 @@ The role <b>button</b> can be assigned to an interactive card that has <b>NO</b>
 
     <div style="width: 300px; height: fit-content; margin: 1rem;">
         <div class="fd-card">
-            
-            <div 
-                class="fd-card__header fd-card__header--interactive" 
-                role="group" 
+
+            <div
+                class="fd-card__header fd-card__header--interactive"
+                role="group"
                 title="Activate for action/navigation"
                 aria-label="Activate for action/navigation"
                 aria-roledescription="Card Header">
-                
+
                 <div class="fd-card__header-main">
-                    <div 
-                        tabindex="0" 
-                        role="button" 
-                        aria-labelledby="card-title-2b" 
-                        class="fd-card__header-main-container" 
-                        
+                    <div
+                        tabindex="0"
+                        role="button"
+                        aria-labelledby="card-title-2b"
+                        class="fd-card__header-main-container"
+
                         aria-description="Activate for action/navigation">
-                        
+
                         <span
                             class="fd-avatar fd-avatar--s fd-avatar--circle fd-avatar--thumbnail fd-card__avatar"
                             style="background-image: url('/assets/images/backgrounds/city.jpg')"
@@ -878,7 +878,7 @@ The role <b>button</b> can be assigned to an interactive card that has <b>NO</b>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="fd-card__header-main-actions">
                         <button class="fd-button fd-button--transparent" aria-label="overflow">
                             <i class="sap-icon--overflow"></i>
@@ -894,10 +894,10 @@ The role <b>button</b> can be assigned to an interactive card that has <b>NO</b>
 
 ### Interactive card with role listitem
 
-The <b>listitem</b> is the recommended role for card. With this role, all interactive variants of the card can be covered: 
+The <b>listitem</b> is the recommended role for card. With this role, all interactive variants of the card can be covered:
   - Non-interactive card
   - Non-interactive card with interactive elements inside
-  - Interactive card 
+  - Interactive card
   - Interactive card with interactive elements
 <br><br>
 Only the list item role allows nested interactions, which means: the card can be interactive itself while also having interactive elements inside. It is not recommended to use interactive cards outside list containers!<br>
@@ -906,21 +906,21 @@ The card container must be a list, even when there's only one card. The containe
 ```html
 <div role="region" aria-label="Interactive Cards and States">
     <h2>Interactive Cards and States</h2>
-    <div 
-        role="list" aria-roledescription="Card Container" 
+    <div
+        role="list" aria-roledescription="Card Container"
         style="display:flex; gap: 2rem; flex-wrap: wrap">
-    
-        <div 
-            class="fd-card fd-card--interactive" 
+
+        <div
+            class="fd-card fd-card--interactive"
             style="width: 400px; min-width: 400px; max-width: 400px;"
             role="listitem"
-            tabindex="0" 
+            tabindex="0"
             aria-posinset="1"
             aria-setsize="5"
-            aria-roledescription="Card" 
+            aria-roledescription="Card"
             aria-description="Activate for action"
             aria-labelledby="card-title-1c">
-                
+
             <div class="fd-card__header" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main">
                     <div class="fd-card__header-main-container">
@@ -943,7 +943,7 @@ The card container must be a list, even when there's only one card. The containe
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content" style="height: 100px;"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -956,17 +956,17 @@ The card container must be a list, even when there's only one card. The containe
             </div>
         </div>
 
-        <div 
-            class="fd-card fd-card--interactive is-hover" 
+        <div
+            class="fd-card fd-card--interactive is-hover"
             style="width: 400px; min-width: 400px; max-width: 400px;"
             role="listitem"
-            tabindex="0" 
+            tabindex="0"
             aria-posinset="2"
             aria-setsize="5"
-            aria-roledescription="Card" 
+            aria-roledescription="Card"
             aria-description="Activate for action"
             aria-labelledby="card-title-2c">
-            
+
             <div class="fd-card__header" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main">
                     <div class="fd-card__header-main-container">
@@ -989,7 +989,7 @@ The card container must be a list, even when there's only one card. The containe
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content" style="height: 100px;"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -1002,17 +1002,17 @@ The card container must be a list, even when there's only one card. The containe
             </div>
         </div>
 
-        <div 
-            class="fd-card fd-card--interactive is-active" 
+        <div
+            class="fd-card fd-card--interactive is-active"
             style="width: 400px; min-width: 400px; max-width: 400px;"
             role="listitem"
-            tabindex="0" 
+            tabindex="0"
             aria-posinset="3"
             aria-setsize="5"
-            aria-roledescription="Card" 
+            aria-roledescription="Card"
             aria-description="Activate for action"
             aria-labelledby="card-title-3c">
-            
+
             <div class="fd-card__header" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main">
                     <div class="fd-card__header-main-container">
@@ -1035,7 +1035,7 @@ The card container must be a list, even when there's only one card. The containe
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content" style="height: 100px;"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -1048,17 +1048,17 @@ The card container must be a list, even when there's only one card. The containe
             </div>
         </div>
 
-        <div 
-            class="fd-card fd-card--interactive is-focus" 
+        <div
+            class="fd-card fd-card--interactive is-focus"
             style="width: 400px; min-width: 400px; max-width: 400px;"
             role="listitem"
-            tabindex="0" 
+            tabindex="0"
             aria-posinset="4"
             aria-setsize="5"
-            aria-roledescription="Card" 
+            aria-roledescription="Card"
             aria-description="Activate for action"
             aria-labelledby="card-title-4c">
-            
+
             <div class="fd-card__header" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main">
                     <div class="fd-card__header-main-container">
@@ -1081,7 +1081,7 @@ The card container must be a list, even when there's only one card. The containe
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content" style="height: 100px;"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -1094,17 +1094,17 @@ The card container must be a list, even when there's only one card. The containe
             </div>
         </div>
 
-        <div 
-            class="fd-card fd-card--interactive is-selected" 
+        <div
+            class="fd-card fd-card--interactive is-selected"
             style="width: 400px; min-width: 400px; max-width: 400px;"
             role="listitem"
-            tabindex="0" 
+            tabindex="0"
             aria-posinset="5"
             aria-setsize="5"
-            aria-roledescription="Card" 
+            aria-roledescription="Card"
             aria-description="Activate for action"
             aria-labelledby="card-title-5c">
-            
+
             <div class="fd-card__header" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main">
                     <div class="fd-card__header-main-container">
@@ -1127,7 +1127,7 @@ The card container must be a list, even when there's only one card. The containe
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content" style="height: 100px;"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -1145,15 +1145,15 @@ The card container must be a list, even when there's only one card. The containe
 
 ### Standard card | Main Header
 
-The main card header block shows the basic information of the card. It comes in two interactivity variants: 
-- <b>non-interactive</b>: default 
-- <b>interactive</b>: add the <code>.fd-card__header--interactive</code> modifier class to the <code>.fd-card__header</code> base class. 
+The main card header block shows the basic information of the card. It comes in two interactivity variants:
+- <b>non-interactive</b>: default
+- <b>interactive</b>: add the <code>.fd-card__header--interactive</code> modifier class to the <code>.fd-card__header</code> base class.
 
-<br> Building blocks of the Main Header: 
-- <b>title</b>: title is mandatory to explain what content is being displayed to the user. It wraps 3 lines. 
-- <b>avatar</b> (optional): avatar should be displayed in a size S (3rem). 
+<br> Building blocks of the Main Header:
+- <b>title</b>: title is mandatory to explain what content is being displayed to the user. It wraps 3 lines.
+- <b>avatar</b> (optional): avatar should be displayed in a size S (3rem).
 - <b>subtitle</b> (optional): the subtitle provides additional context to the title or displays a status. Its usage depends on the card type. Subtitles that exceed one line are truncated with an ellipsis (it wraps 2 lines).
-- <b>counter</b> (optional): the counter indicates how many items are showing on the card in relation to the total number of relevant items. If all the relevant items are visible on the card, no counter is shown. There is also no counter if there is an issue loading a card, or if no items are found in the filter criteria. The counter is right-aligned and is never truncated. 
+- <b>counter</b> (optional): the counter indicates how many items are showing on the card in relation to the total number of relevant items. If all the relevant items are visible on the card, no counter is shown. There is also no counter if there is an issue loading a card, or if no items are found in the filter criteria. The counter is right-aligned and is never truncated.
 - <b>interactive element</b> (optional): like an icon button.
 
 ```html
@@ -1188,7 +1188,7 @@ The main card header block shows the basic information of the card. It comes in 
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -1230,9 +1230,9 @@ The main card header block shows the basic information of the card. It comes in 
                     </div>
                 </div>
             </div>
-    
+
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -1276,7 +1276,7 @@ The main card header block shows the basic information of the card. It comes in 
                     </div>
                 </div>
             </div>
-    
+
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
             <div class="fd-card__footer">
                 <a class="fd-link fd-card__footer-link" href="#"><span class="fd-link__content">Footer with a link</span></a>
@@ -1427,7 +1427,7 @@ The main card header block shows the basic information of the card. It comes in 
 
 The Extended header is a flexible block to hold various other components, like time stamp, rating, tags, label/value, long text, numeric values, etc. The components can be arranged in left column or right column, each column is suggested to have maximum 3 lines for placing the components.
 
-- <code>.fd-card__header-extended--top-aligned</code> and <code>.fd-card__header-extended--bottom-aligned</code> modifier classes applied with the <code>.fd-card__header-extended</code> base class will align the content of the columns vertically to the top or the bottom (default is center). 
+- <code>.fd-card__header-extended--top-aligned</code> and <code>.fd-card__header-extended--bottom-aligned</code> modifier classes applied with the <code>.fd-card__header-extended</code> base class will align the content of the columns vertically to the top or the bottom (default is center).
 - <code>.fd-card__header-column--right-aligned</code> modifier class for <code>.fd-card__header-column</code> will align the content of the column to the right.
 
 ```html
@@ -1623,19 +1623,19 @@ The Extended header is a flexible block to hold various other components, like t
                                 <div class="fd-rating-indicator__container" aria-label="Star Rating (out of 5)">
                                     <input aria-label="0 star" type="radio" class="fd-rating-indicator__input fd-rating-indicator__input--zero-rating" id="rating-s-0" name="rating-s" value="0">
                                     <label class="fd-rating-indicator__label fd-rating-indicator__label--zero-rating" for="rating-s-0" aria-hidden="true"></label>
-                    
+
                                     <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-s-1" name="rating-s" value="1">
                                     <label class="fd-rating-indicator__label" for="rating-s-1"></label>
-                    
+
                                     <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-s-2" name="rating-s" value="2" checked>
                                     <label class="fd-rating-indicator__label" for="rating-s-2"></label>
-                    
+
                                     <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-s-3" name="rating-s" value="3">
                                     <label class="fd-rating-indicator__label" for="rating-s-3"></label>
-                    
+
                                     <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-s-4" name="rating-s" value="4">
                                     <label class="fd-rating-indicator__label" for="rating-s-4"></label>
-                    
+
                                     <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-s-5" name="rating-s" value="5">
                                     <label class="fd-rating-indicator__label" for="rating-s-5"></label>
                                 </div>
@@ -1722,7 +1722,7 @@ The numeric header block is designed for displaying numeric information.
 ### Alternative Icon on Card Header
 
 Alternatively to an Avatar a Message Icon can be displayed within the Main Header. This will be available in three different sizes (this is only applicable for Message Icons not Avatar component on Card Header). The Message Icons are non-interactive.
-      
+
 <br><b>Icon Sizes</b>
 
 <table>
@@ -1802,7 +1802,7 @@ Alternatively to an Avatar a Message Icon can be displayed within the Main Heade
 <div style="display:flex; justify-content:space-around; flex-wrap: wrap">
     <div style="width: 300px; height: 400px; margin: 1rem;">
         <div class="fd-card" role="region" aria-roledescription="Card" aria-labelledby="card-title-1a">
-            
+
             <div class="fd-card__header" role="group" aria-roledescription="Card Header">
                 <div class="fd-card__header-main">
                     <div class="fd-card__header-main-container">
@@ -1827,7 +1827,7 @@ Alternatively to an Avatar a Message Icon can be displayed within the Main Heade
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -1867,7 +1867,7 @@ Alternatively to an Avatar a Message Icon can be displayed within the Main Heade
             </div>
 
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
-            
+
             <div class="fd-card__footer">
                 <div class="fd-card__footer-actions">
                     <button class="fd-button fd-button--positive">
@@ -1994,12 +1994,12 @@ Use Illustrated Messages component inside the Card content to represent an empty
                             <path class="sapIllus_StrokeDetailColor" style="fill:var(--sapIllus_StrokeDetailColor)" d="M274.5954,188.2069c-.459,0-1.2246-.2676-2.39-1.4316-1.7891-1.7891-1.374-2.9473-1.3213-3.0733a.5.5,0,0,1,.9307.3662c-.0118.0489-.1495.753,1.0976,2,1.2051,1.2061,1.7031,1.1319,1.7041,1.1319a.46.46,0,0,1,.6436.2021.5327.5327,0,0,1-.2246.6983A.8706.8706,0,0,1,274.5954,188.2069Z"/>
                             <path class="sapIllus_StrokeDetailColor" style="fill:var(--sapIllus_StrokeDetailColor)" d="M228.1736,229.0389a2.33,2.33,0,0,1-.5024-.7506l-2.6,4.11a1.01,1.01,0,0,0,1.3756,1.3756l4.1136-2.6023a2.3358,2.3358,0,0,1-.7639-.5083Z"/>
                         </svg>
-            
+
                         <figcaption class="fd-illustrated-message__figcaption">
                             <h2 class="fd-illustrated-message__title">Unable to load data</h2>
                             <p class="fd-illustrated-message__text">Try reloading, if that doesn't help check with your administratior.</p>
                         </figcaption>
-            
+
                         <div class="fd-illustrated-message__actions">
                             <button class="fd-button">Reload</button>
                         </div>
@@ -2110,7 +2110,7 @@ The analytical card is used for data visualization. It can display a KPI header 
                         <span class="fd-object-status__text">badge</span>
                     </span>
                 </div>
-                
+
             </div>
             <div class="fd-card__content" role="group" aria-roledescription="Card content"></div>
         </div>

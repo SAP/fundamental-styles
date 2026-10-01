@@ -2,8 +2,8 @@
 component: border
 title: Border
 category: border
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/common-css/stories/border/border.stories.js
 tags: []
 dependencies: []
@@ -276,8 +276,8 @@ Border utilities provide ready-to-use classes for commonly used border parameter
 ### SCSS mixin sap-border
 
 <p>
-  The <code>sap-border</code> helper mixin allows you to specify the width, style, and color of an element's border. 
-  This is achieved by providing values to the <code>sap-border</code> parameters: 
+  The <code>sap-border</code> helper mixin allows you to specify the width, style, and color of an element's border.
+  This is achieved by providing values to the <code>sap-border</code> parameters:
   <code>$width</code>, <code>$style</code>, <code>$color</code>, and <code>$pos</code>.
 </p>
 

@@ -131,7 +131,7 @@ npm install fundamental-styles
 | Class | Description |
 |-------|-------------|
 | `fd-vertical-nav--condensed` | In condensed mode, only icons are shown unless some navigation items have second levels and the second level is expanded. |
-| `fd-vertical-nav--overflow` | To clip the content and add a vertical scroll to the Vertical Navigation add the  \ |
+| `fd-vertical-nav--overflow` | To clip the content and add a vertical scroll to the Vertical Navigation add the  `fd-vertical-nav--overflow` modifier class to the `fd-vertical-nav` base class |
 
 ## States
 
@@ -511,7 +511,7 @@ The Vertical Navigation items can be further visually grouped using the Group He
 
 ### Grouping with Overflow
 
-To clip the content and add a vertical scroll to the Vertical Navigation add the  \
+To clip the content and add a vertical scroll to the Vertical Navigation add the  `fd-vertical-nav--overflow` modifier class to the `fd-vertical-nav` base class. You need to manually set the max-height of the element on the `fd-vertical-nav` level. For example: `style="max-height: 200px;"`.
 
 ```html
 <div class="fd-vertical-nav fd-vertical-nav--overflow">
@@ -576,7 +576,7 @@ To clip the content and add a vertical scroll to the Vertical Navigation add the
 
 ### Long text
 
-Navigation list items truncate long text by default. Add the \
+Navigation list items truncate long text by default. Add the `fd-list--wrap` modifier class to the `fd-list` element to enable text wrapping.
 
 ```html
 <div>
@@ -608,36 +608,36 @@ Navigation list items truncate long text by default. Add the \
             </ul>
         </nav>
     </div>
+</div>
 
-    <div>
-        <p>With <code>fd-list--wrap</code></p>
-        <div class="fd-vertical-nav">
-            <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu">
-                <ul class="fd-list fd-list--wrap" aria-label="Main Menu List">
-                    <li class="fd-list__navigation-item" tabindex="0">
-                        <i role="presentation" class="fd-list__navigation-item-icon sap-icon--home"></i>
-                        <span class="fd-list__navigation-item-text">Enterprise Resource Planning Configuration and Dashboard Overview</span>
-                    </li>
-                    <li class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded">
-                        <i role="presentation" class="fd-list__navigation-item-icon sap-icon--calendar"></i>
-                        <span class="fd-list__navigation-item-text">Human Capital Management and Payroll Processing</span>
-                        <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand submenu"></button>
-                        <ul class="fd-list fd-list--wrap">
-                            <li class="fd-list__navigation-item" tabindex="0">
-                                <span class="fd-list__navigation-item-text">Employee Performance and Development Tracking</span>
-                            </li>
-                            <li class="fd-list__navigation-item" tabindex="0">
-                                <span class="fd-list__navigation-item-text">Payroll and Compensation Management for All Regions</span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="fd-list__navigation-item" tabindex="0">
-                        <i role="presentation" class="fd-list__navigation-item-icon sap-icon--shipping-status"></i>
-                        <span class="fd-list__navigation-item-text">Supply Chain and Logistics Management</span>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+<div>
+    <p>With <code>fd-list--wrap</code></p>
+    <div class="fd-vertical-nav">
+        <nav class="fd-vertical-nav__main-navigation" aria-label="Main Menu">
+            <ul class="fd-list fd-list--wrap" aria-label="Main Menu List">
+                <li class="fd-list__navigation-item" tabindex="0">
+                    <i role="presentation" class="fd-list__navigation-item-icon sap-icon--home"></i>
+                    <span class="fd-list__navigation-item-text">Enterprise Resource Planning Configuration and Dashboard Overview</span>
+                </li>
+                <li class="fd-list__navigation-item fd-list__navigation-item--expandable is-expanded">
+                    <i role="presentation" class="fd-list__navigation-item-icon sap-icon--calendar"></i>
+                    <span class="fd-list__navigation-item-text">Human Capital Management and Payroll Processing</span>
+                    <button class="fd-list__navigation-item-arrow sap-icon--navigation-down-arrow is-expanded" aria-label="Expand submenu"></button>
+                    <ul class="fd-list fd-list--wrap">
+                        <li class="fd-list__navigation-item" tabindex="0">
+                            <span class="fd-list__navigation-item-text">Employee Performance and Development Tracking</span>
+                        </li>
+                        <li class="fd-list__navigation-item" tabindex="0">
+                            <span class="fd-list__navigation-item-text">Payroll and Compensation Management for All Regions</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="fd-list__navigation-item" tabindex="0">
+                    <i role="presentation" class="fd-list__navigation-item-icon sap-icon--shipping-status"></i>
+                    <span class="fd-list__navigation-item-text">Supply Chain and Logistics Management</span>
+                </li>
+            </ul>
+        </nav>
     </div>
 </div>
 ```

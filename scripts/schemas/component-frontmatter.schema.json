@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://sap.github.io/fundamental-styles/schemas/component-frontmatter.schema.json",
+    "title": "Component Documentation Frontmatter",
+    "description": "JSON Schema for validating generated component documentation frontmatter",
+    "type": "object",
+    "required": ["component", "title", "category", "sourcePath"],
+    "properties": {
+        "component": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+        },
+        "title": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 200
+        },
+        "category": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+        },
+        "selector": {
+            "type": "string",
+            "pattern": "^(fd-[a-z][a-z0-9-]*)?$",
+            "maxLength": 100
+        },
+        "cssFile": {
+            "type": "string",
+            "pattern": "^([a-z][a-z0-9-]*\\.css)?$",
+            "maxLength": 100
+        },
+        "sourcePath": {
+            "type": "string",
+            "pattern": "^packages/[^/]+/stories/.+\\.stories\\.js$",
+            "minLength": 10,
+            "maxLength": 500
+        },
+        "tags": {
+            "type": "array",
+            "items": { "type": "string", "maxLength": 50 },
+            "uniqueItems": true
+        },
+        "dependencies": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1, "maxLength": 100 },
+            "uniqueItems": true
+        },
+        "relatedComponents": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1, "maxLength": 100 },
+            "uniqueItems": true
+        },
+        "stability": {
+            "type": "string",
+            "enum": ["stable", "deprecated", "experimental"]
+        },
+        "generatedAt": {
+            "type": "string",
+            "format": "date-time"
+        }
+    },
+    "additionalProperties": false
+}

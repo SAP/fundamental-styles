@@ -2,8 +2,8 @@
 component: iconTnt
 title: Components/Icons/TNT Icons
 category: Components
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/styles/stories/Components/Icons/icon/TNTIcons/iconTnt.stories.js
 tags: []
 dependencies: []

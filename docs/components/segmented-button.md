@@ -15,7 +15,8 @@ stability: stable
 
 The segmented button displays a group of options. Only one option can be active at a time, while the others remain or become inactive when the initial option is selected.
 This button type was previously known as "button group" and is comparable to a radio button group.
-It can be displayed by using the container with \
+It can be displayed by using the container with `fd-segmented-button` class with `role="group"` and the `aria-label="Group label"` attribute.
+Active button should have `aria-pressed="true"` and `fd-button--toggled` class and inactive buttons should have `aria-pressed="false"` \n\n**New Feature:** Multiple items can be selected at a time.
 
 ## Dependencies
 
@@ -116,7 +117,7 @@ npm install fundamental-styles
 
 | Class | Description |
 |-------|-------------|
-| `fd-segmented-button--vertical` | Segmented button can also be rendered vertically if \ |
+| `fd-segmented-button--vertical` | Segmented button can also be rendered vertically if `.fd-segmented-button--vertical` class modifier is added.<div class="fd-message-strip fd-message-strip--no-icon fd-message-strip--information" role="note" aria-live="assertive" id="message-strip-1" aria-labelledby="message-strip-1"><b class="fd-message-strip__text">Vertical segmented button should only be used with icon-only buttons.</b></div> |
 
 ## Related Components
 
@@ -219,7 +220,7 @@ Key CSS variables used by this component:
 
 ### Vertical alignment
 
-Segmented button can also be rendered vertically if \
+Segmented button can also be rendered vertically if `.fd-segmented-button--vertical` class modifier is added.<div class="fd-message-strip fd-message-strip--no-icon fd-message-strip--information" role="note" aria-live="assertive" id="message-strip-1" aria-labelledby="message-strip-1"><b class="fd-message-strip__text">Vertical segmented button should only be used with icon-only buttons.</b></div>
 
 ```html
 <div class="fd-segmented-button fd-segmented-button--vertical" role="listbox" tabindex="-1" aria-multiselectable="true" aria-roledescription="Segmented button group" aria-orientation="vertical">

@@ -13,7 +13,32 @@ stability: stable
 
 # Layouts/Page
 
-- \
+- `fd-page`: standard (default)
+ - `fd-page--solid`: solid
+ - `fd-page--list`: list
+ - `fd-page--transparent:` transparent
+
+
+ ### CONTAINER HIERARCHY
+
+ The elements used to construct a page are:
+
+ - `fd-page`: The page-level wrapper
+ - **Header**: Uses a Bar component with `fd-bar--page` and `fd-bar--header` modifier classes
+ - **Header with SubHeader**: Uses a Bar component with `fd-bar--page` and `fd-bar--header-with-subheader` modifier classes
+ - **SubHeader**: _(optional)_ Uses a Bar component with `fd-bar--page` and `fd-bar--subheader` modifier classes
+ - **Content**: The page content is wrapped in `fd-page__content container`
+ - **Footer**: _(optional)_ Uses a Bar component with `fd-bar--page` and `fd-bar--footer` modifier classes
+
+
+ ### PAGE RESPONSIVE BEHAVIOUR
+
+ The left and right spacings of the Bar and the Content could be adjusted according to the container width.
+
+ - **default**: Bar component with `fd-bar--page modifier` class and `fd-page__content` class for the content
+ - **Size S**: Bar component with additional `fd-bar--page-s` modifier class and `fd-page__content--s` modifier class for the content
+ - **Size M & L**: Bar component with additional `fd-bar--page-m_l` modifier class and `fd-page__content--m_l` modifier class for the content
+ - **Size XL**: Bar component with additional `fd-bar--page-xl` modifier class and `fd-page__content--xl` modifier class for the content
 
 ## Dependencies
 
@@ -76,7 +101,9 @@ npm install fundamental-styles
         </div>
     </header>
     <div class="fd-page__content" role="region">
+
         Page Content
+
     </div>
     <footer>
         <div class="fd-bar fd-bar--page fd-bar--footer">
@@ -166,7 +193,9 @@ Key CSS variables used by this component:
         </div>
     </header>
     <div class="fd-page__content" role="region">
+
         Page Content
+
     </div>
     <footer>
         <div class="fd-bar fd-bar--page fd-bar--footer">
@@ -223,7 +252,9 @@ Page with Transparent Background Design, Header with SubHeader, and Responsive B
         </div>
     </div>
     <div class="fd-page__content--m_l" role="region">
+
         Page Content
+
     </div>
     <footer>
         <div class="fd-bar fd-bar--page-m_l fd-bar--footer">
@@ -268,7 +299,9 @@ Home page with List Background Design, Floating Footer and Responsive Behaviour 
         </div>
     </header>
     <div class="fd-page__content--xl" role="region">
+
         Page Content
+
     </div>
     <footer>
         <div class="fd-bar fd-bar--home-page-xl fd-bar--floating-footer">

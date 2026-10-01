@@ -89,6 +89,8 @@ npm install fundamental-styles
                 title="Submit">
                 <i role="presentation" aria-hidden="true" class="sap-icon--paper-plane"></i>
             </button>
+        </div>
+    </div>
 ```
 
 ## States
@@ -155,6 +157,8 @@ The default feed input displays an empty text field with an inactive submit butt
                 title="Submit">
                 <i role="presentation" aria-hidden="true" class="sap-icon--paper-plane"></i>
             </button>
+        </div>
+    </div>
 ```
 
 ### With text
@@ -181,6 +185,8 @@ The input with text displays some text, activating the submit button.
             >
             <i role="presentation" aria-hidden="true" class="sap-icon--feeder-arrow"></i>
         </button>
+    </div>
+</div>
 ```
 
 ### Disabled
@@ -207,6 +213,8 @@ The disabled feed input displays a text field and submit button that users canno
                 title="Submit">
                 <i role="presentation" aria-hidden="true" class="sap-icon--feeder-arrow"></i>
             </button>
+        </div>
+    </div>
 ```
 
 ### No thumbnail
@@ -230,6 +238,7 @@ Although the default feed input has a thumbnail, it is possible to remove it. Wi
             <i role="presentation" aria-hidden="true" class="sap-icon--feeder-arrow"></i>
         </button>
     </div>
+</div>
 ```
 
 ### Generic thumbnail
@@ -258,6 +267,8 @@ A generic thumbnail will be displayed if no image has been chosen by the user.
             title="Submit">
             <i role="presentation" aria-hidden="true" class="sap-icon--feeder-arrow"></i>
         </button>
+    </div>
+</div>
 ```
 
 ### Multiline
@@ -285,6 +296,8 @@ The multiline feed input displays a text field with multiple lines of text, whic
             title="Submit">
             <i role="presentation" aria-hidden="true" class="sap-icon--feeder-arrow"></i>
         </button>
+    </div>
+</div>
 ```
 
 ### Max height
@@ -329,6 +342,8 @@ The max height feed input displays a text field with the maximum amount of text 
             title="Submit">
             <i role="presentation" aria-hidden="true" class="sap-icon--feeder-arrow"></i>
         </button>
+    </div>
+</div>
 ```
 
 ## Accessibility

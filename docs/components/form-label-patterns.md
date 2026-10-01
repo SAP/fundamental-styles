@@ -129,64 +129,64 @@ npm install fundamental-styles
                         </span>
                         <input id="formItemMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" />
                     </div>
-                    <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
-                            <i class="sap-icon--value-help"></i>
-                        </button>
-                    </span>
                 </div>
+                <span class="fd-input-group__addon fd-input-group__addon--button">
+                    <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
+                        <i class="sap-icon--value-help"></i>
+                    </button>
+                </span>
             </div>
-            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348a">
-                <div class="fd-popover__wrapper">
-                    <ul aria-multiselectable="true" role="listbox" aria-label="list of fruits" class="fd-list fd-list--multi-input">
-                        <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                            <div class="fd-form-item fd-list__form-item">
-                                <input type="checkbox" class="fd-checkbox" id="Ai4ez620" checked aria-labelledby="Az0bg30">
-                                <label tabindex="-1" class="fd-checkbox__label" for="Ai4e20">
-                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                                </label>
-                            </div>
-                            <span class="fd-list__title" id="Az0bg30">Apple</span>
-                        </li>
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348a">
+            <div class="fd-popover__wrapper">
+                <ul aria-multiselectable="true" role="listbox" aria-label="list of fruits" class="fd-list fd-list--multi-input">
+                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                        <div class="fd-form-item fd-list__form-item">
+                            <input type="checkbox" class="fd-checkbox" id="Ai4ez620" checked aria-labelledby="Az0bg30">
+                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4e20">
+                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                            </label>
+                        </div>
+                        <span class="fd-list__title" id="Az0bg30">Apple</span>
+                    </li>
 
-                        <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                            <div class="fd-form-item fd-list__form-item">
-                                <input type="checkbox" class="fd-checkbox" id="Ai4ez621" checked aria-labelledby="Az0bg31">
-                                <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez621">
-                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                                </label>
-                            </div>
-                            <span class="fd-list__title" id="Az0bg31">Orange</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                            <div class="fd-form-item fd-list__form-item">
-                                <input type="checkbox" class="fd-checkbox" id="Ai4ez622" checked aria-labelledby="Az0bg32">
-                                <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez622">
-                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                                </label>
-                            </div>
-                            <span class="fd-list__title" id="Az0bg32">Banana</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <div class="fd-form-item fd-list__form-item">
-                                <input type="checkbox" class="fd-checkbox" id="Ai4ez623" aria-labelledby="Az0bg33">
-                                <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez623">
-                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                                </label>
-                            </div>
-                            <span class="fd-list__title" id="Az0bg33">Kiwi</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <div class="fd-form-item fd-list__form-item">
-                                <input type="checkbox" class="fd-checkbox" id="Ai4ez624" aria-labelledby="Az0bg34">
-                                <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez624">
-                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                                </label>
-                            </div>
-                            <span class="fd-list__title" id="Az0bg34">Lemon</span>
-                        </li>
-                    </ul>
-                </div>
+                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                        <div class="fd-form-item fd-list__form-item">
+                            <input type="checkbox" class="fd-checkbox" id="Ai4ez621" checked aria-labelledby="Az0bg31">
+                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez621">
+                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                            </label>
+                        </div>
+                        <span class="fd-list__title" id="Az0bg31">Orange</span>
+                    </li>
+                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                        <div class="fd-form-item fd-list__form-item">
+                            <input type="checkbox" class="fd-checkbox" id="Ai4ez622" checked aria-labelledby="Az0bg32">
+                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez622">
+                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                            </label>
+                        </div>
+                        <span class="fd-list__title" id="Az0bg32">Banana</span>
+                    </li>
+                    <li role="option" tabindex="0" class="fd-list__item">
+                        <div class="fd-form-item fd-list__form-item">
+                            <input type="checkbox" class="fd-checkbox" id="Ai4ez623" aria-labelledby="Az0bg33">
+                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez623">
+                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                            </label>
+                        </div>
+                        <span class="fd-list__title" id="Az0bg33">Kiwi</span>
+                    </li>
+                    <li role="option" tabindex="0" class="fd-list__item">
+                        <div class="fd-form-item fd-list__form-item">
+                            <input type="checkbox" class="fd-checkbox" id="Ai4ez624" aria-labelledby="Az0bg34">
+                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez624">
+                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                            </label>
+                        </div>
+                        <span class="fd-list__title" id="Az0bg34">Lemon</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -282,64 +282,64 @@ Applications are free to override this in their custom styles if needed and own 
                         </span>
                         <input id="formItemMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" />
                     </div>
-                    <span class="fd-input-group__addon fd-input-group__addon--button">
-                        <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
-                            <i class="sap-icon--value-help"></i>
-                        </button>
-                    </span>
                 </div>
+                <span class="fd-input-group__addon fd-input-group__addon--button">
+                    <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348a" aria-expanded="false" aria-haspopup="true">
+                        <i class="sap-icon--value-help"></i>
+                    </button>
+                </span>
             </div>
-            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348a">
-                <div class="fd-popover__wrapper">
-                    <ul aria-multiselectable="true" role="listbox" aria-label="list of fruits" class="fd-list fd-list--multi-input">
-                        <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                            <div class="fd-form-item fd-list__form-item">
-                                <input type="checkbox" class="fd-checkbox" id="Ai4ez620" checked aria-labelledby="Az0bg30">
-                                <label tabindex="-1" class="fd-checkbox__label" for="Ai4e20">
-                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                                </label>
-                            </div>
-                            <span class="fd-list__title" id="Az0bg30">Apple</span>
-                        </li>
+        </div>
+        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348a">
+            <div class="fd-popover__wrapper">
+                <ul aria-multiselectable="true" role="listbox" aria-label="list of fruits" class="fd-list fd-list--multi-input">
+                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                        <div class="fd-form-item fd-list__form-item">
+                            <input type="checkbox" class="fd-checkbox" id="Ai4ez620" checked aria-labelledby="Az0bg30">
+                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4e20">
+                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                            </label>
+                        </div>
+                        <span class="fd-list__title" id="Az0bg30">Apple</span>
+                    </li>
 
-                        <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                            <div class="fd-form-item fd-list__form-item">
-                                <input type="checkbox" class="fd-checkbox" id="Ai4ez621" checked aria-labelledby="Az0bg31">
-                                <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez621">
-                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                                </label>
-                            </div>
-                            <span class="fd-list__title" id="Az0bg31">Orange</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                            <div class="fd-form-item fd-list__form-item">
-                                <input type="checkbox" class="fd-checkbox" id="Ai4ez622" checked aria-labelledby="Az0bg32">
-                                <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez622">
-                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                                </label>
-                            </div>
-                            <span class="fd-list__title" id="Az0bg32">Banana</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <div class="fd-form-item fd-list__form-item">
-                                <input type="checkbox" class="fd-checkbox" id="Ai4ez623" aria-labelledby="Az0bg33">
-                                <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez623">
-                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                                </label>
-                            </div>
-                            <span class="fd-list__title" id="Az0bg33">Kiwi</span>
-                        </li>
-                        <li role="option" tabindex="0" class="fd-list__item">
-                            <div class="fd-form-item fd-list__form-item">
-                                <input type="checkbox" class="fd-checkbox" id="Ai4ez624" aria-labelledby="Az0bg34">
-                                <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez624">
-                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                                </label>
-                            </div>
-                            <span class="fd-list__title" id="Az0bg34">Lemon</span>
-                        </li>
-                    </ul>
-                </div>
+                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                        <div class="fd-form-item fd-list__form-item">
+                            <input type="checkbox" class="fd-checkbox" id="Ai4ez621" checked aria-labelledby="Az0bg31">
+                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez621">
+                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                            </label>
+                        </div>
+                        <span class="fd-list__title" id="Az0bg31">Orange</span>
+                    </li>
+                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                        <div class="fd-form-item fd-list__form-item">
+                            <input type="checkbox" class="fd-checkbox" id="Ai4ez622" checked aria-labelledby="Az0bg32">
+                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez622">
+                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                            </label>
+                        </div>
+                        <span class="fd-list__title" id="Az0bg32">Banana</span>
+                    </li>
+                    <li role="option" tabindex="0" class="fd-list__item">
+                        <div class="fd-form-item fd-list__form-item">
+                            <input type="checkbox" class="fd-checkbox" id="Ai4ez623" aria-labelledby="Az0bg33">
+                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez623">
+                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                            </label>
+                        </div>
+                        <span class="fd-list__title" id="Az0bg33">Kiwi</span>
+                    </li>
+                    <li role="option" tabindex="0" class="fd-list__item">
+                        <div class="fd-form-item fd-list__form-item">
+                            <input type="checkbox" class="fd-checkbox" id="Ai4ez624" aria-labelledby="Az0bg34">
+                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez624">
+                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                            </label>
+                        </div>
+                        <span class="fd-list__title" id="Az0bg34">Lemon</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -380,91 +380,91 @@ In cases where the list items need to be categorized into groups, it is possible
                     <span class="fd-tokenizer__indicator">2 more</span>
                     <input id="fruitsAndVegsMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" />
                 </div>
-                <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4H8X34a" aria-expanded="false" aria-haspopup="true">
-                        <i class="sap-icon--value-help"></i>
-                    </button>
-                </span>
             </div>
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4H8X34a" aria-expanded="false" aria-haspopup="true">
+                    <i class="sap-icon--value-help"></i>
+                </button>
+            </span>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4H8X34a">
-            <div class="fd-popover__wrapper">
-                <h3 id="fruitListHeader" class="fd-list__group-header">
-                    <span class="fd-list__title">Fruits</span>
-                </h3>
-                <ul aria-multiselectable="true" role="listbox" aria-labelledby="fruitListHeader" class="fd-list fd-list--multi-input">
-                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez625" checked aria-labelledby="Az0bg35">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez625">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg35">Apple</span>
-                    </li>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4H8X34a">
+        <div class="fd-popover__wrapper">
+            <h3 id="fruitListHeader" class="fd-list__group-header">
+                <span class="fd-list__title">Fruits</span>
+            </h3>
+            <ul aria-multiselectable="true" role="listbox" aria-labelledby="fruitListHeader" class="fd-list fd-list--multi-input">
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez625" checked aria-labelledby="Az0bg35">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez625">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg35">Apple</span>
+                </li>
 
-                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez626" checked aria-labelledby="Az0bg36">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez626">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg36">Orange</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez627" checked aria-labelledby="Az0bg37">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez627">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg37">Banana</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez628" aria-labelledby="Az0bg38">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez628">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg38">Kiwi</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez629" aria-labelledby="Az0bg39">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez629">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg39">Lemon</span>
-                    </li>
-                </ul>
-                <label class="fd-list__group-header" id="selectMultipleVegsLabel">
-                    <span class="fd-list__title">Vegetables</span>
-                </label>
-                <ul class="fd-list fd-list--multi-input" role="listbox" aria-multiselectable="true" aria-labelledby="selectMultipleVegsLabel">
-                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez630" checked aria-labelledby="Az0bg40">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez630">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg40">Onion</span>
-                    </li>
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez626" checked aria-labelledby="Az0bg36">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez626">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg36">Orange</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez627" checked aria-labelledby="Az0bg37">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez627">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg37">Banana</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez628" aria-labelledby="Az0bg38">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez628">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg38">Kiwi</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez629" aria-labelledby="Az0bg39">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez629">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg39">Lemon</span>
+                </li>
+            </ul>
+            <label class="fd-list__group-header" id="selectMultipleVegsLabel">
+                <span class="fd-list__title">Vegetables</span>
+            </label>
+            <ul class="fd-list fd-list--multi-input" role="listbox" aria-multiselectable="true" aria-labelledby="selectMultipleVegsLabel">
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez630" checked aria-labelledby="Az0bg40">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez630">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg40">Onion</span>
+                </li>
 
-                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez631" checked aria-labelledby="Az0bg41">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez632">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg41">Tomato</span>
-                    </li>
-                </ul>
-            </div>
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez631" checked aria-labelledby="Az0bg41">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez632">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg41">Tomato</span>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
@@ -473,7 +473,10 @@ In cases where the list items need to be categorized into groups, it is possible
 ### MatchPopoverBodySize
 
 The default length size of the popover body is often different from the text length.
-The body length can be adjusted to match the text length by adding the \
+The body length can be adjusted to match the text length by adding the `fd-popover__body--dropdown-fill` class to the `fd-popover__body`.
+
+This class has been added to all the `Multi Input` examples above.
+In the example you can see how the `Multi Input` component looks without the `fd-popover__body--dropdown-fill` modifier.
 
 ```html
 <label for="matchPopoverBodySizeMultiInput" class="fd-form-label">
@@ -505,64 +508,64 @@ The body length can be adjusted to match the text length by adding the \
                     <span class="fd-tokenizer__indicator">2 more</span>
                     <input id="matchPopoverBodySizeMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" />
                 </div>
-                <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true">
-                        <i class="sap-icon--value-help"></i>
-                    </button>
-                </span>
             </div>
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true">
+                    <i class="sap-icon--value-help"></i>
+                </button>
+            </span>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false" id="F4HGFHX34a">
-            <div class="fd-popover__wrapper">
-                <ul aria-multiselectable="true" role="listbox" aria-label="list of fruits" class="fd-list fd-list--multi-input">
-                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez633" checked aria-labelledby="Az0bg42">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez633">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg42">Apple</span>
-                    </li>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false" id="F4HGFHX34a">
+        <div class="fd-popover__wrapper">
+            <ul aria-multiselectable="true" role="listbox" aria-label="list of fruits" class="fd-list fd-list--multi-input">
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez633" checked aria-labelledby="Az0bg42">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez633">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg42">Apple</span>
+                </li>
 
-                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez634" checked aria-labelledby="Az0bg43">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez634">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg43">Orange</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez635" checked aria-labelledby="Az0bg44">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez635">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg44">Banana</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez636" aria-labelledby="Az0bg45">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez636">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg45">Kiwi</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez637" aria-labelledby="Az0bg46">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez637">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg46">Lemon</span>
-                    </li>
-                </ul>
-            </div>
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez634" checked aria-labelledby="Az0bg43">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez634">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg43">Orange</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez635" checked aria-labelledby="Az0bg44">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez635">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg44">Banana</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez636" aria-labelledby="Az0bg45">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez636">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg45">Kiwi</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez637" aria-labelledby="Az0bg46">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez637">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg46">Lemon</span>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
@@ -570,277 +573,296 @@ The body length can be adjusted to match the text length by adding the \
 
 ### MultiInputModes
 
-To disable a \
+To disable a `Multi Input` component, the `disabled` attribute needs to be added to the `fd-popover__control` and the `fd-input-group` elements.
+The disabled state can also be achieved by adding the `.is-disabled` class or the `aria-disabled="true"` attribute.
+
+To make the `Multi Input` component read-only, the `readonly` attribute needs to be added to the `fd-input-group` element.
+This can also be done by using the `.is-readonly` class or `aria-readonly="true"` attribute. Also, the `fd-tokenizer--readonly` class needs to be added to the `fd-tokenizer` element and the `fd-token--readonly` class to each `fd-token` element.
+
+To make the `Multi Input` component display-only, the `display` attribute needs to be added to the `fd-input-group` element.
+This can also be done by using the `.is-display` class. Also, the `fd-tokenizer--display` class needs to be added to the `fd-tokenizer` element and the `fd-token--display` class to each `fd-token` element.
+In order to have the label and the `Multi Input` component in one line, the `fd-form-item` and `fd-form-item--horizontal` classes need to be added to the parent container.
 
 ```html
 <div>
-    <div>
-        <label for="disabledMultiInput" class="fd-form-label"> Latin Words (Disabled): </label>
-        <div class="fd-popover">
-            <div
-                class="fd-popover__control"
-                aria-expanded="false"
-                aria-haspopup="true"
-                aria-disabled="true"
-                disabled
-                >
-                <div class="fd-input-group fd-input-group--control" aria-disabled="true" disabled>
-                    <div class="fd-tokenizer">
-                        <div class="fd-tokenizer__inner">
-                            <span class="fd-token fd-token--readonly" role="button">
-                                <span class="fd-token__text"> Bibendum </span>
-                            </span>
-                            <span class="fd-token fd-token--readonly" role="button">
-                                <span class="fd-token__text"> Lorem </span>
-                            </span>
-                            <span class="fd-token fd-token--readonly" role="button">
-                                <span class="fd-token__text"> Dolor </span>
-                            </span>
-                            <span class="fd-token fd-token--readonly" role="button">
-                                <span class="fd-token__text"> Filter </span>
-                            </span>
-                            <span class="fd-token fd-token--readonly">
-                                <span class="fd-token__text"> Lorem </span>
-                            </span>
-                            <span class="fd-tokenizer__indicator">
-                                <div class="fd-popover">
-                                    <div
-                                        class="fd-popover__control fd-input-group__control"
-                                        aria-controls="F4GcX34Xa"
-                                        aria-expanded="false"
-                                        aria-haspopup="true"
-                                        onclick="onPopoverClick('F4GcX34Xa');"
-                                        >
-                                        <a class="fd-link">
-                                            <span class="fd-link__content">2 more</span>
-                                        </a>
-                                        <div class="fd-popover__body" aria-hidden="true" id="F4GcX34Xa">
-                                            <nav class="fd-menu" id="">
-                                                <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                                    <li class="fd-menu__item">
-                                                        <a tabindex="-1" href="#" class="fd-menu__link">
-                                                            <span class="fd-menu__title">Consectetur</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="fd-menu__item">
-                                                        <a tabindex="-1" href="#" class="fd-menu__link">
-                                                            <span class="fd-menu__title">Adipiscing</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
-                                        </div>
-                                    </span>
-                                    <input
-                                    disabled
-                                    id="disabledMultiInput"
-                                    class="fd-input fd-input-group__input fd-tokenizer__input"
-                                    />
+    <label for="disabledMultiInput" class="fd-form-label"> Latin Words (Disabled): </label>
+    <div class="fd-popover">
+        <div
+            class="fd-popover__control"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-disabled="true"
+            disabled
+            >
+            <div class="fd-input-group fd-input-group--control" aria-disabled="true" disabled>
+                <div class="fd-tokenizer">
+                    <div class="fd-tokenizer__inner">
+                        <span class="fd-token fd-token--readonly" role="button">
+                            <span class="fd-token__text"> Bibendum </span>
+                        </span>
+                        <span class="fd-token fd-token--readonly" role="button">
+                            <span class="fd-token__text"> Lorem </span>
+                        </span>
+                        <span class="fd-token fd-token--readonly" role="button">
+                            <span class="fd-token__text"> Dolor </span>
+                        </span>
+                        <span class="fd-token fd-token--readonly" role="button">
+                            <span class="fd-token__text"> Filter </span>
+                        </span>
+                        <span class="fd-token fd-token--readonly">
+                            <span class="fd-token__text"> Lorem </span>
+                        </span>
+                        <span class="fd-tokenizer__indicator">
+                            <div class="fd-popover">
+                                <div
+                                    class="fd-popover__control fd-input-group__control"
+                                    aria-controls="F4GcX34Xa"
+                                    aria-expanded="false"
+                                    aria-haspopup="true"
+                                    onclick="onPopoverClick('F4GcX34Xa');"
+                                    >
+                                    <a class="fd-link">
+                                        <span class="fd-link__content">2 more</span>
+                                    </a>
+                                </div>
+                                <div class="fd-popover__body" aria-hidden="true" id="F4GcX34Xa">
+                                    <nav class="fd-menu" id="">
+                                        <ul class="fd-menu__list fd-menu__list--no-shadow">
+                                            <li class="fd-menu__item">
+                                                <a tabindex="-1" href="#" class="fd-menu__link">
+                                                    <span class="fd-menu__title">Consectetur</span>
+                                                </a>
+                                            </li>
+                                            <li class="fd-menu__item">
+                                                <a tabindex="-1" href="#" class="fd-menu__link">
+                                                    <span class="fd-menu__title">Adipiscing</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
-                            <span class="fd-input-group__addon fd-input-group__addon--button">
-                                <button
-                                    aria-label="show options"
-                                    tabindex="-1"
-                                    class="fd-input-group__button fd-button fd-button--transparent"
+                        </span>
+                        <input
+                        disabled
+                        id="disabledMultiInput"
+                        class="fd-input fd-input-group__input fd-tokenizer__input"
+                        />
+                    </div>
+                </div>
+                <span class="fd-input-group__addon fd-input-group__addon--button">
+                    <button
+                        aria-label="show options"
+                        tabindex="-1"
+                        class="fd-input-group__button fd-button fd-button--transparent"
+                        >
+                        <i class="sap-icon--value-help"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <label for="readOnlyMultiInput" class="fd-form-label"> Latin Words (Readonly): </label>
+    <div class="fd-popover">
+        <div
+            class="fd-popover__control"
+            aria-expanded="false"
+            aria-haspopup="false"
+            >
+            <div class="fd-input-group fd-input-group--control" readonly aria-readonly="true">
+                <div class="fd-tokenizer fd-tokenizer--readonly">
+                    <div class="fd-tokenizer__inner">
+                        <span tabindex="0" class="fd-token fd-token--readonly">
+                            <span class="fd-token__text"> Bibendum </span>
+                        </span>
+                        <span tabindex="0" class="fd-token fd-token--readonly">
+                            <span class="fd-token__text"> Lorem </span>
+                        </span>
+                        <span tabindex="0" class="fd-token fd-token--readonly">
+                            <span class="fd-token__text"> Dolor </span>
+                        </span>
+                        <span tabindex="0" class="fd-token fd-token--readonly">
+                            <span class="fd-token__text"> Filter </span>
+                        </span>
+                        <span tabindex="0" class="fd-token fd-token--readonly">
+                            <span class="fd-token__text"> Lorem </span>
+                        </span>
+                        <span class="fd-tokenizer__indicator">
+                            <div class="fd-popover">
+                                <div
+                                    class="fd-popover__control fd-input-group__control"
+                                    aria-controls="F4GF5348a"
+                                    aria-expanded="true"
+                                    aria-haspopup="true"
+                                    onclick="onPopoverClick('F4GF5348a');"
                                     >
-                                    <i class="sap-icon--value-help"></i>
-                                </button>
-                            </span>
-                        </div>
+                                    <a tabindex="0" class="fd-link">
+                                        <span class="fd-link__content">2 more</span>
+                                    </a>
+                                </div>
+                                <div class="fd-popover__body" aria-hidden="false" id="F4GF5348a">
+                                    <nav aria-label="more options for readonly input" class="fd-menu" id="">
+                                        <ul class="fd-menu__list fd-menu__list--no-shadow">
+                                            <li class="fd-menu__item">
+                                                <a href="#" class="fd-menu__link">
+                                                    <span class="fd-menu__title">Consectetur</span>
+                                                </a>
+                                            </li>
+                                            <li class="fd-menu__item">
+                                                <a href="#" class="fd-menu__link">
+                                                    <span class="fd-menu__title">Adipiscing</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </span>
+                        <input
+                        id="readOnlyMultiInput"
+                        class="fd-input fd-input-group__input fd-tokenizer__input"
+                        readonly
+                        aria-readonly="true"
+                        />
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-            <label for="readOnlyMultiInput" class="fd-form-label"> Latin Words (Readonly): </label>
-            <div class="fd-popover">
-                <div
-                    class="fd-popover__control"
-                    aria-expanded="false"
-                    aria-haspopup="false"
-                    >
-                    <div class="fd-input-group fd-input-group--control" readonly aria-readonly="true">
-                        <div class="fd-tokenizer fd-tokenizer--readonly">
-                            <div class="fd-tokenizer__inner">
-                                <span tabindex="0" class="fd-token fd-token--readonly">
-                                    <span class="fd-token__text"> Bibendum </span>
-                                </span>
-                                <span tabindex="0" class="fd-token fd-token--readonly">
-                                    <span class="fd-token__text"> Lorem </span>
-                                </span>
-                                <span tabindex="0" class="fd-token fd-token--readonly">
-                                    <span class="fd-token__text"> Dolor </span>
-                                </span>
-                                <span tabindex="0" class="fd-token fd-token--readonly">
-                                    <span class="fd-token__text"> Filter </span>
-                                </span>
-                                <span tabindex="0" class="fd-token fd-token--readonly">
-                                    <span class="fd-token__text"> Lorem </span>
-                                </span>
-                                <span class="fd-tokenizer__indicator">
-                                    <div class="fd-popover">
-                                        <div
-                                            class="fd-popover__control fd-input-group__control"
-                                            aria-controls="F4GF5348a"
-                                            aria-expanded="true"
-                                            aria-haspopup="true"
-                                            onclick="onPopoverClick('F4GF5348a');"
-                                            >
-                                            <a tabindex="0" class="fd-link">
-                                                <span class="fd-link__content">2 more</span>
-                                            </a>
-                                            <div class="fd-popover__body" aria-hidden="false" id="F4GF5348a">
-                                                <nav aria-label="more options for readonly input" class="fd-menu" id="">
-                                                    <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                                        <li class="fd-menu__item">
-                                                            <a href="#" class="fd-menu__link">
-                                                                <span class="fd-menu__title">Consectetur</span>
-                                                            </a>
-                                                        </li>
-                                                        <li class="fd-menu__item">
-                                                            <a href="#" class="fd-menu__link">
-                                                                <span class="fd-menu__title">Adipiscing</span>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                        </div>
-                                    </span>
-                                    <input
-                                    id="readOnlyMultiInput"
-                                    class="fd-input fd-input-group__input fd-tokenizer__input"
-                                    readonly
-                                    aria-readonly="true"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="fd-form-item fd-form-item--horizontal">
-                    <label for="displayOnlyMultiInput" class="fd-form-label"> Latin Words (Display-only): </label>
-                    <div class="fd-popover">
-                        <div
-                            class="fd-popover__control"
-                            aria-controls="F4GcX3X8a"
-                            aria-expanded="false"
-                            aria-haspopup="false"
-                            >
-                            <div class="fd-input-group fd-input-group--control" display>
-                                <div class="fd-tokenizer fd-tokenizer--display">
-                                    <div class="fd-tokenizer__inner">
-                                        <span tabindex="0" class="fd-token fd-token--display">
-                                            <span class="fd-token__text"> Bibendum </span>
-                                        </span>
-                                        <span tabindex="0" class="fd-token fd-token--display">
-                                            <span class="fd-token__text"> Lorem </span>
-                                        </span>
-                                        <span tabindex="0" class="fd-token fd-token--display">
-                                            <span class="fd-token__text"> Dolor </span>
-                                        </span>
-                                        <span tabindex="0" class="fd-token fd-token--display">
-                                            <span class="fd-token__text"> Filter </span>
-                                        </span>
-                                        <span tabindex="0" class="fd-token fd-token--display">
-                                            <span class="fd-token__text"> Lorem </span>
-                                        </span>
-                                        <span class="fd-tokenizer__indicator">
-                                            <div class="fd-popover">
-                                                <div
-                                                    class="fd-popover__control fd-input-group__control"
-                                                    aria-controls="F4GF5348b"
-                                                    aria-expanded="true"
-                                                    aria-haspopup="true"
-                                                    onclick="onPopoverClick('F4GF5348b');"
-                                                    >
-                                                    <a tabindex="0" class="fd-link">
-                                                        <span class="fd-link__content">2 more</span>
-                                                    </a>
-                                                    <div class="fd-popover__body" aria-hidden="false" id="F4GF5348b">
-                                                        <nav aria-label="more options for display only input" class="fd-menu" id="">
-                                                            <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                                                <li class="fd-menu__item">
-                                                                    <a href="#" class="fd-menu__link">
-                                                                        <span class="fd-menu__title">Consectetur</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="fd-menu__item">
-                                                                    <a href="#" class="fd-menu__link">
-                                                                        <span class="fd-menu__title">Adipiscing</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </nav>
-                                                    </div>
-                                                </div>
-                                            </span>
-                                            <input
-                                            id="displayOnlyMultiInput"
-                                            class="fd-input fd-input-group__input fd-tokenizer__input"
-                                            readonly
-                                            aria-readonly="true"
-                                            />
-                                        </div>
-                                    </div>
-                                    <span class="fd-input-group__addon fd-input-group__addon--button">
-                                        <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true">
-                                            <i class="sap-icon--value-help"></i>
-                                        </button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+    </div>
+</div>
 
-                        <div class="fd-form-item fd-form-item--horizontal">
-                            <label for="displayOnlyMultiInput" class="fd-form-label"> Latin Words (Display-only): </label>
+<div class="fd-form-item fd-form-item--horizontal">
+    <label for="displayOnlyMultiInput" class="fd-form-label"> Latin Words (Display-only): </label>
+    <div class="fd-popover">
+        <div
+            class="fd-popover__control"
+            aria-controls="F4GcX3X8a"
+            aria-expanded="false"
+            aria-haspopup="false"
+            >
+            <div class="fd-input-group fd-input-group--control" display>
+                <div class="fd-tokenizer fd-tokenizer--display">
+                    <div class="fd-tokenizer__inner">
+                        <span tabindex="0" class="fd-token fd-token--display">
+                            <span class="fd-token__text"> Bibendum </span>
+                        </span>
+                        <span tabindex="0" class="fd-token fd-token--display">
+                            <span class="fd-token__text"> Lorem </span>
+                        </span>
+                        <span tabindex="0" class="fd-token fd-token--display">
+                            <span class="fd-token__text"> Dolor </span>
+                        </span>
+                        <span tabindex="0" class="fd-token fd-token--display">
+                            <span class="fd-token__text"> Filter </span>
+                        </span>
+                        <span tabindex="0" class="fd-token fd-token--display">
+                            <span class="fd-token__text"> Lorem </span>
+                        </span>
+                        <span class="fd-tokenizer__indicator">
                             <div class="fd-popover">
                                 <div
-                                    class="fd-popover__control"
-                                    aria-controls="F4GcX3X8a"
-                                    aria-expanded="false"
-                                    aria-haspopup="false"
+                                    class="fd-popover__control fd-input-group__control"
+                                    aria-controls="F4GF5348b"
+                                    aria-expanded="true"
+                                    aria-haspopup="true"
+                                    onclick="onPopoverClick('F4GF5348b');"
                                     >
-                                    <div class="fd-input-group fd-input-group--control" display>
-                                        <div class="fd-tokenizer fd-tokenizer--display">
-                                            <div class="fd-tokenizer__inner">
-                                                <span tabindex="0" class="fd-token fd-token--display">
-                                                    <span class="fd-token__text"> Bibendum </span>
-                                                </span>
-                                                <span tabindex="0" class="fd-token fd-token--display">
-                                                    <span class="fd-token__text"> Lorem </span>
-                                                </span>
-                                                <span tabindex="0" class="fd-token fd-token--display">
-                                                    <span class="fd-token__text"> Dolor </span>
-                                                </span>
-                                                <span tabindex="0" class="fd-token fd-token--display">
-                                                    <span class="fd-token__text"> Filter </span>
-                                                </span>
-                                                <span tabindex="0" class="fd-token fd-token--display">
-                                                    <span class="fd-token__text"> Lorem </span>
-                                                </span>
-                                                <input
-                                                id="displayOnlyMultiInput"
-                                                class="fd-input fd-input-group__input fd-tokenizer__input"
-                                                readonly
-                                                aria-readonly="true"
-                                                />
-                                            </div>
-                                            <span class="fd-input-group__addon fd-input-group__addon--button">
-                                                <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true">
-                                                    <i class="sap-icon--value-help"></i>
-                                                </button>
-                                            </span>
-                                        </div>
-                                    </div>
+                                    <a tabindex="0" class="fd-link">
+                                        <span class="fd-link__content">2 more</span>
+                                    </a>
+                                </div>
+                                <div class="fd-popover__body" aria-hidden="false" id="F4GF5348b">
+                                    <nav aria-label="more options for display only input" class="fd-menu" id="">
+                                        <ul class="fd-menu__list fd-menu__list--no-shadow">
+                                            <li class="fd-menu__item">
+                                                <a href="#" class="fd-menu__link">
+                                                    <span class="fd-menu__title">Consectetur</span>
+                                                </a>
+                                            </li>
+                                            <li class="fd-menu__item">
+                                                <a href="#" class="fd-menu__link">
+                                                    <span class="fd-menu__title">Adipiscing</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
+                        </span>
+                        <input
+                        id="displayOnlyMultiInput"
+                        class="fd-input fd-input-group__input fd-tokenizer__input"
+                        readonly
+                        aria-readonly="true"
+                        />
+                    </div>
+                </div>
+                <span class="fd-input-group__addon fd-input-group__addon--button">
+                    <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true">
+                        <i class="sap-icon--value-help"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fd-form-item fd-form-item--horizontal">
+    <label for="displayOnlyMultiInput" class="fd-form-label"> Latin Words (Display-only): </label>
+    <div class="fd-popover">
+        <div
+            class="fd-popover__control"
+            aria-controls="F4GcX3X8a"
+            aria-expanded="false"
+            aria-haspopup="false"
+            >
+            <div class="fd-input-group fd-input-group--control" display>
+                <div class="fd-tokenizer fd-tokenizer--display">
+                    <div class="fd-tokenizer__inner">
+                        <span tabindex="0" class="fd-token fd-token--display">
+                            <span class="fd-token__text"> Bibendum </span>
+                        </span>
+                        <span tabindex="0" class="fd-token fd-token--display">
+                            <span class="fd-token__text"> Lorem </span>
+                        </span>
+                        <span tabindex="0" class="fd-token fd-token--display">
+                            <span class="fd-token__text"> Dolor </span>
+                        </span>
+                        <span tabindex="0" class="fd-token fd-token--display">
+                            <span class="fd-token__text"> Filter </span>
+                        </span>
+                        <span tabindex="0" class="fd-token fd-token--display">
+                            <span class="fd-token__text"> Lorem </span>
+                        </span>
+                        <input
+                        id="displayOnlyMultiInput"
+                        class="fd-input fd-input-group__input fd-tokenizer__input"
+                        readonly
+                        aria-readonly="true"
+                        />
+                    </div>
+                </div>
+                <span class="fd-input-group__addon fd-input-group__addon--button">
+                    <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4HGFHX34a" aria-expanded="false" aria-haspopup="true">
+                        <i class="sap-icon--value-help"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
 ```
 
 ### Semantic
 
-For a complete list of states supported by the \
+For a complete list of states supported by the `Multi Input` component, please see the documentation for the form or select components.
+
+The semantic mode can be used to modify the combobox component by adding one of
+`is-error` | `is-success` | `is-warning` | `is-information` classes into `fd-input-group` element.
+To add text in the `body` of the component, simply include your text in the `fd-list__message` under the `ul` element.
 
 ```html
 <label for="semanticMultiInput" class="fd-form-label">
@@ -872,65 +894,65 @@ For a complete list of states supported by the \
                     <span class="fd-tokenizer__indicator">4 more</span>
                     <input id="semanticMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" />
                 </div>
-                <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true">
-                        <i class="sap-icon--value-help"></i>
-                    </button>
-                </span>
             </div>
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcKJH8a" aria-expanded="false" aria-haspopup="true">
+                    <i class="sap-icon--value-help"></i>
+                </button>
+            </span>
         </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcKJH8a">
-            <div class="fd-popover__wrapper">
-                <span class="fd-list__message fd-list__message--success">Success Message</span>
-                <ul aria-multiselectable="true" role="listbox" aria-label="list of fruits" class="fd-list fd-list--multi-input fd-list--has-message">
-                    <li class="fd-list__message fd-list__message--success" role="option">Success Message</li>
-                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez638" checked aria-labelledby="Az0bg47">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez638">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg47">Apple</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez639" checked aria-labelledby="Az0bg48">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez639">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg48">Orange</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez640" checked aria-labelledby="Az0bg49">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez640">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg49">Banana</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez641" aria-labelledby="Az0bg50">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez641">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg50">Kiwi</span>
-                    </li>
-                    <li role="option" tabindex="0" class="fd-list__item">
-                        <div class="fd-form-item fd-list__form-item">
-                            <input type="checkbox" class="fd-checkbox" id="Ai4ez642" aria-labelledby="Az0bg51">
-                            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez642">
-                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                            </label>
-                        </div>
-                        <span class="fd-list__title" id="Az0bg51">Lemon</span>
-                    </li>
-                </ul>
-            </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcKJH8a">
+        <div class="fd-popover__wrapper">
+            <span class="fd-list__message fd-list__message--success">Success Message</span>
+            <ul aria-multiselectable="true" role="listbox" aria-label="list of fruits" class="fd-list fd-list--multi-input fd-list--has-message">
+                <li class="fd-list__message fd-list__message--success" role="option">Success Message</li>
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez638" checked aria-labelledby="Az0bg47">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez638">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg47">Apple</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez639" checked aria-labelledby="Az0bg48">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez639">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg48">Orange</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez640" checked aria-labelledby="Az0bg49">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez640">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg49">Banana</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez641" aria-labelledby="Az0bg50">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez641">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg50">Kiwi</span>
+                </li>
+                <li role="option" tabindex="0" class="fd-list__item">
+                    <div class="fd-form-item fd-list__form-item">
+                        <input type="checkbox" class="fd-checkbox" id="Ai4ez642" aria-labelledby="Az0bg51">
+                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez642">
+                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <span class="fd-list__title" id="Az0bg51">Lemon</span>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
@@ -939,7 +961,7 @@ For a complete list of states supported by the \
 ### MobileMode
 
 For mobile devices, or tablets, multi input component should be displayed in fullscreen mode.
-So instead of using popover and dropdown, it should be wrapped in \
+So instead of using popover and dropdown, it should be wrapped in `dialog` and `bar` components.
 
 ```html
 <section role="dialog" aria-labelledby="mobileModeMultiInputHeader"
@@ -1082,87 +1104,87 @@ The user can filter selectable options by typing in the input. A button with the
                     </span>
                     <input id="filteringMultiInput" class="fd-input fd-input-group__input fd-tokenizer__input" value="A" />
                 </div>
-                <span class="fd-input-group__addon fd-input-group__addon--button">
-                    <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348aB" aria-expanded="false" aria-haspopup="true">
-                        <i class="sap-icon--value-help"></i>
-                    </button>
-                </span>
             </div>
-        </div>
-        <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348aB">
-            <ul aria-multiselectable="true" role="listbox" aria-label="list of fruits" class="fd-list fd-list--multi-input">
-                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                    <div class="fd-form-item fd-list__form-item">
-                        <input type="checkbox" class="fd-checkbox" id="Ai4ez651" checked aria-labelledby="Az0bg59">
-                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez651">
-                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                        </label>
-                    </div>
-                    <span class="fd-list__title" id="Az0bg59"><b>A</b>pple</span>
-                    <span class="fd-list__secondary">A2</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                    <div class="fd-form-item fd-list__form-item">
-                        <input type="checkbox" class="fd-checkbox" id="Ai4ez652" checked aria-labelledby="Az0bg60">
-                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez652">
-                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                        </label>
-                    </div>
-                    <span class="fd-list__title" id="Az0bg60">Or<b>a</b>nge</span>
-                    <span class="fd-list__secondary">A1</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
-                    <div class="fd-form-item fd-list__form-item">
-                        <input type="checkbox" class="fd-checkbox" id="Ai4ez653" checked aria-labelledby="Az0bg61">
-                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez653">
-                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                        </label>
-                    </div>
-                    <span class="fd-list__title" id="Az0bg61">B<b>a</b>nana</span>
-                    <span class="fd-list__secondary">A3</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <div class="fd-form-item fd-list__form-item">
-                        <input type="checkbox" class="fd-checkbox" id="Ai4ez654" aria-labelledby="Az0bg62">
-                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez654">
-                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                        </label>
-                    </div>
-                    <span class="fd-list__title" id="Az0bg62"><b>A</b>pple</span>
-                    <span class="fd-list__secondary">A1</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <div class="fd-form-item fd-list__form-item">
-                        <input type="checkbox" class="fd-checkbox" id="Ai4ez655" aria-labelledby="Az0bg63">
-                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez655">
-                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                        </label>
-                    </div>
-                    <span class="fd-list__title" id="Az0bg63">Or<b>a</b>nge</span>
-                    <span class="fd-list__secondary">A2</span>
-                </li>
-                <li role="option" tabindex="0" class="fd-list__item">
-                    <div class="fd-form-item fd-list__form-item">
-                        <input type="checkbox" class="fd-checkbox" id="Ai4ez656" aria-labelledby="Az0bg64">
-                        <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez656">
-                            <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                        </label>
-                    </div>
-                    <span class="fd-list__title" id="Az0bg64">B<b>a</b>nana</span>
-                    <span class="fd-list__secondary">A3</span>
-                </li>
-            </ul>
-            <span class="fd-list__footer">
-                <a tabindex="0" role="button" class="fd-link">Show All</a>
+            <span class="fd-input-group__addon fd-input-group__addon--button">
+                <button aria-label="show options" class="fd-input-group__button fd-button fd-button--transparent" aria-controls="F4GcX348aB" aria-expanded="false" aria-haspopup="true">
+                    <i class="sap-icon--value-help"></i>
+                </button>
             </span>
         </div>
+    </div>
+    <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown fd-popover__body--dropdown-fill" aria-hidden="false" id="F4GcX348aB">
+        <ul aria-multiselectable="true" role="listbox" aria-label="list of fruits" class="fd-list fd-list--multi-input">
+            <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                <div class="fd-form-item fd-list__form-item">
+                    <input type="checkbox" class="fd-checkbox" id="Ai4ez651" checked aria-labelledby="Az0bg59">
+                    <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez651">
+                        <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                    </label>
+                </div>
+                <span class="fd-list__title" id="Az0bg59"><b>A</b>pple</span>
+                <span class="fd-list__secondary">A2</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                <div class="fd-form-item fd-list__form-item">
+                    <input type="checkbox" class="fd-checkbox" id="Ai4ez652" checked aria-labelledby="Az0bg60">
+                    <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez652">
+                        <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                    </label>
+                </div>
+                <span class="fd-list__title" id="Az0bg60">Or<b>a</b>nge</span>
+                <span class="fd-list__secondary">A1</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item is-selected" aria-selected="true">
+                <div class="fd-form-item fd-list__form-item">
+                    <input type="checkbox" class="fd-checkbox" id="Ai4ez653" checked aria-labelledby="Az0bg61">
+                    <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez653">
+                        <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                    </label>
+                </div>
+                <span class="fd-list__title" id="Az0bg61">B<b>a</b>nana</span>
+                <span class="fd-list__secondary">A3</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <div class="fd-form-item fd-list__form-item">
+                    <input type="checkbox" class="fd-checkbox" id="Ai4ez654" aria-labelledby="Az0bg62">
+                    <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez654">
+                        <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                    </label>
+                </div>
+                <span class="fd-list__title" id="Az0bg62"><b>A</b>pple</span>
+                <span class="fd-list__secondary">A1</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <div class="fd-form-item fd-list__form-item">
+                    <input type="checkbox" class="fd-checkbox" id="Ai4ez655" aria-labelledby="Az0bg63">
+                    <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez655">
+                        <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                    </label>
+                </div>
+                <span class="fd-list__title" id="Az0bg63">Or<b>a</b>nge</span>
+                <span class="fd-list__secondary">A2</span>
+            </li>
+            <li role="option" tabindex="0" class="fd-list__item">
+                <div class="fd-form-item fd-list__form-item">
+                    <input type="checkbox" class="fd-checkbox" id="Ai4ez656" aria-labelledby="Az0bg64">
+                    <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez656">
+                        <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                    </label>
+                </div>
+                <span class="fd-list__title" id="Az0bg64">B<b>a</b>nana</span>
+                <span class="fd-list__secondary">A3</span>
+            </li>
+        </ul>
+        <span class="fd-list__footer">
+            <a tabindex="0" role="button" class="fd-link">Show All</a>
+        </span>
     </div>
 </div>
 ```
 
 ### Long text
 
-Multi input list option labels truncate long text by default. Add the \
+Multi input list option labels truncate long text by default. Add the `fd-list__label--wrap` modifier class to the `fd-list__label` element to enable text wrapping.
 
 ```html
 <div>
@@ -1174,79 +1196,79 @@ Multi input list option labels truncate long text by default. Add the \
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
                 <div class="fd-checkbox__label-container">
                     <span class="fd-checkbox__text">Forecast Category Override Reason</span>
-                </label>
-            </li>
-            <li class="fd-list__item is-selected" role="option">
-                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="lt-mi-2">
-                <label class="fd-checkbox__label fd-list__label" for="lt-mi-2">
-                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
-                        <span class="fd-checkbox__text">Purchase Order Approval Threshold Exceeded</span>
-                    </div>
-                </label>
-            </li>
-            <li class="fd-list__item" role="option">
-                <input type="checkbox" class="fd-checkbox fd-list__input" id="lt-mi-3">
-                <label class="fd-checkbox__label fd-list__label" for="lt-mi-3">
-                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
-                        <span class="fd-checkbox__text">Customer Satisfaction Score Below Target</span>
-                    </div>
-                </label>
-            </li>
-            <li class="fd-list__item" role="option">
-                <input type="checkbox" class="fd-checkbox fd-list__input" id="lt-mi-4">
-                <label class="fd-checkbox__label fd-list__label" for="lt-mi-4">
-                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
-                        <span class="fd-checkbox__text">Delivery Confirmation Required</span>
-                    </div>
-                </label>
-            </li>
-        </ul>
-    </div>
+                </div>
+            </label>
+        </li>
+        <li class="fd-list__item is-selected" role="option">
+            <input type="checkbox" checked class="fd-checkbox fd-list__input" id="lt-mi-2">
+            <label class="fd-checkbox__label fd-list__label" for="lt-mi-2">
+                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__text">Purchase Order Approval Threshold Exceeded</span>
+                </div>
+            </label>
+        </li>
+        <li class="fd-list__item" role="option">
+            <input type="checkbox" class="fd-checkbox fd-list__input" id="lt-mi-3">
+            <label class="fd-checkbox__label fd-list__label" for="lt-mi-3">
+                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__text">Customer Satisfaction Score Below Target</span>
+                </div>
+            </label>
+        </li>
+        <li class="fd-list__item" role="option">
+            <input type="checkbox" class="fd-checkbox fd-list__input" id="lt-mi-4">
+            <label class="fd-checkbox__label fd-list__label" for="lt-mi-4">
+                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__text">Delivery Confirmation Required</span>
+                </div>
+            </label>
+        </li>
+    </ul>
+</div>
 
-    <div>
-        <p>With <code>fd-list__label--wrap</code></p>
-        <ul aria-multiselectable="true" role="listbox" class="fd-list fd-list--multi-input">
-            <li class="fd-list__item is-selected" role="option">
-                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="lt-mi-w-1">
-                <label class="fd-checkbox__label fd-list__label fd-list__label--wrap" for="lt-mi-w-1">
-                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
-                        <span class="fd-checkbox__text">Forecast Category Override Reason</span>
-                    </div>
-                </label>
-            </li>
-            <li class="fd-list__item is-selected" role="option">
-                <input type="checkbox" checked class="fd-checkbox fd-list__input" id="lt-mi-w-2">
-                <label class="fd-checkbox__label fd-list__label fd-list__label--wrap" for="lt-mi-w-2">
-                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
-                        <span class="fd-checkbox__text">Purchase Order Approval Threshold Exceeded</span>
-                    </div>
-                </label>
-            </li>
-            <li class="fd-list__item" role="option">
-                <input type="checkbox" class="fd-checkbox fd-list__input" id="lt-mi-w-3">
-                <label class="fd-checkbox__label fd-list__label fd-list__label--wrap" for="lt-mi-w-3">
-                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
-                        <span class="fd-checkbox__text">Customer Satisfaction Score Below Target</span>
-                    </div>
-                </label>
-            </li>
-            <li class="fd-list__item" role="option">
-                <input type="checkbox" class="fd-checkbox fd-list__input" id="lt-mi-w-4">
-                <label class="fd-checkbox__label fd-list__label fd-list__label--wrap" for="lt-mi-w-4">
-                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                    <div class="fd-checkbox__label-container">
-                        <span class="fd-checkbox__text">Delivery Confirmation Required</span>
-                    </div>
-                </label>
-            </li>
-        </ul>
-    </div>
+<div>
+    <p>With <code>fd-list__label--wrap</code></p>
+    <ul aria-multiselectable="true" role="listbox" class="fd-list fd-list--multi-input">
+        <li class="fd-list__item is-selected" role="option">
+            <input type="checkbox" checked class="fd-checkbox fd-list__input" id="lt-mi-w-1">
+            <label class="fd-checkbox__label fd-list__label fd-list__label--wrap" for="lt-mi-w-1">
+                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__text">Forecast Category Override Reason</span>
+                </div>
+            </label>
+        </li>
+        <li class="fd-list__item is-selected" role="option">
+            <input type="checkbox" checked class="fd-checkbox fd-list__input" id="lt-mi-w-2">
+            <label class="fd-checkbox__label fd-list__label fd-list__label--wrap" for="lt-mi-w-2">
+                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__text">Purchase Order Approval Threshold Exceeded</span>
+                </div>
+            </label>
+        </li>
+        <li class="fd-list__item" role="option">
+            <input type="checkbox" class="fd-checkbox fd-list__input" id="lt-mi-w-3">
+            <label class="fd-checkbox__label fd-list__label fd-list__label--wrap" for="lt-mi-w-3">
+                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__text">Customer Satisfaction Score Below Target</span>
+                </div>
+            </label>
+        </li>
+        <li class="fd-list__item" role="option">
+            <input type="checkbox" class="fd-checkbox fd-list__input" id="lt-mi-w-4">
+            <label class="fd-checkbox__label fd-list__label fd-list__label--wrap" for="lt-mi-w-4">
+                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                <div class="fd-checkbox__label-container">
+                    <span class="fd-checkbox__text">Delivery Confirmation Required</span>
+                </div>
+            </label>
+        </li>
+    </ul>
 </div>
 ```
 

@@ -47,7 +47,16 @@ The Bar is a container primarily used for displaying titles, buttons, and input 
 
 ## Paddings
 
-Modifier classes are available to adjust the paddings of the bar when it is being used in the \
+Modifier classes are available to adjust the paddings of the bar when it is being used in the `fd-page`. Alternatively the `--responsive-paddings` modifier may be used to apply this styles automatically.
+
+| **Padding**     | &nbsp;&nbsp; **Amount** | **Modifier class** |
+| :-------------- | ----------------: | :----------------------- | ---------------: |
+| `s / sm`      | &nbsp;&nbsp; 1rem | `fd-bar--page-s` **or** `fd-bar--page-sm` |
+| `s / sm`      | &nbsp;&nbsp; 1rem | `fd-bar--home-page-s` **or** `fd-bar--home-page-sm` |
+| `m_l / md_lg` | &nbsp;&nbsp; 2rem | `fd-bar--page-m_l` **or** `fd-bar--page-md_lg` |
+| `m_l / md_lg` | &nbsp;&nbsp; 2rem | `fd-bar--home-page-m_l` **or** `fd-bar--home-page-md_lg` |
+| `xl `         | &nbsp;&nbsp; 3rem | `fd-bar--page-xl` |
+| `xl`          | &nbsp;&nbsp; 3rem | `fd-bar--home-page-xl` |
 
 ## When Not To Use
 
@@ -551,9 +560,9 @@ Key CSS variables used by this component:
     <div class="fd-bar__right">
         <div class="fd-bar__element">
             <button aria-label="button" class="fd-button fd-button--emphasized fd-button--compact">Save</button>
-            <div class="fd-bar__element">
-                <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
-            </div>
+        </div>
+        <div class="fd-bar__element">
+            <button aria-label="button" class="fd-button fd-button--transparent fd-button--compact">Cancel</button>
         </div>
     </div>
 </div>

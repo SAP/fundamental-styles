@@ -2,8 +2,8 @@
 component: layout-grid
 title: Layouts/Layout Grid
 category: Layouts
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/styles/stories/Layouts/layout-grid/layout-grid.stories.js
 generatedAt: 2026-05-28T15:51:35.735Z
 ---
@@ -26,6 +26,8 @@ To use the grid, the user must use all of the \
       <div class='fd-col fd-col--11'>
           <div class='docs-layout-grid-bg docs-layout-grid-bg--color-2'>11 columns element</div>
       </div>
+</div>
+</div>
 ```
 
 ## Modifiers
@@ -215,6 +217,7 @@ Add an extra
             </div>
         </div>
     </div>
+</div>
 </div>
 ```
 

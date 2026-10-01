@@ -75,17 +75,25 @@ npm install fundamental-styles
 
 | Class | Description |
 |-------|-------------|
-| `fd-object-status--critical` | Style variant |
+| `fd-object-status--critical` | Object Status can display the semantic status of an object: negative (class: `fd-object-status--negative`), critical
+  (class: `fd-object-status--critical`), positive (class: `fd-object-status--positive`),
+  informative (class: `fd-object-status--informative`), or none. |
 | `fd-object-status--icon-only` | Object status icon only |
 | `fd-object-status--indication-` | Object Status with Generic Indication Colors |
-| `fd-object-status--informative` | Style variant |
+| `fd-object-status--informative` | Object Status can display the semantic status of an object: negative (class: `fd-object-status--negative`), critical
+  (class: `fd-object-status--critical`), positive (class: `fd-object-status--positive`),
+  informative (class: `fd-object-status--informative`), or none. |
 | `fd-object-status--inverted` | Inverted Object Status(optional inverted visualization) determines whether the background color reflects the set state
  instead of the control's text |
 | `fd-object-status--large` | Style variant |
 | `fd-object-status--link` | If the object status is used as a link, a hover effect is shown on non-touch devices |
-| `fd-object-status--negative` | Object Status can display the semantic status of an object: negative (class: \ |
+| `fd-object-status--negative` | Object Status can display the semantic status of an object: negative (class: `fd-object-status--negative`), critical
+  (class: `fd-object-status--critical`), positive (class: `fd-object-status--positive`),
+  informative (class: `fd-object-status--informative`), or none. |
 | `fd-object-status--neutral` | Style variant |
-| `fd-object-status--positive` | Style variant |
+| `fd-object-status--positive` | Object Status can display the semantic status of an object: negative (class: `fd-object-status--negative`), critical
+  (class: `fd-object-status--critical`), positive (class: `fd-object-status--positive`),
+  informative (class: `fd-object-status--informative`), or none. |
 | `fd-object-status--truncate` | By default, Object Status text goes on multiple lines based on the max width that is set for the element |
 
 ## States
@@ -138,7 +146,9 @@ Key CSS variables used by this component:
 
 ### Primary
 
-Object Status can display the semantic status of an object: negative (class: \
+Object Status can display the semantic status of an object: negative (class: `fd-object-status--negative`), critical
+  (class: `fd-object-status--critical`), positive (class: `fd-object-status--positive`),
+  informative (class: `fd-object-status--informative`), or none.
 
 ```html
 <span class="fd-object-status fd-object-status--negative">
@@ -312,7 +322,7 @@ Object Status with Generic Indication Colors
 
 If the object status is used as a link, a hover effect is shown on non-touch devices.
  If the object status is shown using a combination of icon and text, there is no hover effect for the icon.
- If Object Status has to be clicked/tabbed by the user add the \
+ If Object Status has to be clicked/tabbed by the user add the `fd-object-status--link` modifier class.
 
 ```html
 <h3>Regular State</h3>
@@ -384,6 +394,7 @@ If the object status is used as a link, a hover effect is shown on non-touch dev
     <span class="fd-object-status__text">Pink</span>
     <span class="fd-object-status__sr-only">Indication Color 8</span>
 </div>
+
 <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--negative fd-object-status--link is-hover">
     <i class="fd-object-status__icon sap-icon--error" role="presentation" aria-hidden="true"></i>
     <span class="fd-object-status__text">Negative</span>
@@ -452,6 +463,7 @@ If the object status is used as a link, a hover effect is shown on non-touch dev
     <span class="fd-object-status__text">Pink</span>
     <span class="fd-object-status__sr-only">Indication Color 8</span>
 </div>
+
 <h3>Down State</h3>
 <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--negative fd-object-status--link is-active">
     <i class="fd-object-status__icon sap-icon--error" role="presentation" aria-hidden="true"></i>
@@ -521,6 +533,7 @@ If the object status is used as a link, a hover effect is shown on non-touch dev
     <span class="fd-object-status__text">Pink</span>
     <span class="fd-object-status__sr-only">Indication Color 8</span>
 </div>
+
 <h3>Visited State</h3>
 <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--negative fd-object-status--link is-visited">
     <i class="fd-object-status__icon sap-icon--error" role="presentation" aria-hidden="true"></i>
@@ -590,6 +603,7 @@ If the object status is used as a link, a hover effect is shown on non-touch dev
     <span class="fd-object-status__text">Pink</span>
     <span class="fd-object-status__sr-only">Indication Color 8</span>
 </div>
+
 <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--negative fd-object-status--link is-focus">
     <i class="fd-object-status__icon sap-icon--error" role="presentation" aria-hidden="true"></i>
     <span class="fd-object-status__text">Negative</span>
@@ -697,7 +711,7 @@ If the object status is used as a link, a hover effect is shown on non-touch dev
 
 Inverted Object Status(optional inverted visualization) determines whether the background color reflects the set state
  instead of the control's text. Use the inverted object status if the information is crucial for the user’s actions and needs to stand out visually.
- Inverted Object Status is achieved by adding the \
+ Inverted Object Status is achieved by adding the `fd-object-status--inverted` modifier class.
 
 ```html
 <span class="fd-object-status fd-object-status--negative fd-object-status--inverted">
@@ -1010,6 +1024,7 @@ Inverted indication colors
     <span class="fd-object-status__sr-only">Object Status</span>
     <span class="fd-object-status__sr-only">Indication Color 10</span>
 </span>
+
 <h4>Clickable Inverted Object Status (Regular)</h4>
 <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1" >
     <span class="fd-object-status__text">Indication1</span>
@@ -1279,6 +1294,7 @@ Secondary Set of Inverted indication colors
     <span class="fd-object-status__sr-only">Object Status</span>
     <span class="fd-object-status__sr-only">Indication Color 10b</span>
 </span>
+
 <h4>Clickable Inverted Object Status (Regular)</h4>
 <div role="button" tabindex="0" aria-roledescription="Object Status Button" class="fd-object-status fd-object-status--inverted fd-object-status--link fd-object-status--indication-1b" >
     <span class="fd-object-status__text">Indication1b</span>

@@ -20,7 +20,36 @@ The busy indicator component informs the user about an ongoing operation. Only o
 | **Size** | &nbsp;&nbsp; **rem** &nbsp;&nbsp; | **Modifier class** |
 | :------- | :-------------------------------- | -----------------: |
 | Default  | &nbsp;&nbsp; 0.5 rem                | none               |
-| M        | &nbsp;&nbsp; 1 rem                | \
+| M        | &nbsp;&nbsp; 1 rem                | `sap-busy-indicator--m`   |
+| L        | &nbsp;&nbsp; 2 rem                | `sap-busy-indicator--l`   |
+
+##Usage
+**Use the busy indicator if:**
+
+The ongoing operation only covers part of a screen that has multiple controls, and:
+
+- You need to display additional information, or
+- The user needs to be able to cancel the operation.
+
+
+**Do not use the busy indicator if:**
+
+- The operation takes less than one second.
+- You need to block the screen because the user is not supposed to start another operation. In this case, use the **Busy Dialog** component.
+
+## Usage Guidelines
+
+**Use the busy indicator if:**
+
+The ongoing operation only covers part of a screen that has multiple controls, and:
+
+- You need to display additional information, or
+- The user needs to be able to cancel the operation.
+
+## When Not To Use
+
+- The operation takes less than one second.
+- You need to block the screen because the user is not supposed to start another operation. In this case, use the **Busy Dialog** component.
 
 ## Dependencies
 
@@ -129,7 +158,8 @@ The busy dialog informs the user about an ongoing operation. During the operatio
                 </div>
             </div>
         </footer>
-    </section>
+    </div>
+</section>
 ```
 
 ## Accessibility

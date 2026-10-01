@@ -107,7 +107,14 @@ Key CSS variables used by this component:
 
 ### All-Round Margin
 
-All-round margin appears on all sides of the container they are applied to. Use \
+All-round margin appears on all sides of the container they are applied to. Use `fd-margin` class with any of the following modifiers:
+
+| Element | Modifier class | Margin applied |
+| ----------------: | :------------ | :------------ |
+| Tiny | `fd-margin--tiny` | 0.5rem |
+| Small | `fd-margin--sm` | 1rem |
+| Medium | `fd-margin--md` | 2rem |
+| Large | `fd-margin--lg` | 3rem |
 
 ```html
 <div class="docs-column-flex docs-column-flex--align-start">
@@ -135,7 +142,8 @@ Single sided margins appear on only one of the sides of the element:
 - bottom - displayed on the bottom of the element
 - begin - displayed on the left side and in right-to-left mode on the right side of the element.
 
-Use \
+Use `fd-margin-top` or `fd-margin-end` or `fd-margin-bottom` or `fd-margin-begin`
+class with any of the size modifiers as mentioned above.
 
 ```html
 <div class="docs-column-flex docs-column-flex--align-start">
@@ -218,7 +226,7 @@ Double sided margins appear on two opposite sides of the element.
 - top-bottom - displayed on top and bottom of the element
 - begin-end - displayed on left and right side of the element
 
-Use \
+Use `fd-margin-top-bottom` or `fd-margin-begin-end` class with any of the size modifiers as mentioned above.
 
 ```html
 <div class="docs-column-flex docs-column-flex--align-start">
@@ -258,7 +266,7 @@ Use \
 
 ### NoMargin
 
-No margin classes remove existing container margins. Use \
+No margin classes remove existing container margins. Use `fd-margin--none` or  `fd-margin-top--none` or `fd-margin-end--none` or `fd-margin-bottom--none` or `fd-margin-begin--none` modifier classes to remove existing margin. Place the no margin classes last to make sure they will be applied. In the case of `fd-margin-begin--none` and `fd-margin-end--none`, `!important` is not applied since we want the user-specified margins(if any) to be reapplied in the RTL mode. Please note that for RTL to work correctly, you must add `[dir="rtl"]` style on the class where these modifiers will be applied.
 
 ```html
 <div class="docs-column-flex docs-column-flex--align-start">
@@ -280,7 +288,15 @@ No margin classes remove existing container margins. Use \
 
 ### ResponsiveMargin
 
-The responsive margins class adds a margin around an element based on the width of the container the element is in. Use \
+The responsive margins class adds a margin around an element based on the width of the container the element is in. Use `fd-margin-responsive`
+        class with any of the following modifiers:
+
+| Element | Modifier class |
+| ----------------: | :------------ |
+| Small | `fd-margin-responsive--sm` |
+| Medium | `fd-margin-responsive--md` |
+| Large | `fd-margin-responsive--lg` |
+| Extra-large | `fd-margin-responsive--xl` |
 
 ```html
 <div class="docs-column-flex docs-column-flex--align-start">
@@ -302,7 +318,7 @@ The responsive margins class adds a margin around an element based on the width 
 ### Double-Sided Negative Margin Begin-End
 
 The negative margin class adds a double sided negative margin to an element. This is useful when aligning elements with built-in paddings.
-  Use \
+  Use `fd-margin-negative-begin-end` class with any of the size modifiers as mentioned above.
 
 ```html
 <div class="docs-column-flex docs-layout-margins-paddings--padded">

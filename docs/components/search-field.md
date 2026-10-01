@@ -72,66 +72,66 @@ npm install fundamental-styles
             <button class="fd-button fd-button--nested" aria-label="Close">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button>
-            <div class="fd-search-field__action-container">
-                <button class="fd-button fd-button--nested" aria-label="Search" aria-disabled="true" tabindex="-1">
-                    <i class="sap-icon--slim-arrow-right" role="presentation"></i>
-                </button>
-            </div>
+        </div>
+        <div class="fd-search-field__action-container">
+            <button class="fd-button fd-button--nested" aria-label="Search" aria-disabled="true" tabindex="-1">
+                <i class="sap-icon--slim-arrow-right" role="presentation"></i>
+            </button>
         </div>
     </div>
+</div>
 
-    <div class="fd-search-field">
-        <span role="presentation" aria-hidden="true" class="fd-search-field__icon sap-icon--search"></span>
-        <input placeholder="Search Anything" type="search" aria-label="Search" class="fd-search-field__input is-hover">
+<div class="fd-search-field">
+    <span role="presentation" aria-hidden="true" class="fd-search-field__icon sap-icon--search"></span>
+    <input placeholder="Search Anything" type="search" aria-label="Search" class="fd-search-field__input is-hover">
 
-        <div class="fd-search-field__actions">
-            <div class="fd-search-field__action-container">
-                <button class="fd-button fd-button--nested" aria-label="Close">
-                    <i class="sap-icon--decline" role="presentation"></i>
-                </button>
-            </div>
-            <div class="fd-search-field__action-container">
-                <button class="fd-button fd-button--nested" aria-label="Search" aria-disabled="true" tabindex="-1">
-                    <i class="sap-icon--slim-arrow-right" role="presentation"></i>
-                </button>
-            </div>
+    <div class="fd-search-field__actions">
+        <div class="fd-search-field__action-container">
+            <button class="fd-button fd-button--nested" aria-label="Close">
+                <i class="sap-icon--decline" role="presentation"></i>
+            </button>
+        </div>
+        <div class="fd-search-field__action-container">
+            <button class="fd-button fd-button--nested" aria-label="Search" aria-disabled="true" tabindex="-1">
+                <i class="sap-icon--slim-arrow-right" role="presentation"></i>
+            </button>
         </div>
     </div>
+</div>
 
-    <div class="fd-search-field">
-        <span role="presentation" aria-hidden="true" class="fd-search-field__icon sap-icon--search"></span>
-        <input placeholder="Search Anything" type="search" aria-label="Search" class="fd-search-field__input is-focus">
+<div class="fd-search-field">
+    <span role="presentation" aria-hidden="true" class="fd-search-field__icon sap-icon--search"></span>
+    <input placeholder="Search Anything" type="search" aria-label="Search" class="fd-search-field__input is-focus">
 
-        <div class="fd-search-field__actions">
-            <div class="fd-search-field__action-container">
-                <button class="fd-button fd-button--nested" aria-label="Close">
-                    <i class="sap-icon--decline" role="presentation"></i>
-                </button>
-            </div>
-            <div class="fd-search-field__action-container">
-                <button class="fd-button fd-button--nested" aria-label="Search" aria-disabled="true" tabindex="-1">
-                    <i class="sap-icon--slim-arrow-right" role="presentation"></i>
-                </button>
-            </div>
+    <div class="fd-search-field__actions">
+        <div class="fd-search-field__action-container">
+            <button class="fd-button fd-button--nested" aria-label="Close">
+                <i class="sap-icon--decline" role="presentation"></i>
+            </button>
+        </div>
+        <div class="fd-search-field__action-container">
+            <button class="fd-button fd-button--nested" aria-label="Search" aria-disabled="true" tabindex="-1">
+                <i class="sap-icon--slim-arrow-right" role="presentation"></i>
+            </button>
         </div>
     </div>
+</div>
 
-    <h4>typed text</h4>
-    <div class="fd-search-field">
-        <span role="presentation" aria-hidden="true" class="fd-search-field__icon sap-icon--search"></span>
-        <input placeholder="Search Anything" type="search" aria-label="Search" class="fd-search-field__input" value="Typing">
+<h4>typed text</h4>
+<div class="fd-search-field">
+    <span role="presentation" aria-hidden="true" class="fd-search-field__icon sap-icon--search"></span>
+    <input placeholder="Search Anything" type="search" aria-label="Search" class="fd-search-field__input" value="Typing">
 
-        <div class="fd-search-field__actions">
-            <div class="fd-search-field__action-container">
-                <button class="fd-button fd-button--nested" aria-label="Close">
-                    <i class="sap-icon--decline" role="presentation"></i>
-                </button>
-            </div>
-            <div class="fd-search-field__action-container">
-                <button class="fd-button fd-button--nested is-focus" aria-label="Search" aria-disabled="false">
-                    <i class="sap-icon--slim-arrow-right" role="presentation"></i>
-                </button>
-            </div>
+    <div class="fd-search-field__actions">
+        <div class="fd-search-field__action-container">
+            <button class="fd-button fd-button--nested" aria-label="Close">
+                <i class="sap-icon--decline" role="presentation"></i>
+            </button>
+        </div>
+        <div class="fd-search-field__action-container">
+            <button class="fd-button fd-button--nested is-focus" aria-label="Search" aria-disabled="false">
+                <i class="sap-icon--slim-arrow-right" role="presentation"></i>
+            </button>
         </div>
     </div>
 </div>
@@ -207,66 +207,66 @@ Key CSS variables used by this component:
             <button class="fd-button fd-button--nested" aria-label="Close">
                 <i class="sap-icon--decline" role="presentation"></i>
             </button>
-            <div class="fd-search-field__action-container">
-                <button class="fd-button fd-button--nested" aria-label="Search" aria-disabled="true" tabindex="-1">
-                    <i class="sap-icon--slim-arrow-right" role="presentation"></i>
-                </button>
-            </div>
+        </div>
+        <div class="fd-search-field__action-container">
+            <button class="fd-button fd-button--nested" aria-label="Search" aria-disabled="true" tabindex="-1">
+                <i class="sap-icon--slim-arrow-right" role="presentation"></i>
+            </button>
         </div>
     </div>
+</div>
 
-    <div class="fd-search-field">
-        <span role="presentation" aria-hidden="true" class="fd-search-field__icon sap-icon--search"></span>
-        <input placeholder="Search Anything" type="search" aria-label="Search" class="fd-search-field__input is-hover">
+<div class="fd-search-field">
+    <span role="presentation" aria-hidden="true" class="fd-search-field__icon sap-icon--search"></span>
+    <input placeholder="Search Anything" type="search" aria-label="Search" class="fd-search-field__input is-hover">
 
-        <div class="fd-search-field__actions">
-            <div class="fd-search-field__action-container">
-                <button class="fd-button fd-button--nested" aria-label="Close">
-                    <i class="sap-icon--decline" role="presentation"></i>
-                </button>
-            </div>
-            <div class="fd-search-field__action-container">
-                <button class="fd-button fd-button--nested" aria-label="Search" aria-disabled="true" tabindex="-1">
-                    <i class="sap-icon--slim-arrow-right" role="presentation"></i>
-                </button>
-            </div>
+    <div class="fd-search-field__actions">
+        <div class="fd-search-field__action-container">
+            <button class="fd-button fd-button--nested" aria-label="Close">
+                <i class="sap-icon--decline" role="presentation"></i>
+            </button>
+        </div>
+        <div class="fd-search-field__action-container">
+            <button class="fd-button fd-button--nested" aria-label="Search" aria-disabled="true" tabindex="-1">
+                <i class="sap-icon--slim-arrow-right" role="presentation"></i>
+            </button>
         </div>
     </div>
+</div>
 
-    <div class="fd-search-field">
-        <span role="presentation" aria-hidden="true" class="fd-search-field__icon sap-icon--search"></span>
-        <input placeholder="Search Anything" type="search" aria-label="Search" class="fd-search-field__input is-focus">
+<div class="fd-search-field">
+    <span role="presentation" aria-hidden="true" class="fd-search-field__icon sap-icon--search"></span>
+    <input placeholder="Search Anything" type="search" aria-label="Search" class="fd-search-field__input is-focus">
 
-        <div class="fd-search-field__actions">
-            <div class="fd-search-field__action-container">
-                <button class="fd-button fd-button--nested" aria-label="Close">
-                    <i class="sap-icon--decline" role="presentation"></i>
-                </button>
-            </div>
-            <div class="fd-search-field__action-container">
-                <button class="fd-button fd-button--nested" aria-label="Search" aria-disabled="true" tabindex="-1">
-                    <i class="sap-icon--slim-arrow-right" role="presentation"></i>
-                </button>
-            </div>
+    <div class="fd-search-field__actions">
+        <div class="fd-search-field__action-container">
+            <button class="fd-button fd-button--nested" aria-label="Close">
+                <i class="sap-icon--decline" role="presentation"></i>
+            </button>
+        </div>
+        <div class="fd-search-field__action-container">
+            <button class="fd-button fd-button--nested" aria-label="Search" aria-disabled="true" tabindex="-1">
+                <i class="sap-icon--slim-arrow-right" role="presentation"></i>
+            </button>
         </div>
     </div>
+</div>
 
-    <h4>typed text</h4>
-    <div class="fd-search-field">
-        <span role="presentation" aria-hidden="true" class="fd-search-field__icon sap-icon--search"></span>
-        <input placeholder="Search Anything" type="search" aria-label="Search" class="fd-search-field__input" value="Typing">
+<h4>typed text</h4>
+<div class="fd-search-field">
+    <span role="presentation" aria-hidden="true" class="fd-search-field__icon sap-icon--search"></span>
+    <input placeholder="Search Anything" type="search" aria-label="Search" class="fd-search-field__input" value="Typing">
 
-        <div class="fd-search-field__actions">
-            <div class="fd-search-field__action-container">
-                <button class="fd-button fd-button--nested" aria-label="Close">
-                    <i class="sap-icon--decline" role="presentation"></i>
-                </button>
-            </div>
-            <div class="fd-search-field__action-container">
-                <button class="fd-button fd-button--nested is-focus" aria-label="Search" aria-disabled="false">
-                    <i class="sap-icon--slim-arrow-right" role="presentation"></i>
-                </button>
-            </div>
+    <div class="fd-search-field__actions">
+        <div class="fd-search-field__action-container">
+            <button class="fd-button fd-button--nested" aria-label="Close">
+                <i class="sap-icon--decline" role="presentation"></i>
+            </button>
+        </div>
+        <div class="fd-search-field__action-container">
+            <button class="fd-button fd-button--nested is-focus" aria-label="Search" aria-disabled="false">
+                <i class="sap-icon--slim-arrow-right" role="presentation"></i>
+            </button>
         </div>
     </div>
 </div>

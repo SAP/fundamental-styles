@@ -73,9 +73,10 @@ npm install fundamental-styles
                 <a role="tab" class="fd-icon-tab-bar__tab" href="#section3" id="tab3">
                     <span class="fd-icon-tab-bar__tag">Approvals (42)</span>
                 </a>
-            </ul>
-        </div>
+            </li>
+        </ul>
     </div>
+</div>
 ```
 
 ## BEM Elements
@@ -145,9 +146,10 @@ Key CSS variables used by this component:
                 <a role="tab" class="fd-icon-tab-bar__tab" href="#section3" id="tab3">
                     <span class="fd-icon-tab-bar__tag">Approvals (42)</span>
                 </a>
-            </ul>
-        </div>
+            </li>
+        </ul>
     </div>
+</div>
 ```
 
 ### Separator hovered tab state
@@ -170,9 +172,10 @@ Key CSS variables used by this component:
                 <a role="tab" class="fd-icon-tab-bar__tab" href="#section3" id="tab3">
                     <span class="fd-icon-tab-bar__tag">Approvals (42)</span>
                 </a>
-            </ul>
-        </div>
+            </li>
+        </ul>
     </div>
+</div>
 ```
 
 ## Accessibility

@@ -13,7 +13,43 @@ stability: stable
 
 # Components/List/Byline
 
-Byline lists allow users to extend standard list items with additional content. To display a byline list, add the \
+Byline lists allow users to extend standard list items with additional content. To display a byline list, add the `fd-list--byline` modifier class to the `fd-list` element introduced in **Standard List**.
+
+##Usage
+
+**Use the byline list if:**
+
+-	You want to include additional text in standard list items.
+-	You want to present a semantic status in standard list items.
+
+**Do not use the byline list if:**
+
+-	You want to include objects in your list items. Instead, use the **Object List**.
+-	You want to manage complex datasets that need to be extensively sorted, grouped, filtered, or edited. In this case, use a **Table**.
+-	You work with complex hierarchies. In this case, use a **Tree**.
+
+##Elements
+The byline list consists of a few extra elements to add additional text and semantic colors to the list items.
+
+| Modifier/Class | Description |
+| :--------------- | :--------------- |
+| `fd-list__byline--2-col` | Displays a 2-column byline that consists of two sides: left and right. |
+| `fd-list__byline-left` | The left side is best suited for standard text, and occupies 60% of the available space. |
+| `fd-list__byline-right` | The right side is best suited for supplemental information (can be a semantic status), and occupies 40% of the available space. |
+| `fd-list__byline-right--*` | To represent a semantic status, replace the * with either: _neutral_, _positive_, _negative_, _critical_ or _informative_. |
+
+## Usage Guidelines
+
+**Use the byline list if:**
+
+-	You want to include additional text in standard list items.
+-	You want to present a semantic status in standard list items.
+
+## When Not To Use
+
+-	You want to include objects in your list items. Instead, use the **Object List**.
+-	You want to manage complex datasets that need to be extensively sorted, grouped, filtered, or edited. In this case, use a **Table**.
+-	You work with complex hierarchies. In this case, use a **Tree**.
 
 ## Installation
 
@@ -27,7 +63,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/list.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage
@@ -91,8 +126,8 @@ npm install fundamental-styles
 |-------|-------------|
 | `fd-list--byline` | The default byline list dislays list items in the standard size, which is ideal for mobile |
 | `fd-list--navigation` | Byline list items can contain navigation links |
-| `fd-list--navigation-indication` | Style variant |
-| `fd-list--no-border` | Style variant |
+| `fd-list--navigation-indication` | If only some of the list items are navigable, you should indicate them with an arrow icon |
+| `fd-list--no-border` | To display a borderless byline list, add the `fd-list--no-border` modifier class to the main element. |
 | `fd-list--selection` | Byline list items can contain navigation links |
 | `fd-list--unread-indicator` | Style variant |
 | `fd-list--wrap` | By default, long title and byline text is truncated with an ellipsis |
@@ -140,7 +175,7 @@ This component uses the following BEM elements:
 
 ### Default
 
-The default byline list dislays list items in the standard size, which is ideal for mobile. To display the byline list in compact mode (for desktop), add the \
+The default byline list dislays list items in the standard size, which is ideal for mobile. To display the byline list in compact mode (for desktop), add the `is-compact` modifier class to the main element.
 
 ```html
 <h4>Standard size</h4>
@@ -230,7 +265,7 @@ The Attachment List shares the same specification as the Standard List with Byli
 
 ### Selection with navigation
 
-Byline list items can contain navigation links. To add navigation, add the \
+Byline list items can contain navigation links. To add navigation, add the `fd-list--navigation` modifier class to the list and the `fd-list__item--link` modifier class to the list elements that contain links. All items should be navigable.
 
 ```html
 <ul class="fd-list fd-list--byline fd-list--navigation" role="list">
@@ -318,7 +353,7 @@ Byline list items can contain navigation links. To add navigation, add the \
 
 ### Interractive
 
-The \
+The `fd-list__item--interractive` will force list item to handle hover and active states. Usage of this modifier is not needed on `Selection`, `Navigation` and `Action` modes.
 
 ```html
 <ul class="fd-list fd-list--byline" role="list">
@@ -376,7 +411,7 @@ The \
 
 ### Navigation indicators
 
-If only some of the list items are navigable, you should indicate them with an arrow icon. To display navigation indicators, add the \
+If only some of the list items are navigable, you should indicate them with an arrow icon. To display navigation indicators, add the `fd-list--navigation-indication` modifier class to the unordered list element. Do not show indicators if all items are navigable. In this case, use a byline list with navigation (in the example above).
 
 ```html
 <ul class="fd-list fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
@@ -413,7 +448,7 @@ If only some of the list items are navigable, you should indicate them with an a
 
 ### Borderless
 
-To display a borderless byline list, add the \
+To display a borderless byline list, add the `fd-list--no-border` modifier class to the main element.
 
 ```html
 <ul class="fd-list fd-list--no-border fd-list--byline" role="list">
@@ -456,7 +491,7 @@ To display a borderless byline list, add the \
 
 ### Selection
 
-Byline list items can display checkboxes that users can select from. To display byline list items with selection, add the \
+Byline list items can display checkboxes that users can select from. To display byline list items with selection, add the `fd-list--selection` modifier class to the main element. To create checkbox form items, add the `fd-list__form-item` class within each list element.
 
 ```html
 <ul class="fd-list fd-list--selection fd-list--byline" role="listbox" aria-labelledby="O09lk9">
@@ -509,7 +544,10 @@ Byline list items can display checkboxes that users can select from. To display 
 
 To display byline list items with selection and navigation, add these following modifier classes to the main element:
 
-- \
+- `fd-list--byline`
+- `fd-list--selection`
+- `fd-list--navigation`
+- `fd-list--navigation-indicator`
 
 ```html
 <ul class="fd-list fd-list--selection fd-list--byline fd-list--navigation fd-list--navigation-indication" role="listbox"
@@ -608,7 +646,32 @@ To display byline list items with selection and navigation, add these following 
 
 By default, long title and byline text is truncated with an ellipsis. Wrapping can be enabled at three levels:
 
-**List level** — add \
+**List level** — add `fd-list--wrap` to the root element to wrap all items:
+```html
+<ul class="fd-list fd-list--byline fd-list--wrap">
+</ul>
+```
+
+**Item level** — add `fd-list__item--wrap` to a single list item:
+```html
+<li class="fd-list__item fd-list__item--wrap">
+</li>
+```
+
+**Element level** — add modifier classes to individual elements:
+- `fd-list__title--wrap`
+- `fd-list__byline--wrap`
+
+**Show More / Show Less accessibility** — when a trigger link is present, use `aria-expanded` to communicate the current state to assistive technologies. Set `aria-expanded="false"` in the collapsed (truncated) state and `aria-expanded="true"` in the expanded (wrapped) state. The JS toggling logic lives in the consuming framework; fund-styles provides only the visual affordance via `fd-list__link--more`:
+```html
+<!-- Collapsed -->
+<a href="#" class="fd-link fd-list__link--more" aria-expanded="false">More</a>
+
+<!-- Expanded -->
+<a href="#" class="fd-link fd-list__link--more" aria-expanded="true">Less</a>
+```
+
+When more than 100 characters for small screens or 300 characters for medium to large screens are used, a clickable "MORE" link should be displayed to reveal the entire contents of the text.
 
 ```html
 <p class="fd-form-label">Default — truncation</p>
@@ -618,9 +681,9 @@ By default, long title and byline text is truncated with an ellipsis. Wrapping c
         <div class="fd-list__content">
             <div class="fd-list__title">Annual Budget Review for Q3 and Q4 — please review the attached documents and provide your feedback before the end of the fiscal quarter to ensure timely processing.</div>
             <div class="fd-list__byline">Finance · Updated 2 hours ago by Michael Thompson, Senior Analyst, Global Finance Division, Central Europe · Reviewed by Anna Schmidt, Finance Controller · Pending approval from Regional CFO</div>
-        </li>
-    </ul>
-</div>
+        </div>
+    </li>
+</ul>
 
 <p class="fd-form-label">List level — <code>fd-list--wrap</code></p>
 <ul class="fd-list fd-list--byline fd-list--wrap" role="list">
@@ -629,9 +692,9 @@ By default, long title and byline text is truncated with an ellipsis. Wrapping c
         <div class="fd-list__content">
             <div class="fd-list__title">All titles wrap at list level, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
             <div class="fd-list__byline">All bylines wrap too, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
-        </li>
-    </ul>
-</div>
+        </div>
+    </li>
+</ul>
 
 <p class="fd-form-label">Item level — <code>fd-list__item--wrap</code> (collapsed and expanded states)</p>
 <!-- The fd-list__link--more element is placed outside fd-list__title so it stays
@@ -643,16 +706,16 @@ visible even when the title truncates. -->
             <div class="fd-list__title">Collapsed — title truncated, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
             <a href="#" class="fd-link fd-list__link--more" aria-expanded="false" tabindex="0"><span class="fd-link__content">More</span></a>
             <div class="fd-list__byline">Byline truncated, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
-        </li>
-        <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap">
-            <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
-            <div class="fd-list__content">
-                <div class="fd-list__title">Expanded — fd-list__item--wrap applied, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. <a href="#" class="fd-link fd-list__link--more" aria-expanded="true" tabindex="0"><span class="fd-link__content">Less</span></a></div>
-                <div class="fd-list__byline">Byline wraps too, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</div>
-            </div>
-        </li>
-    </ul>
-</div>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap">
+        <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
+        <div class="fd-list__content">
+            <div class="fd-list__title">Expanded — fd-list__item--wrap applied, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. <a href="#" class="fd-link fd-list__link--more" aria-expanded="true" tabindex="0"><span class="fd-link__content">Less</span></a></div>
+            <div class="fd-list__byline">Byline wraps too, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</div>
+        </div>
+    </li>
+</ul>
 
 <div>
     <p class="fd-form-label">Element level — <code>fd-list__title--wrap</code> / <code>fd-list__byline--wrap</code></p>

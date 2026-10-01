@@ -30,7 +30,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/prompt-input.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage

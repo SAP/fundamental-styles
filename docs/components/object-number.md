@@ -98,12 +98,12 @@ npm install fundamental-styles
 
 | Class | Description |
 |-------|-------------|
-| `fd-object-number--critical` | Style variant |
-| `fd-object-number--informative` | Style variant |
-| `fd-object-number--interactive` | To make an object number interactive, add the \ |
-| `fd-object-number--inverted` | To display the object number with an inverted style, add the \ |
+| `fd-object-number--critical` | There are different semantic statuses that can be applied to the object number by adding a modifier class |
+| `fd-object-number--informative` | There are different semantic statuses that can be applied to the object number by adding a modifier class |
+| `fd-object-number--interactive` | To make an object number interactive, add the `fd-object-number__interactive` modifier class, `role="button"`, and `tabindex="0"` to its container element. |
+| `fd-object-number--inverted` | To display the object number with an inverted style, add the `fd-object-number--inverted` modifier class. |
 | `fd-object-number--large` | In some cases, it can be useful to enlarge the text for the object number |
-| `fd-object-number--negative` | Style variant |
+| `fd-object-number--negative` | There are different semantic statuses that can be applied to the object number by adding a modifier class |
 | `fd-object-number--positive` | There are different semantic statuses that can be applied to the object number by adding a modifier class |
 
 ## BEM Elements
@@ -149,10 +149,13 @@ Key CSS variables used by this component:
 
 There are different semantic statuses that can be applied to the object number by adding a modifier class.
 
-| **Status** | **Modifier class**                  | 
+| **Status** | **Modifier class**                  |
 | ----------: | :-------------------------------   |
 | Neutral     |   none (default)                     |
-| Positive    | \
+| Positive    | `fd-object-number--positive`     |
+| Negative    | `fd-object-number--negative`     |
+| Critical    | `fd-object-number--critical`     |
+| Informative | `fd-object-number--informative`  |
 
 ```html
 <span class="fd-object-number fd-object-number--negative">
@@ -179,7 +182,7 @@ There are different semantic statuses that can be applied to the object number b
 
 ### Large
 
-In some cases, it can be useful to enlarge the text for the object number. To display the object number in large text, add the \
+In some cases, it can be useful to enlarge the text for the object number. To display the object number in large text, add the `fd-object-number--large` modifier class to the `fd-object-number` base class.
 
 ```html
 <span class="fd-object-number fd-object-number--large fd-object-number--negative">
@@ -206,7 +209,7 @@ In some cases, it can be useful to enlarge the text for the object number. To di
 
 ### Bold
 
-When there is a key numeric attribute on the page, it should be emphasized in bold text. To display the object number in bold text, add the \
+When there is a key numeric attribute on the page, it should be emphasized in bold text. To display the object number in bold text, add the `fd-object-number__text--bold` modifier class to the text element with class `fd-object-number__text`.
 
 ```html
 <span class="fd-object-number fd-object-number--negative">
@@ -233,7 +236,7 @@ When there is a key numeric attribute on the page, it should be emphasized in bo
 
 ### Interactive
 
-To make an object number interactive, add the \
+To make an object number interactive, add the `fd-object-number__interactive` modifier class, `role="button"`, and `tabindex="0"` to its container element.
 
 ```html
 <span class="fd-object-number fd-object-number--interactive fd-object-number--negative" role="button" tabindex="0">
@@ -260,7 +263,7 @@ To make an object number interactive, add the \
 
 ### Inverted
 
-To display the object number with an inverted style, add the \
+To display the object number with an inverted style, add the `fd-object-number--inverted` modifier class.
 
 ```html
 <span class="fd-object-number fd-object-number--inverted fd-object-number--negative">
@@ -287,7 +290,7 @@ To display the object number with an inverted style, add the \
 
 ### InvertedInteractive
 
-To make an object number interactive, add the \
+To make an object number interactive, add the `fd-object-number__interactive` modifier class, along with `role="button"` and `tabindex="0"`, to its container element. To display the object number with an inverted style, add the `fd-object-number--inverted` modifier class.
 
 ```html
 <span class="fd-object-number fd-object-number--inverted fd-object-number--interactive fd-object-number--negative" role="button" tabindex="0">

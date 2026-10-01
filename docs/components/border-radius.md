@@ -2,8 +2,8 @@
 component: border-radius
 title: Border Radius
 category: border-radius
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/common-css/stories/border-radius/border-radius.stories.js
 tags: []
 dependencies: []

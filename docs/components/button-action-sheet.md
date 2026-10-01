@@ -234,46 +234,46 @@ Key CSS variables used by this component:
                 <h6 class="fd-action-sheet__title">Control Title</h6>
             </div>
         </div>
-
-        <ul class="fd-action-sheet fd-action-sheet--mobile" role="list" aria-label="List of contextual options">
-            <li class="fd-action-sheet__item" role="listitem">
-                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--attachment"></i>
-                    <span class="fd-button__text">Upload file</span>
-                </button>
-            </li>
-            <li class="fd-action-sheet__item" role="listitem">
-                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--add"></i>
-                    <span class="fd-button__text">Assign user</span>
-                </button>
-            </li>
-            <li class="fd-action-sheet__item" role="listitem">
-                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--print"></i>
-                    <span class="fd-button__text">Print</span>
-                </button>
-            </li>
-            <li class="fd-action-sheet__item" role="listitem">
-                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
-                    <i class="sap-icon--download"></i>
-                    <span class="fd-button__text">Download</span>
-                </button>
-            </li>
-            <li class="fd-action-sheet__item" role="listitem">
-                <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
-                    onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
-                    <span class="fd-button__text">Decide Later</span>
-                </button>
-            </li>
-            <li class="fd-action-sheet__item" role="listitem">
-                <button class="fd-button fd-button--full-width fd-button--negative"
-                    onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
-                    <span class="fd-button__text">Cancel</span>
-                </button>
-            </li>
-        </ul>
     </div>
+
+    <ul class="fd-action-sheet fd-action-sheet--mobile" role="list" aria-label="List of contextual options">
+        <li class="fd-action-sheet__item" role="listitem">
+            <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                <i class="sap-icon--attachment"></i>
+                <span class="fd-button__text">Upload file</span>
+            </button>
+        </li>
+        <li class="fd-action-sheet__item" role="listitem">
+            <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                <i class="sap-icon--add"></i>
+                <span class="fd-button__text">Assign user</span>
+            </button>
+        </li>
+        <li class="fd-action-sheet__item" role="listitem">
+            <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                <i class="sap-icon--print"></i>
+                <span class="fd-button__text">Print</span>
+            </button>
+        </li>
+        <li class="fd-action-sheet__item" role="listitem">
+            <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left">
+                <i class="sap-icon--download"></i>
+                <span class="fd-button__text">Download</span>
+            </button>
+        </li>
+        <li class="fd-action-sheet__item" role="listitem">
+            <button class="fd-button fd-button--full-width fd-button--transparent fd-button--text-alignment-left"
+                onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
+                <span class="fd-button__text">Decide Later</span>
+            </button>
+        </li>
+        <li class="fd-action-sheet__item" role="listitem">
+            <button class="fd-button fd-button--full-width fd-button--negative"
+                onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
+                <span class="fd-button__text">Cancel</span>
+            </button>
+        </li>
+    </ul>
 </div>
 ```
 

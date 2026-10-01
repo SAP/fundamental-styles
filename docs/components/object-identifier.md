@@ -132,7 +132,8 @@ To display the object identifier as a title, add the `fd-object-identifier__titl
 
 ### Bold
 
-To display the object identifier's title in bold, replace \
+To display the object identifier's title in bold, replace `fd-object-identifier__title`
+        with the `fd-object-identifier__title--bold` modifier class.
 
 ```html
 <div class="fd-object-identifier">

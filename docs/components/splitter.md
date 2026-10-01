@@ -19,7 +19,23 @@ The Responsive Splitter Layout structures complex application content into defin
 
 ## Elements structure:
 
-- **\
+- **`fd-splitter`** – Component
+  - **`fd-splitter__pane-container`** – Container for panes that has the same orientation.
+    - `fd-splitter__pane-container--vertical` – Modifier class for the container to set panes orientation to vertical (align in columns).
+    - `fd-splitter__pane-container--horizontal` – Modifier class for the container to set panes orientation to horizontal (align in rows).
+  - **`fd-splitter__split-pane`** – An independent container that may interact with other panes or pane containers. Holds the Pagination Bar when off-canvas panes are available. The default background is transparent.
+    - `fd-splitter__split-pane--translucent` – Modifier class for translucent (`var(--sapBackgroundColor)`) background.
+    - `fd-splitter__split-pane--solid` – Modifier class for solid (`var(--sapGroup_ContentBackground)`) background.
+  - **`fd-splitter__resizer`** – The component that allows resizing of panes and pane containers.
+    - `fd-splitter__resizer--translucent` – Modifier class to apply translucent background to the resizer.
+    - `fd-splitter__resizer--solid` – Modifier class to apply solid background to the resizer.
+  - **`fd-splitter__resizer-decoration-before`** – Resizer decoration element.
+  - **`fd-splitter__resizer-grip`** – Resizer grip element.
+  - **`fd-splitter__resizer-decoration-after`** – Resizer decoration element.
+  - **`fd-splitter__pagination`** – Pagination element.
+  - **`fd-splitter__pagination-item`** – Pagination item element.
+    - `fd-splitter__pagination-item--active` – Modifier class for the active pagination item.
+  - **`fd-splitter__pagination-item-dot`** – Pagination item dot element.
 
 ## Dependencies
 
@@ -140,7 +156,7 @@ Key CSS variables used by this component:
 
 ### SplitPaneAnatomy
 
-Split Pane is an independent container that may interact with other panes or pane containers. It holds the Pagination Bar when off-canvas panes are available. The default background is transparent. <br>For translucent background use the \
+Split Pane is an independent container that may interact with other panes or pane containers. It holds the Pagination Bar when off-canvas panes are available. The default background is transparent. <br>For translucent background use the `fd-splitter__split-pane--translucent` modifier class. <br>For solid background use the `fd-splitter__split-pane--solid` modifier class.
 
 ```html
 <div class="fd-splitter">

@@ -25,7 +25,29 @@ Pagination allows users to separate their content into discrete pages, making it
 
 ##Details
 - > 9 pages: 9 elements should be shown (including pages, more symbols and the current page), use input for the current page
-- < 9 pages, add \
+- < 9 pages, add `.fd-pagination--short` class: all pages should be shown, button in active state shown for the current page
+
+##Elements
+The pagination component consists of the following elements:
+
+| Element | Modifier/class | Description |
+| :------ | :------------- | :---------- |
+| Main | `fd-pagination` | The main container |
+| Navigation | `fd-pagination__nav` | The navigation area |
+| Total page count | `fd-pagination__total` | The area where total pages information is placed |
+| Total page count label | `fd-pagination__total-label` | The total number of pages label |
+| Links | `fd-pagination__link` | The page number links that users can select to navigate to a different pages |
+| Selected page (> 9 pages) | `fd-pagination__input` | The input with the page that is currently selected, can be used to navigate to the specific page |
+| Selected page (< 9 pages) | `fd-pagination__link.is-active` | The button with the page number that is currently selected |
+| Selected page label | `fd-pagination__label` | The label of the selected page input. Shown only on mobile. |
+| First page button | `fd-pagination__button--mobile` | The first page button that users can use to navigate to the first page. This button is disabled when on the first page. Shown only on mobile. |
+| Previous page button | `fd-pagination__button` | The previous page button that users can use to navigate backward. This button is disabled when on the first page. |
+| Next page button | `fd-pagination__button` | The next arrow that users can use to navigate forward. This arrow is disabled when on the last page. |
+| Last page button | `fd-pagination__button--mobile` | The last page button that users can use to navigate to the last page. This button is disabled when on the last page. Shown only on mobile. |
+| Per page | `fd-pagination__per-page` | The area where items per page select & its label are placed |
+| Per page label | `fd-pagination__per-page-label` | Per page section label. Hidden on mobile. |
+<br>
+<br>
 
 ## Usage Guidelines
 
@@ -518,76 +540,76 @@ Additionally, per page section can be displayed with select to specify which num
                         </span>
                     </button>
                 </div>
+            </div>
 
-                <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false" id="h0C6A326">
-                    <ul aria-activedescendant="compactSelectCombobox-currentlyFocusedItem" aria-labelledby="compactSelectLabel" class="fd-list fd-list--dropdown" role="listbox">
-                        <li id="compactSelectCombobox-currentlyFocusedItem" class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-                            <span class="fd-list__title">4</span>
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="-1">
-                            <span class="fd-list__title">8</span>
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="-1">
-                            <span class="fd-list__title">16</span>
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="-1">
-                            <span class="fd-list__title">32</span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false" id="h0C6A326">
+                <ul aria-activedescendant="compactSelectCombobox-currentlyFocusedItem" aria-labelledby="compactSelectLabel" class="fd-list fd-list--dropdown" role="listbox">
+                    <li id="compactSelectCombobox-currentlyFocusedItem" class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
+                        <span class="fd-list__title">4</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">8</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">16</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">32</span>
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
 
-        <nav class="fd-pagination__nav" role="navigation" aria-label="per page page example, pagination with more than 9 pages">
-            <a href="#" class="fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile" aria-label="First page" aria-disabled="false">
-                <i class="sap-icon sap-icon--media-rewind"></i>
-            </a>
+    <nav class="fd-pagination__nav" role="navigation" aria-label="per page page example, pagination with more than 9 pages">
+        <a href="#" class="fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile" aria-label="First page" aria-disabled="false">
+            <i class="sap-icon sap-icon--media-rewind"></i>
+        </a>
 
-            <a href="#" class="fd-button fd-button--transparent fd-pagination__button" aria-label="Previous page" aria-disabled="false">
-                <i class="sap-icon sap-icon--navigation-left-arrow"></i>
-            </a>
+        <a href="#" class="fd-button fd-button--transparent fd-pagination__button" aria-label="Previous page" aria-disabled="false">
+            <i class="sap-icon sap-icon--navigation-left-arrow"></i>
+        </a>
 
-            <a href="#" class="fd-button fd-button--transparent fd-pagination__link" aria-label="Goto page 1">1</a>
+        <a href="#" class="fd-button fd-button--transparent fd-pagination__link" aria-label="Goto page 1">1</a>
 
-            <span class="fd-pagination__more" role="presentation"></span>
+        <span class="fd-pagination__more" role="presentation"></span>
 
-            <a href="#" class="fd-button fd-button--transparent fd-pagination__link" aria-label="Goto page 494">494</a>
+        <a href="#" class="fd-button fd-button--transparent fd-pagination__link" aria-label="Goto page 494">494</a>
 
-            <a href="#" class="fd-button fd-button--transparent fd-pagination__link" aria-label="Goto page 495">495</a>
+        <a href="#" class="fd-button fd-button--transparent fd-pagination__link" aria-label="Goto page 495">495</a>
 
-            <a href="#" class="fd-button fd-button--transparent fd-pagination__link" aria-label="Goto page 496">496</a>
+        <a href="#" class="fd-button fd-button--transparent fd-pagination__link" aria-label="Goto page 496">496</a>
 
-            <a href="#" class="fd-button fd-button--transparent fd-pagination__link" aria-label="Goto page 497">497</a>
+        <a href="#" class="fd-button fd-button--transparent fd-pagination__link" aria-label="Goto page 497">497</a>
 
-            <a href="#" class="fd-button fd-button--transparent fd-pagination__link" aria-label="Goto page 498">498</a>
+        <a href="#" class="fd-button fd-button--transparent fd-pagination__link" aria-label="Goto page 498">498</a>
 
-            <a href="#" class="fd-button fd-button--transparent fd-pagination__link" aria-label="Goto page 499">499</a>
+        <a href="#" class="fd-button fd-button--transparent fd-pagination__link" aria-label="Goto page 499">499</a>
 
-            <label class="fd-form-label fd-pagination__label" id="perPageInputPage" aria-label="Page input, Current page, Page 500">Page:</label>
+        <label class="fd-form-label fd-pagination__label" id="perPageInputPage" aria-label="Page input, Current page, Page 500">Page:</label>
 
-            <input aria-labelledby="perPageInputPage perPageInputOf" class="fd-input fd-pagination__input" type="number" min="1" max="500" value="500" required />
+        <input aria-labelledby="perPageInputPage perPageInputOf" class="fd-input fd-pagination__input" type="number" min="1" max="500" value="500" required />
 
-            <label class="fd-form-label fd-pagination__label" id="perPageInputOf">of 500</label>
+        <label class="fd-form-label fd-pagination__label" id="perPageInputOf">of 500</label>
 
-            <a href="#" class="fd-button fd-button--transparent fd-pagination__button" aria-label="Next page" aria-disabled="true">
-                <i class="sap-icon sap-icon--navigation-right-arrow"></i>
-            </a>
+        <a href="#" class="fd-button fd-button--transparent fd-pagination__button" aria-label="Next page" aria-disabled="true">
+            <i class="sap-icon sap-icon--navigation-right-arrow"></i>
+        </a>
 
-            <a href="#" class="fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile" aria-label="Last page" aria-disabled="true">
-                <i class="sap-icon sap-icon--media-forward"></i>
-            </a>
-        </nav>
+        <a href="#" class="fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile" aria-label="Last page" aria-disabled="true">
+            <i class="sap-icon sap-icon--media-forward"></i>
+        </a>
+    </nav>
 
-        <div class="fd-pagination__total">
-            <span class="fd-form-label fd-pagination__total-label">500 Results</span>
-        </div>
+    <div class="fd-pagination__total">
+        <span class="fd-form-label fd-pagination__total-label">500 Results</span>
     </div>
 </div>
 ```
 
 ### Mobile
 
-Pagination component is responsive by default. When the screen's size is smaller than 1024px in width mobile mode is shown and you have nothing to do. If you want to display pagination component always in mobile mode please add \
+Pagination component is responsive by default. When the screen's size is smaller than 1024px in width mobile mode is shown and you have nothing to do. If you want to display pagination component always in mobile mode please add `.fd-pagination--mobile` modifier class to the component.
 
 ```html
 <div class="fd-pagination fd-pagination--mobile">
@@ -606,53 +628,53 @@ Pagination component is responsive by default. When the screen's size is smaller
                         </span>
                     </button>
                 </div>
+            </div>
 
-                <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false" id="h0C6A327">
-                    <ul aria-activedescendant="selectCombobox-currentlyFocusedItem" aria-labelledby="selectLabel" class="fd-list fd-list--dropdown fd-list" role="listbox">
-                        <li id="selectCombobox-currentlyFocusedItem" class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
-                            <span class="fd-list__title">4</span>
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="-1">
-                            <span class="fd-list__title">8</span>
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="-1">
-                            <span class="fd-list__title">16</span>
-                        </li>
-                        <li class="fd-list__item" role="option" tabindex="-1">
-                            <span class="fd-list__title">32</span>
-                        </li>
-                    </ul>
-                </div>
+            <div class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--dropdown" aria-hidden="false" id="h0C6A327">
+                <ul aria-activedescendant="selectCombobox-currentlyFocusedItem" aria-labelledby="selectLabel" class="fd-list fd-list--dropdown fd-list" role="listbox">
+                    <li id="selectCombobox-currentlyFocusedItem" class="fd-list__item is-selected" aria-selected="true" role="option" tabindex="0">
+                        <span class="fd-list__title">4</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">8</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">16</span>
+                    </li>
+                    <li class="fd-list__item" role="option" tabindex="-1">
+                        <span class="fd-list__title">32</span>
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
 
-        <nav class="fd-pagination__nav" role="navigation" aria-label="mobile mode example, pagination with more than 9 pages">
-            <a href="#" class="fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile" aria-label="First page" aria-disabled="false">
-                <i class="sap-icon sap-icon--media-rewind"></i>
-            </a>
+    <nav class="fd-pagination__nav" role="navigation" aria-label="mobile mode example, pagination with more than 9 pages">
+        <a href="#" class="fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile" aria-label="First page" aria-disabled="false">
+            <i class="sap-icon sap-icon--media-rewind"></i>
+        </a>
 
-            <a href="#" class="fd-button fd-button--transparent fd-pagination__button" aria-label="Previous page" aria-disabled="false">
-                <i class="sap-icon sap-icon--navigation-left-arrow"></i>
-            </a>
+        <a href="#" class="fd-button fd-button--transparent fd-pagination__button" aria-label="Previous page" aria-disabled="false">
+            <i class="sap-icon sap-icon--navigation-left-arrow"></i>
+        </a>
 
-            <label class="fd-form-label fd-pagination__label" id="mobilePageInputPage" aria-label="Page input, Current page, Page 500">Page:</label>
+        <label class="fd-form-label fd-pagination__label" id="mobilePageInputPage" aria-label="Page input, Current page, Page 500">Page:</label>
 
-            <input aria-labelledby="mobilePageInputPage cozyPageInputOf" class="fd-input fd-pagination__input" type="number" min="1" max="500" value="500" required />
+        <input aria-labelledby="mobilePageInputPage cozyPageInputOf" class="fd-input fd-pagination__input" type="number" min="1" max="500" value="500" required />
 
-            <label class="fd-form-label fd-pagination__label" id="mobilePageInputOf">of 500</label>
+        <label class="fd-form-label fd-pagination__label" id="mobilePageInputOf">of 500</label>
 
-            <a href="#" class="fd-button fd-button--transparent fd-pagination__button" aria-label="Next page" aria-disabled="true">
-                <i class="sap-icon sap-icon--navigation-right-arrow"></i>
-            </a>
+        <a href="#" class="fd-button fd-button--transparent fd-pagination__button" aria-label="Next page" aria-disabled="true">
+            <i class="sap-icon sap-icon--navigation-right-arrow"></i>
+        </a>
 
-            <a href="#" class="fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile" aria-label="Last page" aria-disabled="true">
-                <i class="sap-icon sap-icon--media-forward"></i>
-            </a>
-        </nav>
+        <a href="#" class="fd-button fd-button--transparent fd-pagination__button fd-pagination__button--mobile" aria-label="Last page" aria-disabled="true">
+            <i class="sap-icon sap-icon--media-forward"></i>
+        </a>
+    </nav>
 
-        <div class="fd-pagination__total">
-            <span class="fd-form-label fd-pagination__total-label">500 Results</span>
-        </div>
+    <div class="fd-pagination__total">
+        <span class="fd-form-label fd-pagination__total-label">500 Results</span>
     </div>
 </div>
 ```

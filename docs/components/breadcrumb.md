@@ -123,11 +123,11 @@ npm install fundamental-styles
 
 | Class | Description |
 |-------|-------------|
-| `fd-breadcrumb--backslash` | Style variant |
-| `fd-breadcrumb--double-backslash` | Style variant |
-| `fd-breadcrumb--double-greater-than` | Style variant |
-| `fd-breadcrumb--double-slash` | Style variant |
-| `fd-breadcrumb--greater-than` | Style variant |
+| `fd-breadcrumb--backslash` | Separator between the links can be configured with modifier classes added to the main `fd-breadcrumb` class |
+| `fd-breadcrumb--double-backslash` | Separator between the links can be configured with modifier classes added to the main `fd-breadcrumb` class |
+| `fd-breadcrumb--double-greater-than` | Separator between the links can be configured with modifier classes added to the main `fd-breadcrumb` class |
+| `fd-breadcrumb--double-slash` | Separator between the links can be configured with modifier classes added to the main `fd-breadcrumb` class |
+| `fd-breadcrumb--greater-than` | Separator between the links can be configured with modifier classes added to the main `fd-breadcrumb` class |
 
 ## BEM Elements
 
@@ -202,7 +202,16 @@ The standard breadcrumb component displays several pages in text format separate
 
 ### Styles
 
-Separator between the links can be configured with modifier classes added to the main \
+Separator between the links can be configured with modifier classes added to the main `fd-breadcrumb` class. For example: `fd-breadcrumb--backslash` or `fd-breadcrumb--double-greater-than`.
+
+| **Separator style**      | **Modifier class**                 |
+| :------------------ | :-------------------------------------- |
+| Slash               | default (no modiier class)              |
+| Backslash           | `fd-breadcrumb--backslash`            |
+| Double slash        | `fd-breadcrumb--double-slash`         |
+| Double backslash	  | `fd-breadcrumb--double-backslash`     |
+| Greater than        | `fd-breadcrumb--greater-than`         |
+| Double greater than	| `fd-breadcrumb--double-greater-than`  |
 
 ```html
 <h4>Slash (default)</h4>

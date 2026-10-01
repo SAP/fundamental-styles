@@ -2,8 +2,8 @@
 component: section
 title: Layouts/Section
 category: Layouts
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/styles/stories/Layouts/section/section.stories.js
 generatedAt: 2026-05-28T15:51:35.755Z
 ---

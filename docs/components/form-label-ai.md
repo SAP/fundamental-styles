@@ -30,7 +30,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/form-label.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage
@@ -46,6 +45,7 @@ npm install fundamental-styles
 </div>
 
 <h4>With Text Area</h4>
+
 <div class="fd-form-item">
     <div class="fd-form-item__label-container">
         <label class="fd-form-label" for="textarea-ai-1">How will you measure this goal? </label>
@@ -54,14 +54,14 @@ npm install fundamental-styles
             <span class="fd-button__text">Revise</span>
             <i class="sap-icon--slim-arrow-down"></i>
         </button>
-        <div role="textbox" contenteditable="true" aria-multiline="true" class="fd-textarea fd-textarea--ai is-information" id="textarea-ai-1" placeholder="Write something here" rows="5"><p class="fd-ai-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eligendi quae recusandae rem illum? <mark>Vel minus corrupti in numquam qui eius totam!</mark> Sequi aut molestiae minus inventore. Sapiente, officia possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos fugiat quas cum, voluptas consequuntur totam aliquam illum aspernatur corrupti consectetur sint eaque sequi magni alias aliquid saepe quod ab voluptates.</p>
     </div>
-    <div class="fd-textarea-counter-container">
-        <label class="fd-form-label">Created with <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">Joule</span></a>. Verify results before using them.</label>
-        <div class="fd-textarea-counter">150 characters left</div>
-    </div>
-
+    <div role="textbox" contenteditable="true" aria-multiline="true" class="fd-textarea fd-textarea--ai is-information" id="textarea-ai-1" placeholder="Write something here" rows="5"><p class="fd-ai-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eligendi quae recusandae rem illum? <mark>Vel minus corrupti in numquam qui eius totam!</mark> Sequi aut molestiae minus inventore. Sapiente, officia possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos fugiat quas cum, voluptas consequuntur totam aliquam illum aspernatur corrupti consectetur sint eaque sequi magni alias aliquid saepe quod ab voluptates.</p>
 </div>
+<div class="fd-textarea-counter-container">
+    <label class="fd-form-label">Created with <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">Joule</span></a>. Verify results before using them.</label>
+    <div class="fd-textarea-counter">150 characters left</div>
+</div>
+
 </div>
 ```
 
@@ -92,6 +92,7 @@ npm install fundamental-styles
 </div>
 
 <h4>With Text Area</h4>
+
 <div class="fd-form-item">
     <div class="fd-form-item__label-container">
         <label class="fd-form-label" for="textarea-ai-1">How will you measure this goal? </label>
@@ -100,14 +101,14 @@ npm install fundamental-styles
             <span class="fd-button__text">Revise</span>
             <i class="sap-icon--slim-arrow-down"></i>
         </button>
-        <div role="textbox" contenteditable="true" aria-multiline="true" class="fd-textarea fd-textarea--ai is-information" id="textarea-ai-1" placeholder="Write something here" rows="5"><p class="fd-ai-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eligendi quae recusandae rem illum? <mark>Vel minus corrupti in numquam qui eius totam!</mark> Sequi aut molestiae minus inventore. Sapiente, officia possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos fugiat quas cum, voluptas consequuntur totam aliquam illum aspernatur corrupti consectetur sint eaque sequi magni alias aliquid saepe quod ab voluptates.</p>
     </div>
-    <div class="fd-textarea-counter-container">
-        <label class="fd-form-label">Created with <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">Joule</span></a>. Verify results before using them.</label>
-        <div class="fd-textarea-counter">150 characters left</div>
-    </div>
-
+    <div role="textbox" contenteditable="true" aria-multiline="true" class="fd-textarea fd-textarea--ai is-information" id="textarea-ai-1" placeholder="Write something here" rows="5"><p class="fd-ai-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eligendi quae recusandae rem illum? <mark>Vel minus corrupti in numquam qui eius totam!</mark> Sequi aut molestiae minus inventore. Sapiente, officia possimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos fugiat quas cum, voluptas consequuntur totam aliquam illum aspernatur corrupti consectetur sint eaque sequi magni alias aliquid saepe quod ab voluptates.</p>
 </div>
+<div class="fd-textarea-counter-container">
+    <label class="fd-form-label">Created with <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">Joule</span></a>. Verify results before using them.</label>
+    <div class="fd-textarea-counter">150 characters left</div>
+</div>
+
 </div>
 ```
 

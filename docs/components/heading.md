@@ -2,8 +2,8 @@
 component: heading
 title: Heading
 category: heading
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/common-css/stories/heading/heading.stories.js
 tags: []
 dependencies: []

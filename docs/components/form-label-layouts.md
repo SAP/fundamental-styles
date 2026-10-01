@@ -25,7 +25,7 @@ The Page Footer displays at the bottom of the page, and includes the links, icon
 
 -	You want to display collection of links for menu listing actions at the bottom of the screen.
 
-Note: You may want to display components from right to left on the screen for international purposes. To display them as such, add the \
+Note: You may want to display components from right to left on the screen for international purposes. To display them as such, add the `rtl` directive to the main element.
 
 ## Usage Guidelines
 
@@ -38,7 +38,7 @@ Note: You may want to display components from right to left on the screen for in
 
 -	You want to display collection of links for menu listing actions at the bottom of the screen.
 
-Note: You may want to display components from right to left on the screen for international purposes. To display them as such, add the \
+Note: You may want to display components from right to left on the screen for international purposes. To display them as such, add the `rtl` directive to the main element.
 
 ## Dependencies
 

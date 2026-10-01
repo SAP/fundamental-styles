@@ -65,7 +65,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/grid-list.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage
@@ -93,179 +92,179 @@ npm install fundamental-styles
                     </button>
                 </div>
             </div>
+        </div>
 
-            <div class="fd-row">
-                <div class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link is-navigated">
-                        <div class="fd-toolbar fd-grid-list__item-toolbar">
-                            <span class="fd-toolbar__spacer"></span>
+        <div class="fd-row">
+            <div class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link is-navigated">
+                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
+                        <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                            <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
-                                <i class="sap-icon--navigation-right-arrow"></i>
-                            </span>
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
+                            <i class="sap-icon--navigation-right-arrow"></i>
+                        </span>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
-                            <span class="fd-toolbar__spacer"></span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <button class="fd-button fd-button--transparent" aria-label="Edit">
-                                <i class="sap-icon--edit"></i>
-                            </button>
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
+                            <i class="sap-icon--edit"></i>
+                        </button>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
-                        <div class="fd-toolbar fd-grid-list__item-toolbar">
-                            <span class="fd-toolbar__spacer"></span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
+                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
+                        <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                            <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
-                                <i class="sap-icon--navigation-right-arrow"></i>
-                            </span>
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
+                            <i class="sap-icon--navigation-right-arrow"></i>
+                        </span>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -279,10 +278,10 @@ npm install fundamental-styles
 
 | Class | Description |
 |-------|-------------|
-| `fd-grid-list--mode-multi-select` | Style variant |
-| `fd-grid-list--mode-single-select` | Style variant |
-| `fd-grid-list--mode-single-select-left` | Style variant |
-| `fd-grid-list--mode-single-select-right` | Style variant |
+| `fd-grid-list--mode-multi-select` | Users can select one or more items |
+| `fd-grid-list--mode-single-select` | One item in the grid list can be selected |
+| `fd-grid-list--mode-single-select-left` | One item in the grid list can be selected |
+| `fd-grid-list--mode-single-select-right` | One item in the grid list can be selected |
 
 ## States
 
@@ -341,179 +340,179 @@ Items cannot be selected but can still use
                     </button>
                 </div>
             </div>
+        </div>
 
-            <div class="fd-row">
-                <div class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link is-navigated">
-                        <div class="fd-toolbar fd-grid-list__item-toolbar">
-                            <span class="fd-toolbar__spacer"></span>
+        <div class="fd-row">
+            <div class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link is-navigated">
+                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
+                        <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                            <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
-                                <i class="sap-icon--navigation-right-arrow"></i>
-                            </span>
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
+                            <i class="sap-icon--navigation-right-arrow"></i>
+                        </span>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
-                            <span class="fd-toolbar__spacer"></span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <button class="fd-button fd-button--transparent" aria-label="Edit">
-                                <i class="sap-icon--edit"></i>
-                            </button>
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
+                            <i class="sap-icon--edit"></i>
+                        </button>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
-                        <div class="fd-toolbar fd-grid-list__item-toolbar">
-                            <span class="fd-toolbar__spacer"></span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
+                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
+                        <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                            <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
-                                <i class="sap-icon--navigation-right-arrow"></i>
-                            </span>
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
+                            <i class="sap-icon--navigation-right-arrow"></i>
+                        </span>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
@@ -526,7 +525,7 @@ Items cannot be selected but can still use
 ### Single select mode
 
 One item in the grid list can be selected. Need click on an item to select it.
-To turn on the Single select mode, add the \
+To turn on the Single select mode, add the `fd-grid-list--mode-single-select` modifier class to the main element.
 
 ```html
 <div class="fd-grid-list fd-grid-list--mode-single-select">
@@ -551,124 +550,124 @@ To turn on the Single select mode, add the \
                     </button>
                 </div>
             </div>
+        </div>
 
-            <div class="fd-row">
-                <div class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
-                        <input type="radio" class="fd-radio is-compact fd-grid-list__radio-input" id="pDidh761" name="singleSelectMasterRadio">
-                        <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh761" aria-label="John Li, Product Owner, Company B"></label>
+        <div class="fd-row">
+            <div class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
+                    <input type="radio" class="fd-radio is-compact fd-grid-list__radio-input" id="pDidh761" name="singleSelectMasterRadio">
+                    <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh761" aria-label="John Li, Product Owner, Company B"></label>
 
-                        <div class="fd-toolbar fd-grid-list__item-toolbar">
-                            <span class="fd-toolbar__spacer"></span>
+                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
+                        <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                            <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
-                                <i class="sap-icon--navigation-right-arrow"></i>
-                            </span>
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
+                            <i class="sap-icon--navigation-right-arrow"></i>
+                        </span>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <input type="radio" class="fd-radio is-compact fd-grid-list__radio-input" id="pDidh761123" name="singleSelectMasterRadio">
-                        <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh761123" aria-label="John Li, Product Owner, Company B"></label>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <input type="radio" class="fd-radio is-compact fd-grid-list__radio-input" id="pDidh761123" name="singleSelectMasterRadio">
+                    <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh761123" aria-label="John Li, Product Owner, Company B"></label>
 
-                        <div class="fd-toolbar fd-grid-list__item-toolbar">
-                            <span class="fd-toolbar__spacer"></span>
+                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <button class="fd-button is-compact fd-button--transparent" aria-label="Pool">
-                                <i class="sap-icon--edit"></i>
-                            </button>
+                        <button class="fd-button is-compact fd-button--transparent" aria-label="Pool">
+                            <i class="sap-icon--edit"></i>
+                        </button>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0"><span class="fd-link__content">john_li@example.com</span></a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item is-selected">
-                        <input type="radio" class="fd-radio is-compact fd-grid-list__radio-input" id="pDidh7611234" name="singleSelectMasterRadio" aria-label="John Li, Product Owner, Company B" checked>
-                        <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh7611234"></label>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item is-selected">
+                    <input type="radio" class="fd-radio is-compact fd-grid-list__radio-input" id="pDidh7611234" name="singleSelectMasterRadio" aria-label="John Li, Product Owner, Company B" checked>
+                    <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh7611234"></label>
 
-                        <div class="fd-toolbar fd-grid-list__item-toolbar">
-                            <span class="fd-toolbar__spacer"></span>
+                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <span class="fd-grid-list__item-counter" aria-label="Item has 5 children">5</span>
+                        <span class="fd-grid-list__item-counter" aria-label="Item has 5 children">5</span>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <input type="radio" class="fd-radio is-compact fd-grid-list__radio-input" id="pDidh761642" name="singleSelectMasterRadio" aria-label="John Li, Product Owner, Company B">
-                        <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh761642"></label>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <input type="radio" class="fd-radio is-compact fd-grid-list__radio-input" id="pDidh761642" name="singleSelectMasterRadio" aria-label="John Li, Product Owner, Company B">
+                    <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh761642"></label>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
 
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -681,7 +680,7 @@ To turn on the Single select mode, add the \
 ### Single select left mode
 
 One item in the grid list can be selected. For this, the grid list provides radio buttons on the left side of each item toolbar.
-To turn on the Single select left mode, add the \
+To turn on the Single select left mode, add the `fd-grid-list--mode-single-select-left` modifier class to the main element.
 
 ```html
 <div class="fd-grid-list fd-grid-list--mode-single-select-left">
@@ -706,125 +705,125 @@ To turn on the Single select left mode, add the \
                     </button>
                 </div>
             </div>
+        </div>
 
-            <div class="fd-row">
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
-                        <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
-                            <input type="radio" class="fd-radio fd-grid-list__radio-input" id="pDidh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
-                            <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh1761" tabindex="-1"></label>
+        <div class="fd-row">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
+                    <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
+                        <input type="radio" class="fd-radio fd-grid-list__radio-input" id="pDidh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
+                        <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh1761" tabindex="-1"></label>
 
-                            <span class="fd-toolbar__spacer"></span>
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
+                        <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                            <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
-                                <i class="sap-icon--navigation-right-arrow"></i>
-                            </span>
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
+                            <i class="sap-icon--navigation-right-arrow"></i>
+                        </span>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item is-selected">
-                        <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
-                            <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p1Didh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B" checked>
-                            <label class="fd-radio__label fd-grid-list__radio-label" for="p1Didh1761" tabindex="-1"></label>
-                            <span class="fd-toolbar__spacer"></span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item is-selected">
+                    <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
+                        <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p1Didh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B" checked>
+                        <label class="fd-radio__label fd-grid-list__radio-label" for="p1Didh1761" tabindex="-1"></label>
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <button class="fd-button fd-button--transparent" aria-label="Edit">
-                                <i class="sap-icon--edit"></i>
-                            </button>
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
+                            <i class="sap-icon--edit"></i>
+                        </button>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
-                            <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p12Didh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
-                            <label class="fd-radio__label fd-grid-list__radio-label" for="p12Didh1761" tabindex="-1"></label>
-                            <span class="fd-toolbar__spacer"></span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
+                        <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p12Didh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
+                        <label class="fd-radio__label fd-grid-list__radio-label" for="p12Didh1761" tabindex="-1"></label>
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <span class="fd-grid-list__item-counter" aria-label="Item has 5 children">5</span>
+                        <span class="fd-grid-list__item-counter" aria-label="Item has 5 children">5</span>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
-                            <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p1x2Didh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
-                            <label class="fd-radio__label fd-grid-list__radio-label" for="p1x2Didh1761" tabindex="-1"></label>
-                            <span class="fd-toolbar__spacer"></span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
+                        <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p1x2Didh1761" name="singleSelectLeftRadio" aria-label="John Li, Product Owner, Company B">
+                        <label class="fd-radio__label fd-grid-list__radio-label" for="p1x2Didh1761" tabindex="-1"></label>
+                        <span class="fd-toolbar__spacer"></span>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -837,7 +836,7 @@ To turn on the Single select left mode, add the \
 ### Single select right mode
 
 One item in the grid list can be selected. For this, the grid list provides radio buttons on the left side of each item toolbar.
-To turn on the Single select right mode, add the \
+To turn on the Single select right mode, add the `fd-grid-list--mode-single-select-right` modifier class to the main element.
 
 ```html
 <div class="fd-grid-list fd-grid-list--mode-single-select-right">
@@ -862,128 +861,128 @@ To turn on the Single select right mode, add the \
                     </button>
                 </div>
             </div>
+        </div>
 
-            <div class="fd-row">
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
-                        <div class="fd-toolbar fd-grid-list__item-toolbar">
-                            <input type="radio" class="fd-radio is-compact fd-grid-list__radio-input" id="pDidh1v761541" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B">
-                            <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh1v761541" tabindex="-1"></label>
+        <div class="fd-row">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link">
+                    <div class="fd-toolbar fd-grid-list__item-toolbar">
+                        <input type="radio" class="fd-radio is-compact fd-grid-list__radio-input" id="pDidh1v761541" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B">
+                        <label class="fd-radio__label fd-grid-list__radio-label" for="pDidh1v761541" tabindex="-1"></label>
 
-                            <span class="fd-toolbar__spacer"></span>
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
+                        <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                            <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
-                                <i class="sap-icon--navigation-right-arrow"></i>
-                            </span>
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
+                            <i class="sap-icon--navigation-right-arrow"></i>
+                        </span>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item is-selected">
-                        <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
-                            <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p1Didh1761g234" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B" checked>
-                            <label class="fd-radio__label fd-grid-list__radio-label" for="p1Didh1761g234" tabindex="-1"></label>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item is-selected">
+                    <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
+                        <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p1Didh1761g234" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B" checked>
+                        <label class="fd-radio__label fd-grid-list__radio-label" for="p1Didh1761g234" tabindex="-1"></label>
 
-                            <span class="fd-toolbar__spacer"></span>
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <button class="fd-button fd-button--transparent" aria-label="Edit">
-                                <i class="sap-icon--edit"></i>
-                            </button>
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
+                            <i class="sap-icon--edit"></i>
+                        </button>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
-                            <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p12Didh176141w" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B">
-                            <label class="fd-radio__label fd-grid-list__radio-label" for="p12Didh176141w" tabindex="-1"></label>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
+                        <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p12Didh176141w" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B">
+                        <label class="fd-radio__label fd-grid-list__radio-label" for="p12Didh176141w" tabindex="-1"></label>
 
-                            <span class="fd-toolbar__spacer"></span>
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <span class="fd-grid-list__item-counter" aria-label="Item has 5 children">5</span>
+                        <span class="fd-grid-list__item-counter" aria-label="Item has 5 children">5</span>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
-                            <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p1x2Didh176132" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B">
-                            <label class="fd-radio__label fd-grid-list__radio-label" for="p1x2Didh176132" tabindex="-1"></label>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
+                        <input type="radio" class="fd-radio fd-grid-list__radio-input" id="p1x2Didh176132" name="singleSelectRightRadio" aria-label="John Li, Product Owner, Company B">
+                        <label class="fd-radio__label fd-grid-list__radio-label" for="p1x2Didh176132" tabindex="-1"></label>
 
-                            <span class="fd-toolbar__spacer"></span>
+                        <span class="fd-toolbar__spacer"></span>
+                    </div>
+
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
-
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
-
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
@@ -996,7 +995,7 @@ To turn on the Single select right mode, add the \
 ### Multi select mode
 
 Users can select one or more items. For this, the grid list provides checkboxes on the left side of each item toolbar.
-To turn on the Multi select mode, add the \
+To turn on the Multi select mode, add the `fd-grid-list--mode-multi-select` modifier class to the main element.
 
 ```html
 <div class="fd-grid-list fd-grid-list--mode-multi-select">
@@ -1021,146 +1020,146 @@ To turn on the Multi select mode, add the \
                     </button>
                 </div>
             </div>
+        </div>
 
-            <div class="fd-row">
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link is-selected">
-                        <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
-                            <div class="fd-form-item">
-                                <input type="checkbox" class="fd-checkbox fd-grid-list__checkbox-input" id="Ai4ez611c" aria-label="John Li, Product Owner, Company B" checked>
-                                <label class="fd-checkbox__label fd-grid-list__checkbox-label" for="Ai4ez611c" tabindex="-1">
-                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                                </label>
-                            </div>
-
-                            <span class="fd-toolbar__spacer"></span>
-
-                            <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
-
-                            <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
-                                <i class="sap-icon--navigation-right-arrow"></i>
-                            </span>
+        <div class="fd-row">
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item fd-grid-list__item--link is-selected">
+                    <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
+                        <div class="fd-form-item">
+                            <input type="checkbox" class="fd-checkbox fd-grid-list__checkbox-input" id="Ai4ez611c" aria-label="John Li, Product Owner, Company B" checked>
+                            <label class="fd-checkbox__label fd-grid-list__checkbox-label" for="Ai4ez611c" tabindex="-1">
+                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                            </label>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
+                        <span class="fd-grid-list__item-counter" aria-label="Item has 10 children">10</span>
 
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
+                        <span class="fd-grid-list__item-navigation-indicator" aria-label="Navigation">
+                            <i class="sap-icon--navigation-right-arrow"></i>
+                        </span>
+                    </div>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
+
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
-                            <div class="fd-form-item">
-                                <input type="checkbox" class="fd-checkbox fd-grid-list__checkbox-input" id="Ai4ez611c2" aria-label="John Li, Product Owner, Company B">
-                                <label class="fd-checkbox__label fd-grid-list__checkbox-label" for="Ai4ez611c2" tabindex="-1">
-                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                                </label>
-                            </div>
-
-                            <span class="fd-toolbar__spacer"></span>
-
-                            <button class="fd-button fd-button--transparent" aria-label="Edit">
-                                <i class="sap-icon--edit"></i>
-                            </button>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
+                        <div class="fd-form-item">
+                            <input type="checkbox" class="fd-checkbox fd-grid-list__checkbox-input" id="Ai4ez611c2" aria-label="John Li, Product Owner, Company B">
+                            <label class="fd-checkbox__label fd-grid-list__checkbox-label" for="Ai4ez611c2" tabindex="-1">
+                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                            </label>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
+                        <button class="fd-button fd-button--transparent" aria-label="Edit">
+                            <i class="sap-icon--edit"></i>
+                        </button>
+                    </div>
 
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
+
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item is-selected">
-                        <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
-                            <div class="fd-form-item">
-                                <input type="checkbox" class="fd-checkbox fd-grid-list__checkbox-input" id="Ai4ez611c3" aria-label="John Li, Product Owner, Company B" checked>
-                                <label class="fd-checkbox__label fd-grid-list__checkbox-label" for="Ai4ez611c3" tabindex="-1">
-                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                                </label>
-                            </div>
-
-                            <span class="fd-toolbar__spacer"></span>
-
-                            <span class="fd-grid-list__item-counter" aria-label="Item has 5 children">5</span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item is-selected">
+                    <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
+                        <div class="fd-form-item">
+                            <input type="checkbox" class="fd-checkbox fd-grid-list__checkbox-input" id="Ai4ez611c3" aria-label="John Li, Product Owner, Company B" checked>
+                            <label class="fd-checkbox__label fd-grid-list__checkbox-label" for="Ai4ez611c3" tabindex="-1">
+                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                            </label>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
+                        <span class="fd-grid-list__item-counter" aria-label="Item has 5 children">5</span>
+                    </div>
 
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
+
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
-                    <div tabindex="0" class="fd-grid-list__item">
-                        <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
-                            <div class="fd-form-item">
-                                <input type="checkbox" class="fd-checkbox fd-grid-list__checkbox-input" id="Ai4ez611c4" aria-label="John Li, Product Owner, Company B">
-                                <label class="fd-checkbox__label fd-grid-list__checkbox-label" for="Ai4ez611c4" tabindex="-1">
-                                    <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
-                                </label>
-                            </div>
-
-                            <span class="fd-toolbar__spacer"></span>
-
-                            <span class="fd-grid-list__item-counter" aria-label="Item has 5 children">5</span>
+            <div  class="fd-col fd-col--12 fd-col-md--6 fd-col-lg--4 fd-col-xl--3">
+                <div tabindex="0" class="fd-grid-list__item">
+                    <div class="fd-toolbar is-compact fd-grid-list__item-toolbar">
+                        <div class="fd-form-item">
+                            <input type="checkbox" class="fd-checkbox fd-grid-list__checkbox-input" id="Ai4ez611c4" aria-label="John Li, Product Owner, Company B">
+                            <label class="fd-checkbox__label fd-grid-list__checkbox-label" for="Ai4ez611c4" tabindex="-1">
+                                <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
+                            </label>
                         </div>
 
-                        <div class="fd-grid-list__item-body">
-                            <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
+                        <span class="fd-toolbar__spacer"></span>
 
-                            <div class="fd-grid-list__item-header">
-                                <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
-                                <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
-                            </div>
+                        <span class="fd-grid-list__item-counter" aria-label="Item has 5 children">5</span>
+                    </div>
 
-                            <div class="fd-grid-list__item-content">
-                                <p>781 Main Street</p>
-                                <p>Anytown, SD 57401</p>
-                                <p>USA</p>
+                    <div class="fd-grid-list__item-body">
+                        <span class="fd-avatar fd-avatar--s fd-grid-list__item-image" role="presentation"></span>
 
-                                <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
-                            </div>
+                        <div class="fd-grid-list__item-header">
+                            <h4 class="fd-title fd-title--h4 fd-grid-list__item-title">John Li</h4>
+                            <span class="fd-grid-list__item-subtitle">Product Owner, Company B</span>
+                        </div>
+
+                        <div class="fd-grid-list__item-content">
+                            <p>781 Main Street</p>
+                            <p>Anytown, SD 57401</p>
+                            <p>USA</p>
+
+                            <a href="#" class="fd-link" tabindex="0">john_li@example.com</a>
                         </div>
                     </div>
                 </div>

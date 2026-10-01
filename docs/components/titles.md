@@ -2,8 +2,8 @@
 component: title
 title: Titles
 category: page-title
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/common-css/stories/page-title/title.stories.js
 tags: []
 dependencies: []

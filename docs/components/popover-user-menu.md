@@ -38,7 +38,7 @@ The User Menu is an integral part of the Shell Bar, accessible by clicking the a
     <li>Content Overload: Keep the menu concise by limiting links to essential items only.</li>
     <li>Dynamic Content: Avoid altering the menu content within the product.</li>
 </ul>
-    
+
 ### Anatomy
 The User Menu popover is composed of the following components:
 
@@ -161,7 +161,9 @@ npm install fundamental-styles
                             <div class="fd-user-menu__subline">Primary Employment</div>
                         </div>
                         <div class="fd-user-menu__header-content-area">
+
                             Header Content Area
+
                         </div>
                     </div>
                     <div class="fd-user-menu__content-container">
@@ -481,200 +483,203 @@ npm install fundamental-styles
                                                                             </div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                            </div>
 
-                                                                    <div class="fd-popover fd-popover--right fd-user-menu">
-                                                                        <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="userMenu1">
-                                                                            <div class="fd-popover__wrapper fd-user-menu__popover-wrapper">
-                                                                                <div class="fd-user-menu__body">
-                                                                                    <div class="fd-user-menu__header">
-                                                                                        <span
-                                                                                            class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--thumbnail"
-                                                                                            aria-label="Avatar"
+                                                            <div class="fd-popover fd-popover--right fd-user-menu">
+                                                                <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="userMenu1">
+                                                                    <div class="fd-popover__wrapper fd-user-menu__popover-wrapper">
+                                                                        <div class="fd-user-menu__body">
+                                                                            <div class="fd-user-menu__header">
+                                                                                <span
+                                                                                    class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--thumbnail"
+                                                                                    aria-label="Avatar"
 
-                                                                                            >
-                                                                                            <i
-                                                                                                class="fd-avatar__zoom-icon sap-icon--edit"
-                                                                                                aria-label="Edit"
-                                                                                                role="presentation"
-                                                                                                aria-hidden="true"
-                                                                                                ></i>
-                                                                                            </span>
-                                                                                            <div class="fd-user-menu__header-container">
-                                                                                                <div class="fd-user-menu__user-name fd-user-menu__user-name--wrap">
-                                                                                                    Lisa Miller Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa consequuntur
-                                                                                                    cum voluptate iure tenetu!
-                                                                                                </div>
-                                                                                                <div class="fd-user-menu__subline fd-user-menu__subline--wrap">
-                                                                                                    lisa.miller@test.com Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-                                                                                                    quod accusamus quis magnam, reprehenderit anim.
-                                                                                                </div>
-                                                                                                <div class="fd-user-menu__subline fd-user-menu__subline--wrap">
-                                                                                                    A very long subline 2 that can be displayed by wrapping behaviour in the subtitle like
-                                                                                                    this.
-                                                                                                </div>
-                                                                                                <div class="fd-user-menu__subline fd-user-menu__subline--truncate">
-                                                                                                    A very long subline 3 that can be truncated with ellipsis
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <button aria-label="Manage Account" class="fd-button">
-                                                                                                <i class="sap-icon--user-settings"></i>
-                                                                                                <span class="fd-button__text">Manage Account</span>
-                                                                                            </button>
+                                                                                    >
+                                                                                    <i
+                                                                                        class="fd-avatar__zoom-icon sap-icon--edit"
+                                                                                        aria-label="Edit"
+                                                                                        role="presentation"
+                                                                                        aria-hidden="true"
+                                                                                        ></i>
+                                                                                    </span>
+                                                                                    <div class="fd-user-menu__header-container">
+                                                                                        <div class="fd-user-menu__user-name fd-user-menu__user-name--wrap">
+                                                                                            Lisa Miller Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa consequuntur
+                                                                                            cum voluptate iure tenetu!
                                                                                         </div>
-                                                                                        <div class="fd-user-menu__content-container">
-                                                                                            <div class="fd-panel fd-user-menu__panel" aria-labelledby="__panel-title-8" role="form">
-                                                                                                <div class="fd-panel__header">
-                                                                                                    <div class="fd-panel__expand">
-                                                                                                        <button
-                                                                                                            class="fd-button fd-button--transparent fd-panel__button"
-                                                                                                            aria-expanded="true"
-                                                                                                            aria-haspopup="true"
-                                                                                                            aria-label="expand/collapse panel"
-                                                                                                            aria-controls="__panel-8"
-                                                                                                            >
-                                                                                                            <i class="sap-icon--slim-arrow-down"></i>
-                                                                                                        </button>
-                                                                                                    </div>
-                                                                                                    <h4 class="fd-panel__title" id="__panel-title-8">Accounts (3)</h4>
-                                                                                                    <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                                                                                        <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
-                                                                                                        <button
-                                                                                                            class="fd-button fd-button--transparent"
-                                                                                                            aria-label="Add Account"
-                                                                                                            title="Add Account"
-                                                                                                            >
-                                                                                                            <i class="sap-icon--user-edit"></i>
-                                                                                                        </button>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    role="region"
-                                                                                                    aria-labelledby="__panel-title-8"
-                                                                                                    class="fd-panel__content fd-panel__content--no-padding"
-                                                                                                    aria-hidden="false"
-                                                                                                    id="__panel-8"
+                                                                                        <div class="fd-user-menu__subline fd-user-menu__subline--wrap">
+                                                                                            lisa.miller@test.com Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+                                                                                            quod accusamus quis magnam, reprehenderit anim.
+                                                                                        </div>
+                                                                                        <div class="fd-user-menu__subline fd-user-menu__subline--wrap">
+                                                                                            A very long subline 2 that can be displayed by wrapping behaviour in the subtitle like
+                                                                                            this.
+                                                                                        </div>
+                                                                                        <div class="fd-user-menu__subline fd-user-menu__subline--truncate">
+                                                                                            A very long subline 3 that can be truncated with ellipsis
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <button aria-label="Manage Account" class="fd-button">
+                                                                                        <i class="sap-icon--user-settings"></i>
+                                                                                        <span class="fd-button__text">Manage Account</span>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <div class="fd-user-menu__content-container">
+                                                                                    <div class="fd-panel fd-user-menu__panel" aria-labelledby="__panel-title-8" role="form">
+                                                                                        <div class="fd-panel__header">
+                                                                                            <div class="fd-panel__expand">
+                                                                                                <button
+                                                                                                    class="fd-button fd-button--transparent fd-panel__button"
+                                                                                                    aria-expanded="true"
+                                                                                                    aria-haspopup="true"
+                                                                                                    aria-label="expand/collapse panel"
+                                                                                                    aria-controls="__panel-8"
                                                                                                     >
-                                                                                                    <ul class="fd-list fd-list--subline" role="list">
-                                                                                                        <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
-                                                                                                            <span
-                                                                                                                class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail"
+                                                                                                    <i class="sap-icon--slim-arrow-down"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                            <h4 class="fd-panel__title" id="__panel-title-8">Accounts (3)</h4>
+                                                                                            <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                                                                                <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+                                                                                                <button
+                                                                                                    class="fd-button fd-button--transparent"
+                                                                                                    aria-label="Add Account"
+                                                                                                    title="Add Account"
+                                                                                                    >
+                                                                                                    <i class="sap-icon--user-edit"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            role="region"
+                                                                                            aria-labelledby="__panel-title-8"
+                                                                                            class="fd-panel__content fd-panel__content--no-padding"
+                                                                                            aria-hidden="false"
+                                                                                            id="__panel-8"
+                                                                                            >
+                                                                                            <ul class="fd-list fd-list--subline" role="list">
+                                                                                                <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+                                                                                                    <span
+                                                                                                        class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail"
 
-                                                                                                                role="img"
-                                                                                                                aria-label="Jane Doe"
-                                                                                                                ></span>
-                                                                                                                <div class="fd-list__content">
-                                                                                                                    <div class="fd-list__title fd-list__title--wrap">
-                                                                                                                        Lisa Miller Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                                                                                                        Autem minima ex distinctio dolores vitae!
-                                                                                                                    </div>
-                                                                                                                    <div class="fd-list__subline fd-list__subline--wrap">
-                                                                                                                        lisa.miller@test.com Lorem, ipsum dolor sit amet consectetur adipisicing
-                                                                                                                        elit.
-                                                                                                                    </div>
-                                                                                                                    <div class="fd-list__subline fd-list__subline--wrap">
-                                                                                                                        Delivery Manager Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                                                                        elit.
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                <span class="fd-list__active-indicator sap-icon--sys-enter-2"></span>
-                                                                                                            </li>
-                                                                                                            <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
-                                                                                                                <span
-                                                                                                                    class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail"
-
-                                                                                                                    role="img"
-                                                                                                                    aria-label="John Doe"
-                                                                                                                    ></span>
-                                                                                                                    <div class="fd-list__content">
-                                                                                                                        <div class="fd-list__title fd-list__title--truncate">
-                                                                                                                            John Doe Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
-                                                                                                                            minima ex distinctio dolores vitae!
-                                                                                                                        </div>
-                                                                                                                        <div class="fd-list__subline fd-list__subline--truncate">
-                                                                                                                            john.doe@test.com ipsum dolor sit amet consectetur adipisicing elit.
-                                                                                                                            Autem minima ex distinctio dolores vitae!
-                                                                                                                        </div>
-                                                                                                                        <div class="fd-list__subline fd-list__subline--truncate">
-                                                                                                                            Project Manager ipsum dolor sit amet consectetur adipisicing elit. Autem
-                                                                                                                            minima ex distinctio dolores vitae!
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </li>
-                                                                                                                <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
-                                                                                                                    <span
-                                                                                                                        class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10"
-                                                                                                                        aria-role="img"
-                                                                                                                        aria-label="Jane Doe"
-                                                                                                                        >JD</span
-                                                                                                                        >
-                                                                                                                        <div class="fd-list__content">
-                                                                                                                            <div class="fd-list__title">Jane Doe</div>
-                                                                                                                            <div class="fd-list__subline">jane.doe@test.com</div>
-                                                                                                                            <div class="fd-list__subline">User Experience Designer</div>
-                                                                                                                        </div>
-                                                                                                                    </li>
-                                                                                                                </ul>
+                                                                                                        role="img"
+                                                                                                        aria-label="Jane Doe"
+                                                                                                        ></span>
+                                                                                                        <div class="fd-list__content">
+                                                                                                            <div class="fd-list__title fd-list__title--wrap">
+                                                                                                                Lisa Miller Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                                                                                Autem minima ex distinctio dolores vitae!
+                                                                                                            </div>
+                                                                                                            <div class="fd-list__subline fd-list__subline--wrap">
+                                                                                                                lisa.miller@test.com Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                                                                                elit.
+                                                                                                            </div>
+                                                                                                            <div class="fd-list__subline fd-list__subline--wrap">
+                                                                                                                Delivery Manager Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                                                                elit.
                                                                                                             </div>
                                                                                                         </div>
-                                                                                                        <nav class="fd-menu fd-menu--icons fd-user-menu__menu">
-                                                                                                            <ul class="fd-menu__list fd-user-menu__menu-list" role="menu">
-                                                                                                                <li class="fd-menu__item" role="presentation">
-                                                                                                                    <a class="fd-menu__link" href="#" role="menuitem">
-                                                                                                                        <span class="fd-menu__addon-before">
-                                                                                                                            <i class="sap-icon--action-settings" role="presentation"></i>
-                                                                                                                        </span>
-                                                                                                                        <span class="fd-menu__title">Settings</span>
-                                                                                                                    </a>
-                                                                                                                </li>
+                                                                                                        <span class="fd-list__active-indicator sap-icon--sys-enter-2"></span>
+                                                                                                    </li>
+                                                                                                    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+                                                                                                        <span
+                                                                                                            class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail"
 
-                                                                                                                <li class="fd-menu__item" role="presentation">
-                                                                                                                    <span
-                                                                                                                        class="fd-menu__link has-child"
-                                                                                                                        aria-expanded="false"
-                                                                                                                        aria-haspopup="true"
-                                                                                                                        role="menuitem"
-                                                                                                                        >
-                                                                                                                        <span class="fd-menu__addon-before">
-                                                                                                                            <i class="sap-icon--card" role="presentation"></i>
-                                                                                                                        </span>
-                                                                                                                        <span class="fd-menu__title">Menu Item</span>
-                                                                                                                        <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
-                                                                                                                    </span>
-                                                                                                                </li>
-
-                                                                                                                <li class="fd-menu__item" role="presentation">
-                                                                                                                    <a class="fd-menu__link" href="#" role="menuitem">
-                                                                                                                        <span class="fd-menu__addon-before">
-                                                                                                                            <i class="sap-icon--official-service" role="presentation"></i>
-                                                                                                                        </span>
-                                                                                                                        <span class="fd-menu__title">Legal Information</span>
-                                                                                                                    </a>
-                                                                                                                </li>
-
-                                                                                                                <li class="fd-menu__item" role="presentation">
-                                                                                                                    <a class="fd-menu__link" href="#" role="menuitem">
-                                                                                                                        <span class="fd-menu__addon-before">
-                                                                                                                            <i class="sap-icon--message-information" role="presentation"></i>
-                                                                                                                        </span>
-                                                                                                                        <span class="fd-menu__title">About</span>
-                                                                                                                    </a>
-                                                                                                                </li>
-                                                                                                            </ul>
-                                                                                                        </nav>
+                                                                                                            role="img"
+                                                                                                            aria-label="John Doe"
+                                                                                                            ></span>
+                                                                                                            <div class="fd-list__content">
+                                                                                                                <div class="fd-list__title fd-list__title--truncate">
+                                                                                                                    John Doe Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+                                                                                                                    minima ex distinctio dolores vitae!
+                                                                                                                </div>
+                                                                                                                <div class="fd-list__subline fd-list__subline--truncate">
+                                                                                                                    john.doe@test.com ipsum dolor sit amet consectetur adipisicing elit.
+                                                                                                                    Autem minima ex distinctio dolores vitae!
+                                                                                                                </div>
+                                                                                                                <div class="fd-list__subline fd-list__subline--truncate">
+                                                                                                                    Project Manager ipsum dolor sit amet consectetur adipisicing elit. Autem
+                                                                                                                    minima ex distinctio dolores vitae!
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </li>
+                                                                                                        <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+                                                                                                            <span
+                                                                                                                class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10"
+                                                                                                                aria-role="img"
+                                                                                                                aria-label="Jane Doe"
+                                                                                                                >JD</span
+                                                                                                                >
+                                                                                                                <div class="fd-list__content">
+                                                                                                                    <div class="fd-list__title">Jane Doe</div>
+                                                                                                                    <div class="fd-list__subline">jane.doe@test.com</div>
+                                                                                                                    <div class="fd-list__subline">User Experience Designer</div>
+                                                                                                                </div>
+                                                                                                            </li>
+                                                                                                        </ul>
                                                                                                     </div>
                                                                                                 </div>
-                                                                                            </div>
-                                                                                            <div class="fd-bar fd-bar--footer">
-                                                                                                <div class="fd-bar__right">
-                                                                                                    <div class="fd-bar__element">
-                                                                                                        <button aria-label="button" class="fd-button fd-button--transparent">
-                                                                                                            <i class="sap-icon--log"></i>
-                                                                                                            <span class="fd-button__text"> Sign Out</span>
-                                                                                                        </button>
-                                                                                                    </div>
-                                                                                                </div>
+                                                                                                <nav class="fd-menu fd-menu--icons fd-user-menu__menu">
+                                                                                                    <ul class="fd-menu__list fd-user-menu__menu-list" role="menu">
+                                                                                                        <li class="fd-menu__item" role="presentation">
+                                                                                                            <a class="fd-menu__link" href="#" role="menuitem">
+                                                                                                                <span class="fd-menu__addon-before">
+                                                                                                                    <i class="sap-icon--action-settings" role="presentation"></i>
+                                                                                                                </span>
+                                                                                                                <span class="fd-menu__title">Settings</span>
+                                                                                                            </a>
+                                                                                                        </li>
+
+                                                                                                        <li class="fd-menu__item" role="presentation">
+                                                                                                            <span
+                                                                                                                class="fd-menu__link has-child"
+                                                                                                                aria-expanded="false"
+                                                                                                                aria-haspopup="true"
+                                                                                                                role="menuitem"
+                                                                                                                >
+                                                                                                                <span class="fd-menu__addon-before">
+                                                                                                                    <i class="sap-icon--card" role="presentation"></i>
+                                                                                                                </span>
+                                                                                                                <span class="fd-menu__title">Menu Item</span>
+                                                                                                                <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
+                                                                                                            </span>
+                                                                                                        </li>
+
+                                                                                                        <li class="fd-menu__item" role="presentation">
+                                                                                                            <a class="fd-menu__link" href="#" role="menuitem">
+                                                                                                                <span class="fd-menu__addon-before">
+                                                                                                                    <i class="sap-icon--official-service" role="presentation"></i>
+                                                                                                                </span>
+                                                                                                                <span class="fd-menu__title">Legal Information</span>
+                                                                                                            </a>
+                                                                                                        </li>
+
+                                                                                                        <li class="fd-menu__item" role="presentation">
+                                                                                                            <a class="fd-menu__link" href="#" role="menuitem">
+                                                                                                                <span class="fd-menu__addon-before">
+                                                                                                                    <i class="sap-icon--message-information" role="presentation"></i>
+                                                                                                                </span>
+                                                                                                                <span class="fd-menu__title">About</span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </nav>
                                                                                             </div>
                                                                                         </div>
+                                                                                    </div>
+                                                                                    <div class="fd-bar fd-bar--footer">
+                                                                                        <div class="fd-bar__right">
+                                                                                            <div class="fd-bar__element">
+                                                                                                <button aria-label="button" class="fd-button fd-button--transparent">
+                                                                                                    <i class="sap-icon--log"></i>
+                                                                                                    <span class="fd-button__text"> Sign Out</span>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
 ```
 
 ## Modifiers
@@ -772,7 +777,9 @@ Key CSS variables used by this component:
                             <div class="fd-user-menu__subline">Primary Employment</div>
                         </div>
                         <div class="fd-user-menu__header-content-area">
+
                             Header Content Area
+
                         </div>
                     </div>
                     <div class="fd-user-menu__content-container">
@@ -1092,200 +1099,203 @@ Key CSS variables used by this component:
                                                                             </div>
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                            </div>
 
-                                                                    <div class="fd-popover fd-popover--right fd-user-menu">
-                                                                        <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="userMenu1">
-                                                                            <div class="fd-popover__wrapper fd-user-menu__popover-wrapper">
-                                                                                <div class="fd-user-menu__body">
-                                                                                    <div class="fd-user-menu__header">
-                                                                                        <span
-                                                                                            class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--thumbnail"
-                                                                                            aria-label="Avatar"
+                                                            <div class="fd-popover fd-popover--right fd-user-menu">
+                                                                <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="userMenu1">
+                                                                    <div class="fd-popover__wrapper fd-user-menu__popover-wrapper">
+                                                                        <div class="fd-user-menu__body">
+                                                                            <div class="fd-user-menu__header">
+                                                                                <span
+                                                                                    class="fd-avatar fd-avatar--lg fd-avatar--circle fd-avatar--thumbnail"
+                                                                                    aria-label="Avatar"
 
-                                                                                            >
-                                                                                            <i
-                                                                                                class="fd-avatar__zoom-icon sap-icon--edit"
-                                                                                                aria-label="Edit"
-                                                                                                role="presentation"
-                                                                                                aria-hidden="true"
-                                                                                                ></i>
-                                                                                            </span>
-                                                                                            <div class="fd-user-menu__header-container">
-                                                                                                <div class="fd-user-menu__user-name fd-user-menu__user-name--wrap">
-                                                                                                    Lisa Miller Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa consequuntur
-                                                                                                    cum voluptate iure tenetu!
-                                                                                                </div>
-                                                                                                <div class="fd-user-menu__subline fd-user-menu__subline--wrap">
-                                                                                                    lisa.miller@test.com Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-                                                                                                    quod accusamus quis magnam, reprehenderit anim.
-                                                                                                </div>
-                                                                                                <div class="fd-user-menu__subline fd-user-menu__subline--wrap">
-                                                                                                    A very long subline 2 that can be displayed by wrapping behaviour in the subtitle like
-                                                                                                    this.
-                                                                                                </div>
-                                                                                                <div class="fd-user-menu__subline fd-user-menu__subline--truncate">
-                                                                                                    A very long subline 3 that can be truncated with ellipsis
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <button aria-label="Manage Account" class="fd-button">
-                                                                                                <i class="sap-icon--user-settings"></i>
-                                                                                                <span class="fd-button__text">Manage Account</span>
-                                                                                            </button>
+                                                                                    >
+                                                                                    <i
+                                                                                        class="fd-avatar__zoom-icon sap-icon--edit"
+                                                                                        aria-label="Edit"
+                                                                                        role="presentation"
+                                                                                        aria-hidden="true"
+                                                                                        ></i>
+                                                                                    </span>
+                                                                                    <div class="fd-user-menu__header-container">
+                                                                                        <div class="fd-user-menu__user-name fd-user-menu__user-name--wrap">
+                                                                                            Lisa Miller Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa consequuntur
+                                                                                            cum voluptate iure tenetu!
                                                                                         </div>
-                                                                                        <div class="fd-user-menu__content-container">
-                                                                                            <div class="fd-panel fd-user-menu__panel" aria-labelledby="__panel-title-8" role="form">
-                                                                                                <div class="fd-panel__header">
-                                                                                                    <div class="fd-panel__expand">
-                                                                                                        <button
-                                                                                                            class="fd-button fd-button--transparent fd-panel__button"
-                                                                                                            aria-expanded="true"
-                                                                                                            aria-haspopup="true"
-                                                                                                            aria-label="expand/collapse panel"
-                                                                                                            aria-controls="__panel-8"
-                                                                                                            >
-                                                                                                            <i class="sap-icon--slim-arrow-down"></i>
-                                                                                                        </button>
-                                                                                                    </div>
-                                                                                                    <h4 class="fd-panel__title" id="__panel-title-8">Accounts (3)</h4>
-                                                                                                    <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
-                                                                                                        <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
-                                                                                                        <button
-                                                                                                            class="fd-button fd-button--transparent"
-                                                                                                            aria-label="Add Account"
-                                                                                                            title="Add Account"
-                                                                                                            >
-                                                                                                            <i class="sap-icon--user-edit"></i>
-                                                                                                        </button>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    role="region"
-                                                                                                    aria-labelledby="__panel-title-8"
-                                                                                                    class="fd-panel__content fd-panel__content--no-padding"
-                                                                                                    aria-hidden="false"
-                                                                                                    id="__panel-8"
+                                                                                        <div class="fd-user-menu__subline fd-user-menu__subline--wrap">
+                                                                                            lisa.miller@test.com Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+                                                                                            quod accusamus quis magnam, reprehenderit anim.
+                                                                                        </div>
+                                                                                        <div class="fd-user-menu__subline fd-user-menu__subline--wrap">
+                                                                                            A very long subline 2 that can be displayed by wrapping behaviour in the subtitle like
+                                                                                            this.
+                                                                                        </div>
+                                                                                        <div class="fd-user-menu__subline fd-user-menu__subline--truncate">
+                                                                                            A very long subline 3 that can be truncated with ellipsis
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <button aria-label="Manage Account" class="fd-button">
+                                                                                        <i class="sap-icon--user-settings"></i>
+                                                                                        <span class="fd-button__text">Manage Account</span>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <div class="fd-user-menu__content-container">
+                                                                                    <div class="fd-panel fd-user-menu__panel" aria-labelledby="__panel-title-8" role="form">
+                                                                                        <div class="fd-panel__header">
+                                                                                            <div class="fd-panel__expand">
+                                                                                                <button
+                                                                                                    class="fd-button fd-button--transparent fd-panel__button"
+                                                                                                    aria-expanded="true"
+                                                                                                    aria-haspopup="true"
+                                                                                                    aria-label="expand/collapse panel"
+                                                                                                    aria-controls="__panel-8"
                                                                                                     >
-                                                                                                    <ul class="fd-list fd-list--subline" role="list">
-                                                                                                        <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
-                                                                                                            <span
-                                                                                                                class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail"
+                                                                                                    <i class="sap-icon--slim-arrow-down"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                            <h4 class="fd-panel__title" id="__panel-title-8">Accounts (3)</h4>
+                                                                                            <div class="fd-toolbar fd-toolbar--clear fd-toolbar--transparent">
+                                                                                                <span class="fd-toolbar__spacer fd-toolbar__spacer--auto"> </span>
+                                                                                                <button
+                                                                                                    class="fd-button fd-button--transparent"
+                                                                                                    aria-label="Add Account"
+                                                                                                    title="Add Account"
+                                                                                                    >
+                                                                                                    <i class="sap-icon--user-edit"></i>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            role="region"
+                                                                                            aria-labelledby="__panel-title-8"
+                                                                                            class="fd-panel__content fd-panel__content--no-padding"
+                                                                                            aria-hidden="false"
+                                                                                            id="__panel-8"
+                                                                                            >
+                                                                                            <ul class="fd-list fd-list--subline" role="list">
+                                                                                                <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+                                                                                                    <span
+                                                                                                        class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail"
 
-                                                                                                                role="img"
-                                                                                                                aria-label="Jane Doe"
-                                                                                                                ></span>
-                                                                                                                <div class="fd-list__content">
-                                                                                                                    <div class="fd-list__title fd-list__title--wrap">
-                                                                                                                        Lisa Miller Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                                                                                                        Autem minima ex distinctio dolores vitae!
-                                                                                                                    </div>
-                                                                                                                    <div class="fd-list__subline fd-list__subline--wrap">
-                                                                                                                        lisa.miller@test.com Lorem, ipsum dolor sit amet consectetur adipisicing
-                                                                                                                        elit.
-                                                                                                                    </div>
-                                                                                                                    <div class="fd-list__subline fd-list__subline--wrap">
-                                                                                                                        Delivery Manager Lorem ipsum dolor sit amet consectetur adipisicing
-                                                                                                                        elit.
-                                                                                                                    </div>
-                                                                                                                </div>
-                                                                                                                <span class="fd-list__active-indicator sap-icon--sys-enter-2"></span>
-                                                                                                            </li>
-                                                                                                            <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
-                                                                                                                <span
-                                                                                                                    class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail"
-
-                                                                                                                    role="img"
-                                                                                                                    aria-label="John Doe"
-                                                                                                                    ></span>
-                                                                                                                    <div class="fd-list__content">
-                                                                                                                        <div class="fd-list__title fd-list__title--truncate">
-                                                                                                                            John Doe Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
-                                                                                                                            minima ex distinctio dolores vitae!
-                                                                                                                        </div>
-                                                                                                                        <div class="fd-list__subline fd-list__subline--truncate">
-                                                                                                                            john.doe@test.com ipsum dolor sit amet consectetur adipisicing elit.
-                                                                                                                            Autem minima ex distinctio dolores vitae!
-                                                                                                                        </div>
-                                                                                                                        <div class="fd-list__subline fd-list__subline--truncate">
-                                                                                                                            Project Manager ipsum dolor sit amet consectetur adipisicing elit. Autem
-                                                                                                                            minima ex distinctio dolores vitae!
-                                                                                                                        </div>
-                                                                                                                    </div>
-                                                                                                                </li>
-                                                                                                                <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
-                                                                                                                    <span
-                                                                                                                        class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10"
-                                                                                                                        aria-role="img"
-                                                                                                                        aria-label="Jane Doe"
-                                                                                                                        >JD</span
-                                                                                                                        >
-                                                                                                                        <div class="fd-list__content">
-                                                                                                                            <div class="fd-list__title">Jane Doe</div>
-                                                                                                                            <div class="fd-list__subline">jane.doe@test.com</div>
-                                                                                                                            <div class="fd-list__subline">User Experience Designer</div>
-                                                                                                                        </div>
-                                                                                                                    </li>
-                                                                                                                </ul>
+                                                                                                        role="img"
+                                                                                                        aria-label="Jane Doe"
+                                                                                                        ></span>
+                                                                                                        <div class="fd-list__content">
+                                                                                                            <div class="fd-list__title fd-list__title--wrap">
+                                                                                                                Lisa Miller Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                                                                                Autem minima ex distinctio dolores vitae!
+                                                                                                            </div>
+                                                                                                            <div class="fd-list__subline fd-list__subline--wrap">
+                                                                                                                lisa.miller@test.com Lorem, ipsum dolor sit amet consectetur adipisicing
+                                                                                                                elit.
+                                                                                                            </div>
+                                                                                                            <div class="fd-list__subline fd-list__subline--wrap">
+                                                                                                                Delivery Manager Lorem ipsum dolor sit amet consectetur adipisicing
+                                                                                                                elit.
                                                                                                             </div>
                                                                                                         </div>
-                                                                                                        <nav class="fd-menu fd-menu--icons fd-user-menu__menu">
-                                                                                                            <ul class="fd-menu__list fd-user-menu__menu-list" role="menu">
-                                                                                                                <li class="fd-menu__item" role="presentation">
-                                                                                                                    <a class="fd-menu__link" href="#" role="menuitem">
-                                                                                                                        <span class="fd-menu__addon-before">
-                                                                                                                            <i class="sap-icon--action-settings" role="presentation"></i>
-                                                                                                                        </span>
-                                                                                                                        <span class="fd-menu__title">Settings</span>
-                                                                                                                    </a>
-                                                                                                                </li>
+                                                                                                        <span class="fd-list__active-indicator sap-icon--sys-enter-2"></span>
+                                                                                                    </li>
+                                                                                                    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+                                                                                                        <span
+                                                                                                            class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail"
 
-                                                                                                                <li class="fd-menu__item" role="presentation">
-                                                                                                                    <span
-                                                                                                                        class="fd-menu__link has-child"
-                                                                                                                        aria-expanded="false"
-                                                                                                                        aria-haspopup="true"
-                                                                                                                        role="menuitem"
-                                                                                                                        >
-                                                                                                                        <span class="fd-menu__addon-before">
-                                                                                                                            <i class="sap-icon--card" role="presentation"></i>
-                                                                                                                        </span>
-                                                                                                                        <span class="fd-menu__title">Menu Item</span>
-                                                                                                                        <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
-                                                                                                                    </span>
-                                                                                                                </li>
-
-                                                                                                                <li class="fd-menu__item" role="presentation">
-                                                                                                                    <a class="fd-menu__link" href="#" role="menuitem">
-                                                                                                                        <span class="fd-menu__addon-before">
-                                                                                                                            <i class="sap-icon--official-service" role="presentation"></i>
-                                                                                                                        </span>
-                                                                                                                        <span class="fd-menu__title">Legal Information</span>
-                                                                                                                    </a>
-                                                                                                                </li>
-
-                                                                                                                <li class="fd-menu__item" role="presentation">
-                                                                                                                    <a class="fd-menu__link" href="#" role="menuitem">
-                                                                                                                        <span class="fd-menu__addon-before">
-                                                                                                                            <i class="sap-icon--message-information" role="presentation"></i>
-                                                                                                                        </span>
-                                                                                                                        <span class="fd-menu__title">About</span>
-                                                                                                                    </a>
-                                                                                                                </li>
-                                                                                                            </ul>
-                                                                                                        </nav>
+                                                                                                            role="img"
+                                                                                                            aria-label="John Doe"
+                                                                                                            ></span>
+                                                                                                            <div class="fd-list__content">
+                                                                                                                <div class="fd-list__title fd-list__title--truncate">
+                                                                                                                    John Doe Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+                                                                                                                    minima ex distinctio dolores vitae!
+                                                                                                                </div>
+                                                                                                                <div class="fd-list__subline fd-list__subline--truncate">
+                                                                                                                    john.doe@test.com ipsum dolor sit amet consectetur adipisicing elit.
+                                                                                                                    Autem minima ex distinctio dolores vitae!
+                                                                                                                </div>
+                                                                                                                <div class="fd-list__subline fd-list__subline--truncate">
+                                                                                                                    Project Manager ipsum dolor sit amet consectetur adipisicing elit. Autem
+                                                                                                                    minima ex distinctio dolores vitae!
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </li>
+                                                                                                        <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+                                                                                                            <span
+                                                                                                                class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10"
+                                                                                                                aria-role="img"
+                                                                                                                aria-label="Jane Doe"
+                                                                                                                >JD</span
+                                                                                                                >
+                                                                                                                <div class="fd-list__content">
+                                                                                                                    <div class="fd-list__title">Jane Doe</div>
+                                                                                                                    <div class="fd-list__subline">jane.doe@test.com</div>
+                                                                                                                    <div class="fd-list__subline">User Experience Designer</div>
+                                                                                                                </div>
+                                                                                                            </li>
+                                                                                                        </ul>
                                                                                                     </div>
                                                                                                 </div>
-                                                                                            </div>
-                                                                                            <div class="fd-bar fd-bar--footer">
-                                                                                                <div class="fd-bar__right">
-                                                                                                    <div class="fd-bar__element">
-                                                                                                        <button aria-label="button" class="fd-button fd-button--transparent">
-                                                                                                            <i class="sap-icon--log"></i>
-                                                                                                            <span class="fd-button__text"> Sign Out</span>
-                                                                                                        </button>
-                                                                                                    </div>
-                                                                                                </div>
+                                                                                                <nav class="fd-menu fd-menu--icons fd-user-menu__menu">
+                                                                                                    <ul class="fd-menu__list fd-user-menu__menu-list" role="menu">
+                                                                                                        <li class="fd-menu__item" role="presentation">
+                                                                                                            <a class="fd-menu__link" href="#" role="menuitem">
+                                                                                                                <span class="fd-menu__addon-before">
+                                                                                                                    <i class="sap-icon--action-settings" role="presentation"></i>
+                                                                                                                </span>
+                                                                                                                <span class="fd-menu__title">Settings</span>
+                                                                                                            </a>
+                                                                                                        </li>
+
+                                                                                                        <li class="fd-menu__item" role="presentation">
+                                                                                                            <span
+                                                                                                                class="fd-menu__link has-child"
+                                                                                                                aria-expanded="false"
+                                                                                                                aria-haspopup="true"
+                                                                                                                role="menuitem"
+                                                                                                                >
+                                                                                                                <span class="fd-menu__addon-before">
+                                                                                                                    <i class="sap-icon--card" role="presentation"></i>
+                                                                                                                </span>
+                                                                                                                <span class="fd-menu__title">Menu Item</span>
+                                                                                                                <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
+                                                                                                            </span>
+                                                                                                        </li>
+
+                                                                                                        <li class="fd-menu__item" role="presentation">
+                                                                                                            <a class="fd-menu__link" href="#" role="menuitem">
+                                                                                                                <span class="fd-menu__addon-before">
+                                                                                                                    <i class="sap-icon--official-service" role="presentation"></i>
+                                                                                                                </span>
+                                                                                                                <span class="fd-menu__title">Legal Information</span>
+                                                                                                            </a>
+                                                                                                        </li>
+
+                                                                                                        <li class="fd-menu__item" role="presentation">
+                                                                                                            <a class="fd-menu__link" href="#" role="menuitem">
+                                                                                                                <span class="fd-menu__addon-before">
+                                                                                                                    <i class="sap-icon--message-information" role="presentation"></i>
+                                                                                                                </span>
+                                                                                                                <span class="fd-menu__title">About</span>
+                                                                                                            </a>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </nav>
                                                                                             </div>
                                                                                         </div>
+                                                                                    </div>
+                                                                                    <div class="fd-bar fd-bar--footer">
+                                                                                        <div class="fd-bar__right">
+                                                                                            <div class="fd-bar__element">
+                                                                                                <button aria-label="button" class="fd-button fd-button--transparent">
+                                                                                                    <i class="sap-icon--log"></i>
+                                                                                                    <span class="fd-button__text"> Sign Out</span>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
 ```
 
 ## Accessibility

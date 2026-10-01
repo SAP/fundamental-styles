@@ -155,7 +155,7 @@ npm install fundamental-styles
 
 | Class | Description |
 |-------|-------------|
-| `fd-micro-process-flow--independent-steps` | Style variant |
+| `fd-micro-process-flow--independent-steps` | Add the `.fd-micro-process-flow--independent-steps` modifier class to `.fd-micro-process-flow` class to remove the connector line. |
 
 ## BEM Elements
 
@@ -270,7 +270,7 @@ Key CSS variables used by this component:
 
 ### Micro process flow with independent steps
 
-Add the \
+Add the `.fd-micro-process-flow--independent-steps` modifier class to `.fd-micro-process-flow` class to remove the connector line.
 
 ```html
 <div class="fd-micro-process-flow fd-micro-process-flow--independent-steps">
@@ -521,160 +521,159 @@ Information displayed in micro flow process items can be extended by adding popo
                 <div class="fd-micro-process-flow__content">
                     <div class="fd-micro-process-flow__content-wrapper">
                         <div class="fd-popover">
-                            <div class="fd-micro-process-flow__icon-container fd-micro-process-flow__focusable-item fd-popover__control" tabindex="0" aria-controls="popoverMPF1" aria-expanded="true" aria-haspopup="true" onclick="onPopoverClick('popoverMPF1');">
-                                <div class="fd-popover__body" aria-hidden="false" id="popoverMPF1">
-                                    <nav class="fd-menu" aria-label="options">
-                                        <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                            <li class="fd-menu__item">
-                                                <a class="fd-menu__link" href="#">
-                                                    <span class="fd-menu__title">Option 1</span>
-                                                </a>
-                                            </li>
-                                            <li class="fd-menu__item">
-                                                <a class="fd-menu__link" href="#">
-                                                    <span class="fd-menu__title">Option 2</span>
-                                                </a>
-                                            </li>
-                                            <li class="fd-menu__item">
-                                                <a class="fd-menu__link" href="#">
-                                                    <span class="fd-menu__title">Option 3</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
+
+                            <div class="fd-popover__body" aria-hidden="false" id="popoverMPF1">
+                                <nav class="fd-menu" aria-label="options">
+                                    <ul class="fd-menu__list fd-menu__list--no-shadow">
+                                        <li class="fd-menu__item">
+                                            <a class="fd-menu__link" href="#">
+                                                <span class="fd-menu__title">Option 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="fd-menu__item">
+                                            <a class="fd-menu__link" href="#">
+                                                <span class="fd-menu__title">Option 2</span>
+                                            </a>
+                                        </li>
+                                        <li class="fd-menu__item">
+                                            <a class="fd-menu__link" href="#">
+                                                <span class="fd-menu__title">Option 3</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
-                <div class="fd-micro-process-flow__item fd-micro-process-flow__item--positive">
-                    <div class="fd-micro-process-flow__content">
-                        <div class="fd-micro-process-flow__content-wrapper">
-                            <div class="fd-popover">
-                                <div class="fd-micro-process-flow__icon-container fd-micro-process-flow__focusable-item fd-popover__control" tabindex="0" aria-controls="popoverMPF2" aria-expanded="false" aria-haspopup="false" onclick="onPopoverClick('popoverMPF2');">
-                                    <i class="fd-micro-process-flow__icon sap-icon--pending" role="presentation"></i>
-                                </div>
-                                <div class="fd-popover__body" aria-hidden="true" id="popoverMPF2">
-                                    <nav class="fd-menu" aria-label="options">
-                                        <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                            <li class="fd-menu__item">
-                                                <a class="fd-menu__link" href="#">
-                                                    <span class="fd-menu__title">Option 1</span>
-                                                </a>
-                                            </li>
-                                            <li class="fd-menu__item">
-                                                <a class="fd-menu__link" href="#">
-                                                    <span class="fd-menu__title">Option 2</span>
-                                                </a>
-                                            </li>
-                                            <li class="fd-menu__item">
-                                                <a class="fd-menu__link" href="#">
-                                                    <span class="fd-menu__title">Option 3</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
+            </div>
+            <div class="fd-micro-process-flow__item fd-micro-process-flow__item--positive">
+                <div class="fd-micro-process-flow__content">
+                    <div class="fd-micro-process-flow__content-wrapper">
+                        <div class="fd-popover">
+                            <div class="fd-micro-process-flow__icon-container fd-micro-process-flow__focusable-item fd-popover__control" tabindex="0" aria-controls="popoverMPF2" aria-expanded="false" aria-haspopup="false" onclick="onPopoverClick('popoverMPF2');">
+                                <i class="fd-micro-process-flow__icon sap-icon--pending" role="presentation"></i>
+                            </div>
+                            <div class="fd-popover__body" aria-hidden="true" id="popoverMPF2">
+                                <nav class="fd-menu" aria-label="options">
+                                    <ul class="fd-menu__list fd-menu__list--no-shadow">
+                                        <li class="fd-menu__item">
+                                            <a class="fd-menu__link" href="#">
+                                                <span class="fd-menu__title">Option 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="fd-menu__item">
+                                            <a class="fd-menu__link" href="#">
+                                                <span class="fd-menu__title">Option 2</span>
+                                            </a>
+                                        </li>
+                                        <li class="fd-menu__item">
+                                            <a class="fd-menu__link" href="#">
+                                                <span class="fd-menu__title">Option 3</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
-                <div class="fd-micro-process-flow__item fd-micro-process-flow__item--information">
-                    <div class="fd-micro-process-flow__content">
-                        <div class="fd-micro-process-flow__content-wrapper">
-                            <div class="fd-popover">
-                                <div class="fd-micro-process-flow__icon-container fd-micro-process-flow__focusable-item fd-popover__control" tabindex="0" aria-controls="popoverMPF3" aria-expanded="false" aria-haspopup="false" onclick="onPopoverClick('popoverMPF3');">
-                                    <i class="fd-micro-process-flow__icon sap-icon--phone" role="presentation"></i>
-                                </div>
-                                <div class="fd-popover__body" aria-hidden="true" id="popoverMPF3">
-                                    <nav class="fd-menu" aria-label="options">
-                                        <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                            <li class="fd-menu__item">
-                                                <a class="fd-menu__link" href="#">
-                                                    <span class="fd-menu__title">Option 1</span>
-                                                </a>
-                                            </li>
-                                            <li class="fd-menu__item">
-                                                <a class="fd-menu__link" href="#">
-                                                    <span class="fd-menu__title">Option 2</span>
-                                                </a>
-                                            </li>
-                                            <li class="fd-menu__item">
-                                                <a class="fd-menu__link" href="#">
-                                                    <span class="fd-menu__title">Option 3</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
+            </div>
+            <div class="fd-micro-process-flow__item fd-micro-process-flow__item--information">
+                <div class="fd-micro-process-flow__content">
+                    <div class="fd-micro-process-flow__content-wrapper">
+                        <div class="fd-popover">
+                            <div class="fd-micro-process-flow__icon-container fd-micro-process-flow__focusable-item fd-popover__control" tabindex="0" aria-controls="popoverMPF3" aria-expanded="false" aria-haspopup="false" onclick="onPopoverClick('popoverMPF3');">
+                                <i class="fd-micro-process-flow__icon sap-icon--phone" role="presentation"></i>
+                            </div>
+                            <div class="fd-popover__body" aria-hidden="true" id="popoverMPF3">
+                                <nav class="fd-menu" aria-label="options">
+                                    <ul class="fd-menu__list fd-menu__list--no-shadow">
+                                        <li class="fd-menu__item">
+                                            <a class="fd-menu__link" href="#">
+                                                <span class="fd-menu__title">Option 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="fd-menu__item">
+                                            <a class="fd-menu__link" href="#">
+                                                <span class="fd-menu__title">Option 2</span>
+                                            </a>
+                                        </li>
+                                        <li class="fd-menu__item">
+                                            <a class="fd-menu__link" href="#">
+                                                <span class="fd-menu__title">Option 3</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
-                <div class="fd-micro-process-flow__item fd-micro-process-flow__item--negative">
-                    <div class="fd-micro-process-flow__content">
-                        <div class="fd-micro-process-flow__content-wrapper">
-                            <div class="fd-popover">
-                                <div class="fd-micro-process-flow__icon-container fd-micro-process-flow__focusable-item fd-popover__control" tabindex="0" aria-controls="popoverMPF4" aria-expanded="false" aria-haspopup="false" onclick="onPopoverClick('popoverMPF4');">
-                                    <i class="fd-micro-process-flow__icon sap-icon--map" role="presentation"></i>
-                                </div>
-                                <div class="fd-popover__body" aria-hidden="true" id="popoverMPF4">
-                                    <nav class="fd-menu" aria-label="options">
-                                        <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                            <li class="fd-menu__item">
-                                                <a class="fd-menu__link" href="#">
-                                                    <span class="fd-menu__title">Option 1</span>
-                                                </a>
-                                            </li>
-                                            <li class="fd-menu__item">
-                                                <a class="fd-menu__link" href="#">
-                                                    <span class="fd-menu__title">Option 2</span>
-                                                </a>
-                                            </li>
-                                            <li class="fd-menu__item">
-                                                <a class="fd-menu__link" href="#">
-                                                    <span class="fd-menu__title">Option 3</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
+            </div>
+            <div class="fd-micro-process-flow__item fd-micro-process-flow__item--negative">
+                <div class="fd-micro-process-flow__content">
+                    <div class="fd-micro-process-flow__content-wrapper">
+                        <div class="fd-popover">
+                            <div class="fd-micro-process-flow__icon-container fd-micro-process-flow__focusable-item fd-popover__control" tabindex="0" aria-controls="popoverMPF4" aria-expanded="false" aria-haspopup="false" onclick="onPopoverClick('popoverMPF4');">
+                                <i class="fd-micro-process-flow__icon sap-icon--map" role="presentation"></i>
+                            </div>
+                            <div class="fd-popover__body" aria-hidden="true" id="popoverMPF4">
+                                <nav class="fd-menu" aria-label="options">
+                                    <ul class="fd-menu__list fd-menu__list--no-shadow">
+                                        <li class="fd-menu__item">
+                                            <a class="fd-menu__link" href="#">
+                                                <span class="fd-menu__title">Option 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="fd-menu__item">
+                                            <a class="fd-menu__link" href="#">
+                                                <span class="fd-menu__title">Option 2</span>
+                                            </a>
+                                        </li>
+                                        <li class="fd-menu__item">
+                                            <a class="fd-menu__link" href="#">
+                                                <span class="fd-menu__title">Option 3</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
-                <div class="fd-micro-process-flow__item fd-micro-process-flow__item--critical">
-                    <div class="fd-micro-process-flow__content">
-                        <div class="fd-micro-process-flow__content-wrapper">
-                            <div class="fd-popover">
-                                <div class="fd-micro-process-flow__icon-container fd-micro-process-flow__focusable-item fd-popover__control" tabindex="0" aria-controls="popoverMPF5" aria-expanded="false" aria-haspopup="false" onclick="onPopoverClick('popoverMPF5');">
-                                    <i class="fd-micro-process-flow__icon sap-icon--log" role="presentation"></i>
-                                </div>
-                                <div class="fd-popover__body" aria-hidden="true" id="popoverMPF5">
-                                    <nav class="fd-menu" aria-label="options">
-                                        <ul class="fd-menu__list fd-menu__list--no-shadow">
-                                            <li class="fd-menu__item">
-                                                <a class="fd-menu__link" href="#">
-                                                    <span class="fd-menu__title">Option 1</span>
-                                                </a>
-                                            </li>
-                                            <li class="fd-menu__item">
-                                                <a class="fd-menu__link" href="#">
-                                                    <span class="fd-menu__title">Option 2</span>
-                                                </a>
-                                            </li>
-                                            <li class="fd-menu__item">
-                                                <a class="fd-menu__link" href="#">
-                                                    <span class="fd-menu__title">Option 3</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
+            </div>
+            <div class="fd-micro-process-flow__item fd-micro-process-flow__item--critical">
+                <div class="fd-micro-process-flow__content">
+                    <div class="fd-micro-process-flow__content-wrapper">
+                        <div class="fd-popover">
+                            <div class="fd-micro-process-flow__icon-container fd-micro-process-flow__focusable-item fd-popover__control" tabindex="0" aria-controls="popoverMPF5" aria-expanded="false" aria-haspopup="false" onclick="onPopoverClick('popoverMPF5');">
+                                <i class="fd-micro-process-flow__icon sap-icon--log" role="presentation"></i>
+                            </div>
+                            <div class="fd-popover__body" aria-hidden="true" id="popoverMPF5">
+                                <nav class="fd-menu" aria-label="options">
+                                    <ul class="fd-menu__list fd-menu__list--no-shadow">
+                                        <li class="fd-menu__item">
+                                            <a class="fd-menu__link" href="#">
+                                                <span class="fd-menu__title">Option 1</span>
+                                            </a>
+                                        </li>
+                                        <li class="fd-menu__item">
+                                            <a class="fd-menu__link" href="#">
+                                                <span class="fd-menu__title">Option 2</span>
+                                            </a>
+                                        </li>
+                                        <li class="fd-menu__item">
+                                            <a class="fd-menu__link" href="#">
+                                                <span class="fd-menu__title">Option 3</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
@@ -921,7 +920,10 @@ Information displayed in micro flow process items can be extended by adding popo
 
 ### Micro process flow with custom node width
 
-By default, the width of the item container is calculated based on the actual item width and the connector line. To change the width add inline style to the element with \
+By default, the width of the item container is calculated based on the actual item width and the connector line. To change the width add inline style to the element with `.fd-micro-process-flow__item` class and provide value for the width.
+
+For example:
+`<div class="fd-micro-process-flow__item" style="width: 6rem;">`
 
 ```html
 <div class="fd-micro-process-flow">

@@ -69,7 +69,7 @@ Textarea can have a counter to display the number of characters entered or left 
 ```html
 <div class="fd-form-item">
     <label class="fd-form-label" for="textarea-2">Message</label>
-  
+
     <textarea
       class="fd-textarea"
       id="textarea-2"
@@ -80,7 +80,7 @@ Textarea can have a counter to display the number of characters entered or left 
       placeholder="Write something here"
       aria-labelledby="textarea-2-counter"
     ></textarea>
-  
+
     <div class="fd-textarea-counter" id="textarea-2-counter">
       200 characters left
     </div>
@@ -143,8 +143,8 @@ As with any other input component, you can validate the fields and show the resu
     <label class="fd-form-label" for="textarea-3">Success message:</label>
     <div class="fd-popover">
         <div class="fd-popover__control" aria-controls="popoverT51" aria-expanded="true" aria-haspopup="true">
-            <textarea 
-                class="fd-textarea is-success" 
+            <textarea
+                class="fd-textarea is-success"
                 rows="2"
                 id="textarea-3"
                 placeholder="Enter your message here"
@@ -166,10 +166,10 @@ As with any other input component, you can validate the fields and show the resu
     <label class="fd-form-label" for="textarea-4">Error message:</label>
     <div class="fd-popover">
         <div class="fd-popover__control" aria-controls="popoverT52" aria-expanded="true" aria-haspopup="true">
-            <textarea 
-                class="fd-textarea is-error" 
+            <textarea
+                class="fd-textarea is-error"
                 rows="2"
-                id="textarea-4" 
+                id="textarea-4"
                 placeholder="Enter your message here"
                 aria-required="false"
                 aria-invalid="true"
@@ -188,10 +188,10 @@ As with any other input component, you can validate the fields and show the resu
     <label class="fd-form-label" for="textarea-5">Warning message:</label>
     <div class="fd-popover">
         <div class="fd-popover__control" aria-controls="popoverT53" aria-expanded="true" aria-haspopup="true">
-            <textarea 
-                class="fd-textarea is-warning" 
+            <textarea
+                class="fd-textarea is-warning"
                 rows="2"
-                id="textarea-5" 
+                id="textarea-5"
                 placeholder="Enter your message here"
                 aria-required="false"
                 aria-describedby="textarea-5-message popoverT53"></textarea>
@@ -209,10 +209,10 @@ As with any other input component, you can validate the fields and show the resu
     <label class="fd-form-label" for="textarea-6">Information message:</label>
     <div class="fd-popover">
         <div class="fd-popover__control" aria-controls="popoverT54" aria-expanded="true" aria-haspopup="true">
-            <textarea 
-                class="fd-textarea is-information" 
+            <textarea
+                class="fd-textarea is-information"
                 rows="2"
-                id="textarea-6" 
+                id="textarea-6"
                 placeholder="Enter your message here"
                 aria-required="false"
                 aria-describedby="textarea-6-message popoverT54"></textarea>

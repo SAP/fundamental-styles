@@ -210,6 +210,36 @@ function extractStability(content, category, tags) {
 }
 
 /**
+ * Extract a template literal after a matching assignment prefix.
+ */
+function extractTemplateLiteral(content, prefixPattern) {
+    const prefixMatch = content.match(prefixPattern);
+    if (!prefixMatch || prefixMatch.index === undefined) return '';
+
+    let value = '';
+    const startIndex = prefixMatch.index + prefixMatch[0].length;
+
+    for (let index = startIndex; index < content.length; index++) {
+        const character = content[index];
+
+        if (character === '`') {
+            return value.trim();
+        }
+
+        if (character === '\\' && index + 1 < content.length) {
+            const escapedCharacter = content[index + 1];
+            value += escapedCharacter === '`' ? '`' : character + escapedCharacter;
+            index++;
+            continue;
+        }
+
+        value += character;
+    }
+
+    return '';
+}
+
+/**
  * Parse a story file and extract component information
  */
 function parseStoryFile(filePath) {
@@ -230,8 +260,7 @@ function parseStoryFile(filePath) {
     const title = titleMatch ? titleMatch[1] : fileName;
 
     // Extract main description from parameters
-    const descriptionMatch = content.match(/description:\s*`([^`]+)`/s);
-    const description = descriptionMatch ? descriptionMatch[1].trim() : '';
+    const description = extractTemplateLiteral(content, /description:\s*`/);
 
     // Extract tags from parameters
     const tags = [];
@@ -308,12 +337,10 @@ function parseStoryFile(filePath) {
         const storyName = storyNameMatch ? storyNameMatch[1] : exportName;
 
         // Find description (try backtick format first)
-        const descRegex = new RegExp(
-            `${exportName}\\.parameters = \\{[^}]*docs:\\s*\\{[^}]*description:\\s*\\{[^}]*story:\\s*\`([^\`]+)\``,
-            's'
+        const descPrefixRegex = new RegExp(
+            `${exportName}\\.parameters = \\{[^}]*docs:\\s*\\{[^}]*description:\\s*\\{[^}]*story:\\s*\``
         );
-        const descMatch = content.match(descRegex);
-        let storyDescription = descMatch ? descMatch[1].trim() : '';
+        let storyDescription = extractTemplateLiteral(content, descPrefixRegex);
 
         // Try single/double quote format
         if (!storyDescription) {
@@ -459,6 +486,214 @@ function parseStoryFile(filePath) {
 /**
  * Clean HTML by removing documentation-specific wrappers and markup
  */
+function* scanHTMLTokens(html) {
+    const rawTextElements = new Set(['iframe', 'noembed', 'noframes', 'script', 'style', 'textarea', 'title', 'xmp']);
+    let cursor = 0;
+    let rawTextElement = null;
+
+    while (cursor < html.length) {
+        if (rawTextElement) {
+            const closingTagRegex = new RegExp(`</\\s*${rawTextElement}\\s*>`, 'gi');
+            closingTagRegex.lastIndex = cursor;
+            const closingTagMatch = closingTagRegex.exec(html);
+            if (!closingTagMatch) {
+                return;
+            }
+
+            yield {
+                value: closingTagMatch[0],
+                index: closingTagMatch.index,
+                end: closingTagRegex.lastIndex
+            };
+            cursor = closingTagRegex.lastIndex;
+            rawTextElement = null;
+            continue;
+        }
+
+        const tokenStart = html.indexOf('<', cursor);
+        if (tokenStart < 0) {
+            return;
+        }
+
+        if (html.startsWith('<!--', tokenStart)) {
+            const commentEnd = html.indexOf('-->', tokenStart + 4);
+            if (commentEnd < 0) {
+                return;
+            }
+
+            const tokenEnd = commentEnd + 3;
+            yield { value: html.slice(tokenStart, tokenEnd), index: tokenStart, end: tokenEnd };
+            cursor = tokenEnd;
+            continue;
+        }
+
+        if (html.startsWith('<![CDATA[', tokenStart)) {
+            const cdataEnd = html.indexOf(']]>', tokenStart + 9);
+            if (cdataEnd < 0) {
+                return;
+            }
+
+            const tokenEnd = cdataEnd + 3;
+            yield { value: html.slice(tokenStart, tokenEnd), index: tokenStart, end: tokenEnd };
+            cursor = tokenEnd;
+            continue;
+        }
+
+        let tagCursor = tokenStart + 1;
+        if (html[tagCursor] === '/') {
+            tagCursor++;
+        }
+
+        const isDeclaration = html[tagCursor] === '!' || html[tagCursor] === '?';
+        if (!isDeclaration && !/[a-z]/i.test(html[tagCursor] ?? '')) {
+            cursor = tokenStart + 1;
+            continue;
+        }
+
+        let quote = null;
+        let quotedGreaterThan = -1;
+        let tokenEnd = -1;
+        for (let index = tagCursor + 1; index < html.length; index++) {
+            const character = html[index];
+            if (quote) {
+                if (character === quote) {
+                    quote = null;
+                    quotedGreaterThan = -1;
+                } else if (character === '>') {
+                    quotedGreaterThan = index;
+                } else if (character === '<' && quotedGreaterThan >= 0) {
+                    tokenEnd = quotedGreaterThan + 1;
+                    break;
+                }
+            } else if (character === '"' || character === "'") {
+                let previousIndex = index - 1;
+                while (/\s/.test(html[previousIndex] ?? '')) {
+                    previousIndex--;
+                }
+                if (html[previousIndex] === '=') {
+                    quote = character;
+                }
+            } else if (character === '>') {
+                tokenEnd = index + 1;
+                break;
+            }
+        }
+
+        if (tokenEnd < 0) {
+            return;
+        }
+
+        const value = html.slice(tokenStart, tokenEnd);
+        yield { value, index: tokenStart, end: tokenEnd };
+        cursor = tokenEnd;
+
+        const tagMatch = value.match(/^<\s*(\/?)\s*([a-z][a-z0-9:-]*)\b/i);
+        if (tagMatch && !tagMatch[1] && !/\/\s*>$/.test(value) && rawTextElements.has(tagMatch[2].toLowerCase())) {
+            rawTextElement = tagMatch[2].toLowerCase();
+        }
+    }
+}
+
+function repairHTMLStructure(html) {
+    const voidElements = new Set([
+        'area',
+        'base',
+        'br',
+        'col',
+        'embed',
+        'hr',
+        'img',
+        'input',
+        'link',
+        'meta',
+        'param',
+        'source',
+        'track',
+        'wbr'
+    ]);
+    const openTags = [];
+    let repaired = '';
+    let cursor = 0;
+
+    for (const htmlToken of scanHTMLTokens(html)) {
+        const tag = htmlToken.value;
+        const precedingContent = html.slice(cursor, htmlToken.index);
+        repaired += precedingContent;
+        cursor = htmlToken.end;
+
+        if (tag.startsWith('<!--') || tag.startsWith('<!') || tag.startsWith('<?')) {
+            repaired += tag;
+            continue;
+        }
+
+        const tagMatch = tag.match(/^<\s*(\/?)\s*([a-z][a-z0-9:-]*)\b/i);
+        if (!tagMatch) {
+            repaired += tag;
+            continue;
+        }
+
+        const tagName = tagMatch[2].toLowerCase();
+        const isClosing = Boolean(tagMatch[1]);
+        if (!isClosing) {
+            repaired += tag;
+            if (!voidElements.has(tagName) && !/\/\s*>$/.test(tag)) {
+                openTags.push(tagName);
+            }
+            continue;
+        }
+
+        const matchingOpeningIndex = openTags.lastIndexOf(tagName);
+        if (matchingOpeningIndex < 0) {
+            continue;
+        }
+
+        const lineIndent = precedingContent.match(/(?:^|\n)([ \t]*)$/)?.[1] ?? '';
+        const missingClosingTags = openTags
+            .splice(matchingOpeningIndex + 1)
+            .reverse()
+            .map((openTagName) => `</${openTagName}>`);
+        openTags.pop();
+
+        if (missingClosingTags.length > 0) {
+            repaired += `${missingClosingTags.join(`\n${lineIndent}`)}\n${lineIndent}`;
+        }
+        repaired += tag;
+    }
+
+    repaired += html.slice(cursor);
+    if (openTags.length > 0) {
+        const missingClosingTags = openTags.reverse().map((tagName) => `</${tagName}>`);
+        repaired += `${repaired.endsWith('\n') ? '' : '\n'}${missingClosingTags.join('\n')}`;
+    }
+
+    return repaired;
+}
+
+function repairHTMLFences(markdown) {
+    return markdown.replace(/```html(\r?\n)([\s\S]*?)```/g, (_fence, newline, html) => {
+        const repaired = repairHTMLStructure(html.trimEnd());
+        return `\`\`\`html${newline}${repaired}${newline}\`\`\``;
+    });
+}
+
+function finalizeGeneratedMarkdown(markdown) {
+    return repairHTMLFences(markdown).replace(/[ \t]+$/gm, '');
+}
+
+function repairGeneratedHTMLFiles() {
+    fs.readdirSync(OUTPUT_DIR)
+        .filter((fileName) => fileName.endsWith('.md'))
+        .forEach((fileName) => {
+            const filePath = path.join(OUTPUT_DIR, fileName);
+            const content = fs.readFileSync(filePath, 'utf-8');
+            const repaired = finalizeGeneratedMarkdown(content);
+            if (repaired !== content) {
+                fs.writeFileSync(filePath, repaired);
+                console.log(`  ✅ Repaired HTML: docs/components/${fileName}\n`);
+            }
+        });
+}
+
 function cleanHTML(html) {
     let cleaned = html;
 
@@ -472,10 +707,46 @@ function cleanHTML(html) {
     // Remove <br> tags used for spacing in demos
     cleaned = cleaned.replace(/<br\s*\/?>\s*/g, '');
 
+    // Remove inline-style-only demo wrappers and their matching closing tags.
+    const divStack = [];
+    const wrapperRanges = [];
+
+    for (const htmlToken of scanHTMLTokens(cleaned)) {
+        const tag = htmlToken.value;
+        const tagMatch = tag.match(/^<\s*(\/?)\s*([a-z][a-z0-9:-]*)\b/i);
+        if (!tagMatch || tagMatch[2].toLowerCase() !== 'div') {
+            continue;
+        }
+
+        if (tagMatch[1]) {
+            const openingTag = divStack.pop();
+            if (openingTag?.isWrapper) {
+                wrapperRanges.push([openingTag.start, openingTag.end], [htmlToken.index, htmlToken.end]);
+            }
+        } else if (!/\/\s*>$/.test(tag)) {
+            divStack.push({
+                start: htmlToken.index,
+                end: htmlToken.end,
+                isWrapper: /^<div\s+style\s*=\s*(?:"[^"]*"|'[^']*')\s*>$/i.test(tag)
+            });
+        }
+    }
+
+    divStack.forEach((openingTag) => {
+        if (openingTag.isWrapper) {
+            wrapperRanges.push([openingTag.start, openingTag.end]);
+        }
+    });
+
+    wrapperRanges
+        .sort((a, b) => b[0] - a[0])
+        .forEach(([start, end]) => {
+            cleaned = cleaned.slice(0, start) + cleaned.slice(end);
+        });
+
     // Split into lines for more granular processing
     const lines = cleaned.split('\n');
     const processedLines = [];
-    let skipDepth = 0;
 
     for (let i = 0; i < lines.length; i++) {
         const line = lines[i];
@@ -501,18 +772,6 @@ function cleanHTML(html) {
                 /^<p[^>]*>(?:Default state:|Inactive state:|Active state:|hover|active|focus|disabled|normal|selected):?<\/p>$/i
             )
         ) {
-            continue;
-        }
-
-        // Skip div wrappers with only inline styles (demo layout divs)
-        if (trimmed.match(/^<div\s+style="[^"]*">\s*$/)) {
-            skipDepth++;
-            continue;
-        }
-
-        // Track depth and skip corresponding closing divs
-        if (skipDepth > 0 && trimmed === '</div>') {
-            skipDepth--;
             continue;
         }
 
@@ -548,28 +807,7 @@ function cleanHTML(html) {
 
     // Post-processing cleanup
 
-    // Remove orphaned closing divs (ones that don't have matching opening)
-    let divDepth = 0;
-    const finalLines = cleaned.split('\n').filter((line) => {
-        const trimmed = line.trim();
-
-        // Track div depth
-        const openDivs = (line.match(/<div[^>]*>/g) || []).length;
-        const closeDivs = (line.match(/<\/div>/g) || []).length;
-
-        divDepth += openDivs;
-        divDepth -= closeDivs;
-
-        // Remove lines that are just a closing div and would make depth negative
-        if (trimmed === '</div>' && divDepth < 0) {
-            divDepth = 0; // Reset
-            return false;
-        }
-
-        return true;
-    });
-
-    cleaned = finalLines.join('\n');
+    cleaned = repairHTMLStructure(cleaned);
 
     // Remove empty divs
     cleaned = cleaned.replace(/<div[^>]*>\s*<\/div>/g, '');
@@ -875,7 +1113,7 @@ This documentation was automatically generated from: \`${sourcePath}\`
 For the latest updates and interactive examples, see [Storybook](https://sap.github.io/fundamental-styles/).
 `;
 
-    return md;
+    return finalizeGeneratedMarkdown(md);
 }
 
 /**
@@ -1003,6 +1241,7 @@ function extractAllDocs() {
 
     // Generate index file
     generateIndexFile(components);
+    repairGeneratedHTMLFiles();
 
     console.log('\n' + '='.repeat(60));
     console.log(`✨ Extraction complete!`);

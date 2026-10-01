@@ -27,7 +27,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/list.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage
@@ -96,7 +95,7 @@ This component uses the following BEM elements:
 
 ### Custom List Item with Subline
 
-This list item structure is used to display accounts in the User Menu. By default, long title and subline text is truncated with an ellipsis. To allow the text to wrap across multiple lines, add the \
+This list item structure is used to display accounts in the User Menu. By default, long title and subline text is truncated with an ellipsis. To allow the text to wrap across multiple lines, add the `fd-list__title--wrap` and `fd-list__subline--wrap` modifier classes respectively.
 
 ```html
 <ul class="fd-list fd-list--subline" role="list">
@@ -140,7 +139,21 @@ This list item structure is used to display accounts in the User Menu. By defaul
 
 By default, long title and subline text is truncated with an ellipsis. Wrapping can be enabled at three levels:
 
-**List level** — add \
+**List level** — add `fd-list--wrap` to the root element to wrap all items:
+```html
+<ul class="fd-list fd-list--subline fd-list--wrap">
+</ul>
+```
+
+**Item level** — add `fd-list__item--wrap` to a single list item:
+```html
+<li class="fd-list__item fd-list__item--wrap">
+</li>
+```
+
+**Element level** — add modifier classes to individual elements:
+- `fd-list__title--wrap`
+- `fd-list__subline--wrap`
 
 ```html
 <p class="fd-form-label">Default — truncation</p>
@@ -150,9 +163,9 @@ By default, long title and subline text is truncated with an ellipsis. Wrapping 
         <div class="fd-list__content">
             <div class="fd-list__title">Annual Budget Review for Q3 and Q4 — please review the attached documents and provide your feedback before the end of the fiscal quarter to ensure timely processing.</div>
             <div class="fd-list__subline">Finance · Updated 2 hours ago by Michael Thompson, Senior Analyst, Global Finance Division · Reviewed by Anna Schmidt · Pending CFO approval</div>
-        </li>
-    </ul>
-</div>
+        </div>
+    </li>
+</ul>
 
 <p class="fd-form-label">List level — <code>fd-list--wrap</code></p>
 <ul class="fd-list fd-list--subline fd-list--wrap" role="list">
@@ -161,9 +174,9 @@ By default, long title and subline text is truncated with an ellipsis. Wrapping 
         <div class="fd-list__content">
             <div class="fd-list__title">All titles wrap at list level, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo?</div>
             <div class="fd-list__subline">All sublines wrap too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque amet minima perferendis.</div>
-        </li>
-    </ul>
-</div>
+        </div>
+    </li>
+</ul>
 
 <p class="fd-form-label">Item level — <code>fd-list__item--wrap</code> (collapsed and expanded states)</p>
 <!-- The fd-list__link--more element is placed outside fd-list__title so it stays
@@ -175,16 +188,16 @@ visible even when the title truncates. -->
             <div class="fd-list__title">Collapsed — title truncated, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo?</div>
             <a href="#" class="fd-link fd-list__link--more" aria-expanded="false" tabindex="0"><span class="fd-link__content">More</span></a>
             <div class="fd-list__subline">Subline truncated, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque.</div>
-        </li>
-        <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive fd-list__item--wrap">
-            <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" role="img" aria-label="John Doe">JD</span>
-            <div class="fd-list__content">
-                <div class="fd-list__title">Expanded — fd-list__item--wrap applied, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo? <a href="#" class="fd-link fd-list__link--more" aria-expanded="true" tabindex="0"><span class="fd-link__content">Less</span></a></div>
-                <div class="fd-list__subline">Subline wraps too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque amet minima perferendis.</div>
-            </div>
-        </li>
-    </ul>
-</div>
+        </div>
+    </li>
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive fd-list__item--wrap">
+        <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" role="img" aria-label="John Doe">JD</span>
+        <div class="fd-list__content">
+            <div class="fd-list__title">Expanded — fd-list__item--wrap applied, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo? <a href="#" class="fd-link fd-list__link--more" aria-expanded="true" tabindex="0"><span class="fd-link__content">Less</span></a></div>
+            <div class="fd-list__subline">Subline wraps too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque amet minima perferendis.</div>
+        </div>
+    </li>
+</ul>
 
 <div>
     <p class="fd-form-label">Element level — <code>fd-list__title--wrap</code> / <code>fd-list__subline--wrap</code></p>

@@ -2,8 +2,8 @@
 component: padding
 title: Padding
 category: padding
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/common-css/stories/padding/padding.stories.js
 tags: []
 dependencies: []

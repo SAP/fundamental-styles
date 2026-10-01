@@ -28,7 +28,36 @@ The Icon Tab Bar can be used for navigation within an object, or as a filter. Ea
 - You plan to use only a single tab.
 
 ##Semantic colors
-Only use semantic colors if it is important for users to know that they need to take action (for example, to indicate errors or critical situations requiring action). Otherwise, use the neutral default colors. To add semantic color to a tab use a modifier class from the table below on \
+Only use semantic colors if it is important for users to know that they need to take action (for example, to indicate errors or critical situations requiring action). Otherwise, use the neutral default colors. To add semantic color to a tab use a modifier class from the table below on `fd-icon-tab-bar__item` level.
+
+| **Color** | **Modifier class** |
+| :--------- | :---------- |
+| positive &nbsp;&nbsp; | `fd-icon-tab-bar__item--positive` |
+| negative &nbsp;&nbsp; | `fd-icon-tab-bar__item--negative` |
+| critical &nbsp;&nbsp; | `fd-icon-tab-bar__item--critical` |
+| informative &nbsp;&nbsp; | `fd-icon-tab-bar__item--informative` |
+
+##Horizontal paddings
+You can add horizontal paddings by applying a modifier class to the container. For responsive horizontal paddings (based on the screen size) add the `fd-icon-tab-bar--responsive-paddings` modifier class. In this case the left and right spacing will change as the screen size changes.
+
+| **Size** | **Modifier class** |
+| :--------- | :---------- |
+| sm (1rem) &nbsp;&nbsp; | `fd-icon-tab-bar--sm` |
+| md (2rem) &nbsp;&nbsp; | `fd-icon-tab-bar--md` |
+| lg (2rem) &nbsp;&nbsp; | `fd-icon-tab-bar--lg` |
+| xl (3rem) &nbsp;&nbsp; | `fd-icon-tab-bar--xl` |
+| xxl (3rem) &nbsp;&nbsp; | `fd-icon-tab-bar--xxl` |
+
+##Background
+By default, the background for the Icon Tab Bar header and content is set to "solid". This will apply `--sapObjectHeader_Background` background color and `--sapContent_HeaderShadow` box-shadow to the header and `--sapBackgroundColor` to the container (panel). It can be changed to "translucent" or "transparent" using modifier classes. In translucent mode the header gets `--sapObjectHeader_Background` background color and the panel `--sapGroup_ContentBackground` background color.
+
+| **Background** | **Modifier class** |
+| :--------- | :---------- |
+| solid &nbsp;&nbsp; | default |
+| translucent &nbsp;&nbsp; | `fd-icon-tab-bar--translucent` |
+| transparent &nbsp;&nbsp; | `fd-icon-tab-bar--transparent` |
+
+<br><br><br>
 
 ## Usage Guidelines
 
@@ -120,7 +149,7 @@ npm install fundamental-styles
 | `fd-icon-tab-bar--lg` | Style variant |
 | `fd-icon-tab-bar--md` | Style variant |
 | `fd-icon-tab-bar--navigation` | The Navigation Tab Bar is the main/default navigation displayed on the SAP launchpad home page |
-| `fd-icon-tab-bar--navigation-flat` | Style variant |
+| `fd-icon-tab-bar--navigation-flat` | The Flat Navigation offers the user an easy access to multiple pages per space |
 | `fd-icon-tab-bar--process` | You can also use the tab bar to depict a process |
 | `fd-icon-tab-bar--responsive-paddings` | For an Icon Tab Bar with responsive paddings that adjust based on the screen size add the `fd-icon-tab-bar--responsive-paddings` modifier class. |
 | `fd-icon-tab-bar--sm` | The text-only variant is one of the most common types |
@@ -657,7 +686,7 @@ You can also use the tab bar to depict a process. In this case, each tab stands 
 
 ### Filter
 
-The tab bar as a filter has two parts: <br>- An “all” tab on the left - shows the total number of items, and describes the type of item (for example, 189 Products).<br>-  Tabs for specific filters - the tab text indicates the filter attribute. It is recommended to show a counter on every tab.<br>You need to add the \
+The tab bar as a filter has two parts: <br>- An “all” tab on the left - shows the total number of items, and describes the type of item (for example, 189 Products).<br>-  Tabs for specific filters - the tab text indicates the filter attribute. It is recommended to show a counter on every tab.<br>You need to add the `fd-icon-tab-bar--filter` modifier class for this type of tabs.
 
 ```html
 <div class="fd-icon-tab-bar fd-icon-tab-bar--filter">
@@ -761,6 +790,7 @@ Tabs can have an overflow to either sides of the control. Depending on if the or
 
 ```html
 <h3>Regular</h3>
+
 <button class="fd-icon-tab-bar__overflow">
     <span class="fd-icon-tab-bar__overflow-text">+2</span>
     <i class="sap-icon--slim-arrow-down" role="presentation"></i>
@@ -875,7 +905,7 @@ Tabs can have an overflow to either sides of the control. Depending on if the or
 
 ### Universal Icon Tab Bar Single Click Area
 
-When there is only one click area per tab (also including tabs with sub-items), regular tabs get selected immediately after the click is released. Tabs with sub-items trigger the expansion of a menu (Popover) showing its sub-items. The parent tab title remains displayed when its child is select.<br>You need to apply the \
+When there is only one click area per tab (also including tabs with sub-items), regular tabs get selected immediately after the click is released. Tabs with sub-items trigger the expansion of a menu (Popover) showing its sub-items. The parent tab title remains displayed when its child is select.<br>You need to apply the `fd-icon-tab-bar__item--single-click` modifier class to `fd-icon-tab-bar__item` element. The List component inside the Popover has an additional modifier class `fd-icon-tab-bar__list` to achieve the nesting (indentation) of the elements. The list menu can be borderless, with line separators (`fd-icon-tab-bar__line-separator`) or icon separators (`fd-icon-tab-bar__icon-separator`)
 
 ```html
 <div class='fddocs-icon-tab-container'>
@@ -1295,7 +1325,7 @@ In case of two click areas for tabs with sub-tabs, the behaviour for regular tab
 
 ### Badges
 
-The Tab attention badge is applied as a visual eye-catcher to indicate a change within a Tab. <br>The badge is a span element with \
+The Tab attention badge is applied as a visual eye-catcher to indicate a change within a Tab. <br>The badge is a span element with `fd-icon-tab-bar__badge` class. It can be animated by adding an additional ` fd-icon-tab-bar__badge--animated` modifier class. In this case the badge appears for a few milliseconds and then disappears.
 
 ```html
 <div class="fd-icon-tab-bar">
@@ -1741,7 +1771,7 @@ The Navigation Tab Bar is the main/default navigation displayed on the SAP launc
 
 ### Flat Navigation
 
-The Flat Navigation offers the user an easy access to multiple pages per space. As the ShellNavigation (Fiori 3), the Flat Navigation is the main/default navigation displayed on the SAP Fiori launchpad home page. It snaps to top and remains visible while scrolling and is not visible in App view. <br>The Flat Navigation Concept allows putting all entities of a single space directly into the first level of the Top Level Navigation Bar for direct access. <br>Add the \
+The Flat Navigation offers the user an easy access to multiple pages per space. As the ShellNavigation (Fiori 3), the Flat Navigation is the main/default navigation displayed on the SAP Fiori launchpad home page. It snaps to top and remains visible while scrolling and is not visible in App view. <br>The Flat Navigation Concept allows putting all entities of a single space directly into the first level of the Top Level Navigation Bar for direct access. <br>Add the `.fd-icon-tab-bar--navigation-flat` modifier class to `.fd-icon-tab-bar.fd-icon-tab-bar--navigation` to achieve the flat navigation look and feel. <br>The items that have separators need to receive the `.fd-icon-tab-bar__item--with-separator` modifier class to `.fd-icon-tab-bar__item` class. This will append a vertical separator line on the right hand side of the item with an 1rem offset.
 
 ```html
 <div class="fd-icon-tab-bar fd-icon-tab-bar--navigation fd-icon-tab-bar--navigation-flat fd-icon-tab-bar--md">
@@ -1782,8 +1812,11 @@ The Flat Navigation offers the user an easy access to multiple pages per space. 
 
 ### Tabs drag and drop
 
-You can allow users to rearrange the tab order. If this feature is enabled, users can drag and drop tabs to reorder them, either directly on the tab bar or inside the overflow menu. It is also possible to drag and drop tabs from the tab bar to the overflow menu and vice versa. <br>There're 4 classes for drag and drop: 
-<br>use \
+You can allow users to rearrange the tab order. If this feature is enabled, users can drag and drop tabs to reorder them, either directly on the tab bar or inside the overflow menu. It is also possible to drag and drop tabs from the tab bar to the overflow menu and vice versa. <br>There're 4 classes for drag and drop:
+<br>use `fd-icon-tab-bar__item--dnd-preview` to indicate the element that is being dragged;
+<br>use `fd-icon-tab-bar__item--dnd-hovered` when dragging over an item. This class indicates that tab, that is being dragged, can be inserted into the current one;
+<br>`fd-icon-tab-bar__item--dnd-separator` adds a visual indicator before the tab, to which is applied, when element that is being dragged can be insterted before particular one. When used with the subtab, separator will be vertical;<br>
+`fd-icon-tab-bar__item--dnd-separator-end` - same as above. Being applied after the tab, to which is applied.
 
 ```html
 <div class="fd-icon-tab-bar">
@@ -2042,7 +2075,7 @@ You can allow users to rearrange the tab order. If this feature is enabled, user
 
 ### Closable Tabs
 
-For closable tabs add the \
+For closable tabs add the `.fd-icon-tab-bar__item--closable` modifier class to the `.fd-icon-tab-bar__item`. The close button is placed inside a button container, responsible for the proper spacing between the elements.<br>Closable tabs can also be moved into the overflow. There the close button remains shown for each tab. The modifier class in this case is `.fd-icon-tab-bar__list-item--closable` added to the list item with base class `.fd-icon-tab-bar__list-item`.
 
 ```html
 <h4>Text Only</h4>
@@ -2358,251 +2391,253 @@ For closable tabs add the \
             </div>
         </li>
     </ul>
+</div>
 
-    <h4>Multi Click Area</h4>
-    <div class="fd-icon-tab-bar">
-        <ul role="tablist" class="fd-icon-tab-bar__header">
-            <li
-                role="presentation"
-                class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click fd-icon-tab-bar__item--closable"
-                >
-                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab1multi">
-                    <span class="fd-icon-tab-bar__tag">Section 1</span>
-                </a>
-                <div class="fd-popover fd-icon-tab-bar__popover">
-                    <div class="fd-popover__control">
-                        <div class="fd-icon-tab-bar__button-container">
-                            <button class="fd-button fd-button--transparent fd-icon-tab-bar__button">
-                                <i class="sap-icon--slim-arrow-down"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="fd-icon-tab-bar__button-container">
-                    <button class="fd-button fd-button--transparent fd-icon-tab-bar__button" aria-label="close tab">
-                        <i class="sap-icon--decline"></i>
-                    </button>
-                </div>
-            </li>
-            <li
-                role="presentation"
-                class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click fd-icon-tab-bar__item--closable"
-                >
-                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab3multi">
-                    <span class="fd-icon-tab-bar__tag">Section 2</span>
-                </a>
-                <div class="fd-popover fd-icon-tab-bar__popover">
-                    <div class="fd-popover__control">
-                        <div class="fd-icon-tab-bar__button-container">
-                            <button class="fd-button fd-button--transparent fd-icon-tab-bar__button">
-                                <i class="sap-icon--slim-arrow-down"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="fd-icon-tab-bar__button-container">
-                    <button class="fd-button fd-button--transparent fd-icon-tab-bar__button" aria-label="close tab">
-                        <i class="sap-icon--decline"></i>
-                    </button>
-                </div>
-            </li>
-            <li
-                role="presentation"
-                class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click fd-icon-tab-bar__item--closable"
-                >
-                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab3multi" aria-selected="true">
-                    <span class="fd-icon-tab-bar__tag">Section 3</span>
-                </a>
-                <div class="fd-popover fd-icon-tab-bar__popover">
-                    <div class="fd-popover__control">
-                        <div class="fd-icon-tab-bar__button-container">
-                            <button class="fd-button fd-button--transparent fd-icon-tab-bar__button">
-                                <i class="sap-icon--slim-arrow-down"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="fd-icon-tab-bar__button-container">
-                    <button class="fd-button fd-button--transparent fd-icon-tab-bar__button" aria-label="close tab">
-                        <i class="sap-icon--decline"></i>
-                    </button>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-    <h4>Overflow</h4>
-
-    <div class="fd-icon-tab-bar fd-icon-tab-bar--icon">
-        <ul role="tablist" class="fd-icon-tab-bar__header">
-            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--closable">
-                <a role="tab" class="fd-icon-tab-bar__tab" href="#" aria-selected="true" id="1">
-                    <div class="fd-icon-tab-bar__container">
-                        <span class="fd-icon-tab-bar__icon">
-                            <i class="sap-icon--filter" role="presentation"></i>
-                        </span>
-                    </div>
-                    <div class="fd-icon-tab-bar__details">
-                        <span class="fd-icon-tab-bar__label">Description</span>
-                    </div>
-                </a>
-                <div class="fd-icon-tab-bar__button-container">
-                    <button class="fd-button fd-button--transparent fd-icon-tab-bar__button" aria-label="close tab">
-                        <i class="sap-icon--decline"></i>
-                    </button>
-                </div>
-            </li>
-            <li
-                role="presentation"
-                class="fd-icon-tab-bar__item fd-icon-tab-bar__item--positive fd-icon-tab-bar__item--closable"
-                >
-                <a role="tab" class="fd-icon-tab-bar__tab" href="#" aria-selected="true" id="tab7">
-                    <div class="fd-icon-tab-bar__container">
-                        <span class="fd-icon-tab-bar__icon">
-                            <i class="sap-icon--play" role="presentation"></i>
-                        </span>
-                    </div>
-                    <div class="fd-icon-tab-bar__details">
-                        <span class="fd-icon-tab-bar__counter">2</span>
-                        <span class="fd-icon-tab-bar__label">Description</span>
-                    </div>
-                </a>
-                <div class="fd-icon-tab-bar__button-container">
-                    <button class="fd-button fd-button--transparent fd-icon-tab-bar__button" aria-label="close tab">
-                        <i class="sap-icon--decline"></i>
-                    </button>
-                </div>
-            </li>
-            <li
-                role="presentation"
-                class="fd-icon-tab-bar__item fd-icon-tab-bar__item--negative fd-icon-tab-bar__item--closable"
-                >
-                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab8">
-                    <div class="fd-icon-tab-bar__container">
-                        <span class="fd-icon-tab-bar__icon">
-                            <i class="sap-icon--unfavorite" role="presentation"></i>
-                        </span>
-                    </div>
-                    <div class="fd-icon-tab-bar__details">
-                        <span class="fd-icon-tab-bar__counter">2</span>
-                        <span class="fd-icon-tab-bar__label">Description</span>
-                    </div>
-                </a>
-                <div class="fd-icon-tab-bar__button-container">
-                    <button class="fd-button fd-button--transparent fd-icon-tab-bar__button" aria-label="close tab">
-                        <i class="sap-icon--decline"></i>
-                    </button>
-                </div>
-            </li>
-            <li
-                role="presentation"
-                class="fd-icon-tab-bar__item fd-icon-tab-bar__item--critical fd-icon-tab-bar__item--closable"
-                >
-                <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab9">
-                    <div class="fd-icon-tab-bar__container">
-                        <span class="fd-icon-tab-bar__icon">
-                            <i class="sap-icon--shipping-status" role="presentation"></i>
-                        </span>
-                    </div>
-                    <div class="fd-icon-tab-bar__details">
-                        <span class="fd-icon-tab-bar__counter">2</span>
-                        <span class="fd-icon-tab-bar__label">Description</span>
-                    </div>
-                </a>
-                <div class="fd-icon-tab-bar__button-container">
-                    <button class="fd-button fd-button--transparent fd-icon-tab-bar__button" aria-label="close tab">
-                        <i class="sap-icon--decline"></i>
-                    </button>
-                </div>
-            </li>
-
-            <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        <button class="fd-icon-tab-bar__overflow is-active">
-                            <span class="fd-icon-tab-bar__overflow-text">More</span>
-                            <i class="sap-icon--slim-arrow-down" role="presentation"></i>
+<h4>Multi Click Area</h4>
+<div class="fd-icon-tab-bar">
+    <ul role="tablist" class="fd-icon-tab-bar__header">
+        <li
+            role="presentation"
+            class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click fd-icon-tab-bar__item--closable"
+            >
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab1multi">
+                <span class="fd-icon-tab-bar__tag">Section 1</span>
+            </a>
+            <div class="fd-popover fd-icon-tab-bar__popover">
+                <div class="fd-popover__control">
+                    <div class="fd-icon-tab-bar__button-container">
+                        <button class="fd-button fd-button--transparent fd-icon-tab-bar__button">
+                            <i class="sap-icon--slim-arrow-down"></i>
                         </button>
                     </div>
-                    <div
-                        class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body"
-
-                        >
-                        <ul role="list" class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list">
-                            <li
-                                role="listitem"
-                                tabindex="-1"
-                                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__list-item--informative fd-icon-tab-bar__list-item--closable"
-                                >
-                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
-                                    <span class="fd-icon-tab-bar__list-item-icon-container">
-                                        <span class="fd-list__icon fd-icon-tab-bar__list-item-icon">
-                                            <i class="sap-icon--letter" role="presentation"></i>
-                                        </span>
-                                    </span>
-                                    <span class="fd-list__title fd-icon-tab-bar__list-item-title">Description</span>
-                                    <span class="fd-list__counter fd-icon-tab-bar__list-item-counter">(12)</span>
-                                </a>
-                                <div class="fd-icon-tab-bar__button-container">
-                                    <button
-                                        class="fd-button fd-button--transparent fd-icon-tab-bar__button"
-                                        aria-label="close tab"
-                                        >
-                                        <i class="sap-icon--decline"></i>
-                                    </button>
-                                </div>
-                            </li>
-                            <li
-                                role="listitem"
-                                tabindex="-1"
-                                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__list-item--closable"
-                                >
-                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
-                                    <span class="fd-icon-tab-bar__list-item-icon-container">
-                                        <span class="fd-list__icon fd-icon-tab-bar__list-item-icon">
-                                            <i class="sap-icon--activate" role="presentation"></i>
-                                        </span>
-                                    </span>
-                                    <span class="fd-list__title fd-icon-tab-bar__list-item-title">Description</span>
-                                    <span class="fd-list__counter fd-icon-tab-bar__list-item-counter">(227)</span>
-                                </a>
-                                <div class="fd-icon-tab-bar__button-container">
-                                    <button
-                                        class="fd-button fd-button--transparent fd-icon-tab-bar__button"
-                                        aria-label="close tab"
-                                        >
-                                        <i class="sap-icon--decline"></i>
-                                    </button>
-                                </div>
-                            </li>
-                            <li
-                                role="listitem"
-                                tabindex="-1"
-                                class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__list-item--positive fd-icon-tab-bar__list-item--closable"
-                                >
-                                <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
-                                    <span class="fd-icon-tab-bar__list-item-icon-container">
-                                        <span class="fd-list__icon fd-icon-tab-bar__list-item-icon">
-                                            <i class="sap-icon--jam" role="presentation"></i>
-                                        </span>
-                                    </span>
-                                    <span class="fd-list__title fd-icon-tab-bar__list-item-title">Description</span>
-                                    <span class="fd-list__counter fd-icon-tab-bar__list-item-counter">(0)</span>
-                                </a>
-                                <div class="fd-icon-tab-bar__button-container">
-                                    <button
-                                        class="fd-button fd-button--transparent fd-icon-tab-bar__button"
-                                        aria-label="close tab"
-                                        >
-                                        <i class="sap-icon--decline"></i>
-                                    </button>
-                                </div>
-                            </li>
-                        </ul>
+                </div>
+            </div>
+            <div class="fd-icon-tab-bar__button-container">
+                <button class="fd-button fd-button--transparent fd-icon-tab-bar__button" aria-label="close tab">
+                    <i class="sap-icon--decline"></i>
+                </button>
+            </div>
+        </li>
+        <li
+            role="presentation"
+            class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click fd-icon-tab-bar__item--closable"
+            >
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab3multi">
+                <span class="fd-icon-tab-bar__tag">Section 2</span>
+            </a>
+            <div class="fd-popover fd-icon-tab-bar__popover">
+                <div class="fd-popover__control">
+                    <div class="fd-icon-tab-bar__button-container">
+                        <button class="fd-button fd-button--transparent fd-icon-tab-bar__button">
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </button>
                     </div>
                 </div>
-            </li>
-        </ul>
+            </div>
+            <div class="fd-icon-tab-bar__button-container">
+                <button class="fd-button fd-button--transparent fd-icon-tab-bar__button" aria-label="close tab">
+                    <i class="sap-icon--decline"></i>
+                </button>
+            </div>
+        </li>
+        <li
+            role="presentation"
+            class="fd-icon-tab-bar__item fd-icon-tab-bar__item--multi-click fd-icon-tab-bar__item--closable"
+            >
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab3multi" aria-selected="true">
+                <span class="fd-icon-tab-bar__tag">Section 3</span>
+            </a>
+            <div class="fd-popover fd-icon-tab-bar__popover">
+                <div class="fd-popover__control">
+                    <div class="fd-icon-tab-bar__button-container">
+                        <button class="fd-button fd-button--transparent fd-icon-tab-bar__button">
+                            <i class="sap-icon--slim-arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="fd-icon-tab-bar__button-container">
+                <button class="fd-button fd-button--transparent fd-icon-tab-bar__button" aria-label="close tab">
+                    <i class="sap-icon--decline"></i>
+                </button>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<h4>Overflow</h4>
+
+<div class="fd-icon-tab-bar fd-icon-tab-bar--icon">
+    <ul role="tablist" class="fd-icon-tab-bar__header">
+        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--closable">
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" aria-selected="true" id="1">
+                <div class="fd-icon-tab-bar__container">
+                    <span class="fd-icon-tab-bar__icon">
+                        <i class="sap-icon--filter" role="presentation"></i>
+                    </span>
+                </div>
+                <div class="fd-icon-tab-bar__details">
+                    <span class="fd-icon-tab-bar__label">Description</span>
+                </div>
+            </a>
+            <div class="fd-icon-tab-bar__button-container">
+                <button class="fd-button fd-button--transparent fd-icon-tab-bar__button" aria-label="close tab">
+                    <i class="sap-icon--decline"></i>
+                </button>
+            </div>
+        </li>
+        <li
+            role="presentation"
+            class="fd-icon-tab-bar__item fd-icon-tab-bar__item--positive fd-icon-tab-bar__item--closable"
+            >
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" aria-selected="true" id="tab7">
+                <div class="fd-icon-tab-bar__container">
+                    <span class="fd-icon-tab-bar__icon">
+                        <i class="sap-icon--play" role="presentation"></i>
+                    </span>
+                </div>
+                <div class="fd-icon-tab-bar__details">
+                    <span class="fd-icon-tab-bar__counter">2</span>
+                    <span class="fd-icon-tab-bar__label">Description</span>
+                </div>
+            </a>
+            <div class="fd-icon-tab-bar__button-container">
+                <button class="fd-button fd-button--transparent fd-icon-tab-bar__button" aria-label="close tab">
+                    <i class="sap-icon--decline"></i>
+                </button>
+            </div>
+        </li>
+        <li
+            role="presentation"
+            class="fd-icon-tab-bar__item fd-icon-tab-bar__item--negative fd-icon-tab-bar__item--closable"
+            >
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab8">
+                <div class="fd-icon-tab-bar__container">
+                    <span class="fd-icon-tab-bar__icon">
+                        <i class="sap-icon--unfavorite" role="presentation"></i>
+                    </span>
+                </div>
+                <div class="fd-icon-tab-bar__details">
+                    <span class="fd-icon-tab-bar__counter">2</span>
+                    <span class="fd-icon-tab-bar__label">Description</span>
+                </div>
+            </a>
+            <div class="fd-icon-tab-bar__button-container">
+                <button class="fd-button fd-button--transparent fd-icon-tab-bar__button" aria-label="close tab">
+                    <i class="sap-icon--decline"></i>
+                </button>
+            </div>
+        </li>
+        <li
+            role="presentation"
+            class="fd-icon-tab-bar__item fd-icon-tab-bar__item--critical fd-icon-tab-bar__item--closable"
+            >
+            <a role="tab" class="fd-icon-tab-bar__tab" href="#" id="tab9">
+                <div class="fd-icon-tab-bar__container">
+                    <span class="fd-icon-tab-bar__icon">
+                        <i class="sap-icon--shipping-status" role="presentation"></i>
+                    </span>
+                </div>
+                <div class="fd-icon-tab-bar__details">
+                    <span class="fd-icon-tab-bar__counter">2</span>
+                    <span class="fd-icon-tab-bar__label">Description</span>
+                </div>
+            </a>
+            <div class="fd-icon-tab-bar__button-container">
+                <button class="fd-button fd-button--transparent fd-icon-tab-bar__button" aria-label="close tab">
+                    <i class="sap-icon--decline"></i>
+                </button>
+            </div>
+        </li>
+
+        <li role="presentation" class="fd-icon-tab-bar__item fd-icon-tab-bar__item--overflow">
+            <div class="fd-popover">
+                <div class="fd-popover__control">
+                    <button class="fd-icon-tab-bar__overflow is-active">
+                        <span class="fd-icon-tab-bar__overflow-text">More</span>
+                        <i class="sap-icon--slim-arrow-down" role="presentation"></i>
+                    </button>
+                </div>
+                <div
+                    class="fd-popover__body fd-popover__body--no-arrow fd-popover__body--right fd-icon-tab-bar__popover-body"
+
+                    >
+                    <ul role="list" class="fd-list fd-list--navigation fd-list--no-border fd-icon-tab-bar__list">
+                        <li
+                            role="listitem"
+                            tabindex="-1"
+                            class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__list-item--informative fd-icon-tab-bar__list-item--closable"
+                            >
+                            <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                                <span class="fd-icon-tab-bar__list-item-icon-container">
+                                    <span class="fd-list__icon fd-icon-tab-bar__list-item-icon">
+                                        <i class="sap-icon--letter" role="presentation"></i>
+                                    </span>
+                                </span>
+                                <span class="fd-list__title fd-icon-tab-bar__list-item-title">Description</span>
+                                <span class="fd-list__counter fd-icon-tab-bar__list-item-counter">(12)</span>
+                            </a>
+                            <div class="fd-icon-tab-bar__button-container">
+                                <button
+                                    class="fd-button fd-button--transparent fd-icon-tab-bar__button"
+                                    aria-label="close tab"
+                                    >
+                                    <i class="sap-icon--decline"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li
+                            role="listitem"
+                            tabindex="-1"
+                            class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__list-item--closable"
+                            >
+                            <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                                <span class="fd-icon-tab-bar__list-item-icon-container">
+                                    <span class="fd-list__icon fd-icon-tab-bar__list-item-icon">
+                                        <i class="sap-icon--activate" role="presentation"></i>
+                                    </span>
+                                </span>
+                                <span class="fd-list__title fd-icon-tab-bar__list-item-title">Description</span>
+                                <span class="fd-list__counter fd-icon-tab-bar__list-item-counter">(227)</span>
+                            </a>
+                            <div class="fd-icon-tab-bar__button-container">
+                                <button
+                                    class="fd-button fd-button--transparent fd-icon-tab-bar__button"
+                                    aria-label="close tab"
+                                    >
+                                    <i class="sap-icon--decline"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li
+                            role="listitem"
+                            tabindex="-1"
+                            class="fd-list__item fd-list__item--link fd-icon-tab-bar__list-item fd-icon-tab-bar__list-item--positive fd-icon-tab-bar__list-item--closable"
+                            >
+                            <a tabindex="0" class="fd-list__link fd-icon-tab-bar__list-link">
+                                <span class="fd-icon-tab-bar__list-item-icon-container">
+                                    <span class="fd-list__icon fd-icon-tab-bar__list-item-icon">
+                                        <i class="sap-icon--jam" role="presentation"></i>
+                                    </span>
+                                </span>
+                                <span class="fd-list__title fd-icon-tab-bar__list-item-title">Description</span>
+                                <span class="fd-list__counter fd-icon-tab-bar__list-item-counter">(0)</span>
+                            </a>
+                            <div class="fd-icon-tab-bar__button-container">
+                                <button
+                                    class="fd-button fd-button--transparent fd-icon-tab-bar__button"
+                                    aria-label="close tab"
+                                    >
+                                    <i class="sap-icon--decline"></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
 ```
 
 ## Accessibility

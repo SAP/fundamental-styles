@@ -13,13 +13,16 @@ stability: stable
 
 # BTP/Avatar
 
-This is an extension to the <a href="https://fundamental-styles.netlify.app/?path=/docs/components-avatar--icon">Avatar</a> which introduces additional avatar sizes that are consumed by components and patterns in the BTP area. 
+This is an extension to the <a href="https://fundamental-styles.netlify.app/?path=/docs/components-avatar--icon">Avatar</a> which introduces additional avatar sizes that are consumed by components and patterns in the BTP area.
 
 ## Sizes
 
 | **Size** | **rem** | **Modifier class** |
 | :---------: | :----------: | :---------------: |
-| 40 | &nbsp;&nbsp; &nbsp;&nbsp;2.5 rem&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp; &nbsp;&nbsp; \
+| 40 | &nbsp;&nbsp; &nbsp;&nbsp;2.5 rem&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp; &nbsp;&nbsp; `fd-avatar--40`&nbsp;&nbsp; &nbsp;&nbsp; |
+| 96 | &nbsp;&nbsp; &nbsp;&nbsp;6 rem&nbsp;&nbsp; &nbsp;&nbsp; | &nbsp;&nbsp; &nbsp;&nbsp; `fd-avatar--96`&nbsp;&nbsp; &nbsp;&nbsp; |
+
+<br><br><br>
 
 ## Dependencies
 

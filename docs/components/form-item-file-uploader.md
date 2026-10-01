@@ -137,7 +137,7 @@ Key CSS variables used by this component:
 
 ### Default
 
-File Uploader is a composition of the \
+File Uploader is a composition of the `fd-input` class and the `fd-button` one. The button triggers the action of searching for the file which needs to be uploaded. The input field shows the predetermined title i.e. Choose a file for upload.
 
 ```html
 <div class="fd-form-item">

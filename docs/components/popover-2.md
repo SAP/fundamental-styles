@@ -35,7 +35,7 @@ The User Menu is an integral part of the Shell Bar, accessible by clicking the a
     <li>Content Overload: Keep the menu concise by limiting links to essential items only.</li>
     <li>Dynamic Content: Avoid altering the menu content within the product.</li>
 </ul>
-    
+
 ### Anatomy
 The User Menu popover is composed of the following components:
 
@@ -119,7 +119,7 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">Settings</span>
                                     </a>
                                 </li>
-    
+
                                 <li class="fd-menu__item" role="presentation">
                                     <span
                                         class="fd-menu__link has-child is-expanded"
@@ -136,7 +136,7 @@ npm install fundamental-styles
                                             </div>
                                             <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
                                     </span>
-                                    
+
                                     <ul class="fd-menu__sublist fd-menu__sublist--icons" id="EX100M2A" aria-hidden="false" role="menu">
                                         <li class="fd-menu__item" role="presentation">
                                             <a class="fd-menu__link" href="#" role="menuitem">
@@ -160,7 +160,7 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">Legal Information</span>
                                     </a>
                                 </li>
-    
+
                                 <li class="fd-menu__item" role="presentation">
                                     <a class="fd-menu__link" href="#" role="menuitem">
                                         <span class="fd-menu__addon-before">
@@ -169,9 +169,9 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">About</span>
                                     </a>
                                 </li>
-                                
+
                             </ul>
-                        </nav>  
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -247,7 +247,7 @@ npm install fundamental-styles
                                             <div class="fd-list__subline">john.doe@test.com</div>
                                             <div class="fd-list__subline">Project Manager</div>
                                         </div>
-                                        
+
                                     </li>
                                     <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
                                         <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" aria-role="img" aria-label="Jane Doe">JD</span>
@@ -258,7 +258,7 @@ npm install fundamental-styles
                                         </div>
                                     </li>
                                 </ul>
-                                
+
                             </div>
                         </div>
                         <nav class="fd-menu fd-menu--icons fd-user-menu__menu">
@@ -271,7 +271,7 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">Settings</span>
                                     </a>
                                 </li>
-    
+
                                 <li class="fd-menu__item" role="presentation">
                                     <span
                                         class="fd-menu__link has-child is-expanded"
@@ -286,10 +286,10 @@ npm install fundamental-styles
                                                 <span class="fd-menu__title">Menu Item Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
                                                 <span class="fd-menu__subtitle">Sub-menu List Item Consectetur reprehenderit, cumque iusto molestiae doloribus assumenda omnis eveniet</span>
                                             </div>
-                                            
+
                                             <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
                                     </span>
-                                    
+
                                     <ul class="fd-menu__sublist" id="EX100M2B" aria-hidden="false" role="menu">
                                         <li class="fd-menu__item" role="presentation">
                                             <a class="fd-menu__link" href="#" role="menuitem">
@@ -318,7 +318,7 @@ npm install fundamental-styles
                                         </div>
                                     </a>
                                 </li>
-    
+
                                 <li class="fd-menu__item" role="presentation">
                                     <a class="fd-menu__link" href="#" role="menuitem">
                                         <span class="fd-menu__addon-before">
@@ -327,9 +327,9 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">About</span>
                                     </a>
                                 </li>
-                                
+
                             </ul>
-                        </nav>  
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -405,7 +405,7 @@ npm install fundamental-styles
                                             <div class="fd-list__subline fd-list__subline--truncate">john.doe@test.com ipsum dolor sit amet consectetur adipisicing elit. Autem minima ex distinctio dolores vitae!</div>
                                             <div class="fd-list__subline fd-list__subline--truncate">Project Manager ipsum dolor sit amet consectetur adipisicing elit. Autem minima ex distinctio dolores vitae!</div>
                                         </div>
-                                        
+
                                     </li>
                                     <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
                                         <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" aria-role="img" aria-label="Jane Doe">JD</span>
@@ -416,7 +416,7 @@ npm install fundamental-styles
                                         </div>
                                     </li>
                                 </ul>
-                                
+
                             </div>
                         </div>
                         <nav class="fd-menu fd-menu--icons fd-user-menu__menu">
@@ -429,7 +429,7 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">Settings</span>
                                     </a>
                                 </li>
-    
+
                                 <li class="fd-menu__item" role="presentation">
                                     <span
                                         class="fd-menu__link has-child"
@@ -452,7 +452,7 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">Legal Information</span>
                                     </a>
                                 </li>
-    
+
                                 <li class="fd-menu__item" role="presentation">
                                     <a class="fd-menu__link" href="#" role="menuitem">
                                         <span class="fd-menu__addon-before">
@@ -461,9 +461,9 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">About</span>
                                     </a>
                                 </li>
-                                
+
                             </ul>
-                        </nav>  
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -529,7 +529,7 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">Settings</span>
                                     </a>
                                 </li>
-    
+
                                 <li class="fd-menu__item" role="presentation">
                                     <span
                                         class="fd-menu__link has-child is-expanded"
@@ -546,7 +546,7 @@ npm install fundamental-styles
                                             </div>
                                             <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
                                     </span>
-                                    
+
                                     <ul class="fd-menu__sublist fd-menu__sublist--icons" id="EX100M2A" aria-hidden="false" role="menu">
                                         <li class="fd-menu__item" role="presentation">
                                             <a class="fd-menu__link" href="#" role="menuitem">
@@ -570,7 +570,7 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">Legal Information</span>
                                     </a>
                                 </li>
-    
+
                                 <li class="fd-menu__item" role="presentation">
                                     <a class="fd-menu__link" href="#" role="menuitem">
                                         <span class="fd-menu__addon-before">
@@ -579,9 +579,9 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">About</span>
                                     </a>
                                 </li>
-                                
+
                             </ul>
-                        </nav>  
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -657,7 +657,7 @@ npm install fundamental-styles
                                             <div class="fd-list__subline">john.doe@test.com</div>
                                             <div class="fd-list__subline">Project Manager</div>
                                         </div>
-                                        
+
                                     </li>
                                     <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
                                         <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" aria-role="img" aria-label="Jane Doe">JD</span>
@@ -668,7 +668,7 @@ npm install fundamental-styles
                                         </div>
                                     </li>
                                 </ul>
-                                
+
                             </div>
                         </div>
                         <nav class="fd-menu fd-menu--icons fd-user-menu__menu">
@@ -681,7 +681,7 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">Settings</span>
                                     </a>
                                 </li>
-    
+
                                 <li class="fd-menu__item" role="presentation">
                                     <span
                                         class="fd-menu__link has-child is-expanded"
@@ -696,10 +696,10 @@ npm install fundamental-styles
                                                 <span class="fd-menu__title">Menu Item Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
                                                 <span class="fd-menu__subtitle">Sub-menu List Item Consectetur reprehenderit, cumque iusto molestiae doloribus assumenda omnis eveniet</span>
                                             </div>
-                                            
+
                                             <span class="fd-menu__addon-after fd-menu__addon-after--submenu"></span>
                                     </span>
-                                    
+
                                     <ul class="fd-menu__sublist" id="EX100M2B" aria-hidden="false" role="menu">
                                         <li class="fd-menu__item" role="presentation">
                                             <a class="fd-menu__link" href="#" role="menuitem">
@@ -728,7 +728,7 @@ npm install fundamental-styles
                                         </div>
                                     </a>
                                 </li>
-    
+
                                 <li class="fd-menu__item" role="presentation">
                                     <a class="fd-menu__link" href="#" role="menuitem">
                                         <span class="fd-menu__addon-before">
@@ -737,9 +737,9 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">About</span>
                                     </a>
                                 </li>
-                                
+
                             </ul>
-                        </nav>  
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -815,7 +815,7 @@ npm install fundamental-styles
                                             <div class="fd-list__subline fd-list__subline--truncate">john.doe@test.com ipsum dolor sit amet consectetur adipisicing elit. Autem minima ex distinctio dolores vitae!</div>
                                             <div class="fd-list__subline fd-list__subline--truncate">Project Manager ipsum dolor sit amet consectetur adipisicing elit. Autem minima ex distinctio dolores vitae!</div>
                                         </div>
-                                        
+
                                     </li>
                                     <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
                                         <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" aria-role="img" aria-label="Jane Doe">JD</span>
@@ -826,7 +826,7 @@ npm install fundamental-styles
                                         </div>
                                     </li>
                                 </ul>
-                                
+
                             </div>
                         </div>
                         <nav class="fd-menu fd-menu--icons fd-user-menu__menu">
@@ -839,7 +839,7 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">Settings</span>
                                     </a>
                                 </li>
-    
+
                                 <li class="fd-menu__item" role="presentation">
                                     <span
                                         class="fd-menu__link has-child"
@@ -862,7 +862,7 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">Legal Information</span>
                                     </a>
                                 </li>
-    
+
                                 <li class="fd-menu__item" role="presentation">
                                     <a class="fd-menu__link" href="#" role="menuitem">
                                         <span class="fd-menu__addon-before">
@@ -871,9 +871,9 @@ npm install fundamental-styles
                                         <span class="fd-menu__title">About</span>
                                     </a>
                                 </li>
-                                
+
                             </ul>
-                        </nav>  
+                        </nav>
                     </div>
                 </div>
             </div>

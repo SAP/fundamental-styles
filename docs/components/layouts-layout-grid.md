@@ -2,8 +2,8 @@
 component: layout-grid
 title: Layouts/Layout Grid
 category: Layouts
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/styles/stories/Layouts/layout-grid/layout-grid.stories.js
 tags: []
 dependencies: ["layout-grid"]
@@ -14,7 +14,26 @@ stability: stable
 # Layouts/Layout Grid
 
 The layout grid is made to separate data into both columns and rows. If there is not enough space on the current line of the same row, the item will go to the next line.
-To use the grid, the user must use all of the \
+To use the grid, the user must use all of the `fd-container`, `fd-row`, and `fd-col` classes.
+
+- Use the `fd-container` class to wrap the whole grid.
+- Use the `fd-container--no-vertical-gap` modifier to remove the gutter spacing between rows.
+- Use the `fd-container--no-horizontal-gap` modifier to remove the gutter spacing between columns.
+- Use the `fd-container--no-gap` modifier to remove the gutter spacing between columns and rows.
+- Use the `fd-row` to separate rows.
+- Use the `fd-col` to separate a column of certain width. The default value will create a column the full width, being 12 columns of the parent at size small and above unless specified another size.
+- Use the `fd-col--x` modifier class to make the column spread x-rows/12 (e.g. `fd-col--4` which will take 4 columns out of 12).
+
+<h2>Breakpoints</h2>
+
+- Default until next specified breakpoint<br>
+`fd-col--x` will be used until the next specified minimum breakpoint, column takes x/12 space of the row.
+- Medium 600px<br>
+`fd-col-md--x` will be used from 600px to the next specified minimum breakpoint, column takes x/12 space of the row.
+- Large 1024px<br>
+`fd-col-lg--x` will be used from 1024px to the next specified minimum breakpoint, column takes x/12 space of the row.
+- Extra-large 1440px<br>
+`fd-col-xl--x` will be used from 1440px and larger, column takes x/12 space of the row.
 
 ## Dependencies
 
@@ -353,6 +372,7 @@ Add an extra `fd-row` class in between inner rows when using nesting. It will ad
             </div>
         </div>
     </div>
+</div>
 ```
 
 ### Offset

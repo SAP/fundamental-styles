@@ -76,62 +76,61 @@ npm install fundamental-styles
                 <div class="fd-bar__middle">
                     <div class="fd-bar__element">Company</div>
                 </div>
+            </div>
 
-                <div class="fd-quick-view__content">
-                    <div class="fd-bar fd-bar--header-with-subheader">
-                        <div class="fd-bar__left">
-                            <span class="fd-avatar fd-avatar--s" role="presentation">
-                                <i role="presentation" class="fd-avatar__icon sap-icon--building"></i>
-                            </span>
+            <div class="fd-quick-view__content">
+                <div class="fd-bar fd-bar--header-with-subheader">
+                    <div class="fd-bar__left">
+                        <span class="fd-avatar fd-avatar--s" role="presentation">
+                            <i role="presentation" class="fd-avatar__icon sap-icon--building"></i>
+                        </span>
 
-                            <div class="fd-quick-view__subheader-text">
-                                <h5 class="fd-title fd-title--h5">Company B</h5>
+                        <div class="fd-quick-view__subheader-text">
+                            <h5 class="fd-title fd-title--h5">Company B</h5>
 
-                                <div class="fd-quick-view__subtitle">
-                                    Michael Adams
-                                </div>
+                            <div class="fd-quick-view__subtitle">
+                                Michael Adams
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="fd-form-group" role="group">
-                        <div class="fd-form-group__header fd-form-group__header--no-border fd-form-group__header--no-padding" aria-labelledby="contactDetails">
-                            <h4 class="fd-form-group__header-text" id="contactDetails">Contact Details</h4>
-                        </div>
-                        <div class="fd-form-item">
-                            <label class="fd-form-label">Phone</label>
-                            <a class="fd-link" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
-                        </div>
-                        <div class="fd-form-item">
-                            <label class="fd-form-label">Address</label>
-                            <span class="fd-text">
-                                781 Main Street Anytown, SD 57401, USA
-                            </span>
-                        </div>
+                <div class="fd-form-group" role="group">
+                    <div class="fd-form-group__header fd-form-group__header--no-border fd-form-group__header--no-padding" aria-labelledby="contactDetails">
+                        <h4 class="fd-form-group__header-text" id="contactDetails">Contact Details</h4>
                     </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Phone</label>
+                        <a class="fd-link" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
+                    </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Address</label>
+                        <span class="fd-text">
+                            781 Main Street Anytown, SD 57401, USA
+                        </span>
+                    </div>
+                </div>
 
-                    <div class="fd-form-group" role="group">
-                        <div class="fd-form-group__header fd-form-group__header--no-border fd-form-group__header--no-padding" aria-labelledby="mainContact">
-                            <h4 class="fd-form-group__header-text" id="mainContact">Main Contact</h4>
-                        </div>
-                        <div class="fd-form-item">
-                            <label class="fd-form-label">Name</label>
-                            <span class="fd-text">Michael Adams</span>
-                        </div>
-                        <div class="fd-form-item">
-                            <label class="fd-form-label">Mobile</label>
-                            <a class="fd-link" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
-                        </div>
-                        <div class="fd-form-item">
-                            <label class="fd-form-label">Mobile</label>
-                            <a class="fd-link" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
-                        </div>
+                <div class="fd-form-group" role="group">
+                    <div class="fd-form-group__header fd-form-group__header--no-border fd-form-group__header--no-padding" aria-labelledby="mainContact">
+                        <h4 class="fd-form-group__header-text" id="mainContact">Main Contact</h4>
+                    </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Name</label>
+                        <span class="fd-text">Michael Adams</span>
+                    </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Mobile</label>
+                        <a class="fd-link" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
+                    </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Mobile</label>
+                        <a class="fd-link" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
 ```
 
@@ -197,62 +196,61 @@ QuickView component as popover
                 <div class="fd-bar__middle">
                     <div class="fd-bar__element">Company</div>
                 </div>
+            </div>
 
-                <div class="fd-quick-view__content">
-                    <div class="fd-bar fd-bar--header-with-subheader">
-                        <div class="fd-bar__left">
-                            <span class="fd-avatar fd-avatar--s" role="presentation">
-                                <i role="presentation" class="fd-avatar__icon sap-icon--building"></i>
-                            </span>
+            <div class="fd-quick-view__content">
+                <div class="fd-bar fd-bar--header-with-subheader">
+                    <div class="fd-bar__left">
+                        <span class="fd-avatar fd-avatar--s" role="presentation">
+                            <i role="presentation" class="fd-avatar__icon sap-icon--building"></i>
+                        </span>
 
-                            <div class="fd-quick-view__subheader-text">
-                                <h5 class="fd-title fd-title--h5">Company B</h5>
+                        <div class="fd-quick-view__subheader-text">
+                            <h5 class="fd-title fd-title--h5">Company B</h5>
 
-                                <div class="fd-quick-view__subtitle">
-                                    Michael Adams
-                                </div>
+                            <div class="fd-quick-view__subtitle">
+                                Michael Adams
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="fd-form-group" role="group">
-                        <div class="fd-form-group__header fd-form-group__header--no-border fd-form-group__header--no-padding" aria-labelledby="contactDetails">
-                            <h4 class="fd-form-group__header-text" id="contactDetails">Contact Details</h4>
-                        </div>
-                        <div class="fd-form-item">
-                            <label class="fd-form-label">Phone</label>
-                            <a class="fd-link" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
-                        </div>
-                        <div class="fd-form-item">
-                            <label class="fd-form-label">Address</label>
-                            <span class="fd-text">
-                                781 Main Street Anytown, SD 57401, USA
-                            </span>
-                        </div>
+                <div class="fd-form-group" role="group">
+                    <div class="fd-form-group__header fd-form-group__header--no-border fd-form-group__header--no-padding" aria-labelledby="contactDetails">
+                        <h4 class="fd-form-group__header-text" id="contactDetails">Contact Details</h4>
                     </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Phone</label>
+                        <a class="fd-link" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
+                    </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Address</label>
+                        <span class="fd-text">
+                            781 Main Street Anytown, SD 57401, USA
+                        </span>
+                    </div>
+                </div>
 
-                    <div class="fd-form-group" role="group">
-                        <div class="fd-form-group__header fd-form-group__header--no-border fd-form-group__header--no-padding" aria-labelledby="mainContact">
-                            <h4 class="fd-form-group__header-text" id="mainContact">Main Contact</h4>
-                        </div>
-                        <div class="fd-form-item">
-                            <label class="fd-form-label">Name</label>
-                            <span class="fd-text">Michael Adams</span>
-                        </div>
-                        <div class="fd-form-item">
-                            <label class="fd-form-label">Mobile</label>
-                            <a class="fd-link" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
-                        </div>
-                        <div class="fd-form-item">
-                            <label class="fd-form-label">Mobile</label>
-                            <a class="fd-link" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
-                        </div>
+                <div class="fd-form-group" role="group">
+                    <div class="fd-form-group__header fd-form-group__header--no-border fd-form-group__header--no-padding" aria-labelledby="mainContact">
+                        <h4 class="fd-form-group__header-text" id="mainContact">Main Contact</h4>
+                    </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Name</label>
+                        <span class="fd-text">Michael Adams</span>
+                    </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Mobile</label>
+                        <a class="fd-link" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
+                    </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Mobile</label>
+                        <a class="fd-link" href="tel:+1 605 555 5555"><span class="fd-link__content">+1 605 555 5555</span></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
 ```
 
@@ -348,20 +346,20 @@ QuickView without the header
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="fd-form-group" role="group">
-                        <div class="fd-form-item">
-                            <label class="fd-form-label">Start Date:</label>
-                            <span class="fd-text">01/01/2015</span>
-                        </div>
-                        <div class="fd-form-item">
-                            <label class="fd-form-label">End Date:</label>
-                            <span class="fd-text">31/12/2015</span>
-                        </div>
-                        <div class="fd-form-item">
-                            <label class="fd-form-label">Occurrence:</label>
-                            <span class="fd-text">Weekly</span>
-                        </div>
+                <div class="fd-form-group" role="group">
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Start Date:</label>
+                        <span class="fd-text">01/01/2015</span>
+                    </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">End Date:</label>
+                        <span class="fd-text">31/12/2015</span>
+                    </div>
+                    <div class="fd-form-item">
+                        <label class="fd-form-label">Occurrence:</label>
+                        <span class="fd-text">Weekly</span>
                     </div>
                 </div>
             </div>

@@ -159,7 +159,7 @@ Key CSS variables used by this component:
 
 ### Default
 
-The basic structure of a menu. Place the menu item title in a \
+The basic structure of a menu. Place the menu item title in a `<span>` tag using class `fd-menu__title` and wrap it in the `fd-menu__link` and `fd-menu__item` classes as shown.<br><b>Note:</b>Use compact menus for the Desktop and use cozy for the Tablet mode.
 
 ```html
 <nav aria-label="navigation menu" class="fd-menu">
@@ -305,77 +305,79 @@ The basic structure of a menu in mobile where it opens as a dialog. Use class `f
                                         </div>
                                     </footer>
                                 </section>
+                            </div>
 
-                                <div
+                            <div
 
-                                    class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active"
-                                    id="select-dialog-example-inner"
-                                    >
-                                    <section aria-labelledby="subOptionHeader" class="fd-dialog__content fd-dialog__content--mobile" role="dialog">
-                                        <header class="fd-dialog__header fd-bar fd-bar--header">
-                                            <div class="fd-bar__left">
+                                class="fd-dialog fd-dialog-docs-static fd-select-docs-max-height fd-dialog--active"
+                                id="select-dialog-example-inner"
+                                >
+                                <section aria-labelledby="subOptionHeader" class="fd-dialog__content fd-dialog__content--mobile" role="dialog">
+                                    <header class="fd-dialog__header fd-bar fd-bar--header">
+                                        <div class="fd-bar__left">
+                                            <div class="fd-bar__element">
+                                                <button aria-label="Show main menu options" class="fd-button fd-button--transparent">
+                                                    <i class="sap-icon--navigation-left-arrow" role="presentation"></i>
+                                                </button>
+                                            </div>
+                                            <div class="fd-bar__element">
+                                                <h3 class="fd-title fd-title--h5" id="subOptionHeader">Option 2</h3>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
+                                        <nav aria-label="option 2 sub-options" class="fd-menu fd-menu--mobile">
+                                            <ul class="fd-menu__sublist" role="menu">
+                                                <li class="fd-menu__item" role="presentation">
+                                                    <a class="fd-menu__link" href="#" role="menuitem">
+                                                        <span class="fd-menu__title">Sub-option 1</span>
+                                                    </a>
+                                                </li>
+                                                <li class="fd-menu__item" role="presentation">
+                                                    <a class="fd-menu__link" href="#" role="menuitem">
+                                                        <span class="fd-menu__title">Sub-option 2</span>
+                                                    </a>
+                                                </li>
+                                                <li class="fd-menu__item" role="presentation">
+                                                    <a class="fd-menu__link" href="#" role="menuitem">
+                                                        <span class="fd-menu__title">Sub-option 3</span>
+                                                    </a>
+                                                </li>
+                                                <li class="fd-menu__item" role="presentation">
+                                                    <a class="fd-menu__link" href="#" role="menuitem">
+                                                        <span class="fd-menu__title">Sub-option 4</span>
+                                                    </a>
+                                                </li>
+                                                <li class="fd-menu__item" role="presentation">
+                                                    <a class="fd-menu__link" href="#" role="menuitem">
+                                                        <span class="fd-menu__title"
+                                                            >Sub-option 5 with very very very very very very very very very very very very long
+                                                            text</span
+                                                            >
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+                                            <div class="fd-bar__right">
                                                 <div class="fd-bar__element">
-                                                    <button aria-label="Show main menu options" class="fd-button fd-button--transparent">
-                                                        <i class="sap-icon--navigation-left-arrow" role="presentation"></i>
+                                                    <button
+                                                        aria-label="close options dialog"
+                                                        class="fd-button fd-button--light fd-dialog__decisive-button"
+                                                        >
+                                                        Cancel
                                                     </button>
                                                 </div>
-                                                <div class="fd-bar__element">
-                                                    <h3 class="fd-title fd-title--h5" id="subOptionHeader">Option 2</h3>
-                                                </div>
                                             </div>
-                                        </header>
-                                        <div class="fd-dialog__body fd-dialog__body--no-vertical-padding">
-                                            <nav aria-label="option 2 sub-options" class="fd-menu fd-menu--mobile">
-                                                <ul class="fd-menu__sublist" role="menu">
-                                                    <li class="fd-menu__item" role="presentation">
-                                                        <a class="fd-menu__link" href="#" role="menuitem">
-                                                            <span class="fd-menu__title">Sub-option 1</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="fd-menu__item" role="presentation">
-                                                        <a class="fd-menu__link" href="#" role="menuitem">
-                                                            <span class="fd-menu__title">Sub-option 2</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="fd-menu__item" role="presentation">
-                                                        <a class="fd-menu__link" href="#" role="menuitem">
-                                                            <span class="fd-menu__title">Sub-option 3</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="fd-menu__item" role="presentation">
-                                                        <a class="fd-menu__link" href="#" role="menuitem">
-                                                            <span class="fd-menu__title">Sub-option 4</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="fd-menu__item" role="presentation">
-                                                        <a class="fd-menu__link" href="#" role="menuitem">
-                                                            <span class="fd-menu__title"
-                                                                >Sub-option 5 with very very very very very very very very very very very very long
-                                                                text</span
-                                                                >
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-                                                <div class="fd-bar__right">
-                                                    <div class="fd-bar__element">
-                                                        <button
-                                                            aria-label="close options dialog"
-                                                            class="fd-button fd-button--light fd-dialog__decisive-button"
-                                                            >
-                                                            Cancel
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </footer>
-                                        </section>
+                                        </footer>
+                                    </section>
+                                </div>
 ```
 
 ### List with separated items
 
-Separators can be added between Menu Items by adding the \
+Separators can be added between Menu Items by adding the `has-separator` class to the element with class `fd-menu__item`. The separator will appear under this item.
 
 ```html
 <nav class="fd-menu">
@@ -413,7 +415,13 @@ Separators can be added between Menu Items by adding the \
 
 Simulate different states to show state behaviour between the items.
 
-- For simulating hover state, use class \
+- For simulating hover state, use class `is-hover` on the menu item.
+- For simulating active state, use class `is-active` on the menu item.
+- For simulating selected state, use class `is-selected` on the menu item.
+- For simulating selected-hover state, use classes `is-selected is-hover` on the menu item.
+- For simulating disabled state, use class `is-disabled` on the menu item.
+
+To remove default box shadow from menu containers use `fd-menu__list--no-shadow` or `fd-menu__sublist--no-shadow`.
 
 ```html
 <nav aria-label="navbar" class="fd-menu">
@@ -540,7 +548,11 @@ Simulate different states to show state behaviour between the items.
 
 ### List with Icon
 
-To create an addon before or after \
+To create an addon before or after `fd-menu__title` element, use elements with folowing classes inside `fd-menu__link`:
+- `fd-menu__addon-before`   - styles addon befotre `fd-menu__title`
+- `fd-menu__addon-after`    - styles addon after `fd-menu__title`
+- `fd-menu__shortcut`       - styles shortcut placed after `fd-menu__title`
+According to Fiori3 design shortcuts should be on desktop devices.
 
 ```html
 <nav class="fd-menu fd-menu--icons">
@@ -598,62 +610,62 @@ To create an addon before or after \
                 <div class="fd-menu__content">
                     <span class="fd-menu__title">Menu List Item Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
                     <span class="fd-menu__subtitle">Sub-menu List Item Dolore nemo reiciendis consequuntur consequatur vero maxime.</span>
-                    <span class="fd-menu__addon-after"><i class="sap-icon--wrench" role="presentation"></i></span>
-                </a>
-            </li>
-            <li class="fd-menu__item" role="presentation">
-                <a class="fd-menu__link" href="#" role="menuitem">
-                    <span class="fd-menu__addon-before"><i class="sap-icon--accept" role="presentation"></i></span>
-                    <div class="fd-menu__content">
-                        <span class="fd-menu__title">Menu List Item</span>
-                        <span class="fd-menu__subtitle">Sub-menu List Item</span>
-                    </div>
-                    <span class="fd-menu__addon-after"><i class="sap-icon--history" role="presentation"></i></span>
-                </a>
-            </li>
-            <li class="fd-menu__item" role="presentation">
-                <a class="fd-menu__link is-focus" href="#" role="menuitem">
-                    <span class="fd-menu__addon-before"><i class="sap-icon--wrench" role="presentation"></i></span>
-                    <div class="fd-menu__content">
-                        <span class="fd-menu__title">Menu List Item</span>
-                        <span class="fd-menu__subtitle">Sub-menu List Item</span>
-                    </div>
-                    <span class="fd-menu__addon-after"><i class="sap-icon--lightbulb" role="presentation"></i></span>
-                </a>
-            </li>
-            <li class="fd-menu__item" role="presentation">
-                <a class="fd-menu__link" href="#" role="menuitem">
-                    <div class="fd-menu__content">
-                        <span class="fd-menu__title">Menu List Item</span>
-                        <span class="fd-menu__subtitle">Sub-menu List Item</span>
-                    </div>
-                    <span class="fd-menu__addon-after fd-menu__addon-after--active"><i class="sap-icon--accept" role="presentation"></i></span>
-                </a>
-            </li>
-            <li class="fd-menu__item" role="presentation">
-                <a class="fd-menu__link" href="#" role="menuitem">
-                    <span class="fd-menu__addon-before"><i class="sap-icon--cart" role="presentation"></i></span>
-                    <div class="fd-menu__content">
-                        <span class="fd-menu__title">Menu List Item Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                        <span class="fd-menu__subtitle">Sub-menu List Item Iusto laboriosam illum maiores at. At provident officiis dolorum nisi.</span>
-                    </div>
-                    <span class="fd-menu__shortcut">Ctrl + A</span>
-                </a>
-            </li>
-            <li class="fd-menu__item" role="presentation">
-                <a class="fd-menu__link" href="#" role="menuitem">
-                    <span class="fd-menu__addon-before"><i class="sap-icon--cart" role="presentation"></i></span>
-                    <div class="fd-menu__content">
-                        <span class="fd-menu__title">Menu List Item</span>
-                        <span class="fd-menu__subtitle">Sub-menu List Item</span>
-                    </div>
-                    <span class="fd-menu__shortcut">Ctrl + A</span>
-                    <span class="fd-menu__addon-after"><i class="sap-icon--history" role="presentation"></i></span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</div>
+                </div>
+                <span class="fd-menu__addon-after"><i class="sap-icon--wrench" role="presentation"></i></span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__addon-before"><i class="sap-icon--accept" role="presentation"></i></span>
+                <div class="fd-menu__content">
+                    <span class="fd-menu__title">Menu List Item</span>
+                    <span class="fd-menu__subtitle">Sub-menu List Item</span>
+                </div>
+                <span class="fd-menu__addon-after"><i class="sap-icon--history" role="presentation"></i></span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link is-focus" href="#" role="menuitem">
+                <span class="fd-menu__addon-before"><i class="sap-icon--wrench" role="presentation"></i></span>
+                <div class="fd-menu__content">
+                    <span class="fd-menu__title">Menu List Item</span>
+                    <span class="fd-menu__subtitle">Sub-menu List Item</span>
+                </div>
+                <span class="fd-menu__addon-after"><i class="sap-icon--lightbulb" role="presentation"></i></span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <div class="fd-menu__content">
+                    <span class="fd-menu__title">Menu List Item</span>
+                    <span class="fd-menu__subtitle">Sub-menu List Item</span>
+                </div>
+                <span class="fd-menu__addon-after fd-menu__addon-after--active"><i class="sap-icon--accept" role="presentation"></i></span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__addon-before"><i class="sap-icon--cart" role="presentation"></i></span>
+                <div class="fd-menu__content">
+                    <span class="fd-menu__title">Menu List Item Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <span class="fd-menu__subtitle">Sub-menu List Item Iusto laboriosam illum maiores at. At provident officiis dolorum nisi.</span>
+                </div>
+                <span class="fd-menu__shortcut">Ctrl + A</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__addon-before"><i class="sap-icon--cart" role="presentation"></i></span>
+                <div class="fd-menu__content">
+                    <span class="fd-menu__title">Menu List Item</span>
+                    <span class="fd-menu__subtitle">Sub-menu List Item</span>
+                </div>
+                <span class="fd-menu__shortcut">Ctrl + A</span>
+                <span class="fd-menu__addon-after"><i class="sap-icon--history" role="presentation"></i></span>
+            </a>
+        </li>
+    </ul>
+</nav>
 ```
 
 ### WithSubmenu
@@ -661,7 +673,10 @@ To create an addon before or after \
 Menu with an additional submenu that can be used for items that can be further grouped under a level but not necessarily visible to user always.
 
 For a submenu, do the following:
-- Specify \
+- Specify `fd-menu__link` class normally like other items. Use `has-child` class to apply styles for parent containing the submenu.
+- Create an addon indicating submenu level using `fd-menu__addon-after--submenu` class and an icon.
+- After the end of the `fd-menu__link` container, use `fd-menu__sublist` class in its own `<ul>`
+- Follow the same template for submenu as you would for a normal menu. The same `fd-menu__item` and `fd-menu__link` works for the subitems too.
 
 ```html
 <nav class="fd-menu">
@@ -851,46 +866,46 @@ An Input field can be placed in a menu item. When an input is placed in a menu i
         <li class="fd-menu__item" role="presentation">
             <div class="fd-menu__link" role="presentation">
                 <input class="fd-input fd-menu__input" type="text" id="input-1" placeholder="Field placeholder text">
-            </li>
-            <li class="fd-menu__item" role="presentation">
-                <a class="fd-menu__link" href="#" role="menuitem">
-                    <span class="fd-menu__addon-before"><i class="sap-icon--map" role="presentation"></i></span>
-                    <span class="fd-menu__title">Add New Pin</span>
-                </a>
-            </li>
-            <li class="fd-menu__item" role="presentation">
-                <a class="fd-menu__link" href="#" role="menuitem">
-                    <span class="fd-menu__addon-before"><i class="sap-icon--image-viewer" role="presentation"></i></span>
-                    <span class="fd-menu__title">View 360</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+            </div>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__addon-before"><i class="sap-icon--map" role="presentation"></i></span>
+                <span class="fd-menu__title">Add New Pin</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__addon-before"><i class="sap-icon--image-viewer" role="presentation"></i></span>
+                <span class="fd-menu__title">View 360</span>
+            </a>
+        </li>
+    </ul>
+</nav>
 
-    <nav class="fd-menu fd-menu--icons">
-        <ul class="fd-menu__list" role="menu">
-            <li class="fd-menu__item" role="presentation">
-                <a class="fd-menu__link" href="#" role="menuitem">
-                    <span class="fd-menu__addon-before"><i class="sap-icon--map" role="presentation"></i></span>
-                    <span class="fd-menu__title">Add New Pin</span>
-                </a>
-            </li>
-            <li class="fd-menu__item" role="presentation">
-                <a class="fd-menu__link" href="#" role="menuitem">
-                    <span class="fd-menu__addon-before"><i class="sap-icon--image-viewer" role="presentation"></i></span>
-                    <span class="fd-menu__title">View 360</span>
-                </a>
-            </li>
-            <li class="fd-menu__item" role="presentation">
-                <div class="fd-menu__link" role="presentation">
-                    <span class="fd-menu__addon-before"><i class="sap-icon--filter" role="presentation"></i></span>
-                    <span class="fd-menu__title">Filter</span>
-                    <input class="fd-input fd-menu__input" type="text" id="input-1" placeholder="Field placeholder text">
-                </div>
-            </li>
-        </ul>
-    </nav>
-</div>
+<nav class="fd-menu fd-menu--icons">
+    <ul class="fd-menu__list" role="menu">
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__addon-before"><i class="sap-icon--map" role="presentation"></i></span>
+                <span class="fd-menu__title">Add New Pin</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <a class="fd-menu__link" href="#" role="menuitem">
+                <span class="fd-menu__addon-before"><i class="sap-icon--image-viewer" role="presentation"></i></span>
+                <span class="fd-menu__title">View 360</span>
+            </a>
+        </li>
+        <li class="fd-menu__item" role="presentation">
+            <div class="fd-menu__link" role="presentation">
+                <span class="fd-menu__addon-before"><i class="sap-icon--filter" role="presentation"></i></span>
+                <span class="fd-menu__title">Filter</span>
+                <input class="fd-input fd-menu__input" type="text" id="input-1" placeholder="Field placeholder text">
+            </div>
+        </li>
+    </ul>
+</nav>
 ```
 
 ### Extended Menu List Items (Buttons as Menu Items)

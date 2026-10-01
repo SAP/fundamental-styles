@@ -34,7 +34,22 @@ Tree allows the user to display and work with a hierarchical set of items. Trees
 
 ##Behaviour
 The tree is like a list containing hierarchical data. It acts as a container for items, with the possibility to expand and collapse nodes. The tree changes the indentation per level dynamically when the user expands a node, based on number of levels currently showing.
-The root tree contains a \
+The root tree contains a `expanded-level-*` class which keeps track of the current expanded level. The indentation rules are the same for compact and cozy mode.
+
+The default behaviour of the list item is that it does not wrap. To enable wrapping, add the `fd-tree__content--wrap` modifier class to the `fd-tree__content` element.
+
+
+##States
+By default, tree items are not interactive; however, there are a few ways to add states (hover, selected, active) depending on the status of the items.
+
+| State | Modifier/Class | Description |
+| :----- | :-------------- | :----------------- |
+| Active | `fd-tree--active` | If all tree items are navigable, add the modifier class to the main element. |
+| Active | `fd-tree__item-container--active` | If only certain tree items are navigable, add the modifier class to the container. |
+| Selected | `is-selected` | If tree items contain single and multiple selection (radio buttons and checkboxes), add the class to the container. |
+| Navigated | `is-navigated` | If a certain tree item has been previously navigated, add the class to the container. |
+
+<br>
 
 ## Usage Guidelines
 
@@ -151,10 +166,10 @@ npm install fundamental-styles
 
 | Class | Description |
 |-------|-------------|
-| `fd-tree--active` | Style variant |
+| `fd-tree--active` | Tree can be displayed with navigation links by anchoring the `href` attribute with the `fd-tree__content` class |
 | `fd-tree--independent-multi-selection` | Style variant |
-| `fd-tree--no-border` | Style variant |
-| `fd-tree--no-data` | If there is no data to display, add the \ |
+| `fd-tree--no-border` | Tree can be displayed without borders |
+| `fd-tree--no-data` | If there is no data to display, add the `fd-tree--no-data` modifier class to the root tree. |
 | `fd-tree--wrap` | Tree items truncate long text by default |
 
 ## States
@@ -216,7 +231,7 @@ Key CSS variables used by this component:
 
 ### Primary
 
-The primary tree component displays level 1 expanded to show level 2, which is indented by 1.5rem. Only the root tree (ul element) needs to have the \
+The primary tree component displays level 1 expanded to show level 2, which is indented by 1.5rem. Only the root tree (ul element) needs to have the `expanded-level-*` modifier class to indicate which level is currently expanded.
 
 ```html
 <ul role="tree" aria-label="Root Tree" id="TREE1L1" class="fd-tree expanded-level-1">
@@ -282,7 +297,10 @@ The primary tree component displays level 1 expanded to show level 2, which is i
 
 ### Borderless
 
-Tree can be displayed without borders. To remove the borders from the first level items, add the \
+Tree can be displayed without borders. To remove the borders from the first level items, add the `fd-tree--no-border` modifier class to the root tree. Additionally, tree list items can display actions, which are added as children of the `fd-tree__item-container` class.
+
+####Icons
+Icons can be added before and/or after the text as children of the `fd-tree__content` class.
 
 ```html
 <ul role="tree" aria-label="Root Tree" id="TREE2L1" class="fd-tree fd-tree--no-border expanded-level-2">
@@ -405,7 +423,16 @@ Tree can be displayed without borders. To remove the borders from the first leve
 Tree can display highlight indicators on tree items to indicate a status. In this example, each level indents by 0.5rem more than the previous level. For example, level 2 indents by 0.5, level 3 by 1rem and level 4 by 1.5rem (up to level 6).
 
 
-To display tree items with highlight indicators, add the \
+To display tree items with highlight indicators, add the `has-highlight-indicator--*` modifier class to the `fd-tree__item-container` element.
+
+**The semantic states of highlight indicators are:**
+
+| State | Modifier class |
+| :------ | :------------------ |
+| Default | `has-highlight-indicator` |
+| Error | `has-highlight-indicator--error` |
+| Success | `has-highlight-indicator--success` |
+| Warning | `has-highlight-indicator--warning` |
 
 ```html
 <ul role="tree" aria-label="Root Tree" id="TREE3L1" class="fd-tree expanded-level-3">
@@ -495,7 +522,16 @@ To display tree items with highlight indicators, add the \
 
 ### Navigable
 
-Tree can be displayed with navigation links by anchoring the \
+Tree can be displayed with navigation links by anchoring the `href` attribute with the `fd-tree__content` class. If only a subset of the tree items is navigable, you should indicate them with navigation arrows.
+
+####Navigation arrows
+To display navigation arrows in tree items, create an element with `fd-tree__icon` and `fd-tree__icon--navigation` classes inside `fd-tree__item-container` with the `fd-tree__item-container--active` modifier class applied.
+
+**If all items are navigable:** Do not display arrows at all. In this case, add the `fd-tree--active` modifier class to the root tree. This will add states (hover, selected, active) to all tree items.
+
+**If an item has been navigated:** When a user has navigated to an item but has since moved onto another item, you can indicate that it has been navigated to by adding the `is-navigated` class to the `fd-tree__item-container` element.
+
+**Note:** In this example, each level indents by 0.25rem more than the previous level (up to level 12).
 
 ```html
 <ul role="tree" aria-label="Root Tree" id="TREE6CL1" class="fd-tree expanded-level-6">
@@ -648,7 +684,13 @@ Tree can be displayed with navigation links by anchoring the \
 
 ### Selection
 
-Tree can be displayed with checkboxes, allowing the user to select multiple items. To display selected tree items, add the \
+Tree can be displayed with checkboxes, allowing the user to select multiple items. To display selected tree items, add the `is-selected` class to the `fd-tree__item-container` element.
+
+####Form items
+Form items can be added before or after the `fd-tree__content` element. The `fd-tree__form-item ` class must be added together with the `fd-form-item` element.
+
+- Multi-selection: use **Checkboxes**
+- Single selection: use **Radio buttons**
 
 ```html
 <h3>Left multi-selection(Dependent Selections)</h3>
@@ -1003,7 +1045,7 @@ Tree can be displayed with checkboxes, allowing the user to select multiple item
 
 ### No data
 
-If there is no data to display, add the \
+If there is no data to display, add the `fd-tree--no-data` modifier class to the root tree.
 
 ```html
 <ul role="tree" aria-label="Root Tree" id="TREE1RTLND1" class="fd-tree fd-tree--no-data">
@@ -1019,7 +1061,7 @@ If there is no data to display, add the \
 
 ### Long text
 
-Tree items truncate long text by default. To enable text wrapping on all items, add the \
+Tree items truncate long text by default. To enable text wrapping on all items, add the `fd-tree--wrap` modifier class to the root tree element. Individual items can also wrap by adding `fd-tree__content--wrap` to the `fd-tree__content` element.
 
 ```html
 <ul role="tree" aria-label="Financial Reports" id="LT_TREE1L1" class="fd-tree expanded-level-1">

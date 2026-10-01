@@ -27,7 +27,7 @@ For the page title, a Title component is utilized that is an H1 but visually sty
 
 -	You want to display finalizing actions at the bottom of the screen. Instead, use the **Bar** component and choose a footer.
 
-Note: You may want to display components from right to left on the screen for international purposes. To display them as such, add the \
+Note: You may want to display components from right to left on the screen for international purposes. To display them as such, add the `rtl` directive to the main element.
 
 ## Usage Guidelines
 
@@ -42,7 +42,7 @@ For the page title, a Title component is utilized that is an H1 but visually sty
 
 -	You want to display finalizing actions at the bottom of the screen. Instead, use the **Bar** component and choose a footer.
 
-Note: You may want to display components from right to left on the screen for international purposes. To display them as such, add the \
+Note: You may want to display components from right to left on the screen for international purposes. To display them as such, add the `rtl` directive to the main element.
 
 ## Dependencies
 
@@ -332,6 +332,7 @@ This action bar is responsive and fits the M and L sizes required for tablet and
     </div>
 
     <p id="action-bar-desc-7" class="fd-action-bar__description fd-action-bar__description--back">Action bar Description</p>
+</div>
 ```
 
 ### Responsive (XL)
@@ -362,6 +363,7 @@ This action bar is responsive and fits the XL size required for larger screens o
         </div>
     </div>
     <p id="action-bar-desc-8" class="fd-action-bar__description fd-action-bar__description--back">Action bar Description </p>
+</div>
 ```
 
 ### Mobile
@@ -375,51 +377,51 @@ This action bar is mobile responsive. To display the mobile action bar, add the 
             <button type="button" aria-label="Go back" title="Go back" class="fd-button fd-button--transparent">
                 <i role="presentation" aria-hidden="true" class="sap-icon--navigation-left-arrow"></i>
             </button>
-            <div class="fd-action-bar__title">
-                <h1 id="action-bar-title-6" class="fd-title fd-title--h3">
-                    Action Bar with description and back button
-                </h1>
-            </div>
-            <div class="fd-action-bar__actions">
-                <div class="fd-popover">
-                    <div class="fd-popover__control">
-                        <button
-                            type="button"
-                            class="fd-button fd-button--transparent"
-                            onclick="onPopoverClick('wgxzK85');"
-                            aria-controls="wgxzK85"
-                            aria-haspopup="true"
-                            aria-expanded="true"
-                            aria-label="More actions"
-                            title="More actions">
-                            <i class="sap-icon--overflow"></i>
-                        </button>
-                    </div>
-                    <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="wgxzK85">
-                        <div class="fd-menu">
-                            <ul class="fd-menu__list fd-menu__list--no-shadow" role="menu" aria-label="More actions">
-                                <li class="fd-menu__item" role="none">
-                                    <a class="fd-menu__link" role="menuitem" href="#">
-                                        <span class="fd-menu__title">Option 1</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item" role="none">
-                                    <a class="fd-menu__link" role="menuitem" href="#">
-                                        <span class="fd-menu__title">Option 2</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item" role="none">
-                                    <a class="fd-menu__link" role="menuitem" href="#">
-                                        <span class="fd-menu__title">Option 3</span>
-                                    </a>
-                                </li>
-                                <li class="fd-menu__item" role="none">
-                                    <a class="fd-menu__link" role="menuitem" href="#">
-                                        <span class="fd-menu__title">Option 4</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+        </div>
+        <div class="fd-action-bar__title">
+            <h1 id="action-bar-title-6" class="fd-title fd-title--h3">
+                Action Bar with description and back button
+            </h1>
+        </div>
+        <div class="fd-action-bar__actions">
+            <div class="fd-popover">
+                <div class="fd-popover__control">
+                    <button
+                        type="button"
+                        class="fd-button fd-button--transparent"
+                        onclick="onPopoverClick('wgxzK85');"
+                        aria-controls="wgxzK85"
+                        aria-haspopup="true"
+                        aria-expanded="true"
+                        aria-label="More actions"
+                        title="More actions">
+                        <i class="sap-icon--overflow"></i>
+                    </button>
+                </div>
+                <div class="fd-popover__body fd-popover__body--right" aria-hidden="false" id="wgxzK85">
+                    <div class="fd-menu">
+                        <ul class="fd-menu__list fd-menu__list--no-shadow" role="menu" aria-label="More actions">
+                            <li class="fd-menu__item" role="none">
+                                <a class="fd-menu__link" role="menuitem" href="#">
+                                    <span class="fd-menu__title">Option 1</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item" role="none">
+                                <a class="fd-menu__link" role="menuitem" href="#">
+                                    <span class="fd-menu__title">Option 2</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item" role="none">
+                                <a class="fd-menu__link" role="menuitem" href="#">
+                                    <span class="fd-menu__title">Option 3</span>
+                                </a>
+                            </li>
+                            <li class="fd-menu__item" role="none">
+                                <a class="fd-menu__link" role="menuitem" href="#">
+                                    <span class="fd-menu__title">Option 4</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

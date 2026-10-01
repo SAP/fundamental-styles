@@ -2,15 +2,15 @@
 component: label
 title: Patterns/Label
 category: patterns
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/common-css/stories/patterns/label/label.stories.js
 generatedAt: 2026-05-28T15:51:35.388Z
 ---
 
 # Patterns/Label
 
-The following classes and mixin provide a way to style your labels per SAP design. 
+The following classes and mixin provide a way to style your labels per SAP design.
 <br><br>
 <b>CSS Classes: </b><br><br>
 <code>.sap-label</code><br>

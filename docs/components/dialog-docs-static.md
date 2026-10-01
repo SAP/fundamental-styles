@@ -13,7 +13,58 @@ stability: stable
 
 # Components/Dialog
 
-The dialog component is a container that appears in response to an action made by the user. It interrupts the app’s current process to prompt the user for either information or a confirmation, which requires them to make a decision before the process can continue. Dialog displays in a fixed position and is activated by adding the \
+The dialog component is a container that appears in response to an action made by the user. It interrupts the app’s current process to prompt the user for either information or a confirmation, which requires them to make a decision before the process can continue. Dialog displays in a fixed position and is activated by adding the `fd-dialog--active` class.
+
+##Usage
+**Use the dialog if:**
+
+- You want to display complex content, but don’t want the user to navigate away from the current page.
+- You want to display an additional step or process that needs to be confirmed by a user action.
+- You want to enable the user to create an object with a small number of fields (up to 8 fields).
+
+**Do not use the dialog if:**
+
+- You want to display a simple message. Use the **Message Box** component instead.
+- You just want to confirm a successful action.
+- You do not want to interrupt the user.
+- You want to enable users to create an object with more than 8 fields. Use an **Object Page** instead.
+
+
+## Structure
+
+**Dialog consists of the following elements:**
+
+- `fd-dialog` Main element
+  - `fd-dialog__content` Dialog window
+    - `fd-dialog__header` Dialog header
+      - `fd-dialog__title` Dialog title
+    - `fd-dialog__body` Dialog content
+    - `fd-dialog__loader` Dialog loader
+    - `fd-dialog__footer` Dialog footer
+      - `fd-dialog__decisive-button` Dialog footer's _Begin/End_ button
+    - `fd-dialog__resize-handle` Handle for resizing modal
+
+**Additional classes (applied to main `.fd-dialog` element):**
+
+- `fd-dialog--no-backdrop` needed, if dialog is used without overlay. Centers the dialog vertically and horizontally
+- `fd-dialog--targeted` to be used, if dialog is attached to the specific element, not body
+
+Note: Dialog's header, subheader and footer are elements from the **Bar** component. This means that dialog headers and footers can be customized using bar component features. To style the elements according to dialog’s needs, CSS classes are used to slightly override bar’s original behaviour.
+
+## Usage Guidelines
+
+**Use the dialog if:**
+
+- You want to display complex content, but don’t want the user to navigate away from the current page.
+- You want to display an additional step or process that needs to be confirmed by a user action.
+- You want to enable the user to create an object with a small number of fields (up to 8 fields).
+
+## When Not To Use
+
+- You want to display a simple message. Use the **Message Box** component instead.
+- You just want to confirm a successful action.
+- You do not want to interrupt the user.
+- You want to enable users to create an object with more than 8 fields. Use an **Object Page** instead.
 
 ## Dependencies
 
@@ -110,6 +161,7 @@ npm install fundamental-styles
             </div>
         </footer>
     </div>
+</div>
 ```
 
 ## States
@@ -117,6 +169,27 @@ npm install fundamental-styles
 | Class | Description |
 |-------|-------------|
 | `is-selected` | Selected state |
+
+## Component Structure
+
+**Dialog consists of the following elements:**
+
+- `fd-dialog` Main element
+  - `fd-dialog__content` Dialog window
+    - `fd-dialog__header` Dialog header
+      - `fd-dialog__title` Dialog title
+    - `fd-dialog__body` Dialog content
+    - `fd-dialog__loader` Dialog loader
+    - `fd-dialog__footer` Dialog footer
+      - `fd-dialog__decisive-button` Dialog footer's _Begin/End_ button
+    - `fd-dialog__resize-handle` Handle for resizing modal
+
+**Additional classes (applied to main `.fd-dialog` element):**
+
+- `fd-dialog--no-backdrop` needed, if dialog is used without overlay. Centers the dialog vertically and horizontally
+- `fd-dialog--targeted` to be used, if dialog is attached to the specific element, not body
+
+Note: Dialog's header, subheader and footer are elements from the **Bar** component. This means that dialog headers and footers can be customized using bar component features. To style the elements according to dialog’s needs, CSS classes are used to slightly override bar’s original behaviour.
 
 ## Related Components
 
@@ -185,6 +258,7 @@ The default dialog component displays a container comprising a header, title, an
             </div>
         </footer>
     </div>
+</div>
 ```
 
 ### Sizes
@@ -197,7 +271,29 @@ These modifier classes are used to display horizontal padding for dialog's heade
 
 | rem | min-width | max width | modifier class |
 | ---- | ---------- | ---------- | ----------- |
-| 0 | _n/a_ | _n/a_ | \
+| 0 | _n/a_ | _n/a_ | `fd-dialog__body--no-horizontal-padding` |
+| 1rem | _n/a_ | 599px | `fd-dialog__content--s` |
+| 2rem | 600px | 1023px | `fd-dialog__content--m` |
+| 2rem | 1024px | 1439px | `fd-dialog__content--l` |
+| 3rem | 1440px | _n/a_ | `fd-dialog__content--xl` |
+
+####Vertical padding
+
+The default dialog’s body has vertical padding, however, it can be removed if it's suitable for the use case.
+
+| Modifier class | Modification |
+| ----------------: | :------------ |
+| `fd-dialog__body--no-vertical-padding` | padding-top: 0, padding-bottom: 0 |
+
+####Mobile
+It is recommended that the default dialog takes the full width and height of the mobile screen. If necessary, this behaviour can be changed using the second modifier class below.
+
+| Modifier class | Modification |
+| ----------------: | :------------ |
+|`fd-dialog__content--mobile` | full width and height of mobile screen |
+| `fd-dialog__content--no-mobile-stretch` | adds additional spacing around the container (margin 6% & 10%) |
+
+Note: On mobile devices, the bar component should be used with the `fd-bar--cozy` class.
 
 ```html
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
@@ -234,114 +330,120 @@ These modifier classes are used to display horizontal padding for dialog's heade
             </div>
         </footer>
     </div>
-    <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-        <div
-            class="fd-dialog__content fd-dialog__content--m"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="dialog-title-3"
-            aria-describedby="dialog-description-3"
-            >
+</div>
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div
+        class="fd-dialog__content fd-dialog__content--m"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dialog-title-3"
+        aria-describedby="dialog-description-3"
+        >
 
-            <header class="fd-dialog__header fd-bar fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-title fd-title--h5" id="dialog-title-3">
-                            Medium Dialog
-                        </h2>
-                    </div>
+        <header class="fd-dialog__header fd-bar fd-bar--header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-3">
+                        Medium Dialog
+                    </h2>
                 </div>
-            </header>
-
-            <section class="fd-dialog__body" id="dialog-description-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            </section>
-
-            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
-                    </div>
-                    <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
-                    </div>
-                </div>
-            </footer>
-        </div>
-        <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-            <div
-                class="fd-dialog__content fd-dialog__content--l"
-                role="dialog"
-                aria-modal="true"
-                aria-labelledby="dialog-title-4"
-                aria-describedby="dialog-description-4"
-                >
-
-                <header class="fd-dialog__header fd-bar fd-bar--header">
-                    <div class="fd-bar__left">
-                        <div class="fd-bar__element">
-                            <h2 class="fd-title fd-title--h5" id="dialog-title-4">
-                                Large Dialog
-                            </h2>
-                        </div>
-                    </div>
-                </header>
-
-                <section class="fd-dialog__body" id="dialog-description-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                </section>
-
-                <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
-                        </div>
-                        <div class="fd-bar__element">
-                            <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
-                        </div>
-                    </div>
-                </footer>
             </div>
+        </header>
 
-            <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-                <div
-                    class="fd-dialog__content fd-dialog__content--xl"
-                    role="dialog"
-                    aria-modal="true"
-                    aria-labelledby="dialog-title-5"
-                    aria-describedby="dialog-description-5"
-                    >
+        <section class="fd-dialog__body" id="dialog-description-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        </section>
 
-                    <header class="fd-dialog__header fd-bar fd-bar--header">
-                        <div class="fd-bar__left">
-                            <div class="fd-bar__element">
-                                <h2 class="fd-title fd-title--h5" id="dialog-title-5">
-                                    Extra Large Dialog
-                                </h2>
-                            </div>
-                        </div>
-                    </header>
-
-                    <section class="fd-dialog__body" id="dialog-description-5">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    </section>
-
-                    <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-                        <div class="fd-bar__right">
-                            <div class="fd-bar__element">
-                                <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
-                            </div>
-                            <div class="fd-bar__element">
-                                <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
-                            </div>
-                        </div>
-                    </footer>
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
                 </div>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div
+        class="fd-dialog__content fd-dialog__content--l"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dialog-title-4"
+        aria-describedby="dialog-description-4"
+        >
+
+        <header class="fd-dialog__header fd-bar fd-bar--header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-4">
+                        Large Dialog
+                    </h2>
+                </div>
+            </div>
+        </header>
+
+        <section class="fd-dialog__body" id="dialog-description-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        </section>
+
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div
+        class="fd-dialog__content fd-dialog__content--xl"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dialog-title-5"
+        aria-describedby="dialog-description-5"
+        >
+
+        <header class="fd-dialog__header fd-bar fd-bar--header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-5">
+                        Extra Large Dialog
+                    </h2>
+                </div>
+            </div>
+        </header>
+
+        <section class="fd-dialog__body" id="dialog-description-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        </section>
+
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
 ```
 
 ### Resizable
 
-Dialog can also be displayed with a resize handle by adding a span element with a \
+Dialog can also be displayed with a resize handle by adding a span element with a `fd-dialog__resize-handle` class inside the `fd-dialog__content` container.
+
+Note: This feature should be enabled for desktop screens only.
 
 ```html
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
@@ -379,6 +481,7 @@ Dialog can also be displayed with a resize handle by adding a span element with 
             </div>
         </footer>
     </div>
+</div>
 ```
 
 ### Draggable
@@ -387,7 +490,8 @@ Dialog can be draggable, enabling the user to drag the container around with the
 
 | Modifier class | Modification |
 | ----------------: | :------------ |
-| \
+| `fd-dialog__content--draggable-grab` | Modifies the element to be draggable |
+| `fd-dialog__content--draggable-grabbing` | Visualizes the grabbing cursor |
 
 ```html
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">
@@ -423,11 +527,12 @@ Dialog can be draggable, enabling the user to drag the container around with the
             </div>
         </footer>
     </div>
+</div>
 ```
 
 ### Selectable
 
-The selectable dialog displays list items in the content area that can be selected. Users can search items from the list, select one or more items, and finalize their choice by selecting the _Select_ button. To display the selectable dialog, include the \
+The selectable dialog displays list items in the content area that can be selected. Users can search items from the list, select one or more items, and finalize their choice by selecting the _Select_ button. To display the selectable dialog, include the `fd-list is-compact` class to the body's container element.
 
 ```html
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active" id="select-dialog-example">
@@ -538,6 +643,7 @@ The selectable dialog displays list items in the content area that can be select
             </div>
         </footer>
     </div>
+</div>
 ```
 
 ### Loading
@@ -577,6 +683,7 @@ Dialog can display a busy indicator that signals to the user that data is loadin
                 </div>
             </footer>
         </div>
+    </div>
 ```
 
 ### HorizontalForm
@@ -686,6 +793,7 @@ Horizontal Form displays all the components aligned horizontally. It is created 
             </div>
         </footer>
     </div>
+</div>
 ```
 
 ### VerticalForm
@@ -794,6 +902,7 @@ Verical Form displays all the components aligned vertically. It is created by po
             </div>
         </footer>
     </div>
+</div>
 ```
 
 ### TabletAndHybridDeviceSpecification
@@ -846,130 +955,134 @@ To properly support resizing for all input methods, the optional resize handle i
             </div>
         </footer>
     </div>
+</div>
 
-    <h3>Tablet with mouse attached</h3>
-    <div>Full Screen Button: visible (<code>sap-icon--full-screen</code>)</div>
-    <div>Resize Handle: visible</div>
-    <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-        <div
-            class="fd-dialog__content fd-dialog__content--s"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="dialog-title-6"
-            >
-            <span class="fd-dialog__resize-handle"></span>
-            <header class="fd-dialog__header fd-bar fd-bar--header">
-                <div class="fd-bar__left">
-                    <div class="fd-bar__element">
-                        <h2 class="fd-title fd-title--h5" id="dialog-title-6">Lorem ipsum</h2>
-                    </div>
+<h3>Tablet with mouse attached</h3>
+<div>Full Screen Button: visible (<code>sap-icon--full-screen</code>)</div>
+<div>Resize Handle: visible</div>
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div
+        class="fd-dialog__content fd-dialog__content--s"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dialog-title-6"
+        >
+        <span class="fd-dialog__resize-handle"></span>
+        <header class="fd-dialog__header fd-bar fd-bar--header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-6">Lorem ipsum</h2>
                 </div>
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button aria-label="Expand to full screen" class="fd-button fd-button--transparent">
-                            <i class="sap-icon--full-screen"></i>
-                        </button>
-                    </div>
-                </div>
-            </header>
-            <div class="fd-dialog__body">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             </div>
-            <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-                <div class="fd-bar__right">
-                    <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
-                    </div>
-                    <div class="fd-bar__element">
-                        <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
-                    </div>
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button aria-label="Expand to full screen" class="fd-button fd-button--transparent">
+                        <i class="sap-icon--full-screen"></i>
+                    </button>
                 </div>
-            </footer>
-        </section>
-
-        <h3>Hybrid device</h3>
-        <div>Full Screen Button: visible (<code>sap-icon--full-screen</code>)</div>
-        <div>Resize Handle: visible</div>
-        <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-            <div
-                class="fd-dialog__content fd-dialog__content--s"
-                role="dialog"
-                aria-modal="true"
-                aria-labelledby="dialog-title-6"
-                >
-                <span class="fd-dialog__resize-handle"></span>
-                <header class="fd-dialog__header fd-bar fd-bar--header fd-bar--compact">
-                    <div class="fd-bar__left">
-                        <div class="fd-bar__element">
-                            <h2 class="fd-title fd-title--h5" id="dialog-title-6">Lorem ipsum</h2>
-                        </div>
-                    </div>
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button aria-label="Expand to full screen" class="fd-button fd-button--transparent">
-                                <i class="sap-icon--full-screen"></i>
-                            </button>
-                        </div>
-                    </div>
-                </header>
-                <div class="fd-dialog__body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            </div>
+        </header>
+        <div class="fd-dialog__body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        </div>
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
                 </div>
-                <footer class="fd-dialog__footer fd-bar fd-bar--compact fd-bar--footer">
-                    <div class="fd-bar__right">
-                        <div class="fd-bar__element">
-                            <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
-                        </div>
-                        <div class="fd-bar__element">
-                            <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
-                        </div>
-                    </div>
-                </footer>
-            </section>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>
 
-            <h3>Full screen</h3>
-            <div>Full Screen Button: visible (<code>sap-icon--exitfullscreen</code>)</div>
-            <div>Resize Handle: not visible</div>
-            <section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
-                <div
-                    class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile"
-                    role="dialog"
-                    aria-modal="true"
-                    aria-labelledby="dialog-title-6"
-                    >
-                    <header class="fd-dialog__header fd-bar fd-bar--header">
-                        <div class="fd-bar__left">
-                            <div class="fd-bar__element">
-                                <h2 class="fd-title fd-title--h5" id="dialog-title-6">Lorem ipsum</h2>
-                            </div>
-                        </div>
-                        <div class="fd-bar__right">
-                            <div class="fd-bar__element">
-                                <button aria-label="Expand to full screen" class="fd-button fd-button--transparent">
-                                    <i class="sap-icon--exitfullscreen"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </header>
-                    <div class="fd-dialog__body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    </div>
-                    <footer class="fd-dialog__footer fd-bar fd-bar--footer">
-                        <div class="fd-bar__right">
-                            <div class="fd-bar__element">
-                                <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
-                            </div>
-                            <div class="fd-bar__element">
-                                <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
-                            </div>
-                        </div>
-                    </footer>
-                </section>
+<h3>Hybrid device</h3>
+<div>Full Screen Button: visible (<code>sap-icon--full-screen</code>)</div>
+<div>Resize Handle: visible</div>
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div
+        class="fd-dialog__content fd-dialog__content--s"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dialog-title-6"
+        >
+        <span class="fd-dialog__resize-handle"></span>
+        <header class="fd-dialog__header fd-bar fd-bar--header fd-bar--compact">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-6">Lorem ipsum</h2>
+                </div>
+            </div>
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button aria-label="Expand to full screen" class="fd-button fd-button--transparent">
+                        <i class="sap-icon--full-screen"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="fd-dialog__body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        </div>
+        <footer class="fd-dialog__footer fd-bar fd-bar--compact fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>
+
+<h3>Full screen</h3>
+<div>Full Screen Button: visible (<code>sap-icon--exitfullscreen</code>)</div>
+<div>Resize Handle: not visible</div>
+<section class="fd-dialog-docs-static fd-dialog fd-dialog--active">
+    <div
+        class="fd-dialog__content fd-dialog__content--s fd-dialog__content--mobile"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="dialog-title-6"
+        >
+        <header class="fd-dialog__header fd-bar fd-bar--header">
+            <div class="fd-bar__left">
+                <div class="fd-bar__element">
+                    <h2 class="fd-title fd-title--h5" id="dialog-title-6">Lorem ipsum</h2>
+                </div>
+            </div>
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button aria-label="Expand to full screen" class="fd-button fd-button--transparent">
+                        <i class="sap-icon--exitfullscreen"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="fd-dialog__body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        </div>
+        <footer class="fd-dialog__footer fd-bar fd-bar--footer">
+            <div class="fd-bar__right">
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--emphasized">Save</button>
+                </div>
+                <div class="fd-bar__element">
+                    <button class="fd-dialog__decisive-button fd-button fd-button--transparent">Cancel</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>
 ```
 
 ### Long text list
 
-Dialogs can contain lists with long item text. List items truncate text by default. Add the \
+Dialogs can contain lists with long item text. List items truncate text by default. Add the `fd-list--wrap` modifier class to the `fd-list` element, and `fd-list__item--wrap` to each item, to enable text wrapping within the dialog body.
 
 ```html
 <div class="fd-dialog-docs-static fd-dialog fd-dialog--active">

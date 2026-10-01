@@ -53,7 +53,21 @@ Below are examples of how to add semantic statuses to the components:
 ## Structure
 **Object list consists of the following elements:**
 
-  - \
+  - `fd-object-list` ul element
+   - `fd-object-list__item` li element
+     - `fd-object-list__container` container to hold child elements
+       - `fd-object-list__intro` introduction text div
+       - `fd-object-list__header` container to hold header elements
+         - `fd-object-list__header-left` container to hold header left elements
+           - `fd-object-list__object-identifier` object identifier element
+         - `fd-object-list__header-right` container to hold header right elements
+           - `fd-object-list__object-number` object number element
+       - `fd-object-list__content` container to hold rows of attributes and status elements
+        - `fd-object-list__row` container to hold attributes and status elements
+         - `fd-object-list__row-right` container to hold right elements of row
+           - `fd-object-status`, `fd-object-marker` object status and object status elements
+         - `fd-object-list__row-left` container to hold left elements of row
+           - `fd-object-list__object-attribute` object attribute element
 
 ## Usage Guidelines
 
@@ -359,7 +373,21 @@ This component uses the following BEM elements:
 
 **Object list consists of the following elements:**
 
-  - \
+  - `fd-object-list` ul element
+   - `fd-object-list__item` li element
+     - `fd-object-list__container` container to hold child elements
+       - `fd-object-list__intro` introduction text div
+       - `fd-object-list__header` container to hold header elements
+         - `fd-object-list__header-left` container to hold header left elements
+           - `fd-object-list__object-identifier` object identifier element
+         - `fd-object-list__header-right` container to hold header right elements
+           - `fd-object-list__object-number` object number element
+       - `fd-object-list__content` container to hold rows of attributes and status elements
+        - `fd-object-list__row` container to hold attributes and status elements
+         - `fd-object-list__row-right` container to hold right elements of row
+           - `fd-object-status`, `fd-object-marker` object status and object status elements
+         - `fd-object-list__row-left` container to hold left elements of row
+           - `fd-object-list__object-attribute` object attribute element
 
 ## Related Components
 
@@ -751,12 +779,77 @@ Object list items can be selectable by adding the `fd-list--selection` and `fd-l
 
 ```html
 <h4 id="objectListItemRowSelection">Object List Item With Row Selection</h4>
+
 <ul class="fd-list fd-object-list fd-list--selection fd-list--selection-row" role="listbox" aria-labelledby="objectListItemRowSelection">
     <li role="option" aria-selected="true" tabindex="0" class="fd-list__item fd-object-list__item is-selected">
         <div class="fd-object-list__container">
             <div class="fd-object-list__intro">
                 Optional inline text
+            </div>
+            <div class="fd-object-list__header">
+                <div class="fd-object-list__header-left">
+                    <div class="fd-object-identifier fd-object-list__object-identifier">
+                        <p class="fd-object-identifier__title">
+                            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
+                        </p>
+                    </div>
+                </div>
+                <div class="fd-object-list__header-right">
+                    <span class="fd-object-number fd-object-list__object-number">
+                        <span class="fd-object-number__text">457.00</span>
+                        <span class="fd-object-number__unit">Euro</span>
+                    </span>
+                </div>
+            </div>
+            <div class="fd-object-list__content">
+                <div class="fd-object-list__row">
+                    <div class="fd-object-list__row-left">
+                        <div class="fd-object-list__object-attribute">
+
+                            First Attribute
+                        </div>
+                    </div>
+                    <div class="fd-object-list__row-right">
+                        <div class="fd-object-marker">
+                            <i class="fd-object-marker__icon sap-icon--flag"
+                                aria-label="icon for flag"></i>
+                            </div>
+                            <div class="fd-object-marker">
+                                <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fd-object-list__row">
+                        <div class="fd-object-list__row-left">
+                            <div class="fd-object-list__object-attribute">
+                                Second Attribute
+                            </div>
+                        </div>
+                        <div class="fd-object-list__row-right">
+                            <span class="fd-object-status fd-object-status--critical">
+                                <span class="fd-object-status__text">Avaliable</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="fd-object-list__row">
+                        <div class="fd-object-list__row-left">
+                            <div class="fd-object-list__object-attribute">
+                                Third Attribute
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li role="option" aria-selected="false" tabindex="0" class="fd-list__item fd-object-list__item">
+            <div class="fd-object-list__container">
+                <div class="fd-object-list__intro">
+                    Optional inline text
+                </div>
                 <div class="fd-object-list__header">
+                    <span class="fd-avatar fd-avatar--s"
+                        >
+                    </span>
                     <div class="fd-object-list__header-left">
                         <div class="fd-object-identifier fd-object-list__object-identifier">
                             <p class="fd-object-identifier__title">
@@ -765,8 +858,8 @@ Object list items can be selectable by adding the `fd-list--selection` and `fd-l
                         </div>
                     </div>
                     <div class="fd-object-list__header-right">
-                        <span class="fd-object-number fd-object-list__object-number">
-                            <span class="fd-object-number__text">457.00</span>
+                        <span class="fd-object-number fd-object-number--positive fd-object-list__object-number">
+                            <span class="fd-object-number__text">666.00</span>
                             <span class="fd-object-number__unit">Euro</span>
                         </span>
                     </div>
@@ -780,99 +873,35 @@ Object list items can be selectable by adding the `fd-list--selection` and `fd-l
                             </div>
                         </div>
                         <div class="fd-object-list__row-right">
-                            <div class="fd-object-marker">
-                                <i class="fd-object-marker__icon sap-icon--flag"
-                                    aria-label="icon for flag"></i>
-                                </div>
-                                <div class="fd-object-marker">
-                                    <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-                                    Second Attribute
-                                </div>
-                            </div>
-                            <div class="fd-object-list__row-right">
-                                <span class="fd-object-status fd-object-status--critical">
-                                    <span class="fd-object-status__text">Avaliable</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-                                    Third Attribute
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li role="option" aria-selected="false" tabindex="0" class="fd-list__item fd-object-list__item">
-                <div class="fd-object-list__container">
-                    <div class="fd-object-list__intro">
-                        Optional inline text
-                    </div>
-                    <div class="fd-object-list__header">
-                        <span class="fd-avatar fd-avatar--s"
-                            >
-                        </span>
-                        <div class="fd-object-list__header-left">
-                            <div class="fd-object-identifier fd-object-list__object-identifier">
-                                <p class="fd-object-identifier__title">
-                                    Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
-                                </p>
-                            </div>
-                        </div>
-                        <div class="fd-object-list__header-right">
-                            <span class="fd-object-number fd-object-number--positive fd-object-list__object-number">
-                                <span class="fd-object-number__text">666.00</span>
-                                <span class="fd-object-number__unit">Euro</span>
+                            <span class="fd-object-status fd-object-status--negative">
+                                <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
+                                <span class="fd-object-status__text">Negative</span>
                             </span>
                         </div>
                     </div>
-                    <div class="fd-object-list__content">
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-
-                                    First Attribute
-                                </div>
-                            </div>
-                            <div class="fd-object-list__row-right">
-                                <span class="fd-object-status fd-object-status--negative">
-                                    <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
-                                    <span class="fd-object-status__text">Negative</span>
-                                </span>
+                    <div class="fd-object-list__row">
+                        <div class="fd-object-list__row-left">
+                            <div class="fd-object-list__object-attribute">
+                                Second Attribute
                             </div>
                         </div>
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-                                    Second Attribute
-                                </div>
-                            </div>
-                            <div class="fd-object-list__row-right">
-                                <span class="fd-object-status fd-object-status--informative">
-                                    <span class="fd-object-status__text">Informative</span>
-                                </span>
-                            </div>
+                        <div class="fd-object-list__row-right">
+                            <span class="fd-object-status fd-object-status--informative">
+                                <span class="fd-object-status__text">Informative</span>
+                            </span>
                         </div>
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-                                    Third Attribute
-                                </div>
+                    </div>
+                    <div class="fd-object-list__row">
+                        <div class="fd-object-list__row-left">
+                            <div class="fd-object-list__object-attribute">
+                                Third Attribute
                             </div>
                         </div>
                     </div>
                 </div>
-            </li>
-        </ul>
-    </div>
+            </div>
+        </li>
+    </ul>
 ```
 
 ### SelectionWithNavigation
@@ -1085,11 +1114,76 @@ Object list items can be displayed without borders. To display a borderless list
 
 ```html
 <h4 id="objectListItemBorderless">Borderless Object List Item</h4>
+
 <ul class="fd-list fd-object-list fd-list--no-border" role="list" aria-labelledby="objectListItemBorderless">
     <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
         <div class="fd-object-list__container">
             <div class="fd-object-list__intro">
                 Optional inline text very very very long
+            </div>
+            <div class="fd-object-list__header">
+                <span class="fd-avatar fd-avatar--s"
+                    >
+                </span>
+                <div class="fd-object-list__header-left">
+                    <div class="fd-object-identifier fd-object-list__object-identifier">
+                        <p class="fd-object-identifier__title">
+                            Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
+                        </p>
+                    </div>
+                </div>
+                <div class="fd-object-list__header-right">
+                    <span class="fd-object-number fd-object-list__object-number">
+                        <span class="fd-object-number__text">457.00</span>
+                        <span class="fd-object-number__unit">Euro</span>
+                    </span>
+                </div>
+            </div>
+            <div class="fd-object-list__content">
+                <div class="fd-object-list__row">
+                    <div class="fd-object-list__row-left">
+                        <div class="fd-object-list__object-attribute">
+
+                            First Attribute
+                        </div>
+                    </div>
+                    <div class="fd-object-list__row-right">
+                        <div class="fd-object-marker">
+                            <i class="fd-object-marker__icon sap-icon--flag"
+                                aria-label="icon for flag"></i>
+                            </div>
+                            <div class="fd-object-marker">
+                                <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fd-object-list__row">
+                        <div class="fd-object-list__row-left">
+                            <div class="fd-object-list__object-attribute">
+                                Second Attribute
+                            </div>
+                        </div>
+                        <div class="fd-object-list__row-right">
+                            <span class="fd-object-status fd-object-status--positive">
+                                <span class="fd-object-status__text">Positive very very very long</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="fd-object-list__row">
+                        <div class="fd-object-list__row-left">
+                            <div class="fd-object-list__object-attribute">
+                                Third Attribute
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
+            <div class="fd-object-list__container">
+                <div class="fd-object-list__intro">
+                    Optional inline text very very very long
+                </div>
                 <div class="fd-object-list__header">
                     <span class="fd-avatar fd-avatar--s"
                         >
@@ -1102,8 +1196,8 @@ Object list items can be displayed without borders. To display a borderless list
                         </div>
                     </div>
                     <div class="fd-object-list__header-right">
-                        <span class="fd-object-number fd-object-list__object-number">
-                            <span class="fd-object-number__text">457.00</span>
+                        <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
+                            <span class="fd-object-number__text">956.00</span>
                             <span class="fd-object-number__unit">Euro</span>
                         </span>
                     </div>
@@ -1117,163 +1211,99 @@ Object list items can be displayed without borders. To display a borderless list
                             </div>
                         </div>
                         <div class="fd-object-list__row-right">
-                            <div class="fd-object-marker">
-                                <i class="fd-object-marker__icon sap-icon--flag"
-                                    aria-label="icon for flag"></i>
-                                </div>
-                                <div class="fd-object-marker">
-                                    <i class="fd-object-marker__icon sap-icon--favorite" aria-label="icon for favourite"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-                                    Second Attribute
-                                </div>
-                            </div>
-                            <div class="fd-object-list__row-right">
-                                <span class="fd-object-status fd-object-status--positive">
-                                    <span class="fd-object-status__text">Positive very very very long</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-                                    Third Attribute
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
-                <div class="fd-object-list__container">
-                    <div class="fd-object-list__intro">
-                        Optional inline text very very very long
-                    </div>
-                    <div class="fd-object-list__header">
-                        <span class="fd-avatar fd-avatar--s"
-                            >
-                        </span>
-                        <div class="fd-object-list__header-left">
-                            <div class="fd-object-identifier fd-object-list__object-identifier">
-                                <p class="fd-object-identifier__title">
-                                    Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
-                                </p>
-                            </div>
-                        </div>
-                        <div class="fd-object-list__header-right">
-                            <span class="fd-object-number fd-object-number--critical fd-object-list__object-number">
-                                <span class="fd-object-number__text">956.00</span>
-                                <span class="fd-object-number__unit">Euro</span>
+                            <span class="fd-object-status fd-object-status--negative">
+                                <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
+                                <span class="fd-object-status__text">Negative</span>
                             </span>
                         </div>
                     </div>
-                    <div class="fd-object-list__content">
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-
-                                    First Attribute
-                                </div>
-                            </div>
-                            <div class="fd-object-list__row-right">
-                                <span class="fd-object-status fd-object-status--negative">
-                                    <i class="fd-object-status__icon sap-icon--message-error" role="presentation"></i>
-                                    <span class="fd-object-status__text">Negative</span>
-                                </span>
+                    <div class="fd-object-list__row">
+                        <div class="fd-object-list__row-left">
+                            <div class="fd-object-list__object-attribute">
+                                Second Attribute
                             </div>
                         </div>
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-                                    Second Attribute
-                                </div>
-                            </div>
-                            <div class="fd-object-list__row-right">
-                                <span class="fd-object-status fd-object-status--critical">
-                                    <span class="fd-object-status__text">Critical</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-                                    Third Attribute
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
-                <div class="fd-object-list__container">
-                    <div class="fd-object-list__intro">
-                        Optional inline text very very very long
-                    </div>
-                    <div class="fd-object-list__header">
-                        <span class="fd-avatar fd-avatar--s"
-                            >
-                        </span>
-                        <div class="fd-object-list__header-left">
-                            <div class="fd-object-identifier fd-object-list__object-identifier">
-                                <p class="fd-object-identifier__title">
-                                    Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
-                                </p>
-                            </div>
-                        </div>
-                        <div class="fd-object-list__header-right">
-                            <span class="fd-object-number fd-object-list__object-number">
-                                <span class="fd-object-number__text">956.00</span>
-                                <span class="fd-object-number__unit">Euro</span>
+                        <div class="fd-object-list__row-right">
+                            <span class="fd-object-status fd-object-status--critical">
+                                <span class="fd-object-status__text">Critical</span>
                             </span>
                         </div>
                     </div>
-                    <div class="fd-object-list__content">
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-
-                                    First Attribute
-                                </div>
-                            </div>
-                            <div class="fd-object-list__row-right">
-                                <span class="fd-object-status fd-object-status--inverted fd-object-status--critical">
-                                    <span class="fd-object-status__text">Warning</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-                                    Second Attribute
-                                </div>
-                            </div>
-                            <div class="fd-object-list__row-right">
-                                <span class="fd-object-status fd-object-status--critical">
-                                    <span class="fd-object-status__text">Critical</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-                                    Third Attribute
-                                </div>
+                    <div class="fd-object-list__row">
+                        <div class="fd-object-list__row-left">
+                            <div class="fd-object-list__object-attribute">
+                                Third Attribute
                             </div>
                         </div>
                     </div>
                 </div>
-            </li>
-        </ul>
-    </div>
+            </div>
+        </li>
+        <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
+            <div class="fd-object-list__container">
+                <div class="fd-object-list__intro">
+                    Optional inline text very very very long
+                </div>
+                <div class="fd-object-list__header">
+                    <span class="fd-avatar fd-avatar--s"
+                        >
+                    </span>
+                    <div class="fd-object-list__header-left">
+                        <div class="fd-object-identifier fd-object-list__object-identifier">
+                            <p class="fd-object-identifier__title">
+                                Fitbit Versa Smart Watch, Black Fitbit Versa Smart Watch
+                            </p>
+                        </div>
+                    </div>
+                    <div class="fd-object-list__header-right">
+                        <span class="fd-object-number fd-object-list__object-number">
+                            <span class="fd-object-number__text">956.00</span>
+                            <span class="fd-object-number__unit">Euro</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="fd-object-list__content">
+                    <div class="fd-object-list__row">
+                        <div class="fd-object-list__row-left">
+                            <div class="fd-object-list__object-attribute">
+
+                                First Attribute
+                            </div>
+                        </div>
+                        <div class="fd-object-list__row-right">
+                            <span class="fd-object-status fd-object-status--inverted fd-object-status--critical">
+                                <span class="fd-object-status__text">Warning</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="fd-object-list__row">
+                        <div class="fd-object-list__row-left">
+                            <div class="fd-object-list__object-attribute">
+                                Second Attribute
+                            </div>
+                        </div>
+                        <div class="fd-object-list__row-right">
+                            <span class="fd-object-status fd-object-status--critical">
+                                <span class="fd-object-status__text">Critical</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="fd-object-list__row">
+                        <div class="fd-object-list__row-left">
+                            <div class="fd-object-list__object-attribute">
+                                Third Attribute
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
 ```
 
 ### Long text
 
-Object list items truncate long text by default. Add the \
+Object list items truncate long text by default. Add the `fd-object-list--wrap` modifier class to the `fd-object-list` element to enable text wrapping for intro text, attributes, and the object identifier title.
 
 ```html
 <p>Default (truncation)</p>
@@ -1282,93 +1312,93 @@ Object list items truncate long text by default. Add the \
         <div class="fd-object-list__container">
             <div class="fd-object-list__intro">
                 Optional additional context about this sales order line item originating from the global procurement and supply chain management system
-                <div class="fd-object-list__header">
-                    <div class="fd-object-list__header-left">
-                        <div class="fd-object-identifier fd-object-list__object-identifier">
-                            <p class="fd-object-identifier__title">
-                                Dell XPS 15 Laptop with 11th Gen Intel Core i7 Processor and NVIDIA GeForce RTX Graphics
-                            </p>
-                        </div>
-                        <div class="fd-object-list__header-right">
-                            <span class="fd-object-number fd-object-list__object-number">
-                                <span class="fd-object-number__text">1,299.00</span>
-                                <span class="fd-object-number__unit">USD</span>
-                            </span>
+            </div>
+            <div class="fd-object-list__header">
+                <div class="fd-object-list__header-left">
+                    <div class="fd-object-identifier fd-object-list__object-identifier">
+                        <p class="fd-object-identifier__title">
+                            Dell XPS 15 Laptop with 11th Gen Intel Core i7 Processor and NVIDIA GeForce RTX Graphics
+                        </p>
+                    </div>
+                </div>
+                <div class="fd-object-list__header-right">
+                    <span class="fd-object-number fd-object-list__object-number">
+                        <span class="fd-object-number__text">1,299.00</span>
+                        <span class="fd-object-number__unit">USD</span>
+                    </span>
+                </div>
+            </div>
+            <div class="fd-object-list__content">
+                <div class="fd-object-list__row">
+                    <div class="fd-object-list__row-left">
+                        <div class="fd-object-list__object-attribute">
+                            Enterprise Resource Planning Product Category
                         </div>
                     </div>
-                    <div class="fd-object-list__content">
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-                                    Enterprise Resource Planning Product Category
-                                </div>
-                            </div>
-                            <div class="fd-object-list__row-right">
-                                <span class="fd-object-status fd-object-status--critical">
-                                    <span class="fd-object-status__text">Below Minimum Required Inventory Level for Restocking</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-                                    Country of Origin and Manufacturing Facility
-                                </div>
-                            </div>
+                    <div class="fd-object-list__row-right">
+                        <span class="fd-object-status fd-object-status--critical">
+                            <span class="fd-object-status__text">Below Minimum Required Inventory Level for Restocking</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="fd-object-list__row">
+                    <div class="fd-object-list__row-left">
+                        <div class="fd-object-list__object-attribute">
+                            Country of Origin and Manufacturing Facility
                         </div>
                     </div>
                 </div>
-            </li>
-        </ul>
-    </div>
+            </div>
+        </div>
+    </li>
+</ul>
 
-    <p>With <code>fd-object-list--wrap</code></p>
-    <ul class="fd-list fd-object-list fd-object-list--wrap" role="list">
-        <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
-            <div class="fd-object-list__container">
-                <div class="fd-object-list__intro">
-                    Optional additional context about this sales order line item originating from the global procurement and supply chain management system
-                    <div class="fd-object-list__header">
-                        <div class="fd-object-list__header-left">
-                            <div class="fd-object-identifier fd-object-list__object-identifier">
-                                <p class="fd-object-identifier__title">
-                                    Dell XPS 15 Laptop with 11th Gen Intel Core i7 Processor and NVIDIA GeForce RTX Graphics
-                                </p>
-                            </div>
-                        </div>
-                        <div class="fd-object-list__header-right">
-                            <span class="fd-object-number fd-object-list__object-number">
-                                <span class="fd-object-number__text">1,299.00</span>
-                                <span class="fd-object-number__unit">USD</span>
-                            </span>
+<p>With <code>fd-object-list--wrap</code></p>
+<ul class="fd-list fd-object-list fd-object-list--wrap" role="list">
+    <li role="listitem" tabindex="0" class="fd-list__item fd-object-list__item">
+        <div class="fd-object-list__container">
+            <div class="fd-object-list__intro">
+                Optional additional context about this sales order line item originating from the global procurement and supply chain management system
+            </div>
+            <div class="fd-object-list__header">
+                <div class="fd-object-list__header-left">
+                    <div class="fd-object-identifier fd-object-list__object-identifier">
+                        <p class="fd-object-identifier__title">
+                            Dell XPS 15 Laptop with 11th Gen Intel Core i7 Processor and NVIDIA GeForce RTX Graphics
+                        </p>
+                    </div>
+                </div>
+                <div class="fd-object-list__header-right">
+                    <span class="fd-object-number fd-object-list__object-number">
+                        <span class="fd-object-number__text">1,299.00</span>
+                        <span class="fd-object-number__unit">USD</span>
+                    </span>
+                </div>
+            </div>
+            <div class="fd-object-list__content">
+                <div class="fd-object-list__row">
+                    <div class="fd-object-list__row-left">
+                        <div class="fd-object-list__object-attribute">
+                            Enterprise Resource Planning Product Category
                         </div>
                     </div>
-                    <div class="fd-object-list__content">
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-                                    Enterprise Resource Planning Product Category
-                                </div>
-                            </div>
-                            <div class="fd-object-list__row-right">
-                                <span class="fd-object-status fd-object-status--critical">
-                                    <span class="fd-object-status__text">Below Minimum Required Inventory Level for Restocking</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="fd-object-list__row">
-                            <div class="fd-object-list__row-left">
-                                <div class="fd-object-list__object-attribute">
-                                    Country of Origin and Manufacturing Facility
-                                </div>
-                            </div>
+                    <div class="fd-object-list__row-right">
+                        <span class="fd-object-status fd-object-status--critical">
+                            <span class="fd-object-status__text">Below Minimum Required Inventory Level for Restocking</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="fd-object-list__row">
+                    <div class="fd-object-list__row-left">
+                        <div class="fd-object-list__object-attribute">
+                            Country of Origin and Manufacturing Facility
                         </div>
                     </div>
                 </div>
-            </li>
-        </ul>
-    </div>
-</div>
+            </div>
+        </div>
+    </li>
+</ul>
 ```
 
 ## Accessibility

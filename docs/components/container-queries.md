@@ -2,8 +2,8 @@
 component: container-queries
 title: Container Queries
 category: container-queries
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/common-css/stories/container-queries/container-queries.stories.js
 tags: []
 dependencies: []
@@ -13,7 +13,7 @@ stability: stable
 
 # Container Queries
 
-Container queries are similar to media queries, but they allow you to apply styles to an element based on the dimensions of the element's container rather than the device’s viewport. For more information please visit the <a target="_blank" title="MDN documentation website" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_container_queries">MDN website</a>.   
+Container queries are similar to media queries, but they allow you to apply styles to an element based on the dimensions of the element's container rather than the device’s viewport. For more information please visit the <a target="_blank" title="MDN documentation website" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_container_queries">MDN website</a>.
         <br><br><br>
         <h3>Containment Context</h3>
         To define a container, you need to specify the <code>container-type</code> property on the element. The container-type can accept three options: size, inline-size, and normal. <br>

@@ -212,7 +212,7 @@ The default switch displays what resembles a physical switch that toggles betwee
 
 ### SemanticSwitch
 
-The switch can be displayed with semantic colors, such as green for active and red for inactive. To display a semantic switch, add the \
+The switch can be displayed with semantic colors, such as green for active and red for inactive. To display a semantic switch, add the `fd-switch—semantic` modifier class to the main element.
 
 ```html
 <div class="fd-form-group">
@@ -236,7 +236,7 @@ The switch can be displayed with semantic colors, such as green for active and r
 
 ### Text Switch
 
-For technical compatibility reasons, it is also possible – although not advised – to have a switch that contains a text element, instead of an icon. Add the \
+For technical compatibility reasons, it is also possible – although not advised – to have a switch that contains a text element, instead of an icon. Add the `fd-switch--text` modifier class to the main element.
 
 ```html
 <div class="fd-form-group">

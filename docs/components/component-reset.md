@@ -2,8 +2,8 @@
 component: reset
 title: Component Reset
 category: reset
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/common-css/stories/reset/reset.stories.js
 tags: []
 dependencies: []

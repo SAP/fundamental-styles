@@ -2,8 +2,8 @@
 component: paddings
 title: Layouts/Paddings
 category: Layouts
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/styles/stories/Layouts/paddings/paddings.stories.js
 tags: []
 dependencies: ["paddings"]
@@ -54,7 +54,7 @@ Key CSS variables used by this component:
 
 ### All-Round Padding
 
-All-round padding appears on all sides of the container they are applied to. Use \
+All-round padding appears on all sides of the container they are applied to. Use `fd-padding` class to apply a padding of 1rem.
 
 ```html
 <div class="docs-column-flex docs-column-flex--align-start">
@@ -66,7 +66,14 @@ All-round padding appears on all sides of the container they are applied to. Use
 
 ### Double-Sided Padding
 
-Double sided paddings appear on two opposite sides of the element. Use \
+Double sided paddings appear on two opposite sides of the element. Use `fd-padding-begin-end` class with any of the following modifiers:
+
+| Element | Modifier class |
+| ----------------: | :------------ |
+| Tiny | `fd-padding-begin-end--tiny` |
+| Small | `fd-padding-begin-end--sm` |
+| Medium | `fd-padding-begin-end--md` |
+| Large | `fd-padding-begin-end--lg` |
 
 ```html
 <div class="docs-column-flex docs-column-flex--align-start">
@@ -87,7 +94,7 @@ Double sided paddings appear on two opposite sides of the element. Use \
 
 ### NoPadding
 
-No padding classes remove existing container paddings. Use \
+No padding classes remove existing container paddings. Use `fd-padding--none` modifier to remove existing padding. Place the no padding classes last to make sure they will be applied.
 
 ```html
 <div class="docs-column-flex docs-column-flex--align-start">
@@ -99,7 +106,14 @@ No padding classes remove existing container paddings. Use \
 
 ### ResponsivePadding
 
-The responsive padding class adds a double sided padding inside a container based on its width. Use \
+The responsive padding class adds a double sided padding inside a container based on its width. Use `fd-padding-responsive` class with any of the following modifiers:
+
+| Element | Modifier class |
+| ----------------: | :------------ |
+| Small | `fd-padding-responsive--sm` |
+| Medium | `fd-padding-responsive--md` |
+| Large | `fd-padding-responsive--lg` |
+| Extra-large | `fd-padding-responsive--xl` |
 
 ```html
 <div class="docs-column-flex docs-column-flex--align-start">

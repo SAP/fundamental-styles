@@ -2,8 +2,8 @@
 component: icon
 title: Components/Icons/SAP Icons
 category: Components
-selector: 
-cssFile: 
+selector:
+cssFile:
 sourcePath: packages/styles/stories/Components/Icons/icon/SAPIcons/icon.stories.js
 tags: []
 dependencies: []
@@ -70,10 +70,19 @@ There are different semantic statuses that can be applied to the icon by adding 
 
 | **Status**      | **Modifier class**               |
 | --------------: | :------------------------------- |
-| Default         | \
+| Default         | `sap-icon--color-default`        |
+| Contrast        | `sap-icon--color-contrast`       |
+| Non-interactive | `sap-icon--color-non-interactive`|
+| Tile            | `sap-icon--color-tile`           |
+| Marker          | `sap-icon--color-marker`         |
+| Critical        | `sap-icon--color-critical`       |
+| Negative        | `sap-icon--color-negative`       |
+| Neutral         | `sap-icon--color-neutral`        |
+| Positive        | `sap-icon--color-positive`       |
 
 ```html
 <h4>Design</h4>
+
 <span class="sap-icon sap-icon--da is-focus" tabindex="0" role="button" aria-label="diamond"></span>
 <span class="sap-icon sap-icon--da sap-icon--color-default" role="presentation" aria-label="diamond"></span>
 <span class="sap-icon sap-icon--da sap-icon--color-contrast" role="presentation" aria-hidden="true" aria-label="diamond"></span>
@@ -87,6 +96,7 @@ There are different semantic statuses that can be applied to the icon by adding 
 <span class="sap-icon sap-icon--da sap-icon--color-information" role="presentation" aria-hidden="true" aria-label="diamond"></span>
 
 <h4>Custom colors</h4>
+
 <span class="sap-icon sap-icon--ai" role="button" aria-label="ai" tabindex="0"></span>
 <span class="sap-icon sap-icon--ai" role="presentation" aria-hidden="true" aria-label="ai"></span>
 <span class="sap-icon sap-icon--ai" role="presentation" aria-hidden="true" aria-label="ai"></span>
@@ -106,7 +116,15 @@ There are different semantic statuses that can be applied to the icon background
 
 | **Status**      | **Modifier class**               |
 | --------------: | :------------------------------- |
-| Default         | \
+| Default         | `sap-icon--background-default`        |
+| Contrast        | `sap-icon--background-contrast`       |
+| Non-interactive | `sap-icon--background-non-interactive`|
+| Tile            | `sap-icon--background-tile`           |
+| Marker          | `sap-icon--background-marker`         |
+| Critical        | `sap-icon--background-critical`       |
+| Negative        | `sap-icon--background-negative`       |
+| Neutral         | `sap-icon--background-neutral`        |
+| Positive        | `sap-icon--background-positive`       |
 
 ```html
 <span class="sap-icon sap-icon--video is-focus" role="button" aria-label="video" tabindex="0"></span>

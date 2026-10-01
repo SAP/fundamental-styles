@@ -54,7 +54,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/navigation.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage
@@ -85,100 +84,122 @@ npm install fundamental-styles
                                 aria-label="selection indicator"
                                 ></span>
                             </a>
-                        </li>
+                        </div>
+                    </li>
 
-                        <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                            <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
-                                <a class="fd-navigation__link" role="link" href="#">
+                    <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
+                        <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                            <a class="fd-navigation__link" role="link" href="#">
+                                <span
+                                    class="fd-navigation__icon sap-icon--attachment"
+                                    role="presentation"
+                                    aria-hidden="true"
+                                    ></span>
+                                    <span class="fd-navigation__text">Attachment</span>
                                     <span
-                                        class="fd-navigation__icon sap-icon--attachment"
+                                        class="fd-navigation__selection-indicator"
                                         role="presentation"
                                         aria-hidden="true"
+                                        aria-label="selection indicator"
                                         ></span>
-                                        <span class="fd-navigation__text">Attachment</span>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
+                                <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                                    <a class="fd-navigation__link" role="link" href="#">
                                         <span
-                                            class="fd-navigation__selection-indicator"
+                                            class="fd-navigation__icon sap-icon--create-entry-time"
                                             role="presentation"
                                             aria-hidden="true"
-                                            aria-label="selection indicator"
                                             ></span>
-                                        </a>
-                                    </div>
-                                </li>
-
-                                <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
-                                        <a class="fd-navigation__link" role="link" href="#">
+                                            <span class="fd-navigation__text">Time</span>
                                             <span
-                                                class="fd-navigation__icon sap-icon--create-entry-time"
+                                                class="fd-navigation__selection-indicator"
                                                 role="presentation"
                                                 aria-hidden="true"
+                                                aria-label="selection indicator"
                                                 ></span>
-                                                <span class="fd-navigation__text">Time</span>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li role="none" tabindex="-1" class="fd-navigation__list-item fd-popover" aria-hidden="true">
+                                        <div
+                                            class="fd-navigation__item fd-popover__control"
+                                            aria-current="false"
+                                            aria-expanded="true"
+                                            aria-selected="true"
+                                            aria-haspopup="tree"
+                                            role="menuitem"
+                                            >
+                                            <a class="fd-navigation__link" role="button" tabindex="0">
                                                 <span
-                                                    class="fd-navigation__selection-indicator"
+                                                    class="fd-navigation__icon sap-icon--basket"
                                                     role="presentation"
                                                     aria-hidden="true"
-                                                    aria-label="selection indicator"
                                                     ></span>
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li role="none" tabindex="-1" class="fd-navigation__list-item fd-popover" aria-hidden="true">
-                                            <div
-                                                class="fd-navigation__item fd-popover__control"
-                                                aria-current="false"
-                                                aria-expanded="true"
-                                                aria-selected="true"
-                                                aria-haspopup="tree"
-                                                role="menuitem"
-                                                >
-                                                <a class="fd-navigation__link" role="button" tabindex="0">
+                                                    <span class="fd-navigation__text">Basket</span>
                                                     <span
-                                                        class="fd-navigation__icon sap-icon--basket"
+                                                        class="fd-navigation__selection-indicator"
                                                         role="presentation"
                                                         aria-hidden="true"
+                                                        aria-label="selection indicator"
                                                         ></span>
-                                                        <span class="fd-navigation__text">Basket</span>
                                                         <span
-                                                            class="fd-navigation__selection-indicator"
+                                                            class="fd-navigation__has-children-indicator"
                                                             role="presentation"
                                                             aria-hidden="true"
-                                                            aria-label="selection indicator"
+                                                            aria-label="has children indicator"
                                                             ></span>
-                                                            <span
-                                                                class="fd-navigation__has-children-indicator"
-                                                                role="presentation"
+                                                        </a>
+                                                    </div>
+                                                    <div
+                                                        class="fd-navigation__list-container fd-popover__body fd-popover__body--no-arrow"
+                                                        aria-hidden="false"
+                                                        >
+                                                        <div class="fd-navigation__list-wrapper fd-popover__wrapper">
+                                                            <ul
+                                                                class="fd-navigation__list fd-navigation__list--child-items"
+                                                                role="tree"
+                                                                aria-roledescription="Navigation List Tree - Child Items"
+                                                                tabindex="-1"
                                                                 aria-hidden="true"
-                                                                aria-label="has children indicator"
-                                                                ></span>
-                                                            </a>
-                                                        </div>
-                                                        <div
-                                                            class="fd-navigation__list-container fd-popover__body fd-popover__body--no-arrow"
-                                                            aria-hidden="false"
-                                                            >
-                                                            <div class="fd-navigation__list-wrapper fd-popover__wrapper">
-                                                                <ul
-                                                                    class="fd-navigation__list fd-navigation__list--child-items"
-                                                                    role="tree"
-                                                                    aria-roledescription="Navigation List Tree - Child Items"
-                                                                    tabindex="-1"
-                                                                    aria-hidden="true"
-                                                                    >
+                                                                >
+                                                                <li class="fd-navigation__list-item" aria-hidden="true">
+                                                                    <div
+                                                                        class="fd-navigation__item fd-navigation__item--child"
+                                                                        aria-level="1"
+                                                                        role="treeitem"
+                                                                        title="Future Orders"
+                                                                        aria-roledescription="Navigation List Menu Item - Child"
+                                                                        aria-expanded="false"
+                                                                        aria-selected="false"
+                                                                        >
+                                                                        <a class="fd-navigation__link" role="link" href="#">
+                                                                            <span class="fd-navigation__text">Future Orders</span>
+                                                                            <span
+                                                                                class="fd-navigation__selection-indicator"
+                                                                                role="presentation"
+                                                                                aria-hidden="true"
+                                                                                aria-label="selection indicator"
+                                                                                ></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </li>
                                                                     <li class="fd-navigation__list-item" aria-hidden="true">
                                                                         <div
                                                                             class="fd-navigation__item fd-navigation__item--child"
                                                                             aria-level="1"
                                                                             role="treeitem"
-                                                                            title="Future Orders"
+                                                                            title="Current Orders"
                                                                             aria-roledescription="Navigation List Menu Item - Child"
                                                                             aria-expanded="false"
-                                                                            aria-selected="false"
+                                                                            aria-selected="true"
                                                                             >
                                                                             <a class="fd-navigation__link" role="link" href="#">
-                                                                                <span class="fd-navigation__text">Future Orders</span>
+                                                                                <span class="fd-navigation__text">Current Orders (selected)</span>
                                                                                 <span
                                                                                     class="fd-navigation__selection-indicator"
                                                                                     role="presentation"
@@ -193,13 +214,13 @@ npm install fundamental-styles
                                                                                 class="fd-navigation__item fd-navigation__item--child"
                                                                                 aria-level="1"
                                                                                 role="treeitem"
-                                                                                title="Current Orders"
+                                                                                title="Past Orders"
                                                                                 aria-roledescription="Navigation List Menu Item - Child"
                                                                                 aria-expanded="false"
-                                                                                aria-selected="true"
+                                                                                aria-selected="false"
                                                                                 >
                                                                                 <a class="fd-navigation__link" role="link" href="#">
-                                                                                    <span class="fd-navigation__text">Current Orders (selected)</span>
+                                                                                    <span class="fd-navigation__text">Past Orders</span>
                                                                                     <span
                                                                                         class="fd-navigation__selection-indicator"
                                                                                         role="presentation"
@@ -207,144 +228,130 @@ npm install fundamental-styles
                                                                                         aria-label="selection indicator"
                                                                                         ></span>
                                                                                     </a>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="fd-navigation__list-item" aria-hidden="true">
+                                                                                <div
+                                                                                    class="fd-navigation__item fd-navigation__item--child"
+                                                                                    aria-level="1"
+                                                                                    role="treeitem"
+                                                                                    title="Lost Orders"
+                                                                                    aria-roledescription="Navigation List Menu Item - Child"
+                                                                                    aria-expanded="false"
+                                                                                    aria-selected="false"
+                                                                                    >
+                                                                                    <a class="fd-navigation__link" role="link" href="#">
+                                                                                        <span class="fd-navigation__text">Lost Orders</span>
+                                                                                        <span
+                                                                                            class="fd-navigation__selection-indicator"
+                                                                                            role="presentation"
+                                                                                            aria-hidden="true"
+                                                                                            aria-label="selection indicator"
+                                                                                            ></span>
+                                                                                        </a>
+                                                                                    </div>
                                                                                 </li>
                                                                                 <li class="fd-navigation__list-item" aria-hidden="true">
                                                                                     <div
                                                                                         class="fd-navigation__item fd-navigation__item--child"
                                                                                         aria-level="1"
                                                                                         role="treeitem"
-                                                                                        title="Past Orders"
+                                                                                        title="Forgotten Orders"
                                                                                         aria-roledescription="Navigation List Menu Item - Child"
                                                                                         aria-expanded="false"
                                                                                         aria-selected="false"
                                                                                         >
                                                                                         <a class="fd-navigation__link" role="link" href="#">
-                                                                                            <span class="fd-navigation__text">Past Orders</span>
+                                                                                            <span class="fd-navigation__text">Forgotten Orders (external link)</span>
                                                                                             <span
                                                                                                 class="fd-navigation__selection-indicator"
                                                                                                 role="presentation"
                                                                                                 aria-hidden="true"
                                                                                                 aria-label="selection indicator"
                                                                                                 ></span>
-                                                                                            </a>
+                                                                                                <span
+                                                                                                    class="fd-navigation__external-link-indicator"
+                                                                                                    role="presentation"
+                                                                                                    aria-hidden="true"
+                                                                                                    aria-label="external link indicator"
+                                                                                                    ></span>
+                                                                                                </a>
+                                                                                            </div>
                                                                                         </li>
-                                                                                        <li class="fd-navigation__list-item" aria-hidden="true">
-                                                                                            <div
-                                                                                                class="fd-navigation__item fd-navigation__item--child"
-                                                                                                aria-level="1"
-                                                                                                role="treeitem"
-                                                                                                title="Lost Orders"
-                                                                                                aria-roledescription="Navigation List Menu Item - Child"
-                                                                                                aria-expanded="false"
-                                                                                                aria-selected="false"
-                                                                                                >
-                                                                                                <a class="fd-navigation__link" role="link" href="#">
-                                                                                                    <span class="fd-navigation__text">Lost Orders</span>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+
+                                                                        <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
+                                                                            <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                                                                                <a class="fd-navigation__link" role="link" href="#">
+                                                                                    <span
+                                                                                        class="fd-navigation__icon sap-icon--shield"
+                                                                                        role="presentation"
+                                                                                        aria-hidden="true"
+                                                                                        ></span>
+                                                                                        <span class="fd-navigation__text">Shield</span>
+                                                                                        <span
+                                                                                            class="fd-navigation__selection-indicator"
+                                                                                            role="presentation"
+                                                                                            aria-hidden="true"
+                                                                                            aria-label="selection indicator"
+                                                                                            ></span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+
+                                                                                <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
+                                                                                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                                                                                        <a class="fd-navigation__link" role="link" href="#">
+                                                                                            <span
+                                                                                                class="fd-navigation__icon sap-icon--action-settings"
+                                                                                                role="presentation"
+                                                                                                aria-hidden="true"
+                                                                                                ></span>
+                                                                                                <span class="fd-navigation__text">Cog</span>
+                                                                                                <span
+                                                                                                    class="fd-navigation__selection-indicator"
+                                                                                                    role="presentation"
+                                                                                                    aria-hidden="true"
+                                                                                                    aria-label="selection indicator"
+                                                                                                    ></span>
                                                                                                     <span
-                                                                                                        class="fd-navigation__selection-indicator"
+                                                                                                        class="fd-navigation__has-children-indicator"
                                                                                                         role="presentation"
                                                                                                         aria-hidden="true"
-                                                                                                        aria-label="selection indicator"
+                                                                                                        aria-label="has children indicator, expanded"
                                                                                                         ></span>
                                                                                                     </a>
-                                                                                                </li>
-                                                                                                <li class="fd-navigation__list-item" aria-hidden="true">
-                                                                                                    <div
-                                                                                                        class="fd-navigation__item fd-navigation__item--child"
-                                                                                                        aria-level="1"
-                                                                                                        role="treeitem"
-                                                                                                        title="Forgotten Orders"
-                                                                                                        aria-roledescription="Navigation List Menu Item - Child"
-                                                                                                        aria-expanded="false"
-                                                                                                        aria-selected="false"
-                                                                                                        >
-                                                                                                        <a class="fd-navigation__link" role="link" href="#">
-                                                                                                            <span class="fd-navigation__text">Forgotten Orders (external link)</span>
+                                                                                                </div>
+                                                                                            </li>
+
+                                                                                            <li
+                                                                                                class="fd-navigation__list-item fd-navigation__list-item--spacer"
+                                                                                                role="presentation"
+                                                                                                aria-hidden="true"
+                                                                                                ></li>
+
+                                                                                                <li
+                                                                                                    role="none"
+                                                                                                    tabindex="-1"
+                                                                                                    class="fd-navigation__list-item fd-navigation__list-item--overflow"
+                                                                                                    aria-hidden="true"
+                                                                                                    >
+                                                                                                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                                                                                                        <a class="fd-navigation__link" role="button" tabindex="0">
                                                                                                             <span
-                                                                                                                class="fd-navigation__selection-indicator"
+                                                                                                                class="fd-navigation__icon sap-icon--overflow"
                                                                                                                 role="presentation"
                                                                                                                 aria-hidden="true"
-                                                                                                                aria-label="selection indicator"
                                                                                                                 ></span>
-                                                                                                                <span
-                                                                                                                    class="fd-navigation__external-link-indicator"
-                                                                                                                    role="presentation"
-                                                                                                                    aria-hidden="true"
-                                                                                                                    aria-label="external link indicator"
-                                                                                                                    ></span>
-                                                                                                                </a>
-                                                                                                            </li>
-                                                                                                        </ul>
+                                                                                                            </a>
+                                                                                                        </div>
                                                                                                     </li>
-
-                                                                                                    <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                                                                                                        <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
-                                                                                                            <a class="fd-navigation__link" role="link" href="#">
-                                                                                                                <span
-                                                                                                                    class="fd-navigation__icon sap-icon--shield"
-                                                                                                                    role="presentation"
-                                                                                                                    aria-hidden="true"
-                                                                                                                    ></span>
-                                                                                                                    <span class="fd-navigation__text">Shield</span>
-                                                                                                                    <span
-                                                                                                                        class="fd-navigation__selection-indicator"
-                                                                                                                        role="presentation"
-                                                                                                                        aria-hidden="true"
-                                                                                                                        aria-label="selection indicator"
-                                                                                                                        ></span>
-                                                                                                                    </a>
-                                                                                                                </div>
-                                                                                                            </li>
-
-                                                                                                            <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                                                                                                                <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
-                                                                                                                    <a class="fd-navigation__link" role="link" href="#">
-                                                                                                                        <span
-                                                                                                                            class="fd-navigation__icon sap-icon--action-settings"
-                                                                                                                            role="presentation"
-                                                                                                                            aria-hidden="true"
-                                                                                                                            ></span>
-                                                                                                                            <span class="fd-navigation__text">Cog</span>
-                                                                                                                            <span
-                                                                                                                                class="fd-navigation__selection-indicator"
-                                                                                                                                role="presentation"
-                                                                                                                                aria-hidden="true"
-                                                                                                                                aria-label="selection indicator"
-                                                                                                                                ></span>
-                                                                                                                                <span
-                                                                                                                                    class="fd-navigation__has-children-indicator"
-                                                                                                                                    role="presentation"
-                                                                                                                                    aria-hidden="true"
-                                                                                                                                    aria-label="has children indicator, expanded"
-                                                                                                                                    ></span>
-                                                                                                                                </a>
-                                                                                                                            </div>
-                                                                                                                        </li>
-
-                                                                                                                        <li
-                                                                                                                            class="fd-navigation__list-item fd-navigation__list-item--spacer"
-                                                                                                                            role="presentation"
-                                                                                                                            aria-hidden="true"
-                                                                                                                            ></li>
-
-                                                                                                                            <li
-                                                                                                                                role="none"
-                                                                                                                                tabindex="-1"
-                                                                                                                                class="fd-navigation__list-item fd-navigation__list-item--overflow"
-                                                                                                                                aria-hidden="true"
-                                                                                                                                >
-                                                                                                                                <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
-                                                                                                                                    <a class="fd-navigation__link" role="button" tabindex="0">
-                                                                                                                                        <span
-                                                                                                                                            class="fd-navigation__icon sap-icon--overflow"
-                                                                                                                                            role="presentation"
-                                                                                                                                            aria-hidden="true"
-                                                                                                                                            ></span>
-                                                                                                                                        </a>
-                                                                                                                                    </div>
-                                                                                                                                </li>
-                                                                                                                            </ul>
-                                                                                                                        </nav>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </nav>
 ```
 
 ## Modifiers
@@ -407,100 +414,122 @@ Horizontal Navigation is an optional alternative to the Vertical Navigation vari
                                 aria-label="selection indicator"
                                 ></span>
                             </a>
-                        </li>
+                        </div>
+                    </li>
 
-                        <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                            <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
-                                <a class="fd-navigation__link" role="link" href="#">
+                    <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
+                        <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                            <a class="fd-navigation__link" role="link" href="#">
+                                <span
+                                    class="fd-navigation__icon sap-icon--attachment"
+                                    role="presentation"
+                                    aria-hidden="true"
+                                    ></span>
+                                    <span class="fd-navigation__text">Attachment</span>
                                     <span
-                                        class="fd-navigation__icon sap-icon--attachment"
+                                        class="fd-navigation__selection-indicator"
                                         role="presentation"
                                         aria-hidden="true"
+                                        aria-label="selection indicator"
                                         ></span>
-                                        <span class="fd-navigation__text">Attachment</span>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
+                                <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                                    <a class="fd-navigation__link" role="link" href="#">
                                         <span
-                                            class="fd-navigation__selection-indicator"
+                                            class="fd-navigation__icon sap-icon--create-entry-time"
                                             role="presentation"
                                             aria-hidden="true"
-                                            aria-label="selection indicator"
                                             ></span>
-                                        </a>
-                                    </div>
-                                </li>
-
-                                <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
-                                        <a class="fd-navigation__link" role="link" href="#">
+                                            <span class="fd-navigation__text">Time</span>
                                             <span
-                                                class="fd-navigation__icon sap-icon--create-entry-time"
+                                                class="fd-navigation__selection-indicator"
                                                 role="presentation"
                                                 aria-hidden="true"
+                                                aria-label="selection indicator"
                                                 ></span>
-                                                <span class="fd-navigation__text">Time</span>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li role="none" tabindex="-1" class="fd-navigation__list-item fd-popover" aria-hidden="true">
+                                        <div
+                                            class="fd-navigation__item fd-popover__control"
+                                            aria-current="false"
+                                            aria-expanded="true"
+                                            aria-selected="true"
+                                            aria-haspopup="tree"
+                                            role="menuitem"
+                                            >
+                                            <a class="fd-navigation__link" role="button" tabindex="0">
                                                 <span
-                                                    class="fd-navigation__selection-indicator"
+                                                    class="fd-navigation__icon sap-icon--basket"
                                                     role="presentation"
                                                     aria-hidden="true"
-                                                    aria-label="selection indicator"
                                                     ></span>
-                                                </a>
-                                            </div>
-                                        </li>
-
-                                        <li role="none" tabindex="-1" class="fd-navigation__list-item fd-popover" aria-hidden="true">
-                                            <div
-                                                class="fd-navigation__item fd-popover__control"
-                                                aria-current="false"
-                                                aria-expanded="true"
-                                                aria-selected="true"
-                                                aria-haspopup="tree"
-                                                role="menuitem"
-                                                >
-                                                <a class="fd-navigation__link" role="button" tabindex="0">
+                                                    <span class="fd-navigation__text">Basket</span>
                                                     <span
-                                                        class="fd-navigation__icon sap-icon--basket"
+                                                        class="fd-navigation__selection-indicator"
                                                         role="presentation"
                                                         aria-hidden="true"
+                                                        aria-label="selection indicator"
                                                         ></span>
-                                                        <span class="fd-navigation__text">Basket</span>
                                                         <span
-                                                            class="fd-navigation__selection-indicator"
+                                                            class="fd-navigation__has-children-indicator"
                                                             role="presentation"
                                                             aria-hidden="true"
-                                                            aria-label="selection indicator"
+                                                            aria-label="has children indicator"
                                                             ></span>
-                                                            <span
-                                                                class="fd-navigation__has-children-indicator"
-                                                                role="presentation"
+                                                        </a>
+                                                    </div>
+                                                    <div
+                                                        class="fd-navigation__list-container fd-popover__body fd-popover__body--no-arrow"
+                                                        aria-hidden="false"
+                                                        >
+                                                        <div class="fd-navigation__list-wrapper fd-popover__wrapper">
+                                                            <ul
+                                                                class="fd-navigation__list fd-navigation__list--child-items"
+                                                                role="tree"
+                                                                aria-roledescription="Navigation List Tree - Child Items"
+                                                                tabindex="-1"
                                                                 aria-hidden="true"
-                                                                aria-label="has children indicator"
-                                                                ></span>
-                                                            </a>
-                                                        </div>
-                                                        <div
-                                                            class="fd-navigation__list-container fd-popover__body fd-popover__body--no-arrow"
-                                                            aria-hidden="false"
-                                                            >
-                                                            <div class="fd-navigation__list-wrapper fd-popover__wrapper">
-                                                                <ul
-                                                                    class="fd-navigation__list fd-navigation__list--child-items"
-                                                                    role="tree"
-                                                                    aria-roledescription="Navigation List Tree - Child Items"
-                                                                    tabindex="-1"
-                                                                    aria-hidden="true"
-                                                                    >
+                                                                >
+                                                                <li class="fd-navigation__list-item" aria-hidden="true">
+                                                                    <div
+                                                                        class="fd-navigation__item fd-navigation__item--child"
+                                                                        aria-level="1"
+                                                                        role="treeitem"
+                                                                        title="Future Orders"
+                                                                        aria-roledescription="Navigation List Menu Item - Child"
+                                                                        aria-expanded="false"
+                                                                        aria-selected="false"
+                                                                        >
+                                                                        <a class="fd-navigation__link" role="link" href="#">
+                                                                            <span class="fd-navigation__text">Future Orders</span>
+                                                                            <span
+                                                                                class="fd-navigation__selection-indicator"
+                                                                                role="presentation"
+                                                                                aria-hidden="true"
+                                                                                aria-label="selection indicator"
+                                                                                ></span>
+                                                                            </a>
+                                                                        </div>
+                                                                    </li>
                                                                     <li class="fd-navigation__list-item" aria-hidden="true">
                                                                         <div
                                                                             class="fd-navigation__item fd-navigation__item--child"
                                                                             aria-level="1"
                                                                             role="treeitem"
-                                                                            title="Future Orders"
+                                                                            title="Current Orders"
                                                                             aria-roledescription="Navigation List Menu Item - Child"
                                                                             aria-expanded="false"
-                                                                            aria-selected="false"
+                                                                            aria-selected="true"
                                                                             >
                                                                             <a class="fd-navigation__link" role="link" href="#">
-                                                                                <span class="fd-navigation__text">Future Orders</span>
+                                                                                <span class="fd-navigation__text">Current Orders (selected)</span>
                                                                                 <span
                                                                                     class="fd-navigation__selection-indicator"
                                                                                     role="presentation"
@@ -515,13 +544,13 @@ Horizontal Navigation is an optional alternative to the Vertical Navigation vari
                                                                                 class="fd-navigation__item fd-navigation__item--child"
                                                                                 aria-level="1"
                                                                                 role="treeitem"
-                                                                                title="Current Orders"
+                                                                                title="Past Orders"
                                                                                 aria-roledescription="Navigation List Menu Item - Child"
                                                                                 aria-expanded="false"
-                                                                                aria-selected="true"
+                                                                                aria-selected="false"
                                                                                 >
                                                                                 <a class="fd-navigation__link" role="link" href="#">
-                                                                                    <span class="fd-navigation__text">Current Orders (selected)</span>
+                                                                                    <span class="fd-navigation__text">Past Orders</span>
                                                                                     <span
                                                                                         class="fd-navigation__selection-indicator"
                                                                                         role="presentation"
@@ -529,144 +558,130 @@ Horizontal Navigation is an optional alternative to the Vertical Navigation vari
                                                                                         aria-label="selection indicator"
                                                                                         ></span>
                                                                                     </a>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="fd-navigation__list-item" aria-hidden="true">
+                                                                                <div
+                                                                                    class="fd-navigation__item fd-navigation__item--child"
+                                                                                    aria-level="1"
+                                                                                    role="treeitem"
+                                                                                    title="Lost Orders"
+                                                                                    aria-roledescription="Navigation List Menu Item - Child"
+                                                                                    aria-expanded="false"
+                                                                                    aria-selected="false"
+                                                                                    >
+                                                                                    <a class="fd-navigation__link" role="link" href="#">
+                                                                                        <span class="fd-navigation__text">Lost Orders</span>
+                                                                                        <span
+                                                                                            class="fd-navigation__selection-indicator"
+                                                                                            role="presentation"
+                                                                                            aria-hidden="true"
+                                                                                            aria-label="selection indicator"
+                                                                                            ></span>
+                                                                                        </a>
+                                                                                    </div>
                                                                                 </li>
                                                                                 <li class="fd-navigation__list-item" aria-hidden="true">
                                                                                     <div
                                                                                         class="fd-navigation__item fd-navigation__item--child"
                                                                                         aria-level="1"
                                                                                         role="treeitem"
-                                                                                        title="Past Orders"
+                                                                                        title="Forgotten Orders"
                                                                                         aria-roledescription="Navigation List Menu Item - Child"
                                                                                         aria-expanded="false"
                                                                                         aria-selected="false"
                                                                                         >
                                                                                         <a class="fd-navigation__link" role="link" href="#">
-                                                                                            <span class="fd-navigation__text">Past Orders</span>
+                                                                                            <span class="fd-navigation__text">Forgotten Orders (external link)</span>
                                                                                             <span
                                                                                                 class="fd-navigation__selection-indicator"
                                                                                                 role="presentation"
                                                                                                 aria-hidden="true"
                                                                                                 aria-label="selection indicator"
                                                                                                 ></span>
-                                                                                            </a>
+                                                                                                <span
+                                                                                                    class="fd-navigation__external-link-indicator"
+                                                                                                    role="presentation"
+                                                                                                    aria-hidden="true"
+                                                                                                    aria-label="external link indicator"
+                                                                                                    ></span>
+                                                                                                </a>
+                                                                                            </div>
                                                                                         </li>
-                                                                                        <li class="fd-navigation__list-item" aria-hidden="true">
-                                                                                            <div
-                                                                                                class="fd-navigation__item fd-navigation__item--child"
-                                                                                                aria-level="1"
-                                                                                                role="treeitem"
-                                                                                                title="Lost Orders"
-                                                                                                aria-roledescription="Navigation List Menu Item - Child"
-                                                                                                aria-expanded="false"
-                                                                                                aria-selected="false"
-                                                                                                >
-                                                                                                <a class="fd-navigation__link" role="link" href="#">
-                                                                                                    <span class="fd-navigation__text">Lost Orders</span>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+
+                                                                        <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
+                                                                            <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                                                                                <a class="fd-navigation__link" role="link" href="#">
+                                                                                    <span
+                                                                                        class="fd-navigation__icon sap-icon--shield"
+                                                                                        role="presentation"
+                                                                                        aria-hidden="true"
+                                                                                        ></span>
+                                                                                        <span class="fd-navigation__text">Shield</span>
+                                                                                        <span
+                                                                                            class="fd-navigation__selection-indicator"
+                                                                                            role="presentation"
+                                                                                            aria-hidden="true"
+                                                                                            aria-label="selection indicator"
+                                                                                            ></span>
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </li>
+
+                                                                                <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
+                                                                                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                                                                                        <a class="fd-navigation__link" role="link" href="#">
+                                                                                            <span
+                                                                                                class="fd-navigation__icon sap-icon--action-settings"
+                                                                                                role="presentation"
+                                                                                                aria-hidden="true"
+                                                                                                ></span>
+                                                                                                <span class="fd-navigation__text">Cog</span>
+                                                                                                <span
+                                                                                                    class="fd-navigation__selection-indicator"
+                                                                                                    role="presentation"
+                                                                                                    aria-hidden="true"
+                                                                                                    aria-label="selection indicator"
+                                                                                                    ></span>
                                                                                                     <span
-                                                                                                        class="fd-navigation__selection-indicator"
+                                                                                                        class="fd-navigation__has-children-indicator"
                                                                                                         role="presentation"
                                                                                                         aria-hidden="true"
-                                                                                                        aria-label="selection indicator"
+                                                                                                        aria-label="has children indicator, expanded"
                                                                                                         ></span>
                                                                                                     </a>
-                                                                                                </li>
-                                                                                                <li class="fd-navigation__list-item" aria-hidden="true">
-                                                                                                    <div
-                                                                                                        class="fd-navigation__item fd-navigation__item--child"
-                                                                                                        aria-level="1"
-                                                                                                        role="treeitem"
-                                                                                                        title="Forgotten Orders"
-                                                                                                        aria-roledescription="Navigation List Menu Item - Child"
-                                                                                                        aria-expanded="false"
-                                                                                                        aria-selected="false"
-                                                                                                        >
-                                                                                                        <a class="fd-navigation__link" role="link" href="#">
-                                                                                                            <span class="fd-navigation__text">Forgotten Orders (external link)</span>
+                                                                                                </div>
+                                                                                            </li>
+
+                                                                                            <li
+                                                                                                class="fd-navigation__list-item fd-navigation__list-item--spacer"
+                                                                                                role="presentation"
+                                                                                                aria-hidden="true"
+                                                                                                ></li>
+
+                                                                                                <li
+                                                                                                    role="none"
+                                                                                                    tabindex="-1"
+                                                                                                    class="fd-navigation__list-item fd-navigation__list-item--overflow"
+                                                                                                    aria-hidden="true"
+                                                                                                    >
+                                                                                                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                                                                                                        <a class="fd-navigation__link" role="button" tabindex="0">
                                                                                                             <span
-                                                                                                                class="fd-navigation__selection-indicator"
+                                                                                                                class="fd-navigation__icon sap-icon--overflow"
                                                                                                                 role="presentation"
                                                                                                                 aria-hidden="true"
-                                                                                                                aria-label="selection indicator"
                                                                                                                 ></span>
-                                                                                                                <span
-                                                                                                                    class="fd-navigation__external-link-indicator"
-                                                                                                                    role="presentation"
-                                                                                                                    aria-hidden="true"
-                                                                                                                    aria-label="external link indicator"
-                                                                                                                    ></span>
-                                                                                                                </a>
-                                                                                                            </li>
-                                                                                                        </ul>
+                                                                                                            </a>
+                                                                                                        </div>
                                                                                                     </li>
-
-                                                                                                    <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                                                                                                        <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
-                                                                                                            <a class="fd-navigation__link" role="link" href="#">
-                                                                                                                <span
-                                                                                                                    class="fd-navigation__icon sap-icon--shield"
-                                                                                                                    role="presentation"
-                                                                                                                    aria-hidden="true"
-                                                                                                                    ></span>
-                                                                                                                    <span class="fd-navigation__text">Shield</span>
-                                                                                                                    <span
-                                                                                                                        class="fd-navigation__selection-indicator"
-                                                                                                                        role="presentation"
-                                                                                                                        aria-hidden="true"
-                                                                                                                        aria-label="selection indicator"
-                                                                                                                        ></span>
-                                                                                                                    </a>
-                                                                                                                </div>
-                                                                                                            </li>
-
-                                                                                                            <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                                                                                                                <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
-                                                                                                                    <a class="fd-navigation__link" role="link" href="#">
-                                                                                                                        <span
-                                                                                                                            class="fd-navigation__icon sap-icon--action-settings"
-                                                                                                                            role="presentation"
-                                                                                                                            aria-hidden="true"
-                                                                                                                            ></span>
-                                                                                                                            <span class="fd-navigation__text">Cog</span>
-                                                                                                                            <span
-                                                                                                                                class="fd-navigation__selection-indicator"
-                                                                                                                                role="presentation"
-                                                                                                                                aria-hidden="true"
-                                                                                                                                aria-label="selection indicator"
-                                                                                                                                ></span>
-                                                                                                                                <span
-                                                                                                                                    class="fd-navigation__has-children-indicator"
-                                                                                                                                    role="presentation"
-                                                                                                                                    aria-hidden="true"
-                                                                                                                                    aria-label="has children indicator, expanded"
-                                                                                                                                    ></span>
-                                                                                                                                </a>
-                                                                                                                            </div>
-                                                                                                                        </li>
-
-                                                                                                                        <li
-                                                                                                                            class="fd-navigation__list-item fd-navigation__list-item--spacer"
-                                                                                                                            role="presentation"
-                                                                                                                            aria-hidden="true"
-                                                                                                                            ></li>
-
-                                                                                                                            <li
-                                                                                                                                role="none"
-                                                                                                                                tabindex="-1"
-                                                                                                                                class="fd-navigation__list-item fd-navigation__list-item--overflow"
-                                                                                                                                aria-hidden="true"
-                                                                                                                                >
-                                                                                                                                <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
-                                                                                                                                    <a class="fd-navigation__link" role="button" tabindex="0">
-                                                                                                                                        <span
-                                                                                                                                            class="fd-navigation__icon sap-icon--overflow"
-                                                                                                                                            role="presentation"
-                                                                                                                                            aria-hidden="true"
-                                                                                                                                            ></span>
-                                                                                                                                        </a>
-                                                                                                                                    </div>
-                                                                                                                                </li>
-                                                                                                                            </ul>
-                                                                                                                        </nav>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </nav>
 ```
 
 ### Horizontal Navigation - Two-Click Area
@@ -697,82 +712,104 @@ Horizontal Navigation is an optional alternative to the Vertical Navigation vari
                                 aria-label="selection indicator"
                                 ></span>
                             </a>
-                        </li>
+                        </div>
+                    </li>
 
-                        <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                            <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
-                                <a class="fd-navigation__link" role="link" href="#">
+                    <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
+                        <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                            <a class="fd-navigation__link" role="link" href="#">
+                                <span
+                                    class="fd-navigation__icon sap-icon--create-entry-time"
+                                    role="presentation"
+                                    aria-hidden="true"
+                                    ></span>
+                                    <span class="fd-navigation__text">Time</span>
                                     <span
-                                        class="fd-navigation__icon sap-icon--create-entry-time"
+                                        class="fd-navigation__selection-indicator"
                                         role="presentation"
                                         aria-hidden="true"
+                                        aria-label="selection indicator"
                                         ></span>
-                                        <span class="fd-navigation__text">Time</span>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li role="none" tabindex="-1" class="fd-navigation__list-item fd-popover" aria-hidden="true">
+                                <div
+                                    class="fd-navigation__item fd-navigation__item--with-expander fd-popover__control"
+                                    aria-current="false"
+                                    aria-expanded="true"
+                                    aria-haspopup="tree"
+                                    aria-selected="true"
+                                    role="menuitem"
+                                    >
+                                    <a class="fd-navigation__link" role="button" tabindex="0">
                                         <span
-                                            class="fd-navigation__selection-indicator"
+                                            class="fd-navigation__icon sap-icon--basket"
                                             role="presentation"
                                             aria-hidden="true"
-                                            aria-label="selection indicator"
                                             ></span>
-                                        </a>
-                                    </div>
-                                </li>
-
-                                <li role="none" tabindex="-1" class="fd-navigation__list-item fd-popover" aria-hidden="true">
-                                    <div
-                                        class="fd-navigation__item fd-navigation__item--with-expander fd-popover__control"
-                                        aria-current="false"
-                                        aria-expanded="true"
-                                        aria-haspopup="tree"
-                                        aria-selected="true"
-                                        role="menuitem"
-                                        >
-                                        <a class="fd-navigation__link" role="button" tabindex="0">
+                                            <span class="fd-navigation__text">Basket</span>
                                             <span
-                                                class="fd-navigation__icon sap-icon--basket"
+                                                class="fd-navigation__selection-indicator"
                                                 role="presentation"
                                                 aria-hidden="true"
+                                                aria-label="selection indicator"
                                                 ></span>
-                                                <span class="fd-navigation__text">Basket</span>
-                                                <span
-                                                    class="fd-navigation__selection-indicator"
-                                                    role="presentation"
-                                                    aria-hidden="true"
-                                                    aria-label="selection indicator"
-                                                    ></span>
-                                                </a>
-                                                <span
-                                                    class="fd-navigation__has-children-indicator"
-                                                    role="button"
-                                                    aria-hidden="true"
-                                                    aria-label="Expand/Collapse"
-                                                    aria-expanded="true"
-                                                    ></span>
-                                                </div>
-                                                <div
-                                                    class="fd-navigation__list-container fd-popover__body fd-popover__body--no-arrow"
-                                                    aria-hidden="false"
-                                                    >
-                                                    <div class="fd-navigation__list-wrapper fd-popover__wrapper">
-                                                        <ul
-                                                            class="fd-navigation__list fd-navigation__list--child-items"
-                                                            role="tree"
-                                                            aria-roledescription="Navigation List Tree - Child Items"
-                                                            tabindex="-1"
-                                                            aria-hidden="true"
-                                                            >
+                                            </a>
+                                            <span
+                                                class="fd-navigation__has-children-indicator"
+                                                role="button"
+                                                aria-hidden="true"
+                                                aria-label="Expand/Collapse"
+                                                aria-expanded="true"
+                                                ></span>
+                                            </div>
+                                            <div
+                                                class="fd-navigation__list-container fd-popover__body fd-popover__body--no-arrow"
+                                                aria-hidden="false"
+                                                >
+                                                <div class="fd-navigation__list-wrapper fd-popover__wrapper">
+                                                    <ul
+                                                        class="fd-navigation__list fd-navigation__list--child-items"
+                                                        role="tree"
+                                                        aria-roledescription="Navigation List Tree - Child Items"
+                                                        tabindex="-1"
+                                                        aria-hidden="true"
+                                                        >
+                                                        <li class="fd-navigation__list-item" aria-hidden="true">
+                                                            <div
+                                                                class="fd-navigation__item fd-navigation__item--child"
+                                                                aria-level="1"
+                                                                role="treeitem"
+                                                                title="Future Orders"
+                                                                aria-roledescription="Navigation List Menu Item - Child"
+                                                                aria-expanded="false"
+                                                                aria-selected="false"
+                                                                >
+                                                                <a class="fd-navigation__link" role="link" href="#">
+                                                                    <span class="fd-navigation__text">Future Orders</span>
+                                                                    <span
+                                                                        class="fd-navigation__selection-indicator"
+                                                                        role="presentation"
+                                                                        aria-hidden="true"
+                                                                        aria-label="selection indicator"
+                                                                        ></span>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
                                                             <li class="fd-navigation__list-item" aria-hidden="true">
                                                                 <div
                                                                     class="fd-navigation__item fd-navigation__item--child"
                                                                     aria-level="1"
                                                                     role="treeitem"
-                                                                    title="Future Orders"
+                                                                    title="Current Orders"
                                                                     aria-roledescription="Navigation List Menu Item - Child"
                                                                     aria-expanded="false"
-                                                                    aria-selected="false"
+                                                                    aria-selected="true"
                                                                     >
                                                                     <a class="fd-navigation__link" role="link" href="#">
-                                                                        <span class="fd-navigation__text">Future Orders</span>
+                                                                        <span class="fd-navigation__text">Current Orders (selected)</span>
                                                                         <span
                                                                             class="fd-navigation__selection-indicator"
                                                                             role="presentation"
@@ -787,13 +824,13 @@ Horizontal Navigation is an optional alternative to the Vertical Navigation vari
                                                                         class="fd-navigation__item fd-navigation__item--child"
                                                                         aria-level="1"
                                                                         role="treeitem"
-                                                                        title="Current Orders"
+                                                                        title="Past Orders"
                                                                         aria-roledescription="Navigation List Menu Item - Child"
                                                                         aria-expanded="false"
-                                                                        aria-selected="true"
+                                                                        aria-selected="false"
                                                                         >
                                                                         <a class="fd-navigation__link" role="link" href="#">
-                                                                            <span class="fd-navigation__text">Current Orders (selected)</span>
+                                                                            <span class="fd-navigation__text">Past Orders</span>
                                                                             <span
                                                                                 class="fd-navigation__selection-indicator"
                                                                                 role="presentation"
@@ -801,149 +838,136 @@ Horizontal Navigation is an optional alternative to the Vertical Navigation vari
                                                                                 aria-label="selection indicator"
                                                                                 ></span>
                                                                             </a>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="fd-navigation__list-item" aria-hidden="true">
+                                                                        <div
+                                                                            class="fd-navigation__item fd-navigation__item--child"
+                                                                            aria-level="1"
+                                                                            role="treeitem"
+                                                                            title="Lost Orders"
+                                                                            aria-roledescription="Navigation List Menu Item - Child"
+                                                                            aria-expanded="false"
+                                                                            aria-selected="false"
+                                                                            >
+                                                                            <a class="fd-navigation__link" role="link" href="#">
+                                                                                <span class="fd-navigation__text">Lost Orders</span>
+                                                                                <span
+                                                                                    class="fd-navigation__selection-indicator"
+                                                                                    role="presentation"
+                                                                                    aria-hidden="true"
+                                                                                    aria-label="selection indicator"
+                                                                                    ></span>
+                                                                                </a>
+                                                                            </div>
                                                                         </li>
                                                                         <li class="fd-navigation__list-item" aria-hidden="true">
                                                                             <div
                                                                                 class="fd-navigation__item fd-navigation__item--child"
                                                                                 aria-level="1"
                                                                                 role="treeitem"
-                                                                                title="Past Orders"
+                                                                                title="Forgotten Orders"
                                                                                 aria-roledescription="Navigation List Menu Item - Child"
                                                                                 aria-expanded="false"
                                                                                 aria-selected="false"
                                                                                 >
                                                                                 <a class="fd-navigation__link" role="link" href="#">
-                                                                                    <span class="fd-navigation__text">Past Orders</span>
+                                                                                    <span class="fd-navigation__text">Forgotten Orders (external link)</span>
                                                                                     <span
                                                                                         class="fd-navigation__selection-indicator"
                                                                                         role="presentation"
                                                                                         aria-hidden="true"
                                                                                         aria-label="selection indicator"
                                                                                         ></span>
-                                                                                    </a>
+                                                                                        <span
+                                                                                            class="fd-navigation__external-link-indicator"
+                                                                                            role="presentation"
+                                                                                            aria-hidden="true"
+                                                                                            aria-label="external link indicator"
+                                                                                            ></span>
+                                                                                        </a>
+                                                                                    </div>
                                                                                 </li>
-                                                                                <li class="fd-navigation__list-item" aria-hidden="true">
-                                                                                    <div
-                                                                                        class="fd-navigation__item fd-navigation__item--child"
-                                                                                        aria-level="1"
-                                                                                        role="treeitem"
-                                                                                        title="Lost Orders"
-                                                                                        aria-roledescription="Navigation List Menu Item - Child"
-                                                                                        aria-expanded="false"
-                                                                                        aria-selected="false"
-                                                                                        >
-                                                                                        <a class="fd-navigation__link" role="link" href="#">
-                                                                                            <span class="fd-navigation__text">Lost Orders</span>
-                                                                                            <span
-                                                                                                class="fd-navigation__selection-indicator"
-                                                                                                role="presentation"
-                                                                                                aria-hidden="true"
-                                                                                                aria-label="selection indicator"
-                                                                                                ></span>
-                                                                                            </a>
-                                                                                        </li>
-                                                                                        <li class="fd-navigation__list-item" aria-hidden="true">
-                                                                                            <div
-                                                                                                class="fd-navigation__item fd-navigation__item--child"
-                                                                                                aria-level="1"
-                                                                                                role="treeitem"
-                                                                                                title="Forgotten Orders"
-                                                                                                aria-roledescription="Navigation List Menu Item - Child"
-                                                                                                aria-expanded="false"
-                                                                                                aria-selected="false"
-                                                                                                >
-                                                                                                <a class="fd-navigation__link" role="link" href="#">
-                                                                                                    <span class="fd-navigation__text">Forgotten Orders (external link)</span>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+
+                                                                <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
+                                                                    <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                                                                        <a class="fd-navigation__link" role="link" href="#">
+                                                                            <span
+                                                                                class="fd-navigation__icon sap-icon--shield"
+                                                                                role="presentation"
+                                                                                aria-hidden="true"
+                                                                                ></span>
+                                                                                <span class="fd-navigation__text">Shield</span>
+                                                                                <span
+                                                                                    class="fd-navigation__selection-indicator"
+                                                                                    role="presentation"
+                                                                                    aria-hidden="true"
+                                                                                    aria-label="selection indicator"
+                                                                                    ></span>
+                                                                                </a>
+                                                                            </div>
+                                                                        </li>
+
+                                                                        <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
+                                                                            <div
+                                                                                class="fd-navigation__item fd-navigation__item--with-expander"
+                                                                                aria-current="false"
+                                                                                aria-expanded="false"
+                                                                                aria-selected="false"
+                                                                                role="menuitem"
+                                                                                >
+                                                                                <a class="fd-navigation__link" role="link" href="#">
+                                                                                    <span
+                                                                                        class="fd-navigation__icon sap-icon--action-settings"
+                                                                                        role="presentation"
+                                                                                        aria-hidden="true"
+                                                                                        ></span>
+                                                                                        <span class="fd-navigation__text">Cog</span>
+                                                                                        <span
+                                                                                            class="fd-navigation__selection-indicator"
+                                                                                            role="presentation"
+                                                                                            aria-hidden="true"
+                                                                                            aria-label="selection indicator"
+                                                                                            ></span>
+                                                                                        </a>
+                                                                                        <span
+                                                                                            class="fd-navigation__has-children-indicator"
+                                                                                            role="button"
+                                                                                            aria-hidden="true"
+                                                                                            aria-label="Expand/Collapse"
+                                                                                            ></span>
+                                                                                        </div>
+                                                                                    </li>
+
+                                                                                    <li
+                                                                                        class="fd-navigation__list-item fd-navigation__list-item--spacer"
+                                                                                        role="presentation"
+                                                                                        aria-hidden="true"
+                                                                                        ></li>
+
+                                                                                        <li
+                                                                                            role="none"
+                                                                                            tabindex="-1"
+                                                                                            class="fd-navigation__list-item fd-navigation__list-item--overflow"
+                                                                                            aria-hidden="true"
+                                                                                            >
+                                                                                            <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
+                                                                                                <a class="fd-navigation__link" role="button" tabindex="0">
                                                                                                     <span
-                                                                                                        class="fd-navigation__selection-indicator"
+                                                                                                        class="fd-navigation__icon sap-icon--overflow"
                                                                                                         role="presentation"
                                                                                                         aria-hidden="true"
-                                                                                                        aria-label="selection indicator"
                                                                                                         ></span>
-                                                                                                        <span
-                                                                                                            class="fd-navigation__external-link-indicator"
-                                                                                                            role="presentation"
-                                                                                                            aria-hidden="true"
-                                                                                                            aria-label="external link indicator"
-                                                                                                            ></span>
-                                                                                                        </a>
-                                                                                                    </li>
-                                                                                                </ul>
+                                                                                                    </a>
+                                                                                                </div>
                                                                                             </li>
-
-                                                                                            <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                                                                                                <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
-                                                                                                    <a class="fd-navigation__link" role="link" href="#">
-                                                                                                        <span
-                                                                                                            class="fd-navigation__icon sap-icon--shield"
-                                                                                                            role="presentation"
-                                                                                                            aria-hidden="true"
-                                                                                                            ></span>
-                                                                                                            <span class="fd-navigation__text">Shield</span>
-                                                                                                            <span
-                                                                                                                class="fd-navigation__selection-indicator"
-                                                                                                                role="presentation"
-                                                                                                                aria-hidden="true"
-                                                                                                                aria-label="selection indicator"
-                                                                                                                ></span>
-                                                                                                            </a>
-                                                                                                        </div>
-                                                                                                    </li>
-
-                                                                                                    <li role="none" tabindex="-1" class="fd-navigation__list-item" aria-hidden="true">
-                                                                                                        <div
-                                                                                                            class="fd-navigation__item fd-navigation__item--with-expander"
-                                                                                                            aria-current="false"
-                                                                                                            aria-expanded="false"
-                                                                                                            aria-selected="false"
-                                                                                                            role="menuitem"
-                                                                                                            >
-                                                                                                            <a class="fd-navigation__link" role="link" href="#">
-                                                                                                                <span
-                                                                                                                    class="fd-navigation__icon sap-icon--action-settings"
-                                                                                                                    role="presentation"
-                                                                                                                    aria-hidden="true"
-                                                                                                                    ></span>
-                                                                                                                    <span class="fd-navigation__text">Cog</span>
-                                                                                                                    <span
-                                                                                                                        class="fd-navigation__selection-indicator"
-                                                                                                                        role="presentation"
-                                                                                                                        aria-hidden="true"
-                                                                                                                        aria-label="selection indicator"
-                                                                                                                        ></span>
-                                                                                                                    </a>
-                                                                                                                    <span
-                                                                                                                        class="fd-navigation__has-children-indicator"
-                                                                                                                        role="button"
-                                                                                                                        aria-hidden="true"
-                                                                                                                        aria-label="Expand/Collapse"
-                                                                                                                        ></span>
-                                                                                                                    </li>
-
-                                                                                                                    <li
-                                                                                                                        class="fd-navigation__list-item fd-navigation__list-item--spacer"
-                                                                                                                        role="presentation"
-                                                                                                                        aria-hidden="true"
-                                                                                                                        ></li>
-
-                                                                                                                        <li
-                                                                                                                            role="none"
-                                                                                                                            tabindex="-1"
-                                                                                                                            class="fd-navigation__list-item fd-navigation__list-item--overflow"
-                                                                                                                            aria-hidden="true"
-                                                                                                                            >
-                                                                                                                            <div class="fd-navigation__item" aria-current="false" aria-expanded="false" role="menuitem">
-                                                                                                                                <a class="fd-navigation__link" role="button" tabindex="0">
-                                                                                                                                    <span
-                                                                                                                                        class="fd-navigation__icon sap-icon--overflow"
-                                                                                                                                        role="presentation"
-                                                                                                                                        aria-hidden="true"
-                                                                                                                                        ></span>
-                                                                                                                                    </a>
-                                                                                                                                </div>
-                                                                                                                            </li>
-                                                                                                                        </ul>
-                                                                                                                    </nav>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </nav>
 ```
 
 ## Accessibility

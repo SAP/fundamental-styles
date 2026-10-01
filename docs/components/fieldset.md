@@ -38,7 +38,6 @@ npm install fundamental-styles
 
 <!-- Include component CSS -->
 <link href="node_modules/fundamental-styles/dist/fieldset.css" rel="stylesheet">
-
 ```
 
 ## Basic Usage
@@ -332,7 +331,7 @@ A radio button can have different states that affect its appearance value states
 
 ### TextTruncation
 
-By default, long radio label truncates with ellipsis. For this behaviour no modifier class is needed. For radio label that wraps on a new line to show the entire content, use \
+By default, long radio label truncates with ellipsis. For this behaviour no modifier class is needed. For radio label that wraps on a new line to show the entire content, use `.fd-radio__label--wrap` modifier class applied with `.fd-radio__label`. Keep in mind that for this to work <b>max-width</b> should be set on the label. For a <b>top-left aligned</b> label use the `.fd-radio__label--wrap-top-aligned` modifier class.
 
 ```html
 <fieldset class="fd-fieldset" id="radio1Truncation">
