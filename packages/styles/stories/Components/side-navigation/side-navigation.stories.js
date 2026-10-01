@@ -10,10 +10,18 @@ import '../../../src/button.scss';
 import '../../../src/icon.scss';
 import '../../../src/_nested-list.scss';
 import '../../../src/popover.scss';
+import '../../../../styles/src/message-strip.scss';
 export default {
   title: 'Components/Side Navigation',
   parameters: {
-    description: `The Side Navigation is an additional option to add a navigation to an application. Same as the vertical navigation it offers the user easy access to multiple pages per space. Side Navigation is triggered by the Menu Icon in Shellbar and can be hidden, collapsed or expanded.
+    description: `<br><div  role="note" class="fd-message-strip fd-message-strip--warning fd-message-strip--dismissible"><div class="fd-message-strip__icon-container" aria-hidden="true">
+    <span class="sap-icon sap-icon--message-warning" role="presentation" aria-hidden="true"></span>
+  </div>
+  <p class="fd-message-strip__text" id="message-strip-text-4" style="line-height: 1; margin: 0;">
+    The component has been deprecated, use <b>BTP Side Navigation</b> instead.
+  </p>
+</div>
+The Side Navigation is an additional option to add a navigation to an application. Same as the vertical navigation it offers the user easy access to multiple pages per space. Side Navigation is triggered by the Menu Icon in Shellbar and can be hidden, collapsed or expanded.
 
 ## Anatomy
 The Side Navigation consists of the following elements: <br>
@@ -46,7 +54,7 @@ The List structure is based on **Navigation List**
 </ul>
 
         `,
-    tags: []
+    tags: ['deprecated']
   }
 };
 
