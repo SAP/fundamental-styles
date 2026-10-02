@@ -21089,10 +21089,10 @@ exports[`Check stories > Components/Card/Card > Story ExtendedHeader > Should ma
                 <div class=\\"fd-card__header-extended\\" role=\\"group\\" aria-roledescription=\\"Extended content\\">
                     <div class=\\"fd-card__header-column fd-card__header-column--right-aligned\\">
                         <div class=\\"fd-card__header-row\\">
-                            <div class=\\"fd-rating-indicator\\">
+                            <div class=\\"fd-rating-indicator fd-rating-indicator--sm\\">
                                 <div 
                                     class=\\"fd-rating-indicator__container\\"
-                                    title=\\"Rating\\"
+                                    aria-label=\\"Star Rating\\"
                                     tabindex=\\"0\\"
                                     role=\\"slider\\"
                                     aria-orientation=\\"horizontal\\"
@@ -47311,21 +47311,243 @@ exports[`Check stories > Components/Quick View > Story Popover > Should match sn
 "
 `;
 
-exports[`Check stories > Components/Rating Indicator > Story Sizes > Should match snapshot 1`] = `
+exports[`Check stories > Components/Rating Indicator > Story CustomIcons > Should match snapshot 1`] = `
+"<div class=\\"example-container\\">
+    <div class=\\"fd-rating-indicator\\">
+        <div
+            class=\\"fd-rating-indicator__container\\"
+            role=\\"slider\\"
+            tabindex=\\"0\\"
+            aria-label=\\"Star Rating\\"
+            aria-roledescription=\\"Rating Indicator\\"
+            aria-valuemin=\\"0\\"
+            aria-valuemax=\\"5\\"
+            aria-valuenow=\\"2\\"
+            aria-valuetext=\\"2 of 5\\"
+        >
+            <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--notification fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    <span class=\\"sap-icon sap-icon--notification fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--notification fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    <span class=\\"sap-icon sap-icon--notification fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+            </ul>
+        </div>
+        <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
+    </div>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Rating Indicator > Story DifferentValues > Should match snapshot 1`] = `
+"<div class=\\"example-container\\">
+    <div class=\\"fd-rating-indicator\\">
+        <div
+            class=\\"fd-rating-indicator__container\\"
+            role=\\"slider\\"
+            tabindex=\\"0\\"
+            aria-label=\\"Star Rating\\"
+            aria-roledescription=\\"Rating Indicator\\"
+            aria-valuemin=\\"0\\"
+            aria-valuemax=\\"5\\"
+            aria-valuenow=\\"2\\"
+            aria-valuetext=\\"2 of 5\\"
+        >
+            <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+            </ul>
+        </div>
+        <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
+    </div>
+</div>
+
+<div class=\\"example-container\\">
+    <div class=\\"fd-rating-indicator\\">
+        <div
+            class=\\"fd-rating-indicator__container\\"
+            role=\\"slider\\"
+            tabindex=\\"0\\"
+            aria-label=\\"Star Rating\\"
+            aria-roledescription=\\"Rating Indicator\\"
+            aria-valuemin=\\"0\\"
+            aria-valuemax=\\"6\\"
+            aria-valuenow=\\"2\\"
+            aria-valuetext=\\"2 of 6\\"
+        >
+            <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+            </ul>
+        </div>
+        <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 6)</span>
+    </div>
+</div>
+
+<div class=\\"example-container\\">
+    <div class=\\"fd-rating-indicator\\">
+        <div
+            class=\\"fd-rating-indicator__container\\"
+            role=\\"slider\\"
+            tabindex=\\"0\\"
+            aria-label=\\"Star Rating\\"
+            aria-roledescription=\\"Rating Indicator\\"
+            aria-valuemin=\\"0\\"
+            aria-valuemax=\\"7\\"
+            aria-valuenow=\\"2\\"
+            aria-valuetext=\\"2 of 7\\"
+        >
+            <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+            </ul>
+        </div>
+        <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 7)</span>
+    </div>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Rating Indicator > Story Disabled > Should match snapshot 1`] = `
+"<div class=\\"example-container\\">
+    <div class=\\"fd-rating-indicator\\" aria-disabled=\\"true\\">
+        <div
+            class=\\"fd-rating-indicator__container\\"
+            role=\\"slider\\"
+            tabindex=\\"0\\"
+            aria-label=\\"Star Rating\\"
+            aria-roledescription=\\"Rating Indicator\\"
+            aria-valuemin=\\"0\\"
+            aria-valuemax=\\"5\\"
+            aria-valuenow=\\"2\\"
+            aria-valuetext=\\"2 of 5\\"
+            aria-disabled=\\"true\\"
+        >
+            <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+                <li class=\\"fd-rating-indicator__item\\">
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                </li>
+            </ul>
+        </div>
+        <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
+    </div>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Rating Indicator > Story DisplayMode > Should match snapshot 1`] = `
 "<h4>LG Size</h4>
-<div class=\\"fd-rating-indicator fd-rating-indicator--lg\\">
-    <div 
+<div class=\\"fd-rating-indicator fd-rating-indicator--lg fd-rating-indicator--display-mode is-readonly\\">
+    <div
         class=\\"fd-rating-indicator__container\\"
-        title=\\"Rating\\"
-        tabindex=\\"0\\"
         role=\\"slider\\"
-        aria-orientation=\\"horizontal\\"
+        tabindex=\\"0\\"
+        aria-label=\\"Star Rating\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
-        aria-valuenow=\\"2.5\\"
         aria-valuemax=\\"5\\"
-        aria-valuetext=\\"2.5 of 5\\"
-        >
+        aria-valuenow=\\"2\\"
+        aria-valuetext=\\"2 of 5\\"
+        aria-readonly=\\"true\\"
+    >
         <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
             <li class=\\"fd-rating-indicator__item\\">
                 <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
@@ -47336,49 +47558,8 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
                 <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
             </li>
             <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-        </ul>
-    </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
-</div>
-
-<br>
-<h4>LG Size, Read Only</h4>
-<div class=\\"fd-rating-indicator fd-rating-indicator--lg is-readonly\\">
-    <div 
-        class=\\"fd-rating-indicator__container\\"
-        title=\\"Rating\\"
-        tabindex=\\"0\\"
-        role=\\"slider\\"
-        aria-orientation=\\"horizontal\\"
-        aria-roledescription=\\"Rating Indicator\\"
-        aria-valuemin=\\"0\\"
-        aria-valuenow=\\"2.5\\"
-        aria-valuemax=\\"5\\"
-        aria-valuetext=\\"2.5 of 5\\"
-        >
-        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
             </li>
             <li class=\\"fd-rating-indicator__item\\">
                 <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
@@ -47390,65 +47571,24 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
             </li>
         </ul>
     </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
-</div>
-
-<br>
-<h4>LG Size, Disabled</h4>
-<div class=\\"fd-rating-indicator fd-rating-indicator--lg is-disabled\\">
-    <div 
-        class=\\"fd-rating-indicator__container\\"
-        title=\\"Rating\\"
-        tabindex=\\"0\\"
-        role=\\"slider\\"
-        aria-orientation=\\"horizontal\\"
-        aria-roledescription=\\"Rating Indicator\\"
-        aria-valuemin=\\"0\\"
-        aria-valuenow=\\"2.5\\"
-        aria-valuemax=\\"5\\"
-        aria-valuetext=\\"2.5 of 5\\"
-        >
-        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-        </ul>
-    </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
+    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
 </div>
 
 <br><br>
-<h4>MD Size</h4>
-<div class=\\"fd-rating-indicator fd-rating-indicator--md\\">
-    <div 
+<h4>MD Size (Default)</h4>
+<div class=\\"fd-rating-indicator fd-rating-indicator--md fd-rating-indicator--display-mode is-readonly\\">
+    <div
         class=\\"fd-rating-indicator__container\\"
-        title=\\"Rating\\"
-        tabindex=\\"0\\"
         role=\\"slider\\"
-        aria-orientation=\\"horizontal\\"
+        tabindex=\\"0\\"
+        aria-label=\\"Star Rating\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
-        aria-valuenow=\\"2.5\\"
         aria-valuemax=\\"5\\"
-        aria-valuetext=\\"2.5 of 5\\"
-        >
+        aria-valuenow=\\"2\\"
+        aria-valuetext=\\"2 of 5\\"
+        aria-readonly=\\"true\\"
+    >
         <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
             <li class=\\"fd-rating-indicator__item\\">
                 <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
@@ -47459,37 +47599,37 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
                 <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
             </li>
             <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
             </li>
             <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
             </li>
             <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
             </li>
         </ul>
     </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
+    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
 </div>
 
-<br>
-<h4>MD Size, Read Only</h4>
-<div class=\\"fd-rating-indicator fd-rating-indicator--md is-readonly\\">
-    <div 
+<br><br>
+<h4>SM Size</h4>
+<div class=\\"fd-rating-indicator fd-rating-indicator--sm fd-rating-indicator--display-mode is-readonly\\">
+    <div
         class=\\"fd-rating-indicator__container\\"
-        title=\\"Rating\\"
-        tabindex=\\"0\\"
         role=\\"slider\\"
-        aria-orientation=\\"horizontal\\"
+        tabindex=\\"0\\"
+        aria-label=\\"Star Rating\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
-        aria-valuenow=\\"2.5\\"
         aria-valuemax=\\"5\\"
-        aria-valuetext=\\"2.5 of 5\\"
-        >
+        aria-valuenow=\\"2\\"
+        aria-valuetext=\\"2 of 5\\"
+        aria-readonly=\\"true\\"
+    >
         <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
             <li class=\\"fd-rating-indicator__item\\">
                 <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
@@ -47500,8 +47640,8 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
                 <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
             </li>
             <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
             </li>
             <li class=\\"fd-rating-indicator__item\\">
                 <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
@@ -47513,24 +47653,24 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
             </li>
         </ul>
     </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
+    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
 </div>
 
-<br>
-<h4>MD Size, Disabled</h4>
-<div class=\\"fd-rating-indicator fd-rating-indicator--md is-disabled\\">
-    <div 
+<br><br>
+<h4>XS Size</h4>
+<div class=\\"fd-rating-indicator fd-rating-indicator--xs fd-rating-indicator--display-mode is-readonly\\">
+    <div
         class=\\"fd-rating-indicator__container\\"
-        title=\\"Rating\\"
-        tabindex=\\"0\\"
         role=\\"slider\\"
-        aria-orientation=\\"horizontal\\"
+        tabindex=\\"0\\"
+        aria-label=\\"Star Rating\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
-        aria-valuenow=\\"2.5\\"
         aria-valuemax=\\"5\\"
-        aria-valuetext=\\"2.5 of 5\\"
-        >
+        aria-valuenow=\\"2\\"
+        aria-valuetext=\\"2 of 5\\"
+        aria-readonly=\\"true\\"
+    >
         <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
             <li class=\\"fd-rating-indicator__item\\">
                 <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
@@ -47541,8 +47681,8 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
                 <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
             </li>
             <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
             </li>
             <li class=\\"fd-rating-indicator__item\\">
                 <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
@@ -47554,24 +47694,231 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
             </li>
         </ul>
     </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
+    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
+</div>
+"
+`;
+
+exports[`Check stories > Components/Rating Indicator > Story HalfValues > Should match snapshot 1`] = `
+"<div class=\\"example-container\\">
+        <span style=\\"min-width: 185px;\\">Default:</span>
+        <div class=\\"fd-rating-indicator\\">
+            <div
+                class=\\"fd-rating-indicator__container\\"
+                role=\\"slider\\"
+                tabindex=\\"0\\"
+                aria-label=\\"Star Rating\\"
+                aria-roledescription=\\"Rating Indicator\\"
+                aria-valuemin=\\"0\\"
+                aria-valuemax=\\"5\\"
+                aria-valuenow=\\"2.5\\"
+                aria-valuetext=\\"2.5 of 5\\"
+            >
+                <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
+                    <li class=\\"fd-rating-indicator__item\\">
+                        <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                        <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    </li>
+                    <li class=\\"fd-rating-indicator__item\\">
+                        <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                        <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    </li>
+                    <li class=\\"fd-rating-indicator__item\\">
+                        <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                        <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    </li>
+                    <li class=\\"fd-rating-indicator__item\\">
+                        <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                        <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    </li>
+                    <li class=\\"fd-rating-indicator__item\\">
+                        <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                        <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    </li>
+                </ul>
+            </div>
+            <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
+        </div>
+    </div>
+
+    <div class=\\"example-container\\">
+        <span style=\\"min-width: 185px;\\">Custom icons:</span>
+        <div class=\\"fd-rating-indicator\\">
+            <div
+                class=\\"fd-rating-indicator__container\\"
+                role=\\"slider\\"
+                tabindex=\\"0\\"
+                aria-label=\\"Star Rating\\"
+                aria-roledescription=\\"Rating Indicator\\"
+                aria-valuemin=\\"0\\"
+                aria-valuemax=\\"5\\"
+                aria-valuenow=\\"2.5\\"
+                aria-valuetext=\\"2.5 of 5\\"
+            >
+                <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
+                    <li class=\\"fd-rating-indicator__item\\">
+                        <span class=\\"sap-icon sap-icon--notification fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                        <span class=\\"sap-icon sap-icon--notification fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    </li>
+                    <li class=\\"fd-rating-indicator__item\\">
+                        <span class=\\"sap-icon sap-icon--notification fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                        <span class=\\"sap-icon sap-icon--notification fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    </li>
+                    <li class=\\"fd-rating-indicator__item\\">
+                        <span class=\\"sap-icon sap-icon--notification fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                        <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    </li>
+                    <li class=\\"fd-rating-indicator__item\\">
+                        <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                        <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    </li>
+                    <li class=\\"fd-rating-indicator__item\\">
+                        <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                        <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    </li>
+                </ul>
+            </div>
+            <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
+        </div>
+    </div>
+
+    <div class=\\"example-container\\">
+        <span style=\\"min-width: 185px;\\">Custom icons and size --lg:</span>
+        <div class=\\"fd-rating-indicator fd-rating-indicator--lg\\">
+            <div
+                class=\\"fd-rating-indicator__container\\"
+                role=\\"slider\\"
+                tabindex=\\"0\\"
+                aria-label=\\"Star Rating\\"
+                aria-roledescription=\\"Rating Indicator\\"
+                aria-valuemin=\\"0\\"
+                aria-valuemax=\\"5\\"
+                aria-valuenow=\\"2.5\\"
+                aria-valuetext=\\"2.5 of 5\\"
+            >
+                <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
+                    <li class=\\"fd-rating-indicator__item\\">
+                        <span class=\\"sap-icon sap-icon--notification fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                        <span class=\\"sap-icon sap-icon--notification fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    </li>
+                    <li class=\\"fd-rating-indicator__item\\">
+                        <span class=\\"sap-icon sap-icon--notification fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                        <span class=\\"sap-icon sap-icon--notification fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                    </li>
+                    <li class=\\"fd-rating-indicator__item\\">
+                        <span class=\\"sap-icon sap-icon--notification fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                        <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    </li>
+                    <li class=\\"fd-rating-indicator__item\\">
+                        <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                        <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    </li>
+                    <li class=\\"fd-rating-indicator__item\\">
+                        <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                        <span class=\\"sap-icon sap-icon--bo-strategy-management fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                    </li>
+                </ul>
+            </div>
+            <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
+        </div>
+    </div>
+"
+`;
+
+exports[`Check stories > Components/Rating Indicator > Story Sizes > Should match snapshot 1`] = `
+"<h4>LG Size</h4>
+<div class=\\"fd-rating-indicator fd-rating-indicator--lg\\">
+    <div
+        class=\\"fd-rating-indicator__container\\"
+        role=\\"slider\\"
+        tabindex=\\"0\\"
+        aria-label=\\"Star Rating\\"
+        aria-roledescription=\\"Rating Indicator\\"
+        aria-valuemin=\\"0\\"
+        aria-valuemax=\\"5\\"
+        aria-valuenow=\\"2\\"
+        aria-valuetext=\\"2 of 5\\"
+    >
+        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+        </ul>
+    </div>
+    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
+</div>
+
+<br><br>
+<h4>Default (M)</h4>
+<div class=\\"fd-rating-indicator\\">
+    <div
+        class=\\"fd-rating-indicator__container\\"
+        role=\\"slider\\"
+        tabindex=\\"0\\"
+        aria-label=\\"Star Rating\\"
+        aria-roledescription=\\"Rating Indicator\\"
+        aria-valuemin=\\"0\\"
+        aria-valuemax=\\"5\\"
+        aria-valuenow=\\"2\\"
+        aria-valuetext=\\"2 of 5\\"
+    >
+        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+        </ul>
+    </div>
+    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
 </div>
 
 <br><br>
 <h4>SM Size</h4>
 <div class=\\"fd-rating-indicator fd-rating-indicator--sm\\">
-    <div 
+    <div
         class=\\"fd-rating-indicator__container\\"
-        title=\\"Rating\\"
-        tabindex=\\"0\\"
         role=\\"slider\\"
-        aria-orientation=\\"horizontal\\"
+        tabindex=\\"0\\"
+        aria-label=\\"Star Rating\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
-        aria-valuenow=\\"2.5\\"
         aria-valuemax=\\"5\\"
-        aria-valuetext=\\"2.5 of 5\\"
-        >
+        aria-valuenow=\\"2\\"
+        aria-valuetext=\\"2 of 5\\"
+    >
         <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
             <li class=\\"fd-rating-indicator__item\\">
                 <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
@@ -47582,7 +47929,7 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
                 <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
             </li>
             <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
                 <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
             </li>
             <li class=\\"fd-rating-indicator__item\\">
@@ -47595,107 +47942,23 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
             </li>
         </ul>
     </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
-</div>
-
-<br>
-<h4>SM Size, Read Only</h4>
-<div class=\\"fd-rating-indicator fd-rating-indicator--sm is-readonly\\">
-    <div 
-        class=\\"fd-rating-indicator__container\\"
-        title=\\"Rating\\"
-        tabindex=\\"0\\"
-        role=\\"slider\\"
-        aria-orientation=\\"horizontal\\"
-        aria-roledescription=\\"Rating Indicator\\"
-        aria-valuemin=\\"0\\"
-        aria-valuenow=\\"2.5\\"
-        aria-valuemax=\\"5\\"
-        aria-valuetext=\\"2.5 of 5\\"
-        >
-        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-        </ul>
-    </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
-</div>
-
-<br>
-<h4>SM Size, Disabled</h4>
-<div class=\\"fd-rating-indicator fd-rating-indicator--sm is-disabled\\">
-    <div 
-        class=\\"fd-rating-indicator__container\\"
-        title=\\"Rating\\"
-        tabindex=\\"0\\"
-        role=\\"slider\\"
-        aria-orientation=\\"horizontal\\"
-        aria-roledescription=\\"Rating Indicator\\"
-        aria-valuemin=\\"0\\"
-        aria-valuenow=\\"2.5\\"
-        aria-valuemax=\\"5\\"
-        aria-valuetext=\\"2.5 of 5\\"
-        >
-        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-        </ul>
-    </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
+    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
 </div>
 
 <br><br>
-<br>
-<h4>XS Size, Read Only</h4>
-<div class=\\"fd-rating-indicator fd-rating-indicator--xs is-readonly\\">
-    <div 
+<h4>XS Size</h4>
+<div class=\\"fd-rating-indicator fd-rating-indicator--xs\\">
+    <div
         class=\\"fd-rating-indicator__container\\"
-        title=\\"Rating\\"
-        tabindex=\\"0\\"
         role=\\"slider\\"
-        aria-orientation=\\"horizontal\\"
+        tabindex=\\"0\\"
+        aria-label=\\"Star Rating\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
-        aria-valuenow=\\"2.5\\"
         aria-valuemax=\\"5\\"
-        aria-valuetext=\\"2.5 of 5\\"
-        >
+        aria-valuenow=\\"2\\"
+        aria-valuetext=\\"2 of 5\\"
+    >
         <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
             <li class=\\"fd-rating-indicator__item\\">
                 <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
@@ -47706,49 +47969,7 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
                 <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
             </li>
             <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
                 <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-        </ul>
-    </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
-</div>"
-`;
-
-exports[`Check stories > Components/Rating Indicator > Story States > Should match snapshot 1`] = `
-"<h4>Default</h4>
-<div class=\\"fd-rating-indicator\\">
-    <div 
-        class=\\"fd-rating-indicator__container\\"
-        title=\\"Rating\\"
-        tabindex=\\"0\\"
-        role=\\"slider\\"
-        aria-orientation=\\"horizontal\\"
-        aria-roledescription=\\"Rating Indicator\\"
-        aria-valuemin=\\"0\\"
-        aria-valuenow=\\"2.5\\"
-        aria-valuemax=\\"5\\"
-        aria-valuetext=\\"2.5 of 5\\"
-        >
-        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
                 <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
             </li>
             <li class=\\"fd-rating-indicator__item\\">
@@ -47761,171 +47982,7 @@ exports[`Check stories > Components/Rating Indicator > Story States > Should mat
             </li>
         </ul>
     </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
-</div>
-
-<br>
-<h4>Hover</h4>
-<div class=\\"fd-rating-indicator is-hover\\">
-    <div 
-        class=\\"fd-rating-indicator__container\\"
-        title=\\"Rating\\"
-        tabindex=\\"0\\"
-        role=\\"slider\\"
-        aria-orientation=\\"horizontal\\"
-        aria-roledescription=\\"Rating Indicator\\"
-        aria-valuemin=\\"0\\"
-        aria-valuenow=\\"2.5\\"
-        aria-valuemax=\\"5\\"
-        aria-valuetext=\\"2.5 of 5\\"
-        >
-        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-        </ul>
-    </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
-</div>
-
-<br>
-<h4>Focus</h4>
-<div class=\\"fd-rating-indicator\\">
-    <div 
-        class=\\"fd-rating-indicator__container is-focus\\"
-        title=\\"Rating\\"
-        tabindex=\\"0\\"
-        role=\\"slider\\"
-        aria-orientation=\\"horizontal\\"
-        aria-roledescription=\\"Rating Indicator\\"
-        aria-valuemin=\\"0\\"
-        aria-valuenow=\\"2.5\\"
-        aria-valuemax=\\"5\\"
-        aria-valuetext=\\"2.5 of 5\\"
-        >
-        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-        </ul>
-    </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
-</div>
-
-<br>
-<h4>Read Only</h4>
-<div class=\\"fd-rating-indicator is-readonly\\">
-    <div 
-        class=\\"fd-rating-indicator__container\\"
-        title=\\"Rating\\"
-        tabindex=\\"0\\"
-        role=\\"slider\\"
-        aria-orientation=\\"horizontal\\"
-        aria-roledescription=\\"Rating Indicator\\"
-        aria-valuemin=\\"0\\"
-        aria-valuenow=\\"2.5\\"
-        aria-valuemax=\\"5\\"
-        aria-valuetext=\\"2.5 of 5\\"
-        >
-        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-        </ul>
-    </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
-</div>
-
-<br>
-<h4>Disabled</h4>
-<div class=\\"fd-rating-indicator is-disabled\\">
-    <div 
-        class=\\"fd-rating-indicator__container\\"
-        title=\\"Rating\\"
-        tabindex=\\"0\\"
-        role=\\"slider\\"
-        aria-orientation=\\"horizontal\\"
-        aria-roledescription=\\"Rating Indicator\\"
-        aria-valuemin=\\"0\\"
-        aria-valuenow=\\"2.5\\"
-        aria-valuemax=\\"5\\"
-        aria-valuetext=\\"2.5 of 5\\"
-        >
-        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-        </ul>
-    </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2.5 of 5)</span>
+    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
 </div>
 "
 `;
