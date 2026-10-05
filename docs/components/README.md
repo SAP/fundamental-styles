@@ -29,13 +29,13 @@ This directory contains AI-consumable documentation extracted from Storybook sto
 |-----------|----------|------|
 | BTP/Avatar | `fd-avatar` | [avatar-btp.md](./avatar-btp.md) |
 | BTP/Button | `fd-button` | [button-btp.md](./button-btp.md) |
-| BTP/Navigation/Horizontal Navigation | `fd-navigation` | [navigation-navigation.md](./navigation-navigation.md) |
-| BTP/Navigation/Vertical Navigation | `fd-navigation` | [navigation.md](./navigation.md) |
+| BTP/Side Navigation | `fd-navigation` | [navigation.md](./navigation.md) |
 | BTP/Splitter | `fd-splitter` | [splitter.md](./splitter.md) |
 | BTP/Title Bar | `fd-toolbar` | [toolbar-btp.md](./toolbar-btp.md) |
 | BTP/Tool Header | `fd-tool-header` | [tool-header.md](./tool-header.md) |
 | BTP/User Menu | `fd-popover` | [popover-btp.md](./popover-btp.md) |
 | Dev/Navigation Menu | `fd-navigation-menu` | [navigation-menu.md](./navigation-menu.md) |
+| navigation-horizontal | `fd-navigation` | [navigation-navigation.md](./navigation-navigation.md) |
 
 ### Components
 
