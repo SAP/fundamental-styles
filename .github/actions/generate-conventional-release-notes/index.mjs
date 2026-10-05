@@ -12,11 +12,12 @@ const generateChangelog = (fromVersion) => {
     return new Promise((resolve, reject) => {
         let generatedReleaseNotes = '';
         const changelog = new ConventionalChangelog()
+            .readPackage()
             .loadPreset('angular')
             .options({ releaseCount: 1 })
-            .context({ from: fromVersion })
+            .commits({ from: fromVersion })
             .writer({ headerPartial: '' });
-            
+
         changelog.writeStream()
             .pipe(through(function(chunk, _enc, callback) {
                 this.push(chunk);
