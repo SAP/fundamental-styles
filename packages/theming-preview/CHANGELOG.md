@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.42.0-rc.0](https://github.com/SAP/fundamental-styles/compare/v0.41.10-rc.10...v0.42.0-rc.0) (2026-10-05)
+
+### Bug Fixes
+
+- **styles:** refactor Rating Indicator [ci visual] ([#5645](https://github.com/SAP/fundamental-styles/issues/5645)) ([5113384](https://github.com/SAP/fundamental-styles/commit/5113384e291a807f43623ab71cf679677e828c20))
+
+### BREAKING CHANGES
+
+- **styles:** The HTML structure of the Rating Indicator has been completely replaced. The old `input[type=radio]` + `label` markup is no longer supported.
+
+Consumers must:
+
+1. Replace `input`/`label` elements with the `ul > li > span` structure
+2. Move ARIA state to `role="slider"` attributes on `__container` and update them via JavaScript
+3. Use `--selected` / `--unselected` modifier classes on icon spans instead of `:checked` state
+
 ## [0.41.10-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.41.10-rc.9...v0.41.10-rc.10) (2026-10-01)
 
 **Note:** Version bump only for package @fundamental-styles/theming-preview
