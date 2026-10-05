@@ -40,13 +40,5 @@
         },
         "skipLibCheck": true
     },
-    "ts-node": {
-        "require": ["tsconfig-paths/register"],
-        "compilerOptions": {
-            "module": "CommonJS"
-        },
-        "transpileOnly": true,
-        "ignore": ["(?:^|/)node_modules/", "(?:^|/)\\.nx/"]
-    },
     "exclude": ["node_modules", "tmp"]
 }
