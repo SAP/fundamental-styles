@@ -52,6 +52,8 @@ jobs:
       - uses: actions/checkout@v6
       - uses: ./.github/actions/nodejs
         name: Install dependencies
+      - name: Test release notes generation
+        run: node --test .github/actions/generate-conventional-release-notes/test-generate-conventional-release-notes.mjs
       - run: yarn run lint
       - run: yarn run build:prod
       - run: yarn run size
