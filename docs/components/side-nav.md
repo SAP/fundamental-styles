@@ -5,14 +5,23 @@ category: Components
 selector: fd-side-nav
 cssFile: side-nav.css
 sourcePath: packages/styles/stories/Components/side-navigation/side-navigation.stories.js
-tags: []
-dependencies: ["button","icon","navigation-list","popover","side-nav"]
-relatedComponents: ["button","icon","navigation-list","popover","side-nav"]
-stability: stable
+tags: ["deprecated"]
+dependencies: ["button","icon","message-strip","navigation-list","popover","side-nav"]
+relatedComponents: ["button","icon","message-strip","navigation-list","popover","side-nav"]
+stability: deprecated
 ---
 
 # Components/Side Navigation
 
+> **⚠️ DEPRECATED**: This component is deprecated and should not be used in new projects.
+
+<br><div  role="note" class="fd-message-strip fd-message-strip--warning"><div class="fd-message-strip__icon-container" aria-hidden="true">
+    <span class="sap-icon sap-icon--message-warning" role="presentation" aria-hidden="true"></span>
+  </div>
+  <p class="fd-message-strip__text" style="line-height: 1; margin: 0;">
+    The component has been deprecated, use <b>BTP Side Navigation</b> instead.
+  </p>
+</div>
 The Side Navigation is an additional option to add a navigation to an application. Same as the vertical navigation it offers the user easy access to multiple pages per space. Side Navigation is triggered by the Menu Icon in Shellbar and can be hidden, collapsed or expanded.
 
 ## Anatomy
@@ -51,6 +60,7 @@ This component depends on the following CSS files:
 
 - `button.css`
 - `icon.css`
+- `message-strip.css`
 - `navigation-list.css`
 - `popover.css`
 - `side-nav.css`
@@ -71,6 +81,7 @@ npm install fundamental-styles
 <!-- Include dependencies -->
 <link href="node_modules/fundamental-styles/dist/button.css" rel="stylesheet">
 <link href="node_modules/fundamental-styles/dist/icon.css" rel="stylesheet">
+<link href="node_modules/fundamental-styles/dist/message-strip.css" rel="stylesheet">
 <link href="node_modules/fundamental-styles/dist/navigation-list.css" rel="stylesheet">
 <link href="node_modules/fundamental-styles/dist/popover.css" rel="stylesheet">
 <link href="node_modules/fundamental-styles/dist/side-nav.css" rel="stylesheet">
@@ -375,6 +386,7 @@ This component works with or depends on:
 
 - `button`
 - `icon`
+- `message-strip`
 - `navigation-list`
 - `popover`
 - `side-nav`

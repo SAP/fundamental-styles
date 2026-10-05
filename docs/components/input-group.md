@@ -5,13 +5,23 @@ category: Components
 selector: fd-input-group
 cssFile: input-group.css
 sourcePath: packages/cx/stories/Components/cx-side-navigation/cx-side-navigation.stories.js
-tags: ["cx","theme"]
+tags: ["deprecated","cx"]
 dependencies: ["side-nav"]
 relatedComponents: ["side-nav"]
-stability: stable
+stability: deprecated
 ---
 
 # Components/Cx Side Navigation
+
+> **⚠️ DEPRECATED**: This component is deprecated and should not be used in new projects.
+
+<br><div  role="note" class="fd-message-strip fd-message-strip--warning"><div class="fd-message-strip__icon-container" aria-hidden="true">
+    <span class="sap-icon sap-icon--message-warning" role="presentation" aria-hidden="true"></span>
+  </div>
+  <p class="fd-message-strip__text" style="line-height: 1; margin: 0;">
+    The component has been deprecated, use <b>BTP Side Navigation</b> instead.
+  </p>
+</div>
 
 The Side Navigation can display structures of up to three levels.
 <br><br>In the <code>Wide</code> variant:

@@ -1,6 +1,6 @@
 ---
 component: fd-navigation
-title: BTP/Navigation/Horizontal Navigation
+title: navigation-horizontal
 category: BTP
 selector: fd-navigation
 cssFile: navigation.css
@@ -11,7 +11,7 @@ relatedComponents: []
 stability: stable
 ---
 
-# BTP/Navigation/Horizontal Navigation
+# navigation-horizontal
 
 The navigation is one of the signature design elements of BTP Tools.
 ## Navigation Types:
