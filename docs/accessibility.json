@@ -639,7 +639,8 @@
         "img",
         "button",
         "listitem",
-        "list"
+        "list",
+        "slider"
       ],
       "requiredAttrs": [],
       "optionalAttrs": [
@@ -700,11 +701,47 @@
           "exampleValues": [
             "5"
           ]
+        },
+        {
+          "name": "aria-orientation",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "horizontal"
+          ]
+        },
+        {
+          "name": "aria-valuemin",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "0"
+          ]
+        },
+        {
+          "name": "aria-valuenow",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "2.5"
+          ]
+        },
+        {
+          "name": "aria-valuemax",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "5"
+          ]
+        },
+        {
+          "name": "aria-valuetext",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "2.5 of 5"
+          ]
         }
       ],
       "keyboardSupport": [
         "Enter",
-        "Space"
+        "Space",
+        "Arrow keys"
       ],
       "focusManagement": "Uses tabindex for focus management",
       "notes": []
@@ -2182,15 +2219,15 @@
       ]
     },
     "rating-indicator": {
-      "roles": [],
+      "roles": [
+        "slider"
+      ],
       "requiredAttrs": [
         {
           "name": "aria-label",
           "purpose": "Accessible name when no visible text",
           "exampleValues": [
-            "Star Rating (out of 5)",
-            "0 star",
-            "1 star"
+            "Star Rating"
           ],
           "when": "Required when no visible text label"
         },
@@ -2203,9 +2240,59 @@
           "when": "Required for interactive state"
         }
       ],
-      "optionalAttrs": [],
-      "keyboardSupport": [],
-      "focusManagement": null,
+      "optionalAttrs": [
+        {
+          "name": "aria-roledescription",
+          "purpose": "Custom role description",
+          "exampleValues": [
+            "Rating Indicator"
+          ]
+        },
+        {
+          "name": "aria-valuemin",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "0"
+          ]
+        },
+        {
+          "name": "aria-valuemax",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "5",
+            "6",
+            "7"
+          ]
+        },
+        {
+          "name": "aria-valuenow",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "2",
+            "2.5"
+          ]
+        },
+        {
+          "name": "aria-valuetext",
+          "purpose": "See WAI-ARIA specification",
+          "exampleValues": [
+            "2 of 5",
+            "2 of 6",
+            "2 of 7"
+          ]
+        },
+        {
+          "name": "aria-readonly",
+          "purpose": "Indicates read-only field",
+          "exampleValues": [
+            "true"
+          ]
+        }
+      ],
+      "keyboardSupport": [
+        "Arrow keys"
+      ],
+      "focusManagement": "Uses tabindex for focus management",
       "notes": []
     },
     "search-field": {

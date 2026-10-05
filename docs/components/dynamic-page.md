@@ -132,26 +132,44 @@ npm install fundamental-styles
     </div>
 
     <div class="fd-facet fd-facet--rating-indicator fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="ratingFacetTitle1">
-        <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="ratingFacetTitle1">Average User Rating</h1>
-        <h2 class="fd-form-label">6 reviews</h2>
+        <span role="heading" aria-level="3" class="fd-title fd-title--h5 fd-margin-bottom--sm" id="ratingFacetTitle1">Average User Rating</span>
         <div class="fd-rating-indicator fd-facet__container">
-            <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
-                <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-1" name="rating-max-value-5" value="1">
-                <label class="fd-rating-indicator__label" for="rating-max-value-5-1"></label>
-
-                <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-2" name="rating-max-value-5" value="2" checked>
-                <label class="fd-rating-indicator__label" for="rating-max-value-5-2"></label>
-
-                <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-3" name="rating-max-value-5" value="3">
-                <label class="fd-rating-indicator__label" for="rating-max-value-5-3"></label>
-
-                <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-4" name="rating-max-value-5" value="4">
-                <label class="fd-rating-indicator__label" for="rating-max-value-5-4"></label>
-
-                <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-5" name="rating-max-value-5" value="5">
-                <label class="fd-rating-indicator__label" for="rating-max-value-5-5"></label>
+            <div
+                class="fd-rating-indicator__container fd-facet__rating-container"
+                title="Rating"
+                tabindex="0"
+                role="slider"
+                aria-orientation="horizontal"
+                aria-roledescription="Rating Indicator"
+                aria-valuemin="0"
+                aria-valuenow="2.5"
+                aria-valuemax="5"
+                aria-valuetext="2.5 of 5"
+                >
+                <ul class="fd-rating-indicator__list" aria-hidden="true">
+                    <li class="fd-rating-indicator__item">
+                        <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                        <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                    </li>
+                    <li class="fd-rating-indicator__item">
+                        <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                        <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                    </li>
+                    <li class="fd-rating-indicator__item">
+                        <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                        <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                    </li>
+                    <li class="fd-rating-indicator__item">
+                        <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                        <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                    </li>
+                    <li class="fd-rating-indicator__item">
+                        <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                        <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                    </li>
+                </ul>
             </div>
-            <span class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text fd-margin-top--tiny">(2 of 5)</span>
+            <span class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text">(2.5 of 5)</span>
         </div>
     </div>
 </div>
@@ -301,26 +319,44 @@ Facet types(image, form, and key-value) used together.
     </div>
 
     <div class="fd-facet fd-facet--rating-indicator fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="ratingFacetTitle1">
-        <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="ratingFacetTitle1">Average User Rating</h1>
-        <h2 class="fd-form-label">6 reviews</h2>
+        <span role="heading" aria-level="3" class="fd-title fd-title--h5 fd-margin-bottom--sm" id="ratingFacetTitle1">Average User Rating</span>
         <div class="fd-rating-indicator fd-facet__container">
-            <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
-                <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-1" name="rating-max-value-5" value="1">
-                <label class="fd-rating-indicator__label" for="rating-max-value-5-1"></label>
-
-                <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-2" name="rating-max-value-5" value="2" checked>
-                <label class="fd-rating-indicator__label" for="rating-max-value-5-2"></label>
-
-                <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-3" name="rating-max-value-5" value="3">
-                <label class="fd-rating-indicator__label" for="rating-max-value-5-3"></label>
-
-                <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-4" name="rating-max-value-5" value="4">
-                <label class="fd-rating-indicator__label" for="rating-max-value-5-4"></label>
-
-                <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="rating-max-value-5-5" name="rating-max-value-5" value="5">
-                <label class="fd-rating-indicator__label" for="rating-max-value-5-5"></label>
+            <div
+                class="fd-rating-indicator__container fd-facet__rating-container"
+                title="Rating"
+                tabindex="0"
+                role="slider"
+                aria-orientation="horizontal"
+                aria-roledescription="Rating Indicator"
+                aria-valuemin="0"
+                aria-valuenow="2.5"
+                aria-valuemax="5"
+                aria-valuetext="2.5 of 5"
+                >
+                <ul class="fd-rating-indicator__list" aria-hidden="true">
+                    <li class="fd-rating-indicator__item">
+                        <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                        <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                    </li>
+                    <li class="fd-rating-indicator__item">
+                        <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                        <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                    </li>
+                    <li class="fd-rating-indicator__item">
+                        <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                        <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                    </li>
+                    <li class="fd-rating-indicator__item">
+                        <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                        <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                    </li>
+                    <li class="fd-rating-indicator__item">
+                        <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                        <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                    </li>
+                </ul>
             </div>
-            <span class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text fd-margin-top--tiny">(2 of 5)</span>
+            <span class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text">(2.5 of 5)</span>
         </div>
     </div>
 </div>
@@ -413,37 +449,6 @@ Text in a form facet can also hold a link by using the Link component.
     <div class="fd-facet__container">
         <label class="fd-form-label" for="form-value-09">Height:</label>
         <div class="fd-text" id="form-value-09">20.8 Centimeter</div>
-    </div>
-</div>
-```
-
-### Rating Indicator Facet
-
-The Rating Indicator Facet displays a **Rating Indicator**. It consists of a mandatory title, optional supplementary texts
-        like a subtitle or a dynamic text, and the rating indicator.
-
-```html
-<div class="fd-facet fd-facet--rating-indicator fd-margin-end--md fd-margin-bottom--sm" role="group" aria-labelledby="ratingFacetTitle2">
-    <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="ratingFacetTitle2">Average User Rating</h1>
-    <h2 class="fd-form-label">6 reviews</h2>
-    <div class="fd-rating-indicator fd-facet__container">
-        <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
-            <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="1-rating-max-value-5-1" name="1-rating-max-value-5" value="1">
-            <label class="fd-rating-indicator__label" for="1-rating-max-value-5-1"></label>
-
-            <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="1-rating-max-value-5-2" name="1-rating-max-value-5" value="2">
-            <label class="fd-rating-indicator__label" for="1-rating-max-value-5-2"></label>
-
-            <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="1-rating-max-value-5-3" name="1-rating-max-value-5" value="3">
-            <label class="fd-rating-indicator__label" for="1-rating-max-value-5-3"></label>
-
-            <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="1-rating-max-value-5-4" name="1-rating-max-value-5" value="4" checked>
-            <label class="fd-rating-indicator__label" for="1-rating-max-value-5-4"></label>
-
-            <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="1-rating-max-value-5-5" name="1-rating-max-value-5" value="5">
-            <label class="fd-rating-indicator__label" for="1-rating-max-value-5-5"></label>
-        </div>
-        <span class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text fd-margin-top--tiny">(4 of 5)</span>
     </div>
 </div>
 ```
@@ -617,27 +622,45 @@ The final structure of a collapsed header with image next to the title is shown 
                         </span>
                     </div>
 
-                    <div class="fd-facet fd-facet--rating-indicator fd-margin-end--md  fd-margin-bottom--sm" role="group" aria-labelledby="ratingFacetTitle3">
-                        <h1 class="fd-title fd-title--h5 fd-margin-bottom--sm" id="ratingFacetTitle3">Average User Rating</h1>
-                        <h2 class="fd-form-label">6 reviews</h2>
+                    <div class="fd-facet fd-facet--rating-indicator">
+                        <div role="heading" aria-level="3" class="fd-title fd-title--h5 fd-margin-bottom--sm" id="ratingFacetTitle3">Average User Rating</div>
                         <div class="fd-rating-indicator fd-facet__container">
-                            <div class="fd-rating-indicator__container fd-facet__rating-container" aria-label="Star Rating (out of 5)">
-                                <input aria-label="1 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-1" name="2-rating-max-value-5" value="1">
-                                <label class="fd-rating-indicator__label" for="2-rating-max-value-5-1"></label>
-
-                                <input aria-label="2 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-2" name="2-rating-max-value-5" value="2" checked>
-                                <label class="fd-rating-indicator__label" for="2-rating-max-value-5-2"></label>
-
-                                <input aria-label="3 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-3" name="2-rating-max-value-5" value="3">
-                                <label class="fd-rating-indicator__label" for="2-rating-max-value-5-3"></label>
-
-                                <input aria-label="4 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-4" name="2-rating-max-value-5" value="4">
-                                <label class="fd-rating-indicator__label" for="2-rating-max-value-5-4"></label>
-
-                                <input aria-label="5 star" type="radio" class="fd-rating-indicator__input" id="2-rating-max-value-5-5" name="2-rating-max-value-5" value="5">
-                                <label class="fd-rating-indicator__label" for="2-rating-max-value-5-5"></label>
+                            <div
+                                class="fd-rating-indicator__container fd-facet__rating-container"
+                                title="Rating"
+                                tabindex="0"
+                                role="slider"
+                                aria-orientation="horizontal"
+                                aria-roledescription="Rating Indicator"
+                                aria-valuemin="0"
+                                aria-valuenow="2.5"
+                                aria-valuemax="5"
+                                aria-valuetext="2.5 of 5"
+                                >
+                                <ul class="fd-rating-indicator__list" aria-hidden="true">
+                                    <li class="fd-rating-indicator__item">
+                                        <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                                        <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                                    </li>
+                                    <li class="fd-rating-indicator__item">
+                                        <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                                        <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                                    </li>
+                                    <li class="fd-rating-indicator__item">
+                                        <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                                        <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                                    </li>
+                                    <li class="fd-rating-indicator__item">
+                                        <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                                        <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                                    </li>
+                                    <li class="fd-rating-indicator__item">
+                                        <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                                        <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                                    </li>
+                                </ul>
                             </div>
-                            <span class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text fd-margin-top--tiny">(2 of 5)</span>
+                            <span class="fd-rating-indicator__dynamic-text fd-facet__rating-dynamic-text">(2.5 of 5)</span>
                         </div>
                     </div>
                 </div>

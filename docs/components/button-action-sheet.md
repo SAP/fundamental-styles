@@ -223,6 +223,7 @@ Key CSS variables used by this component:
 
 ```html
 <button class="fd-button fd-button--transparent"
+
     aria-label="More Options" aria-controls="actionSheetPhone" aria-expanded="true"
     aria-haspopup="true" onclick="toggleClass('actionSheetPhone', 'fd-action-sheet__wrapper--active');">
     <i class="sap-icon--settings"></i>
