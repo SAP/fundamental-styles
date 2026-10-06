@@ -46,6 +46,8 @@ $block: #{$fd-namespace}-tool-layout;
   &__navigation-container {
     @include fd-reset();
 
+    z-index: 1;
+
     &--horizontal {
       flex: 1;
       min-width: 100%;
@@ -59,6 +61,8 @@ $block: #{$fd-namespace}-tool-layout;
   &__content-container {
     @include fd-reset();
 
+    // Contain positioned content below navigation flyouts.
+    z-index: 0;
     flex: 1;
     width: 100%;
     height: 100%;
