@@ -1,8 +1,8 @@
 import { makeDecorator } from 'storybook/preview-api';
 
 export const withContentDensity = makeDecorator({
-    name: 'directionalityProvider',
-    parameterName: 'directionality',
+    name: 'contentDensityProvider',
+    parameterName: 'contentDensity',
     wrapper: (storyFn, context) => {
         const contentDensity = context?.globals?.['contentDensity'] || 'cozy';
         const story = storyFn(context);
