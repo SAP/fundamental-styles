@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.42.0-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.42.0-rc.3...v0.42.0-rc.4) (2026-10-13)
+
+### Bug Fixes
+
+- **styles:** keep tool layout navigation above page content ([#6415](https://github.com/SAP/fundamental-styles/issues/6415)) ([45a0bfd](https://github.com/SAP/fundamental-styles/commit/45a0bfd75bda2b92172424d36bc892b6dded52e0))
+
 # [0.42.0-rc.3](https://github.com/SAP/fundamental-styles/compare/v0.42.0-rc.2...v0.42.0-rc.3) (2026-10-06)
 
 **Note:** Version bump only for package fundamental-styles
