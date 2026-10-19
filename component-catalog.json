@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "version": "0.41.9",
+  "version": "0.42.0",
   "description": "Machine-readable catalog of Fundamental Library Styles components",
   "generatedBy": "scripts/generate-ai-metadata.js",
   "relatedFiles": {
@@ -105,7 +105,7 @@
             "responsive-l",
             "responsive-xl"
           ],
-          "category": "uncategorized",
+          "category": "toolbars",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -166,7 +166,7 @@
             "action-sheet-mobile",
             "default"
           ],
-          "category": "uncategorized",
+          "category": "toolbars",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -195,7 +195,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "ai-components",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -218,7 +218,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "ai-components",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -246,7 +246,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "ai-components",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -269,7 +269,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "ai-components",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -294,7 +294,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "ai-components",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -353,8 +353,8 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "feedback",
+          "subcategory": "banner",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -524,7 +524,7 @@
             "individual-type",
             "overflow"
           ],
-          "category": "uncategorized",
+          "category": "visual",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -823,7 +823,7 @@
             "value-states",
             "zoom-icon"
           ],
-          "category": "uncategorized",
+          "category": "visual",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -853,7 +853,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "visual",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -1018,7 +1018,7 @@
             "responsive",
             "subheader"
           ],
-          "category": "uncategorized",
+          "category": "toolbars",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -1081,8 +1081,8 @@
             "standard",
             "styles"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "navigation",
+          "subcategory": "hierarchical",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -1137,8 +1137,8 @@
             "extended-busy-indicator",
             "standard"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "feedback",
+          "subcategory": "loading",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -1218,8 +1218,8 @@
           "examples": [
             "split-menu-button"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "buttons",
+          "subcategory": "action",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -1412,8 +1412,8 @@
             "styles",
             "toggle"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "buttons",
+          "subcategory": "action",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -1710,7 +1710,7 @@
             "two-month-view",
             "years"
           ],
-          "category": "uncategorized",
+          "category": "date-time",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -2109,7 +2109,7 @@
             "object-card",
             "table-card"
           ],
-          "category": "uncategorized",
+          "category": "containers",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -2295,7 +2295,7 @@
             "error",
             "horizontal-carousel"
           ],
-          "category": "uncategorized",
+          "category": "specialized",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -2400,8 +2400,8 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "form-inputs",
+          "subcategory": "selection",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -2431,7 +2431,7 @@
             "inline-code",
             "primary"
           ],
-          "category": "uncategorized",
+          "category": "typography",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -2466,7 +2466,7 @@
             "primary",
             "tabs"
           ],
-          "category": "uncategorized",
+          "category": "visual",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -2589,13 +2589,14 @@
             "draggable",
             "horizontal-form-in-dialog",
             "loading",
+            "long-text-list",
             "resizable",
             "selectable",
             "sizes",
             "vertical-form-in-dialog"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "dialogs",
+          "subcategory": "modal",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -2830,7 +2831,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "specialized",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -2874,7 +2875,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -2925,7 +2926,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "containers",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -2964,7 +2965,7 @@
             "standard",
             "without-user-image"
           ],
-          "category": "uncategorized",
+          "category": "social",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -3082,7 +3083,7 @@
             "standard",
             "with-actions"
           ],
-          "category": "uncategorized",
+          "category": "social",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -3111,7 +3112,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "form-layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -3177,8 +3178,8 @@
             "selected",
             "status"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "form-inputs",
+          "subcategory": "file",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -3236,7 +3237,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -3290,7 +3291,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -3347,7 +3348,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "form-layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -3378,7 +3379,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "form-layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -3412,7 +3413,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "form-layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -3464,7 +3465,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "form-layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -3500,7 +3501,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "form-layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -3537,7 +3538,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "form-layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -3624,7 +3625,7 @@
           "examples": [
             "primary"
           ],
-          "category": "uncategorized",
+          "category": "tags",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -3703,8 +3704,8 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "data-display",
+          "subcategory": "grid",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -3726,7 +3727,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "utilities",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -3749,7 +3750,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "navigation",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -4067,8 +4068,8 @@
             "text-only-semantic",
             "text-only"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "navigation",
+          "subcategory": "tabs",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -4094,7 +4095,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "visual",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -4243,7 +4244,7 @@
             "small",
             "xsmall"
           ],
-          "category": "uncategorized",
+          "category": "feedback",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -4384,7 +4385,7 @@
             "info-label-with-icon",
             "numeric-info-label"
           ],
-          "category": "uncategorized",
+          "category": "visual",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -4468,8 +4469,8 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "form-inputs",
+          "subcategory": "composite",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -4502,8 +4503,8 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "form-inputs",
+          "subcategory": "text",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -4534,7 +4535,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -4614,7 +4615,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -4637,7 +4638,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -4672,8 +4673,8 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "navigation",
+          "subcategory": "inline",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -4720,6 +4721,10 @@
               "description": "inactive variant"
             },
             {
+              "class": "fd-list--wrap",
+              "description": "wrap variant"
+            },
+            {
               "class": "fd-list--positive",
               "description": "positive variant"
             },
@@ -4734,6 +4739,10 @@
             {
               "class": "fd-list--informative",
               "description": "informative variant"
+            },
+            {
+              "class": "fd-list--more",
+              "description": "more variant"
             },
             {
               "class": "fd-list--right",
@@ -4788,12 +4797,8 @@
               "description": "2-col variant"
             },
             {
-              "class": "fd-list--wrap",
-              "description": "wrap variant"
-            },
-            {
-              "class": "fd-list--more",
-              "description": "more variant"
+              "class": "fd-list--navigation-indicator",
+              "description": "navigation-indicator variant"
             },
             {
               "class": "fd-list--subline",
@@ -4820,10 +4825,6 @@
               "description": "navigation-indication variant"
             },
             {
-              "class": "fd-list--navigation-indicator",
-              "description": "navigation-indicator variant"
-            },
-            {
               "class": "fd-list--selection",
               "description": "selection variant"
             },
@@ -4842,6 +4843,10 @@
               "description": "item element",
               "modifiers": [
                 {
+                  "class": "fd-list__item--wrap",
+                  "description": "wrap variant of item"
+                },
+                {
                   "class": "fd-list__item--growing",
                   "description": "growing variant of item"
                 },
@@ -4852,6 +4857,10 @@
                 {
                   "class": "fd-list__item--link",
                   "description": "link variant of item"
+                },
+                {
+                  "class": "fd-list__item--wrap-top-aligned",
+                  "description": "wrap-top-aligned variant of item"
                 },
                 {
                   "class": "fd-list__item--interractive",
@@ -4890,16 +4899,12 @@
               "description": "title element",
               "modifiers": [
                 {
-                  "class": "fd-list__title--scope",
-                  "description": "scope variant of title"
-                },
-                {
                   "class": "fd-list__title--wrap",
                   "description": "wrap variant of title"
                 },
                 {
-                  "class": "fd-list__title--truncate",
-                  "description": "truncate variant of title"
+                  "class": "fd-list__title--scope",
+                  "description": "scope variant of title"
                 }
               ]
             },
@@ -4907,6 +4912,10 @@
               "class": "fd-list__secondary",
               "description": "secondary element",
               "modifiers": [
+                {
+                  "class": "fd-list__secondary--wrap",
+                  "description": "wrap variant of secondary"
+                },
                 {
                   "class": "fd-list__secondary--positive",
                   "description": "positive variant of secondary"
@@ -4955,6 +4964,11 @@
               "modifiers": []
             },
             {
+              "class": "fd-list__item--wrap",
+              "description": "item--wrap element",
+              "modifiers": []
+            },
+            {
               "class": "fd-list__infinite-scroll",
               "description": "infinite-scroll element",
               "modifiers": []
@@ -4969,12 +4983,22 @@
               "description": "byline element",
               "modifiers": [
                 {
-                  "class": "fd-list__byline--2-col",
-                  "description": "2-col variant of byline"
-                },
-                {
                   "class": "fd-list__byline--wrap",
                   "description": "wrap variant of byline"
+                },
+                {
+                  "class": "fd-list__byline--2-col",
+                  "description": "2-col variant of byline"
+                }
+              ]
+            },
+            {
+              "class": "fd-list__subline",
+              "description": "subline element",
+              "modifiers": [
+                {
+                  "class": "fd-list__subline--wrap",
+                  "description": "wrap variant of subline"
                 }
               ]
             },
@@ -4989,16 +5013,6 @@
                 {
                   "class": "fd-list__byline-right--informative",
                   "description": "informative variant of byline-right"
-                }
-              ]
-            },
-            {
-              "class": "fd-list__subline",
-              "description": "subline element",
-              "modifiers": [
-                {
-                  "class": "fd-list__subline--truncate",
-                  "description": "truncate variant of subline"
                 }
               ]
             }
@@ -5031,8 +5045,8 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "data-display",
+          "subcategory": "list",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -5079,7 +5093,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "utilities",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -5265,8 +5279,8 @@
             "toggle-button",
             "with-submenu"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "buttons",
+          "subcategory": "action",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -5371,8 +5385,8 @@
             "structure",
             "types"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "dialogs",
+          "subcategory": "confirmation",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -5456,7 +5470,7 @@
             "no-items",
             "search"
           ],
-          "category": "uncategorized",
+          "category": "feedback",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -5534,9 +5548,10 @@
           "examples": [
             "cozy-message-popover",
             "details-view",
+            "long-text",
             "message-trigger"
           ],
-          "category": "uncategorized",
+          "category": "dialogs",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -5716,8 +5731,8 @@
             "success",
             "warning"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "feedback",
+          "subcategory": "inline",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -5741,7 +5756,7 @@
           "examples": [
             "default-toast"
           ],
-          "category": "uncategorized",
+          "category": "feedback",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -5867,7 +5882,7 @@
             "micro-process-flow-with-popover",
             "overflow-micro-process-flow"
           ],
-          "category": "uncategorized",
+          "category": "specialized",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -5901,6 +5916,10 @@
             {
               "class": "fd-navigation-list__content--two-click",
               "description": "two-click variant"
+            },
+            {
+              "class": "fd-navigation-list__content--wrap",
+              "description": "wrap variant"
             }
           ],
           "elements": [
@@ -5966,12 +5985,13 @@
             "--fdNavigationList_Content_Outline_Offset",
             "--fdNavigationList_Text_Display",
             "--fdNavigationList_Expander_Display",
-            "--fdNavigationList_Indicator_Display"
+            "--fdNavigationList_Indicator_Display",
+            "--fdNavigationList_Content_Wrap_Padding_Block"
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "navigation",
+          "subcategory": "list",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -6068,7 +6088,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "navigation",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -6283,7 +6303,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "navigation",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -6460,8 +6480,8 @@
             "notification-group",
             "primary"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "feedback",
+          "subcategory": "toast",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -6543,7 +6563,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "business-objects",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -6571,7 +6591,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "business-objects",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -6633,7 +6653,7 @@
             "title-as-link",
             "title-only"
           ],
-          "category": "uncategorized",
+          "category": "visual",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -6651,7 +6671,12 @@
           "baseClass": "fd-object-list",
           "cssImport": "fundamental-styles/dist/object-list.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-object-list",
-          "modifiers": [],
+          "modifiers": [
+            {
+              "class": "fd-object-list--wrap",
+              "description": "wrap variant"
+            }
+          ],
           "elements": [
             {
               "class": "fd-object-list__intro",
@@ -6723,13 +6748,14 @@
           "tags": [],
           "examples": [
             "borderless",
+            "long-text",
             "navigation",
             "selection-with-navigation",
             "selection",
             "standart"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "data-display",
+          "subcategory": "list",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -6772,7 +6798,7 @@
             "icon-only",
             "marker-text"
           ],
-          "category": "uncategorized",
+          "category": "tags",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -6871,7 +6897,7 @@
             "large",
             "primary"
           ],
-          "category": "uncategorized",
+          "category": "visual",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -7153,7 +7179,7 @@
             "text",
             "truncate-example"
           ],
-          "category": "uncategorized",
+          "category": "visual",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -7176,7 +7202,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "utilities",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -7224,7 +7250,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "utilities",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -7263,7 +7289,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "containers",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -7345,7 +7371,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "containers",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -7421,8 +7447,8 @@
             "mobile",
             "per-page"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "navigation",
+          "subcategory": "page",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -7537,7 +7563,7 @@
             "sticky-header",
             "transparent"
           ],
-          "category": "uncategorized",
+          "category": "containers",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -7787,8 +7813,8 @@
             "scrollable",
             "variants"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "dialogs",
+          "subcategory": "popup",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -7886,7 +7912,7 @@
             "small",
             "two-column"
           ],
-          "category": "uncategorized",
+          "category": "specialized",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -8018,8 +8044,8 @@
             "truncation",
             "value-states"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "feedback",
+          "subcategory": "loading",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -8059,7 +8085,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "ai-components",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -8126,7 +8152,7 @@
             "no-header",
             "popover"
           ],
-          "category": "uncategorized",
+          "category": "dialogs",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -8217,8 +8243,8 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "form-inputs",
+          "subcategory": "selection",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -8231,97 +8257,61 @@
         {
           "id": "rating-indicator",
           "name": "Rating Indicator",
-          "description": "The rating indicator displays a group of icons or images (usually stars) that indicate a rating.",
-          "baseClass": "fd-rating-indicator",
+          "description": "The rating indicator displays a group of icons (usually stars) that indicate a rating.",
+          "baseClass": "fd-rating-indicator__item",
           "cssImport": "fundamental-styles/dist/rating-indicator.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-rating-indicator",
           "modifiers": [
             {
-              "class": "fd-rating-indicator--icon",
-              "description": "icon variant"
+              "class": "fd-rating-indicator__item--selected",
+              "description": "selected variant"
             },
             {
-              "class": "fd-rating-indicator--hide-dynamic-text",
-              "description": "hide-dynamic-text variant"
-            },
-            {
-              "class": "fd-rating-indicator--display-mode",
-              "description": "display-mode variant"
-            },
-            {
-              "class": "fd-rating-indicator--non-interactive",
-              "description": "non-interactive variant"
-            },
-            {
-              "class": "fd-rating-indicator--half-star",
-              "description": "half-star variant"
-            },
-            {
-              "class": "fd-rating-indicator--zero-rating",
-              "description": "zero-rating variant"
-            },
-            {
-              "class": "fd-rating-indicator--lg",
+              "class": "fd-rating-indicator__item--lg",
               "description": "lg variant"
             },
             {
-              "class": "fd-rating-indicator--xs",
-              "description": "xs variant"
+              "class": "fd-rating-indicator__item--md",
+              "description": "md variant"
             },
             {
-              "class": "fd-rating-indicator--sm",
+              "class": "fd-rating-indicator__item--sm",
               "description": "sm variant"
             },
             {
-              "class": "fd-rating-indicator--compact",
-              "description": "compact variant"
-            },
-            {
-              "class": "fd-rating-indicator--condensed",
-              "description": "condensed variant"
+              "class": "fd-rating-indicator__item--xs",
+              "description": "xs variant"
             }
           ],
           "elements": [
             {
-              "class": "fd-rating-indicator__input",
-              "description": "input element",
-              "modifiers": [
-                {
-                  "class": "fd-rating-indicator__input--zero-rating",
-                  "description": "zero-rating variant of input"
-                }
-              ]
-            },
-            {
-              "class": "fd-rating-indicator__label",
-              "description": "label element",
-              "modifiers": [
-                {
-                  "class": "fd-rating-indicator__label--zero-rating",
-                  "description": "zero-rating variant of label"
-                }
-              ]
-            },
-            {
-              "class": "fd-rating-indicator__container",
+              "class": "fd-rating-indicator__item__container",
               "description": "container element",
               "modifiers": []
             },
             {
-              "class": "fd-rating-indicator__dynamic-text",
+              "class": "fd-rating-indicator__item__list",
+              "description": "list element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-rating-indicator__item__item",
+              "description": "item element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-rating-indicator__item__icon",
+              "description": "icon element",
+              "modifiers": []
+            },
+            {
+              "class": "fd-rating-indicator__item__dynamic-text",
               "description": "dynamic-text element",
               "modifiers": []
             }
           ],
           "variables": [
-            "--fdRating_Indicator_View_Mode_Unselected_Icon_Size_Ratio",
-            "--fdRating_Indicator_Border_Radius",
-            "--fdRating_Indicator_Focus_Outline_Offset",
-            "--fdRating_Indicator_Selected_Hover_Opacity",
-            "--fdRating_Indicator_Disabled_Control_Opacity",
-            "--fdRating_Indicator_Disabled_Selected_Color",
-            "--fdRating_Indicator_Disabled_Unselected_Color",
-            "--fdRating_Indicator_Display_Only_Selected_Color"
+            "--fdRatingIndicator_Container_Border_Radius"
           ],
           "tags": [],
           "examples": [
@@ -8330,11 +8320,10 @@
             "disabled",
             "display-mode",
             "half-values",
-            "non-interactive",
             "sizes"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "form-inputs",
+          "subcategory": "numeric",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -8396,7 +8385,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -8488,7 +8477,7 @@
           "examples": [
             "default-example"
           ],
-          "category": "uncategorized",
+          "category": "utilities",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -8575,8 +8564,8 @@
           "examples": [
             "default"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "form-inputs",
+          "subcategory": "search",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -8632,7 +8621,7 @@
           "variables": [],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "containers",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -8679,8 +8668,8 @@
             "segmented-button-vertical",
             "segmented-button"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "buttons",
+          "subcategory": "selection",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -8746,8 +8735,8 @@
             "two-column",
             "two-columns-and-icons"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "form-inputs",
+          "subcategory": "selection",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -8921,7 +8910,7 @@
             "xl-user-account",
             "xl"
           ],
-          "category": "uncategorized",
+          "category": "specialized",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -9217,8 +9206,8 @@
             "responsive-paddings",
             "responsiveness"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "navigation",
+          "subcategory": "header",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -9268,8 +9257,8 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "navigation",
+          "subcategory": "sidebar",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -9314,7 +9303,7 @@
             "lines",
             "skeleton"
           ],
-          "category": "uncategorized",
+          "category": "feedback",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -9463,8 +9452,8 @@
             "ticks",
             "vertical-mode"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "form-inputs",
+          "subcategory": "numeric",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -9641,7 +9630,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -9736,7 +9725,7 @@
             "status-indicator-linear-filling",
             "status-indicator-radial-filling"
           ],
-          "category": "uncategorized",
+          "category": "feedback",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -9796,8 +9785,8 @@
             "read-only",
             "states"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "form-inputs",
+          "subcategory": "numeric",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -9982,8 +9971,8 @@
             "semantic-switch",
             "with-text"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "form-inputs",
+          "subcategory": "toggle",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -10407,8 +10396,8 @@
             "semantic-rows",
             "tree-rows-table"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "data-display",
+          "subcategory": "grid",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -10559,8 +10548,8 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "navigation",
+          "subcategory": "tabs",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -10627,7 +10616,7 @@
             "max-lines",
             "whitespace"
           ],
-          "category": "uncategorized",
+          "category": "typography",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -10663,8 +10652,8 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "form-inputs",
+          "subcategory": "text",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -10835,7 +10824,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "containers",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -10957,7 +10946,7 @@
             "scrollable-mode",
             "tablet-mode"
           ],
-          "category": "uncategorized",
+          "category": "date-time",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -11065,7 +11054,7 @@
             "mobile",
             "seconds-cozy"
           ],
-          "category": "uncategorized",
+          "category": "date-time",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -11116,7 +11105,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "toolbars",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -11181,7 +11170,7 @@
             "visual-level",
             "wrapping"
           ],
-          "category": "uncategorized",
+          "category": "typography",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -11259,7 +11248,7 @@
           "examples": [
             "primary"
           ],
-          "category": "uncategorized",
+          "category": "tags",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -11323,7 +11312,7 @@
             "cozy-tokenizer",
             "scrollable-tokenizer"
           ],
-          "category": "uncategorized",
+          "category": "tags",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -11403,7 +11392,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "toolbars",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -11484,7 +11473,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "layout",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -11612,7 +11601,7 @@
             "separator",
             "types"
           ],
-          "category": "uncategorized",
+          "category": "toolbars",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -11736,13 +11725,14 @@
           "examples": [
             "borderless",
             "highlight-indicators",
+            "long-text",
             "navigable",
             "primary",
             "selection",
             "tree-with-no-data"
           ],
-          "category": "uncategorized",
-          "subcategory": null,
+          "category": "data-display",
+          "subcategory": "hierarchical",
           "useCases": [],
           "avoidWhen": [],
           "accessibility": {
@@ -11773,12 +11763,16 @@
               "description": "byline variant"
             },
             {
+              "class": "fd-upload-collection--wrap",
+              "description": "wrap variant"
+            },
+            {
               "class": "fd-upload-collection--2-col",
               "description": "2-col variant"
             },
             {
-              "class": "fd-upload-collection--wrap",
-              "description": "wrap variant"
+              "class": "fd-upload-collection--navigation-indicator",
+              "description": "navigation-indicator variant"
             },
             {
               "class": "fd-upload-collection--more",
@@ -11831,8 +11825,32 @@
               "description": "item element",
               "modifiers": [
                 {
+                  "class": "fd-upload-collection__item--wrap",
+                  "description": "wrap variant of item"
+                },
+                {
                   "class": "fd-upload-collection__item--interactive",
                   "description": "interactive variant of item"
+                }
+              ]
+            },
+            {
+              "class": "fd-upload-collection__title",
+              "description": "title element",
+              "modifiers": [
+                {
+                  "class": "fd-upload-collection__title--wrap",
+                  "description": "wrap variant of title"
+                }
+              ]
+            },
+            {
+              "class": "fd-upload-collection__byline",
+              "description": "byline element",
+              "modifiers": [
+                {
+                  "class": "fd-upload-collection__byline--wrap",
+                  "description": "wrap variant of byline"
                 }
               ]
             }
@@ -11843,10 +11861,11 @@
           "tags": [],
           "examples": [
             "edit",
+            "long-text",
             "no-data",
             "standard"
           ],
-          "category": "uncategorized",
+          "category": "specialized",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -11865,6 +11884,10 @@
           "cssImport": "fundamental-styles/dist/user-menu.css",
           "storybookUrl": "https://sap.github.io/fundamental-styles/?path=/docs/components-user-menu",
           "modifiers": [
+            {
+              "class": "fd-user-menu--wrap",
+              "description": "wrap variant"
+            },
             {
               "class": "fd-user-menu--truncate",
               "description": "truncate variant"
@@ -11907,7 +11930,12 @@
             {
               "class": "fd-user-menu__user-name",
               "description": "user-name element",
-              "modifiers": []
+              "modifiers": [
+                {
+                  "class": "fd-user-menu__user-name--wrap",
+                  "description": "wrap variant of user-name"
+                }
+              ]
             },
             {
               "class": "fd-user-menu__user-info",
@@ -11923,6 +11951,10 @@
               "class": "fd-user-menu__subline",
               "description": "subline element",
               "modifiers": [
+                {
+                  "class": "fd-user-menu__subline--wrap",
+                  "description": "wrap variant of subline"
+                },
                 {
                   "class": "fd-user-menu__subline--truncate",
                   "description": "truncate variant of subline"
@@ -11984,7 +12016,7 @@
             "default",
             "mobile"
           ],
-          "category": "uncategorized",
+          "category": "specialized",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -12082,7 +12114,7 @@
             "dirty-label",
             "sizes"
           ],
-          "category": "uncategorized",
+          "category": "specialized",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -12120,6 +12152,10 @@
             {
               "class": "fd-vertical-nav--second-level",
               "description": "second-level variant"
+            },
+            {
+              "class": "fd-vertical-nav--wrap",
+              "description": "wrap variant"
             }
           ],
           "elements": [
@@ -12170,7 +12206,7 @@
           ],
           "tags": [],
           "examples": [],
-          "category": "uncategorized",
+          "category": "navigation",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
@@ -12439,7 +12475,7 @@
             "responsive",
             "reverted-steps"
           ],
-          "category": "uncategorized",
+          "category": "specialized",
           "subcategory": null,
           "useCases": [],
           "avoidWhen": [],
