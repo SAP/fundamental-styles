@@ -1,5 +1,5 @@
 import differentValuesExampleHtml from "./different-values.example.html?raw";
-import displayModeExampleHtml from "./display-mode.example.html?raw";
+import readonlyExampleHtml from "./display-mode.example.html?raw";
 import disabledExampleHtml from "./disabled.example.html?raw";
 import halfValuesExampleHtml from "./half-values.example.html?raw";
 import customIconsExampleHtml from "./custom-icons.example.html?raw";
@@ -110,9 +110,9 @@ state to assistive technology via the \`role="slider"\`.
     }
   }
 };
-export const DisplayMode = () => displayModeExampleHtml;
-DisplayMode.storyName = 'Display mode';
-DisplayMode.parameters = {
+export const Readonly = () => readonlyExampleHtml;
+Readonly.storyName = 'Readonly';
+Readonly.parameters = {
   docs: {
     description: {
       story: `
