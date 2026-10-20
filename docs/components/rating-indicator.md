@@ -76,7 +76,7 @@ npm install fundamental-styles
 ## Basic Usage
 
 ```html
-<h4>LG Size</h4>
+<label>Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--lg">
     <div
         class="fd-rating-indicator__container"
@@ -115,6 +115,7 @@ npm install fundamental-styles
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
+<label>Star Rating</label>
 <div class="fd-rating-indicator">
     <div
         class="fd-rating-indicator__container"
@@ -153,7 +154,7 @@ npm install fundamental-styles
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<h4>SM Size</h4>
+<label>Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--sm">
     <div
         class="fd-rating-indicator__container"
@@ -192,7 +193,7 @@ npm install fundamental-styles
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<h4>XS Size</h4>
+<label>Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--xs">
     <div
         class="fd-rating-indicator__container"
@@ -319,7 +320,7 @@ margin (`margin-block`) but do not change the icon size.
 Compact and condensed content density reduces `margin-block` automatically — apply the density class at the page or shell level (`sap-is-compact` / `sap-is-condensed`).
 
 ```html
-<h4>LG Size</h4>
+<label>Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--lg">
     <div
         class="fd-rating-indicator__container"
@@ -358,6 +359,7 @@ Compact and condensed content density reduces `margin-block` automatically — a
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
+<label>Star Rating</label>
 <div class="fd-rating-indicator">
     <div
         class="fd-rating-indicator__container"
@@ -396,7 +398,7 @@ Compact and condensed content density reduces `margin-block` automatically — a
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<h4>SM Size</h4>
+<label>Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--sm">
     <div
         class="fd-rating-indicator__container"
@@ -435,7 +437,7 @@ Compact and condensed content density reduces `margin-block` automatically — a
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<h4>XS Size</h4>
+<label>Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--xs">
     <div
         class="fd-rating-indicator__container"
@@ -709,7 +711,7 @@ state to assistive technology via the `role="slider"`.
 </div>
 ```
 
-### Display mode
+### Readonly
 
 Use display mode for any read-only rating — display-only forms, object headers, cards, facets, and
 inline running text. Add `.fd-rating-indicator--display-mode` and `.is-readonly` to the
@@ -722,7 +724,7 @@ This size reduction is a visual-only accessibility aid — it allows selected an
 The smaller icons are scaled from their center and offset with additional margin so the overall control width stays stable.
 
 ```html
-<h4>LG Size</h4>
+<label>Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--lg fd-rating-indicator--display-mode is-readonly">
     <div
         class="fd-rating-indicator__container"
@@ -762,7 +764,7 @@ The smaller icons are scaled from their center and offset with additional margin
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<h4>MD Size (Default)</h4>
+<label>Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--md fd-rating-indicator--display-mode is-readonly">
     <div
         class="fd-rating-indicator__container"
@@ -802,7 +804,7 @@ The smaller icons are scaled from their center and offset with additional margin
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<h4>SM Size</h4>
+<label>Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--sm fd-rating-indicator--display-mode is-readonly">
     <div
         class="fd-rating-indicator__container"
@@ -842,7 +844,7 @@ The smaller icons are scaled from their center and offset with additional margin
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<h4>XS Size</h4>
+<label>Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--xs fd-rating-indicator--display-mode is-readonly">
     <div
         class="fd-rating-indicator__container"
