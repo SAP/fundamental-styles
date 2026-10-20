@@ -1,5 +1,5 @@
 import differentValuesExampleHtml from "./different-values.example.html?raw";
-import readonlyExampleHtml from "./display-mode.example.html?raw";
+import readonlyExampleHtml from "./readonly.example.html?raw";
 import disabledExampleHtml from "./disabled.example.html?raw";
 import halfValuesExampleHtml from "./half-values.example.html?raw";
 import customIconsExampleHtml from "./custom-icons.example.html?raw";
