@@ -76,13 +76,13 @@ npm install fundamental-styles
 ## Basic Usage
 
 ```html
-<label>Star Rating</label>
+<label id="sizes-rating-label-lg">Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--lg">
     <div
         class="fd-rating-indicator__container"
         role="slider"
         tabindex="0"
-        aria-label="Star Rating"
+        aria-labelledby="sizes-rating-label-lg"
         aria-roledescription="Rating Indicator"
         aria-valuemin="0"
         aria-valuemax="5"
@@ -115,13 +115,13 @@ npm install fundamental-styles
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<label>Star Rating</label>
+<label id="sizes-rating-label-md">Star Rating</label>
 <div class="fd-rating-indicator">
     <div
         class="fd-rating-indicator__container"
         role="slider"
         tabindex="0"
-        aria-label="Star Rating"
+        aria-labelledby="sizes-rating-label-md"
         aria-roledescription="Rating Indicator"
         aria-valuemin="0"
         aria-valuemax="5"
@@ -154,13 +154,13 @@ npm install fundamental-styles
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<label>Star Rating</label>
+<label id="sizes-rating-label-sm">Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--sm">
     <div
         class="fd-rating-indicator__container"
         role="slider"
         tabindex="0"
-        aria-label="Star Rating"
+        aria-labelledby="sizes-rating-label-sm"
         aria-roledescription="Rating Indicator"
         aria-valuemin="0"
         aria-valuemax="5"
@@ -193,13 +193,13 @@ npm install fundamental-styles
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<label>Star Rating</label>
+<label id="sizes-rating-label-xs">Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--xs">
     <div
         class="fd-rating-indicator__container"
         role="slider"
         tabindex="0"
-        aria-label="Star Rating"
+        aria-labelledby="sizes-rating-label-xs"
         aria-roledescription="Rating Indicator"
         aria-valuemin="0"
         aria-valuemax="5"
@@ -320,13 +320,13 @@ margin (`margin-block`) but do not change the icon size.
 Compact and condensed content density reduces `margin-block` automatically — apply the density class at the page or shell level (`sap-is-compact` / `sap-is-condensed`).
 
 ```html
-<label>Star Rating</label>
+<label id="sizes-rating-label-lg">Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--lg">
     <div
         class="fd-rating-indicator__container"
         role="slider"
         tabindex="0"
-        aria-label="Star Rating"
+        aria-labelledby="sizes-rating-label-lg"
         aria-roledescription="Rating Indicator"
         aria-valuemin="0"
         aria-valuemax="5"
@@ -359,13 +359,13 @@ Compact and condensed content density reduces `margin-block` automatically — a
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<label>Star Rating</label>
+<label id="sizes-rating-label-md">Star Rating</label>
 <div class="fd-rating-indicator">
     <div
         class="fd-rating-indicator__container"
         role="slider"
         tabindex="0"
-        aria-label="Star Rating"
+        aria-labelledby="sizes-rating-label-md"
         aria-roledescription="Rating Indicator"
         aria-valuemin="0"
         aria-valuemax="5"
@@ -398,13 +398,13 @@ Compact and condensed content density reduces `margin-block` automatically — a
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<label>Star Rating</label>
+<label id="sizes-rating-label-sm">Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--sm">
     <div
         class="fd-rating-indicator__container"
         role="slider"
         tabindex="0"
-        aria-label="Star Rating"
+        aria-labelledby="sizes-rating-label-sm"
         aria-roledescription="Rating Indicator"
         aria-valuemin="0"
         aria-valuemax="5"
@@ -437,13 +437,13 @@ Compact and condensed content density reduces `margin-block` automatically — a
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<label>Star Rating</label>
+<label id="sizes-rating-label-xs">Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--xs">
     <div
         class="fd-rating-indicator__container"
         role="slider"
         tabindex="0"
-        aria-label="Star Rating"
+        aria-labelledby="sizes-rating-label-xs"
         aria-roledescription="Rating Indicator"
         aria-valuemin="0"
         aria-valuemax="5"
@@ -724,13 +724,13 @@ This size reduction is a visual-only accessibility aid — it allows selected an
 The smaller icons are scaled from their center and offset with additional margin so the overall control width stays stable.
 
 ```html
-<label>Star Rating</label>
+<label id="readonly-rating-label-lg">Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--lg fd-rating-indicator--display-mode is-readonly">
     <div
         class="fd-rating-indicator__container"
         role="slider"
         tabindex="0"
-        aria-label="Star Rating"
+        aria-labelledby="readonly-rating-label-lg"
         aria-roledescription="Rating Indicator"
         aria-valuemin="0"
         aria-valuemax="5"
@@ -764,13 +764,13 @@ The smaller icons are scaled from their center and offset with additional margin
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<label>Star Rating</label>
+<label id="readonly-rating-label-md">Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--md fd-rating-indicator--display-mode is-readonly">
     <div
         class="fd-rating-indicator__container"
         role="slider"
         tabindex="0"
-        aria-label="Star Rating"
+        aria-labelledby="readonly-rating-label-md"
         aria-roledescription="Rating Indicator"
         aria-valuemin="0"
         aria-valuemax="5"
@@ -804,13 +804,13 @@ The smaller icons are scaled from their center and offset with additional margin
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<label>Star Rating</label>
+<label id="readonly-rating-label-sm">Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--sm fd-rating-indicator--display-mode is-readonly">
     <div
         class="fd-rating-indicator__container"
         role="slider"
         tabindex="0"
-        aria-label="Star Rating"
+        aria-labelledby="readonly-rating-label-sm"
         aria-roledescription="Rating Indicator"
         aria-valuemin="0"
         aria-valuemax="5"
@@ -844,13 +844,13 @@ The smaller icons are scaled from their center and offset with additional margin
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
 </div>
 
-<label>Star Rating</label>
+<label id="readonly-rating-label-xs">Star Rating</label>
 <div class="fd-rating-indicator fd-rating-indicator--xs fd-rating-indicator--display-mode is-readonly">
     <div
         class="fd-rating-indicator__container"
         role="slider"
         tabindex="0"
-        aria-label="Star Rating"
+        aria-labelledby="readonly-rating-label-xs"
         aria-roledescription="Rating Indicator"
         aria-valuemin="0"
         aria-valuemax="5"
