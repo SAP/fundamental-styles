@@ -2224,14 +2224,6 @@
       ],
       "requiredAttrs": [
         {
-          "name": "aria-label",
-          "purpose": "Accessible name when no visible text",
-          "exampleValues": [
-            "Star Rating"
-          ],
-          "when": "Required when no visible text label"
-        },
-        {
           "name": "aria-disabled",
           "purpose": "Disabled state (use with disabled attr)",
           "exampleValues": [
@@ -2241,6 +2233,13 @@
         }
       ],
       "optionalAttrs": [
+        {
+          "name": "aria-label",
+          "purpose": "Accessible name when no visible text",
+          "exampleValues": [
+            "Star Rating"
+          ]
+        },
         {
           "name": "aria-roledescription",
           "purpose": "Custom role description",
@@ -2279,6 +2278,15 @@
             "2 of 5",
             "2 of 6",
             "2 of 7"
+          ]
+        },
+        {
+          "name": "aria-labelledby",
+          "purpose": "References visible label element",
+          "exampleValues": [
+            "readonly-rating-label-lg",
+            "readonly-rating-label-md",
+            "readonly-rating-label-sm"
           ]
         },
         {
