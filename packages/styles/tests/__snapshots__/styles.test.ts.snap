@@ -47660,13 +47660,13 @@ exports[`Check stories > Components/Rating Indicator > Story HalfValues > Should
 `;
 
 exports[`Check stories > Components/Rating Indicator > Story Readonly > Should match snapshot 1`] = `
-"<label>Star Rating</label>
+"<label id=\\"readonly-rating-label-lg\\">Star Rating</label>
 <div class=\\"fd-rating-indicator fd-rating-indicator--lg fd-rating-indicator--display-mode is-readonly\\">
     <div
         class=\\"fd-rating-indicator__container\\"
         role=\\"slider\\"
         tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
+        aria-labelledby=\\"readonly-rating-label-lg\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
         aria-valuemax=\\"5\\"
@@ -47701,13 +47701,13 @@ exports[`Check stories > Components/Rating Indicator > Story Readonly > Should m
 </div>
 
 <br><br>
-<label>Star Rating</label>
+<label id=\\"readonly-rating-label-md\\">Star Rating</label>
 <div class=\\"fd-rating-indicator fd-rating-indicator--md fd-rating-indicator--display-mode is-readonly\\">
     <div
         class=\\"fd-rating-indicator__container\\"
         role=\\"slider\\"
         tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
+        aria-labelledby=\\"readonly-rating-label-md\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
         aria-valuemax=\\"5\\"
@@ -47742,13 +47742,13 @@ exports[`Check stories > Components/Rating Indicator > Story Readonly > Should m
 </div>
 
 <br><br>
-<label>Star Rating</label>
+<label id=\\"readonly-rating-label-sm\\">Star Rating</label>
 <div class=\\"fd-rating-indicator fd-rating-indicator--sm fd-rating-indicator--display-mode is-readonly\\">
     <div
         class=\\"fd-rating-indicator__container\\"
         role=\\"slider\\"
         tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
+        aria-labelledby=\\"readonly-rating-label-sm\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
         aria-valuemax=\\"5\\"
@@ -47783,13 +47783,13 @@ exports[`Check stories > Components/Rating Indicator > Story Readonly > Should m
 </div>
 
 <br><br>
-<label>Star Rating</label>
+<label id=\\"readonly-rating-label-xs\\">Star Rating</label>
 <div class=\\"fd-rating-indicator fd-rating-indicator--xs fd-rating-indicator--display-mode is-readonly\\">
     <div
         class=\\"fd-rating-indicator__container\\"
         role=\\"slider\\"
         tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
+        aria-labelledby=\\"readonly-rating-label-xs\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
         aria-valuemax=\\"5\\"
@@ -47826,13 +47826,13 @@ exports[`Check stories > Components/Rating Indicator > Story Readonly > Should m
 `;
 
 exports[`Check stories > Components/Rating Indicator > Story Sizes > Should match snapshot 1`] = `
-"<label>Star Rating</label>
+"<label id=\\"sizes-rating-label-lg\\">Star Rating</label>
 <div class=\\"fd-rating-indicator fd-rating-indicator--lg\\">
     <div
         class=\\"fd-rating-indicator__container\\"
         role=\\"slider\\"
         tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
+        aria-labelledby=\\"sizes-rating-label-lg\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
         aria-valuemax=\\"5\\"
@@ -47866,13 +47866,13 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
 </div>
 
 <br><br>
-<label>Star Rating</label>
+<label id=\\"sizes-rating-label-md\\">Star Rating</label>
 <div class=\\"fd-rating-indicator\\">
     <div
         class=\\"fd-rating-indicator__container\\"
         role=\\"slider\\"
         tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
+        aria-labelledby=\\"sizes-rating-label-md\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
         aria-valuemax=\\"5\\"
@@ -47906,13 +47906,13 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
 </div>
 
 <br><br>
-<label>Star Rating</label>
+<label id=\\"sizes-rating-label-sm\\">Star Rating</label>
 <div class=\\"fd-rating-indicator fd-rating-indicator--sm\\">
     <div
         class=\\"fd-rating-indicator__container\\"
         role=\\"slider\\"
         tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
+        aria-labelledby=\\"sizes-rating-label-sm\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
         aria-valuemax=\\"5\\"
@@ -47946,13 +47946,13 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
 </div>
 
 <br><br>
-<label>Star Rating</label>
+<label id=\\"sizes-rating-label-xs\\">Star Rating</label>
 <div class=\\"fd-rating-indicator fd-rating-indicator--xs\\">
     <div
         class=\\"fd-rating-indicator__container\\"
         role=\\"slider\\"
         tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
+        aria-labelledby=\\"sizes-rating-label-xs\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
         aria-valuemax=\\"5\\"
