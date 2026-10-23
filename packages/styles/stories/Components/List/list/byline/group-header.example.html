@@ -1,7 +1,7 @@
-<h4>Standard size</h4>
-<ul class="fd-list fd-list--byline" role="list">
+<h4 id="byline-group-header-size-heading">Standard size</h4>
+<ul class="fd-list fd-list--byline" role="list" aria-labelledby="byline-group-header-size-heading">
     <li role="listitem" class="fd-list__group-header">
-        <span class="fd-list__title">Group header 1</span>
+        <span class="fd-list__title" role="heading" aria-level="2" aria-roledescription="Group Header">Group header 1</span>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -10,14 +10,14 @@
             <div class="fd-list__byline">Byline (description)</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
         <div class="fd-list__content">
             <div class="fd-list__title">List item with no byline</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
-        <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+    <li role="listitem" tabindex="-1" class="fd-list__item">
+          <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
               style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
         <div class="fd-list__content">
             <div class="fd-list__title">List item with 2-column byline</div>
@@ -28,16 +28,16 @@
         </div>
     </li>
     <li role="listitem" class="fd-list__group-header">
-        <span class="fd-list__title">Group header 2</span>
-      </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+        <span class="fd-list__title" role="heading" aria-level="2" aria-roledescription="Group Header">Group header 2</span>
+    </li>
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
         <div class="fd-list__content">
             <div class="fd-list__title">List item with no byline</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
-    <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+    <li role="listitem" tabindex="-1" class="fd-list__item">
+    <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
           style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
         <div class="fd-list__content">
             <div class="fd-list__title">List item with 2-column byline</div>
@@ -47,7 +47,7 @@
             </div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <div class="fd-list__content">
             <div class="fd-list__title">Text-only list item</div>
             <div class="fd-list__byline">Byline (description)</div>
