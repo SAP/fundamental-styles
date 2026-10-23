@@ -1,6 +1,7 @@
 import scrollExampleHtml from "./scroll.example.html?raw";
 import inactiveExampleHtml from "./inactive.example.html?raw";
 import selectionExampleHtml from "./selection.example.html?raw";
+import singleSelectionExampleHtml from "./single-selection.example.html?raw";
 import borderlessExampleHtml from "./borderless.example.html?raw";
 import footerExampleHtml from "./footer.example.html?raw";
 import longTextExampleHtml from "./long-text.example.html?raw";
@@ -19,6 +20,7 @@ import searchResultsExampleHtml from "./search-results.example.html?raw";
 import '../../../../../src/list.scss';
 import '../../../../../src/icon.scss';
 import '../../../../../src/checkbox.scss';
+import '../../../../../src/radio.scss';
 import '../../../../../src/link.scss';
 import '../../../../../src/button.scss';
 import '../../../../../src/busy-indicator.scss';
@@ -136,6 +138,8 @@ ActionList.parameters = {
     description: {
       story: `
 Standard list items can display actions that users can choose from. To display actions, add the \`fd-list__item--action\` modifier class to the list elements.
+
+**Accessibility (growing / "More"):** The growing item's trigger must have a descriptive accessible name (e.g. \`aria-label="More — load additional items"\`). The consumer toggles \`aria-busy\` on the button — \`"true"\` while items are loading, \`"false"\` otherwise — and the busy indicator stays \`aria-hidden="true"\`. Newly loaded rows should be announced to screen readers via an \`aria-live="polite"\` status region owned by the consuming application.
 `
     }
   }
@@ -199,6 +203,8 @@ Footer.parameters = {
   docs: {
     description: {
       story: `The standard list can display a footer by placing a \`<span class="fd-list__footer">\` element directly after the closing \`</ul>\` tag.
+
+**Accessibility:** The footer is a non-item region kept **outside** the \`<ul>\`. The footer carries no list-item semantics or interaction, so keeping it out of \`role="list"\` avoids announcing a non-item as a \`listitem\`.
         `
     }
   }
@@ -221,6 +227,20 @@ Selection.parameters = {
 When items contain wrapping text (via \`fd-list__item--wrap\` or \`fd-list__title--wrap\`), the checkbox is **centered by default**. To top-align the checkbox instead, add \`fd-list__item--wrap-top-aligned\` to the \`<li>\` element.
 
 **Accessibility:** Selection lists use \`role="list"\` / \`role="listitem"\` (not \`listbox\`/\`option\`). Selection state is carried entirely by the native \`<input type="checkbox">\` (or \`<input type="radio">\` for single-select). Each checkbox must be labelled via \`aria-labelledby\` pointing to the item title's \`id\` — this gives AT users a complete announcement ("checkbox, checked, List item title"). Do **not** add \`aria-selected\` to list items; it is an invalid attribute on \`listitem\` role.
+
+**Focus model:** The list item (\`<li role="listitem">\`) is the single roving focus target; the nested \`<input>\` carries \`tabindex="-1"\` so it is not a competing tab/arrow stop. Per the Keyboard Interaction spec, Arrow keys move between items and \`Space\`/\`Enter\` toggles selection on the focused item (consumer JS). See the **Single Selection** story for the radio-based single-select pattern.
+`
+    }
+  }
+};
+export const SingleSelection = () => singleSelectionExampleHtml;
+SingleSelection.storyName = 'Single selection';
+SingleSelection.parameters = {
+  docs: {
+    description: {
+      story: `Single-selection lists let the user pick exactly one item. Use native \`<input type="radio">\` controls that share the same \`name\` attribute (the browser enforces the single-select constraint), instead of checkboxes.
+
+The accessibility model matches the multi-select \`Selection\` story: container \`role="list"\`, items \`role="listitem"\`, each radio labelled via \`aria-labelledby\` pointing to the item title's \`id\`, and \`tabindex="-1"\` on the radio so the \`<li>\` is the sole roving focus target. Do **not** add \`aria-selected\` to the list items.
 `
     }
   }
@@ -230,6 +250,8 @@ Inactive.parameters = {
   docs: {
     description: {
       story: `Some list item can be made inactive, to make it non-clickable.
+
+**Accessibility:** An inactive item must be removed from the keyboard tab order — its link carries \`tabindex="-1"\` and \`aria-disabled="true"\`, and it is never the roving entry point. The \`tabindex="0"\` entry stop is placed on the first **active** item instead.
 `
     }
   }
