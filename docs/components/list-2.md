@@ -13,7 +13,7 @@ stability: stable
 
 # Components/List/Subline
 
-
+The subline list extends a standard list item with additional subline rows. Each `<ul role="list">` must carry an accessible name (`aria-label` or `aria-labelledby`). The container uses `role="list"` and each item uses `role="listitem"`. The first interactive item has `tabindex="0"`; all other items have `tabindex="-1"` (roving tabindex).
 
 ## Installation
 
@@ -32,7 +32,7 @@ npm install fundamental-styles
 ## Basic Usage
 
 ```html
-<ul class="fd-list fd-list--subline" role="list">
+<ul class="fd-list fd-list--subline" role="list" aria-label="Subline list">
     <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
         <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail" role="img" aria-label="Jane Doe"></span>
         <div class="fd-list__content">
@@ -41,7 +41,7 @@ npm install fundamental-styles
             <div class="fd-list__subline">List Item Subline</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive">
         <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail" role="img" aria-label="John Doe"></span>
         <div class="fd-list__content">
             <div class="fd-list__title">List Item Title</div>
@@ -50,7 +50,7 @@ npm install fundamental-styles
         </div>
         <span class="fd-list__active-indicator sap-icon--sys-enter-2"></span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive">
         <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" role="img" aria-label="John Doe">JD</span>
         <div class="fd-list__content">
             <div class="fd-list__title">List Item Title Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo?</div>
@@ -58,7 +58,7 @@ npm install fundamental-styles
             <div class="fd-list__subline">List Item Subline Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque asperiores id deleniti quae? Amet officia cum assumenda.</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive">
         <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="John Doe"></span>
         <div class="fd-list__content">
             <div class="fd-list__title fd-list__title--wrap">List Item Title Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo?</div>
@@ -98,7 +98,7 @@ This component uses the following BEM elements:
 This list item structure is used to display accounts in the User Menu. By default, long title and subline text is truncated with an ellipsis. To allow the text to wrap across multiple lines, add the `fd-list__title--wrap` and `fd-list__subline--wrap` modifier classes respectively.
 
 ```html
-<ul class="fd-list fd-list--subline" role="list">
+<ul class="fd-list fd-list--subline" role="list" aria-label="Subline list">
     <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
         <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail" role="img" aria-label="Jane Doe"></span>
         <div class="fd-list__content">
@@ -107,7 +107,7 @@ This list item structure is used to display accounts in the User Menu. By defaul
             <div class="fd-list__subline">List Item Subline</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive">
         <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--thumbnail" role="img" aria-label="John Doe"></span>
         <div class="fd-list__content">
             <div class="fd-list__title">List Item Title</div>
@@ -116,7 +116,7 @@ This list item structure is used to display accounts in the User Menu. By defaul
         </div>
         <span class="fd-list__active-indicator sap-icon--sys-enter-2"></span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive">
         <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" role="img" aria-label="John Doe">JD</span>
         <div class="fd-list__content">
             <div class="fd-list__title">List Item Title Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo?</div>
@@ -124,7 +124,7 @@ This list item structure is used to display accounts in the User Menu. By defaul
             <div class="fd-list__subline">List Item Subline Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque asperiores id deleniti quae? Amet officia cum assumenda.</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive">
         <span class="fd-avatar fd-avatar--sm fd-avatar--thumbnail" role="img" aria-label="John Doe"></span>
         <div class="fd-list__content">
             <div class="fd-list__title fd-list__title--wrap">List Item Title Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo?</div>
@@ -157,7 +157,7 @@ By default, long title and subline text is truncated with an ellipsis. Wrapping 
 
 ```html
 <p class="fd-form-label">Default — truncation</p>
-<ul class="fd-list fd-list--subline" role="list">
+<ul class="fd-list fd-list--subline" role="list" aria-label="Default truncation subline list">
     <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
         <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" role="img" aria-label="Michael Thompson">MT</span>
         <div class="fd-list__content">
@@ -168,7 +168,7 @@ By default, long title and subline text is truncated with an ellipsis. Wrapping 
 </ul>
 
 <p class="fd-form-label">List level — <code>fd-list--wrap</code></p>
-<ul class="fd-list fd-list--subline fd-list--wrap" role="list">
+<ul class="fd-list fd-list--subline fd-list--wrap" role="list" aria-label="List level wrap subline list">
     <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
         <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" role="img" aria-label="John Doe">JD</span>
         <div class="fd-list__content">
@@ -181,7 +181,7 @@ By default, long title and subline text is truncated with an ellipsis. Wrapping 
 <p class="fd-form-label">Item level — <code>fd-list__item--wrap</code> (collapsed and expanded states)</p>
 <!-- The fd-list__link--more element is placed outside fd-list__title so it stays
 visible even when the title truncates. -->
-<ul class="fd-list fd-list--subline" role="list">
+<ul class="fd-list fd-list--subline" role="list" aria-label="Item level wrap subline list">
     <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
         <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" role="img" aria-label="John Doe">JD</span>
         <div class="fd-list__content">
@@ -190,7 +190,7 @@ visible even when the title truncates. -->
             <div class="fd-list__subline">Subline truncated, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque.</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive fd-list__item--wrap">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive fd-list__item--wrap">
         <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" role="img" aria-label="John Doe">JD</span>
         <div class="fd-list__content">
             <div class="fd-list__title">Expanded — fd-list__item--wrap applied, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita magnam repudiandae rerum sint blanditiis rem quo? <a href="#" class="fd-link fd-list__link--more" aria-expanded="true" tabindex="0"><span class="fd-link__content">Less</span></a></div>
@@ -201,7 +201,7 @@ visible even when the title truncates. -->
 
 <div>
     <p class="fd-form-label">Element level — <code>fd-list__title--wrap</code> / <code>fd-list__subline--wrap</code></p>
-    <ul class="fd-list fd-list--subline" role="list">
+    <ul class="fd-list fd-list--subline" role="list" aria-label="Element level wrap subline list">
         <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
             <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-10" role="img" aria-label="John Doe">JD</span>
             <div class="fd-list__content">
@@ -209,7 +209,7 @@ visible even when the title truncates. -->
                 <div class="fd-list__subline">Subline still truncates, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam, amet iste sint? Explicabo dicta doloremque.</div>
             </div>
         </li>
-        <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
+        <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive">
             <span class="fd-avatar fd-avatar--sm fd-avatar--circle fd-avatar--accent-color-6" role="img" aria-label="Jane Doe">JD</span>
             <div class="fd-list__content">
                 <div class="fd-list__title">Title still truncates, Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quod deleniti optio earum voluptatem in, nam et ratione aliquam error facilis expedita.</div>
