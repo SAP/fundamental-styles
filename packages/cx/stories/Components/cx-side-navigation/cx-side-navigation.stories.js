@@ -43,7 +43,7 @@ The Side Navigation can display structures of up to three levels.
 - If second-level items have children, they show the expand/collapse arrows
 - Third level items do not display an icon and are indented by 2 rem (32px)
 
-<br>
+<br><br><br>
 In the <code>Narrow</code> variant:
 - The first levels always shows an icon
 - If first-level items have children, they show the expand/collapse arrows
