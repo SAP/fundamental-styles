@@ -8,6 +8,7 @@ import '../../../../src/menu.scss';
 import '../../../../src/button.scss';
 
 export default {
+// no title because we want to hide this story from the main navigation
     parameters: {
         description: `The navigation is one of the signature design elements of BTP Tools.
 ## Navigation Types:

@@ -1452,7 +1452,7 @@ exports[`Check stories > BTP/Button > Story ToolHeaderButton > Should match snap
 "
 `;
 
-exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story NavigationHorizontal > Should match snapshot 1`] = `
+exports[`Check stories > BTP/Horizontal Navigation > Story NavigationHorizontal > Should match snapshot 1`] = `
 "<div style=\\"height: 500px\\">
     <nav class=\\"fd-navigation fd-navigation--horizontal\\" aria-label=\\"Horizontal Navigation\\">
         <div class=\\"fd-navigation__container\\">
@@ -1751,7 +1751,7 @@ exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story Navigation
 "
 `;
 
-exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story NavigationHorizontalWithExpander > Should match snapshot 1`] = `
+exports[`Check stories > BTP/Horizontal Navigation > Story NavigationHorizontalWithExpander > Should match snapshot 1`] = `
 "<div style=\\"height: 500px\\">
     <nav class=\\"fd-navigation fd-navigation--horizontal\\" aria-label=\\"Horizontal Navigation\\">
         <div class=\\"fd-navigation__container\\">
@@ -2038,7 +2038,88 @@ exports[`Check stories > BTP/Navigation/Horizontal Navigation > Story Navigation
 "
 `;
 
-exports[`Check stories > BTP/Navigation/Vertical Navigation > Story Navigation > Should match snapshot 1`] = `
+exports[`Check stories > BTP/Search Field > Story Default > Should match snapshot 1`] = `
+"<div style=\\"height: 400px\\">
+    <h4>normal</h4>
+    <div class=\\"fd-search-field\\">
+        <span role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__icon sap-icon--search\\"></span>
+        <input placeholder=\\"Search Anything\\" type=\\"search\\" aria-label=\\"Search\\" class=\\"fd-search-field__input\\">
+        <div role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__underline\\"></div>
+        <div class=\\"fd-search-field__actions\\">
+            <div class=\\"fd-search-field__action-container\\">
+                <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Close\\">
+                    <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
+                </button>
+            </div>
+            <div class=\\"fd-search-field__action-container\\">
+                <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Search\\" aria-disabled=\\"true\\" tabindex=\\"-1\\">
+                    <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <h4>hover</h4>
+    <div class=\\"fd-search-field\\">
+        <span role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__icon sap-icon--search\\"></span>
+        <input placeholder=\\"Search Anything\\" type=\\"search\\" aria-label=\\"Search\\" class=\\"fd-search-field__input is-hover\\">
+        <div role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__underline\\"></div>
+        <div class=\\"fd-search-field__actions\\">
+            <div class=\\"fd-search-field__action-container\\">
+                <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Close\\">
+                    <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
+                </button>
+            </div>
+            <div class=\\"fd-search-field__action-container\\">
+                <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Search\\" aria-disabled=\\"true\\" tabindex=\\"-1\\">
+                    <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <h4>focus</h4>
+    <div class=\\"fd-search-field\\">
+        <span role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__icon sap-icon--search\\"></span>
+        <input placeholder=\\"Search Anything\\" type=\\"search\\" aria-label=\\"Search\\" class=\\"fd-search-field__input is-focus\\">
+        <div role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__underline\\"></div>
+        <div class=\\"fd-search-field__actions\\">
+            <div class=\\"fd-search-field__action-container\\">
+                <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Close\\">
+                    <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
+                </button>
+            </div>
+            <div class=\\"fd-search-field__action-container\\">
+                <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Search\\" aria-disabled=\\"true\\" tabindex=\\"-1\\">
+                    <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <h4>typed text</h4>
+    <div class=\\"fd-search-field\\">
+        <span role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__icon sap-icon--search\\"></span>
+        <input placeholder=\\"Search Anything\\" type=\\"search\\" aria-label=\\"Search\\" class=\\"fd-search-field__input\\" value=\\"Typing\\">
+        <div role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__underline\\"></div>
+        <div class=\\"fd-search-field__actions\\">
+            <div class=\\"fd-search-field__action-container\\">
+                <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Close\\">
+                    <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
+                </button>
+            </div>
+            <div class=\\"fd-search-field__action-container\\">
+                <button class=\\"fd-button fd-button--nested is-focus\\" aria-label=\\"Search\\" aria-disabled=\\"false\\">
+                    <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+"
+`;
+
+exports[`Check stories > BTP/Side Navigation > Story Navigation > Should match snapshot 1`] = `
 "<div
     class=\\"fd-navigation fd-navigation--vertical\\"
     role=\\"navigation\\"
@@ -2803,7 +2884,7 @@ exports[`Check stories > BTP/Navigation/Vertical Navigation > Story Navigation >
 "
 `;
 
-exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationLegacy > Should match snapshot 1`] = `
+exports[`Check stories > BTP/Side Navigation > Story NavigationLegacy > Should match snapshot 1`] = `
 "<div
     class=\\"fd-navigation fd-navigation--vertical\\"
     role=\\"navigation\\"
@@ -3412,7 +3493,7 @@ exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationLe
 "
 `;
 
-exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationPopup > Should match snapshot 1`] = `
+exports[`Check stories > BTP/Side Navigation > Story NavigationPopup > Should match snapshot 1`] = `
 "<div
     class=\\"fd-navigation fd-navigation--vertical fd-navigation--popup\\"
     role=\\"navigation\\"
@@ -4181,7 +4262,7 @@ exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationPo
 "
 `;
 
-exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationSearch > Should match snapshot 1`] = `
+exports[`Check stories > BTP/Side Navigation > Story NavigationSearch > Should match snapshot 1`] = `
 "<div
     class=\\"fd-navigation fd-navigation--vertical\\"
     role=\\"navigation\\"
@@ -5122,7 +5203,7 @@ exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationSe
 "
 `;
 
-exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationSnapped > Should match snapshot 1`] = `
+exports[`Check stories > BTP/Side Navigation > Story NavigationSnapped > Should match snapshot 1`] = `
 "<div
     class=\\"fd-navigation fd-navigation--vertical fd-navigation--snapped\\"
     role=\\"navigation\\"
@@ -5788,7 +5869,7 @@ exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationSn
 "
 `;
 
-exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationStickyArea > Should match snapshot 1`] = `
+exports[`Check stories > BTP/Side Navigation > Story NavigationStickyArea > Should match snapshot 1`] = `
 "<div
     class=\\"fd-navigation fd-navigation--vertical\\"
     role=\\"navigation\\"
@@ -6727,7 +6808,7 @@ exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationSt
 "
 `;
 
-exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationTags > Should match snapshot 1`] = `
+exports[`Check stories > BTP/Side Navigation > Story NavigationTags > Should match snapshot 1`] = `
 "<div
     class=\\"fd-navigation fd-navigation--vertical\\"
     role=\\"navigation\\"
@@ -7674,87 +7755,6 @@ exports[`Check stories > BTP/Navigation/Vertical Navigation > Story NavigationTa
                 </div>
             </li>
         </ul>
-    </div>
-</div>
-"
-`;
-
-exports[`Check stories > BTP/Search Field > Story Default > Should match snapshot 1`] = `
-"<div style=\\"height: 400px\\">
-    <h4>normal</h4>
-    <div class=\\"fd-search-field\\">
-        <span role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__icon sap-icon--search\\"></span>
-        <input placeholder=\\"Search Anything\\" type=\\"search\\" aria-label=\\"Search\\" class=\\"fd-search-field__input\\">
-        <div role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__underline\\"></div>
-        <div class=\\"fd-search-field__actions\\">
-            <div class=\\"fd-search-field__action-container\\">
-                <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Close\\">
-                    <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
-                </button>
-            </div>
-            <div class=\\"fd-search-field__action-container\\">
-                <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Search\\" aria-disabled=\\"true\\" tabindex=\\"-1\\">
-                    <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <h4>hover</h4>
-    <div class=\\"fd-search-field\\">
-        <span role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__icon sap-icon--search\\"></span>
-        <input placeholder=\\"Search Anything\\" type=\\"search\\" aria-label=\\"Search\\" class=\\"fd-search-field__input is-hover\\">
-        <div role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__underline\\"></div>
-        <div class=\\"fd-search-field__actions\\">
-            <div class=\\"fd-search-field__action-container\\">
-                <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Close\\">
-                    <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
-                </button>
-            </div>
-            <div class=\\"fd-search-field__action-container\\">
-                <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Search\\" aria-disabled=\\"true\\" tabindex=\\"-1\\">
-                    <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <h4>focus</h4>
-    <div class=\\"fd-search-field\\">
-        <span role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__icon sap-icon--search\\"></span>
-        <input placeholder=\\"Search Anything\\" type=\\"search\\" aria-label=\\"Search\\" class=\\"fd-search-field__input is-focus\\">
-        <div role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__underline\\"></div>
-        <div class=\\"fd-search-field__actions\\">
-            <div class=\\"fd-search-field__action-container\\">
-                <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Close\\">
-                    <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
-                </button>
-            </div>
-            <div class=\\"fd-search-field__action-container\\">
-                <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Search\\" aria-disabled=\\"true\\" tabindex=\\"-1\\">
-                    <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <h4>typed text</h4>
-    <div class=\\"fd-search-field\\">
-        <span role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__icon sap-icon--search\\"></span>
-        <input placeholder=\\"Search Anything\\" type=\\"search\\" aria-label=\\"Search\\" class=\\"fd-search-field__input\\" value=\\"Typing\\">
-        <div role=\\"presentation\\" aria-hidden=\\"true\\" class=\\"fd-search-field__underline\\"></div>
-        <div class=\\"fd-search-field__actions\\">
-            <div class=\\"fd-search-field__action-container\\">
-                <button class=\\"fd-button fd-button--nested\\" aria-label=\\"Close\\">
-                    <i class=\\"sap-icon--decline\\" role=\\"presentation\\"></i>
-                </button>
-            </div>
-            <div class=\\"fd-search-field__action-container\\">
-                <button class=\\"fd-button fd-button--nested is-focus\\" aria-label=\\"Search\\" aria-disabled=\\"false\\">
-                    <i class=\\"sap-icon--slim-arrow-right\\" role=\\"presentation\\"></i>
-                </button>
-            </div>
-        </div>
     </div>
 </div>
 "
@@ -47533,172 +47533,6 @@ exports[`Check stories > Components/Rating Indicator > Story Disabled > Should m
 "
 `;
 
-exports[`Check stories > Components/Rating Indicator > Story DisplayMode > Should match snapshot 1`] = `
-"<h4>LG Size</h4>
-<div class=\\"fd-rating-indicator fd-rating-indicator--lg fd-rating-indicator--display-mode is-readonly\\">
-    <div
-        class=\\"fd-rating-indicator__container\\"
-        role=\\"slider\\"
-        tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
-        aria-roledescription=\\"Rating Indicator\\"
-        aria-valuemin=\\"0\\"
-        aria-valuemax=\\"5\\"
-        aria-valuenow=\\"2\\"
-        aria-valuetext=\\"2 of 5\\"
-        aria-readonly=\\"true\\"
-    >
-        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-        </ul>
-    </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
-</div>
-
-<br><br>
-<h4>MD Size (Default)</h4>
-<div class=\\"fd-rating-indicator fd-rating-indicator--md fd-rating-indicator--display-mode is-readonly\\">
-    <div
-        class=\\"fd-rating-indicator__container\\"
-        role=\\"slider\\"
-        tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
-        aria-roledescription=\\"Rating Indicator\\"
-        aria-valuemin=\\"0\\"
-        aria-valuemax=\\"5\\"
-        aria-valuenow=\\"2\\"
-        aria-valuetext=\\"2 of 5\\"
-        aria-readonly=\\"true\\"
-    >
-        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-        </ul>
-    </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
-</div>
-
-<br><br>
-<h4>SM Size</h4>
-<div class=\\"fd-rating-indicator fd-rating-indicator--sm fd-rating-indicator--display-mode is-readonly\\">
-    <div
-        class=\\"fd-rating-indicator__container\\"
-        role=\\"slider\\"
-        tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
-        aria-roledescription=\\"Rating Indicator\\"
-        aria-valuemin=\\"0\\"
-        aria-valuemax=\\"5\\"
-        aria-valuenow=\\"2\\"
-        aria-valuetext=\\"2 of 5\\"
-        aria-readonly=\\"true\\"
-    >
-        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-        </ul>
-    </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
-</div>
-
-<br><br>
-<h4>XS Size</h4>
-<div class=\\"fd-rating-indicator fd-rating-indicator--xs fd-rating-indicator--display-mode is-readonly\\">
-    <div
-        class=\\"fd-rating-indicator__container\\"
-        role=\\"slider\\"
-        tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
-        aria-roledescription=\\"Rating Indicator\\"
-        aria-valuemin=\\"0\\"
-        aria-valuemax=\\"5\\"
-        aria-valuenow=\\"2\\"
-        aria-valuetext=\\"2 of 5\\"
-        aria-readonly=\\"true\\"
-    >
-        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-            <li class=\\"fd-rating-indicator__item\\">
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
-            </li>
-        </ul>
-    </div>
-    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
-</div>
-"
-`;
-
 exports[`Check stories > Components/Rating Indicator > Story HalfValues > Should match snapshot 1`] = `
 "<div class=\\"example-container\\">
         <span style=\\"min-width: 185px;\\">Default:</span>
@@ -47825,14 +47659,180 @@ exports[`Check stories > Components/Rating Indicator > Story HalfValues > Should
 "
 `;
 
+exports[`Check stories > Components/Rating Indicator > Story Readonly > Should match snapshot 1`] = `
+"<label id=\\"readonly-rating-label-lg\\">Star Rating</label>
+<div class=\\"fd-rating-indicator fd-rating-indicator--lg fd-rating-indicator--display-mode is-readonly\\">
+    <div
+        class=\\"fd-rating-indicator__container\\"
+        role=\\"slider\\"
+        tabindex=\\"0\\"
+        aria-labelledby=\\"readonly-rating-label-lg\\"
+        aria-roledescription=\\"Rating Indicator\\"
+        aria-valuemin=\\"0\\"
+        aria-valuemax=\\"5\\"
+        aria-valuenow=\\"2\\"
+        aria-valuetext=\\"2 of 5\\"
+        aria-readonly=\\"true\\"
+    >
+        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+        </ul>
+    </div>
+    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
+</div>
+
+<br><br>
+<label id=\\"readonly-rating-label-md\\">Star Rating</label>
+<div class=\\"fd-rating-indicator fd-rating-indicator--md fd-rating-indicator--display-mode is-readonly\\">
+    <div
+        class=\\"fd-rating-indicator__container\\"
+        role=\\"slider\\"
+        tabindex=\\"0\\"
+        aria-labelledby=\\"readonly-rating-label-md\\"
+        aria-roledescription=\\"Rating Indicator\\"
+        aria-valuemin=\\"0\\"
+        aria-valuemax=\\"5\\"
+        aria-valuenow=\\"2\\"
+        aria-valuetext=\\"2 of 5\\"
+        aria-readonly=\\"true\\"
+    >
+        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+        </ul>
+    </div>
+    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
+</div>
+
+<br><br>
+<label id=\\"readonly-rating-label-sm\\">Star Rating</label>
+<div class=\\"fd-rating-indicator fd-rating-indicator--sm fd-rating-indicator--display-mode is-readonly\\">
+    <div
+        class=\\"fd-rating-indicator__container\\"
+        role=\\"slider\\"
+        tabindex=\\"0\\"
+        aria-labelledby=\\"readonly-rating-label-sm\\"
+        aria-roledescription=\\"Rating Indicator\\"
+        aria-valuemin=\\"0\\"
+        aria-valuemax=\\"5\\"
+        aria-valuenow=\\"2\\"
+        aria-valuetext=\\"2 of 5\\"
+        aria-readonly=\\"true\\"
+    >
+        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+        </ul>
+    </div>
+    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
+</div>
+
+<br><br>
+<label id=\\"readonly-rating-label-xs\\">Star Rating</label>
+<div class=\\"fd-rating-indicator fd-rating-indicator--xs fd-rating-indicator--display-mode is-readonly\\">
+    <div
+        class=\\"fd-rating-indicator__container\\"
+        role=\\"slider\\"
+        tabindex=\\"0\\"
+        aria-labelledby=\\"readonly-rating-label-xs\\"
+        aria-roledescription=\\"Rating Indicator\\"
+        aria-valuemin=\\"0\\"
+        aria-valuemax=\\"5\\"
+        aria-valuenow=\\"2\\"
+        aria-valuetext=\\"2 of 5\\"
+        aria-readonly=\\"true\\"
+    >
+        <ul class=\\"fd-rating-indicator__list\\" aria-hidden=\\"true\\">
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+            <li class=\\"fd-rating-indicator__item\\">
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+                <span class=\\"sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected\\"></span>
+            </li>
+        </ul>
+    </div>
+    <span class=\\"fd-rating-indicator__dynamic-text\\">(2 of 5)</span>
+</div>
+"
+`;
+
 exports[`Check stories > Components/Rating Indicator > Story Sizes > Should match snapshot 1`] = `
-"<h4>LG Size</h4>
+"<label id=\\"sizes-rating-label-lg\\">Star Rating</label>
 <div class=\\"fd-rating-indicator fd-rating-indicator--lg\\">
     <div
         class=\\"fd-rating-indicator__container\\"
         role=\\"slider\\"
         tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
+        aria-labelledby=\\"sizes-rating-label-lg\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
         aria-valuemax=\\"5\\"
@@ -47866,13 +47866,13 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
 </div>
 
 <br><br>
-<h4>Default (M)</h4>
+<label id=\\"sizes-rating-label-md\\">Star Rating</label>
 <div class=\\"fd-rating-indicator\\">
     <div
         class=\\"fd-rating-indicator__container\\"
         role=\\"slider\\"
         tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
+        aria-labelledby=\\"sizes-rating-label-md\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
         aria-valuemax=\\"5\\"
@@ -47906,13 +47906,13 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
 </div>
 
 <br><br>
-<h4>SM Size</h4>
+<label id=\\"sizes-rating-label-sm\\">Star Rating</label>
 <div class=\\"fd-rating-indicator fd-rating-indicator--sm\\">
     <div
         class=\\"fd-rating-indicator__container\\"
         role=\\"slider\\"
         tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
+        aria-labelledby=\\"sizes-rating-label-sm\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
         aria-valuemax=\\"5\\"
@@ -47946,13 +47946,13 @@ exports[`Check stories > Components/Rating Indicator > Story Sizes > Should matc
 </div>
 
 <br><br>
-<h4>XS Size</h4>
+<label id=\\"sizes-rating-label-xs\\">Star Rating</label>
 <div class=\\"fd-rating-indicator fd-rating-indicator--xs\\">
     <div
         class=\\"fd-rating-indicator__container\\"
         role=\\"slider\\"
         tabindex=\\"0\\"
-        aria-label=\\"Star Rating\\"
+        aria-labelledby=\\"sizes-rating-label-xs\\"
         aria-roledescription=\\"Rating Indicator\\"
         aria-valuemin=\\"0\\"
         aria-valuemax=\\"5\\"
