@@ -53,7 +53,7 @@
         "start:prod": "yarn run storybook:serve:prod",
         "test": "npx vitest --run",
         "typecheck": "tsc --project tsconfig.json --noEmit && npx nx run-many --target=typecheck",
-        "test:accessibility": "vitest accessibility --run",
+        "test:accessibility": "cross-env RUN_A11Y_TESTS=true vitest accessibility --run",
         "test:update": "npx nx run-many --target=update-storyshots --all && yarn run docs:extract",
         "storybook": "yarn run storybook:serve",
         "storybook:serve": "storybook dev -p 6006",
