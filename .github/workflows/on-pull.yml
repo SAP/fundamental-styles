@@ -42,6 +42,19 @@ jobs:
           git diff --exit-code -- docs/
           test -z "$(git ls-files --others --exclude-standard -- docs/)"
 
+  test:
+    runs-on: ubuntu-latest
+    name: Unit & snapshot tests
+    steps:
+      - uses: actions/checkout@v6
+      - uses: ./.github/actions/nodejs
+        name: Install dependencies
+      # Runs the vitest unit + snapshot suites. The accessibility suite is intentionally
+      # excluded here (see vite.config.ts) because it currently has pre-existing violations;
+      # it is tracked separately and can be run locally with `yarn test:accessibility`.
+      - name: Run tests
+        run: yarn test
+
   install-lint-build:
     runs-on: ubuntu-latest
     name: Install, Lint, Build
