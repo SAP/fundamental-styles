@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.42.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.42.1-rc.4...v0.42.1-rc.5) (2026-10-28)
+
+### Bug Fixes
+
+- **styles:** shell search double outline on focus bug [ci visual] ([#6425](https://github.com/SAP/fundamental-styles/issues/6425)) ([748064e](https://github.com/SAP/fundamental-styles/commit/748064e74cc3ac0a41fb186578dcc3c2400a3eee))
+
 ## [0.42.1-rc.4](https://github.com/SAP/fundamental-styles/compare/v0.42.1-rc.3...v0.42.1-rc.4) (2026-10-28)
 
 **Note:** Version bump only for package fundamental-styles
