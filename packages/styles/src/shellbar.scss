@@ -348,6 +348,11 @@ $select: #{$fd-namespace}-select;
       
       background: none;
       box-shadow: var(--fdShellbar_Active_Shadow);
+
+      // Disable any ::after pseudo-element outlines (e.g. from other components) since shellbar provides its own
+      &::after {
+        content: none;
+      }
     }
 
     &:has(button:hover) {
