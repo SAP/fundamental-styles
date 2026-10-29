@@ -1,6 +1,6 @@
 <div style="margin-bottom: 2rem;">
-    <p class="fd-form-label" style="margin-bottom: 0.5rem;">Default — truncation</p>
-    <ul class="fd-list fd-list--byline" role="list">
+    <p id="byline-long-text-default-label" class="fd-form-label" style="margin-bottom: 0.5rem;">Default — truncation</p>
+    <ul class="fd-list fd-list--byline" role="list" aria-labelledby="byline-long-text-default-label">
         <li role="listitem" tabindex="0" class="fd-list__item">
             <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
             <div class="fd-list__content">
@@ -12,8 +12,8 @@
 </div>
 
 <div style="margin-bottom: 2rem;">
-    <p class="fd-form-label" style="margin-bottom: 0.5rem;">List level — <code>fd-list--wrap</code></p>
-    <ul class="fd-list fd-list--byline fd-list--wrap" role="list">
+    <p id="byline-long-text-list-level-label" class="fd-form-label" style="margin-bottom: 0.5rem;">List level — <code>fd-list--wrap</code></p>
+    <ul class="fd-list fd-list--byline fd-list--wrap" role="list" aria-labelledby="byline-long-text-list-level-label">
         <li role="listitem" tabindex="0" class="fd-list__item">
             <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
             <div class="fd-list__content">
@@ -25,10 +25,10 @@
 </div>
 
 <div style="margin-bottom: 2rem;">
-    <p class="fd-form-label" style="margin-bottom: 0.5rem;">Item level — <code>fd-list__item--wrap</code> (collapsed and expanded states)</p>
+    <p id="byline-long-text-item-level-label" class="fd-form-label" style="margin-bottom: 0.5rem;">Item level — <code>fd-list__item--wrap</code> (collapsed and expanded states)</p>
     <!-- The fd-list__link--more element is placed outside fd-list__title so it stays
          visible even when the title truncates. -->
-    <ul class="fd-list fd-list--byline" role="list">
+    <ul class="fd-list fd-list--byline" role="list" aria-labelledby="byline-long-text-item-level-label">
         <li role="listitem" tabindex="0" class="fd-list__item">
             <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
             <div class="fd-list__content">
@@ -37,7 +37,7 @@
                 <div class="fd-list__byline">Byline truncated, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
             </div>
         </li>
-        <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap">
+        <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--wrap">
             <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
             <div class="fd-list__content">
                 <div class="fd-list__title">Expanded — fd-list__item--wrap applied, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. <a href="#" class="fd-link fd-list__link--more" aria-expanded="true" tabindex="0"><span class="fd-link__content">Less</span></a></div>
@@ -48,8 +48,8 @@
 </div>
 
 <div>
-    <p class="fd-form-label" style="margin-bottom: 0.5rem;">Element level — <code>fd-list__title--wrap</code> / <code>fd-list__byline--wrap</code></p>
-    <ul class="fd-list fd-list--byline" role="list">
+    <p id="byline-long-text-element-level-label" class="fd-form-label" style="margin-bottom: 0.5rem;">Element level — <code>fd-list__title--wrap</code> / <code>fd-list__byline--wrap</code></p>
+    <ul class="fd-list fd-list--byline" role="list" aria-labelledby="byline-long-text-element-level-label">
         <li role="listitem" tabindex="0" class="fd-list__item">
             <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
                 style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
