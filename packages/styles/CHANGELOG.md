@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.42.1-rc.8](https://github.com/SAP/fundamental-styles/compare/v0.42.1-rc.7...v0.42.1-rc.8) (2026-11-02)
+
+### Bug Fixes
+
+- **styles:** search results list header height bug ([#6430](https://github.com/SAP/fundamental-styles/issues/6430)) ([466e8ef](https://github.com/SAP/fundamental-styles/commit/466e8efd754ac40d6b221b689b9f953a1f949785))
+
 ## [0.42.1-rc.7](https://github.com/SAP/fundamental-styles/compare/v0.42.1-rc.6...v0.42.1-rc.7) (2026-11-02)
 
 **Note:** Version bump only for package fundamental-styles
