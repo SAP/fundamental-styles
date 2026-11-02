@@ -126,7 +126,7 @@ npm install fundamental-styles
                 <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
                 <span class="fd-notification__footer-content">Feature Name</span>
                 <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
-                <span class="fd-notification__footer-content">11:11</span>
+                <span class="fd-notification__footer-content">15 minutes ago</span>
                 <a
                     href="#"
                     role="button"
@@ -203,7 +203,7 @@ npm install fundamental-styles
                 <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
                 <span class="fd-notification__footer-content">Feature Name</span>
                 <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
-                <span class="fd-notification__footer-content">11:11</span>
+                <span class="fd-notification__footer-content">2 days ago</span>
                 <a
                     href="#"
                     role="button"
@@ -272,7 +272,7 @@ npm install fundamental-styles
                 <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
                 <span class="fd-notification__footer-content">Feature Name</span>
                 <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
-                <span class="fd-notification__footer-content">10:20</span>
+                <span class="fd-notification__footer-content">10:20 AM</span>
             </div>
         </div>
 
@@ -450,7 +450,7 @@ Notification items display a container with:
                 <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
                 <span class="fd-notification__footer-content">Feature Name</span>
                 <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
-                <span class="fd-notification__footer-content">11:11</span>
+                <span class="fd-notification__footer-content">15 minutes ago</span>
                 <a
                     href="#"
                     role="button"
@@ -527,7 +527,7 @@ Notification items display a container with:
                 <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
                 <span class="fd-notification__footer-content">Feature Name</span>
                 <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
-                <span class="fd-notification__footer-content">11:11</span>
+                <span class="fd-notification__footer-content">2 days ago</span>
                 <a
                     href="#"
                     role="button"
@@ -596,7 +596,7 @@ Notification items display a container with:
                 <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
                 <span class="fd-notification__footer-content">Feature Name</span>
                 <span class="fd-notification__separator" role="presentation" aria-hidden="true"></span>
-                <span class="fd-notification__footer-content">10:20</span>
+                <span class="fd-notification__footer-content">10:20 AM</span>
             </div>
         </div>
 
