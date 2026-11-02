@@ -131,6 +131,24 @@ jobs:
             - run: yarn run lint
             - run: yarn run build:prod
 
+            - name: Verify MCP package data is present
+              run: |
+                  catalog=dist/packages/mcp/data/component-catalog.json
+                  if [ ! -s "$catalog" ]; then
+                    echo "::error::$catalog is missing or empty — the MCP package would ship with no components (issue #6420)"
+                    exit 1
+                  fi
+                  count=$(node -e "const c=require('./dist/packages/mcp/data/component-catalog.json');console.log(Object.values(c.packages||{}).reduce((n,p)=>n+((p.components||[]).length),0))")
+                  if [ "$count" -lt 1 ]; then
+                    echo "::error::MCP catalog contains 0 components"
+                    exit 1
+                  fi
+                  if ! ls dist/packages/mcp/data/schemas/*.schema.json >/dev/null 2>&1; then
+                    echo "::error::MCP schemas are missing from the package"
+                    exit 1
+                  fi
+                  echo "MCP package verified: $count components, schemas present"
+
             # Push git commit and tag BEFORE publishing to npm.
             # If push fails here, nothing is published yet — state remains clean and re-running is safe.
             - name: Push changes
