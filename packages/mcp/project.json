@@ -5,9 +5,11 @@
     "projectType": "library",
     "tags": [],
     "targets": {
-        "build": {
+        "build-tsc": {
             "executor": "@nx/js:tsc",
             "outputs": ["{options.outputPath}"],
+            "cache": true,
+            "dependsOn": ["^build", "sync-entry"],
             "options": {
                 "outputPath": "dist/packages/mcp",
                 "tsConfig": "packages/mcp/tsconfig.lib.json",
@@ -45,6 +47,16 @@
                         "output": "data"
                     }
                 ]
+            }
+        },
+        "build": {
+            "executor": "nx:run-commands",
+            "outputs": ["{workspaceRoot}/dist/packages/mcp"],
+            "cache": false,
+            "dependsOn": ["build-tsc"],
+            "options": {
+                "cwd": "{workspaceRoot}",
+                "command": "node packages/mcp/scripts/copy-generated-assets.mjs"
             }
         },
         "test": {

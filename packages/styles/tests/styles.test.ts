@@ -9,7 +9,7 @@ describe('Check stories', async () => {
     });
     for (const storyFilePath of stories) {
         const storyModule = await import(storyFilePath);
-        if (storyModule.default.title.match(/^(Visual|Ignore)/)) {
+        if (storyModule.default.excludeFromTests || storyModule.default.title?.match(/^(Visual|Ignore)/)) {
             continue;
         }
         const stories = Object.entries(storyModule).filter(([key]) => 'default' !== key);

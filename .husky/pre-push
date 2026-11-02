@@ -1,0 +1,19 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Verify (don't auto-stage) that generated docs are in sync before pushing.
+# Mirrors the CI "docs-integrity" drift check, but catches it before the push instead of in CI.
+
+echo "🔍 Verifying generated docs are up to date..."
+yarn docs:extract
+yarn generate:ai-docs
+
+if ! git diff --quiet HEAD -- docs/ || [ -n "$(git ls-files --others --exclude-standard -- docs/)" ]; then
+  echo ""
+  echo "❌ docs/ is out of date with the commits you're pushing."
+  echo "   They have been regenerated in your working tree. Review, commit, and push again:"
+  echo "     git add docs/ && git commit -m \"docs: regenerate component docs\" && git push"
+  exit 1
+fi
+
+echo "✅ docs/ up to date"
