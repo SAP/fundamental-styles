@@ -211,6 +211,7 @@ $floating-footer: #{$fd-namespace}-bar--floating-footer;
 
   &--initial-suggestion-title, &--initial-suggestion-subline {
     height: auto;
+    min-height: 1.625rem !important;
   }
 
   &--initial-suggestion-title {
