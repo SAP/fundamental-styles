@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.42.1-rc.6](https://github.com/SAP/fundamental-styles/compare/v0.42.1-rc.5...v0.42.1-rc.6) (2026-11-02)
+
+### Bug Fixes
+
+- **release:** ship generated catalog & schemas in package ([#6420](https://github.com/SAP/fundamental-styles/issues/6420)) ([#6429](https://github.com/SAP/fundamental-styles/issues/6429)) ([a27ff53](https://github.com/SAP/fundamental-styles/commit/a27ff53883db36b9eb0a91388932019f583c697a))
+
 ## [0.42.1-rc.5](https://github.com/SAP/fundamental-styles/compare/v0.42.1-rc.4...v0.42.1-rc.5) (2026-10-28)
 
 **Note:** Version bump only for package @fundamental-styles/mcp
