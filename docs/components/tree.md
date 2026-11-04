@@ -957,8 +957,8 @@ Form items can be added before or after the `fd-tree__content` element. The `fd-
     <li role="treeitem" aria-level="1" aria-expanded="true" class="fd-tree__item">
         <div class="fd-tree__item-container is-selected" tabindex="0">
             <div class="fd-form-item">
-                <input type="checkbox" checked class="fd-checkbox" id="Ai4ez1">
-                <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez1">
+                <input type="checkbox" checked class="fd-checkbox" id="tree-independent-checkbox-1">
+                <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="tree-independent-checkbox-1">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
                 </label>
             </div>
@@ -973,8 +973,8 @@ Form items can be added before or after the `fd-tree__content` element. The `fd-
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div class="fd-tree__item-container" tabindex="0">
                     <div class="fd-form-item">
-                        <input type="checkbox" class="fd-checkbox" id="Ai4ez2">
-                        <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez2">
+                        <input type="checkbox" class="fd-checkbox" id="tree-independent-checkbox-2">
+                        <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="tree-independent-checkbox-2">
                             <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
                         </label>
                     </div>
@@ -989,8 +989,8 @@ Form items can be added before or after the `fd-tree__content` element. The `fd-
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div class="fd-tree__item-container is-selected" tabindex="0">
                     <div class="fd-form-item">
-                        <input type="checkbox" checked class="fd-checkbox" id="Ai4ez3">
-                        <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez3">
+                        <input type="checkbox" checked class="fd-checkbox" id="tree-independent-checkbox-3">
+                        <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="tree-independent-checkbox-3">
                             <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
                         </label>
                     </div>
@@ -1002,8 +1002,8 @@ Form items can be added before or after the `fd-tree__content` element. The `fd-
             <li role="treeitem" aria-level="2" class="fd-tree__item">
                 <div class="fd-tree__item-container" tabindex="0">
                     <div class="fd-form-item">
-                        <input type="checkbox" class="fd-checkbox" id="Ai4ez4">
-                        <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez4">
+                        <input type="checkbox" class="fd-checkbox" id="tree-independent-checkbox-4">
+                        <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="tree-independent-checkbox-4">
                             <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
                         </label>
                     </div>
@@ -1017,8 +1017,8 @@ Form items can be added before or after the `fd-tree__content` element. The `fd-
     <li role="treeitem" aria-level="1" class="fd-tree__item">
         <div class="fd-tree__item-container" tabindex="0">
             <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez5">
-                <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez5">
+                <input type="checkbox" class="fd-checkbox" id="tree-independent-checkbox-5">
+                <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="tree-independent-checkbox-5">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
                 </label>
             </div>
@@ -1030,8 +1030,8 @@ Form items can be added before or after the `fd-tree__content` element. The `fd-
     <li role="treeitem" aria-level="1" class="fd-tree__item">
         <div class="fd-tree__item-container" tabindex="0">
             <div class="fd-form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez6">
-                <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="Ai4ez6">
+                <input type="checkbox" class="fd-checkbox" id="tree-independent-checkbox-6">
+                <label tabindex="-1" aria-label="checkbox" class="fd-checkbox__label" for="tree-independent-checkbox-6">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
                 </label>
             </div>
