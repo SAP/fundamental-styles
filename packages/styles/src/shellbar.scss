@@ -314,6 +314,12 @@ $select: #{$fd-namespace}-select;
     &:has(.#{$fd-namespace}-product-switch) {
       margin-inline-start: 0.5rem;
     }
+
+    &:has(.sap-icon--overflow) {
+      &:has(+ .#{$block}__action .#{$fd-namespace}-user-menu__control) {
+        margin-inline-end: 0.5rem;
+      }
+    }
   }
 
   .#{$block}__search-field {
