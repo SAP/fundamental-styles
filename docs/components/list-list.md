@@ -38,6 +38,10 @@ The byline list consists of a few extra elements to add additional text and sema
 | `fd-list__byline-right` | The right side is best suited for supplemental information (can be a semantic status), and occupies 40% of the available space. |
 | `fd-list__byline-right--*` | To represent a semantic status, replace the * with either: _neutral_, _positive_, _negative_, _critical_ or _informative_. |
 
+## Accessibility
+
+Every `<ul role="list">` must carry an accessible name (`aria-label` or `aria-labelledby`). The container uses `role="list"` and each item uses `role="listitem"`. The first interactive item has `tabindex="0"`; all other items have `tabindex="-1"` (roving tabindex — arrow-key JS is the consumer's responsibility).
+
 ## Usage Guidelines
 
 **Use the byline list if:**
@@ -68,8 +72,8 @@ npm install fundamental-styles
 ## Basic Usage
 
 ```html
-<h4>Standard size</h4>
-<ul class="fd-list fd-list--byline" role="list">
+<h4 id="byline-standard-size-heading">Standard size</h4>
+<ul class="fd-list fd-list--byline" role="list" aria-labelledby="byline-standard-size-heading">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content">
@@ -77,14 +81,14 @@ npm install fundamental-styles
             <div class="fd-list__byline">Byline (description)</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
         <div class="fd-list__content">
             <div class="fd-list__title">List item with no byline</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
-        <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+    <li role="listitem" tabindex="-1" class="fd-list__item">
+        <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
             ></span>
             <div class="fd-list__content">
                 <div class="fd-list__title">List item with 2-column byline</div>
@@ -94,14 +98,14 @@ npm install fundamental-styles
                 </div>
             </div>
         </li>
-        <li role="listitem" tabindex="0" class="fd-list__item">
+        <li role="listitem" tabindex="-1" class="fd-list__item">
             <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
             <div class="fd-list__content">
                 <div class="fd-list__title">List item with no byline</div>
             </div>
         </li>
-        <li role="listitem" tabindex="0" class="fd-list__item">
-            <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+        <li role="listitem" tabindex="-1" class="fd-list__item">
+            <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
                 ></span>
                 <div class="fd-list__content">
                     <div class="fd-list__title">List item with 2-column byline</div>
@@ -111,7 +115,7 @@ npm install fundamental-styles
                     </div>
                 </div>
             </li>
-            <li role="listitem" tabindex="0" class="fd-list__item">
+            <li role="listitem" tabindex="-1" class="fd-list__item">
                 <div class="fd-list__content">
                     <div class="fd-list__title">Text-only list item</div>
                     <div class="fd-list__byline">Byline (description)</div>
@@ -178,8 +182,8 @@ This component uses the following BEM elements:
 The default byline list dislays list items in the standard size, which is ideal for mobile. To display the byline list in compact mode (for desktop), add the `is-compact` modifier class to the main element.
 
 ```html
-<h4>Standard size</h4>
-<ul class="fd-list fd-list--byline" role="list">
+<h4 id="byline-standard-size-heading">Standard size</h4>
+<ul class="fd-list fd-list--byline" role="list" aria-labelledby="byline-standard-size-heading">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content">
@@ -187,14 +191,14 @@ The default byline list dislays list items in the standard size, which is ideal 
             <div class="fd-list__byline">Byline (description)</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
         <div class="fd-list__content">
             <div class="fd-list__title">List item with no byline</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
-        <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+    <li role="listitem" tabindex="-1" class="fd-list__item">
+        <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
             ></span>
             <div class="fd-list__content">
                 <div class="fd-list__title">List item with 2-column byline</div>
@@ -204,14 +208,14 @@ The default byline list dislays list items in the standard size, which is ideal 
                 </div>
             </div>
         </li>
-        <li role="listitem" tabindex="0" class="fd-list__item">
+        <li role="listitem" tabindex="-1" class="fd-list__item">
             <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
             <div class="fd-list__content">
                 <div class="fd-list__title">List item with no byline</div>
             </div>
         </li>
-        <li role="listitem" tabindex="0" class="fd-list__item">
-            <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+        <li role="listitem" tabindex="-1" class="fd-list__item">
+            <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
                 ></span>
                 <div class="fd-list__content">
                     <div class="fd-list__title">List item with 2-column byline</div>
@@ -221,7 +225,7 @@ The default byline list dislays list items in the standard size, which is ideal 
                     </div>
                 </div>
             </li>
-            <li role="listitem" tabindex="0" class="fd-list__item">
+            <li role="listitem" tabindex="-1" class="fd-list__item">
                 <div class="fd-list__content">
                     <div class="fd-list__title">Text-only list item</div>
                     <div class="fd-list__byline">Byline (description)</div>
@@ -235,8 +239,8 @@ The default byline list dislays list items in the standard size, which is ideal 
 The Attachment List shares the same specification as the Standard List with Byline. The only difference is that if two text items are set within the Byline row, the text aligned to the right is always standard text (i.e. not semantic text)
 
 ```html
-<h4>Standard size</h4>
-<ul class="fd-list fd-list--byline" role="list">
+<h4 id="Att1L1">Standard size</h4>
+<ul class="fd-list fd-list--byline" role="list" aria-labelledby="Att1L1">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--attachment-photo"></i></span>
         <div class="fd-list__content">
@@ -244,13 +248,13 @@ The Attachment List shares the same specification as the Standard List with Byli
             <div class="fd-list__byline">Byline (description)</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--pdf-attachment"></i></span>
         <div class="fd-list__content">
             <div class="fd-list__title">List item with no byline</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--attachment-text-file"></i></span>
         <div class="fd-list__content">
             <div class="fd-list__title">List item with 2-column byline</div>
@@ -267,8 +271,10 @@ The Attachment List shares the same specification as the Standard List with Byli
 
 Byline list items can contain navigation links. To add navigation, add the `fd-list--navigation` modifier class to the list and the `fd-list__item--link` modifier class to the list elements that contain links. All items should be navigable.
 
+**Accessibility:** Navigation links (`<a class="fd-list__link">`) must have a real `href` attribute. `is-selected` and `is-navigated` are visual-only classes; do not add `aria-selected` to `listitem` elements — it is an invalid attribute on that role.
+
 ```html
-<ul class="fd-list fd-list--byline fd-list--navigation" role="list">
+<ul class="fd-list fd-list--byline fd-list--navigation" role="list" aria-label="Byline navigation list">
     <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
         <a tabindex="0" class="fd-list__link" href="#">
             <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -279,7 +285,7 @@ Byline list items can contain navigation links. To add navigation, add the `fd-l
         </a>
     </li>
     <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link is-selected">
-        <a tabindex="0" class="fd-list__link" href="#">
+        <a tabindex="-1" class="fd-list__link" href="#">
             <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
             <div class="fd-list__content">
                 <div class="fd-list__title">List item with no byline</div>
@@ -287,8 +293,8 @@ Byline list items can contain navigation links. To add navigation, add the `fd-l
         </a>
     </li>
     <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
-        <a tabindex="0" class="fd-list__link" href="#">
-            <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+        <a tabindex="-1" class="fd-list__link" href="#">
+            <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
                 ></span>
                 <div class="fd-list__content">
                     <div class="fd-list__title">List item with 2-column byline</div>
@@ -300,7 +306,7 @@ Byline list items can contain navigation links. To add navigation, add the `fd-l
             </a>
         </li>
         <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
-            <a tabindex="0" class="fd-list__link" href="#">
+            <a tabindex="-1" class="fd-list__link" href="#">
                 <div class="fd-list__content">
                     <div class="fd-list__title">Text-only list item</div>
                     <div class="fd-list__byline">Byline (description)</div>
@@ -312,22 +318,30 @@ Byline list items can contain navigation links. To add navigation, add the `fd-l
 
 ### Buttons
 
+Byline list items can contain action buttons. Icon-only buttons **must** have an `aria-label` and a `title` attribute, and the icon element must carry `aria-hidden="true"`.
+
 ```html
-<ul class="fd-list fd-list--byline" role="list">
-    <li role="listitem" class="fd-list__item">
+<button class="fd-button fd-button--transparent fd-list__button" aria-label="Edit" title="Edit">
+  <i class="sap-icon--edit" aria-hidden="true"></i>
+</button>
+```
+
+```html
+<ul class="fd-list fd-list--byline" role="list" aria-label="Byline list with action buttons">
+    <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content">
             <span class="fd-list__title fd-list__title--wrap">List item 1</span>
             <span class="fd-list__byline">Byline (description) List item 1 </span>
         </div>
-        <button class="fd-button fd-button--transparent fd-list__button" aria-label="Edit>
-            <i class="sap-icon--edit"></i>
+        <button class="fd-button fd-button--transparent fd-list__button" aria-label="Edit" title="Edit">
+            <i class="sap-icon--edit" aria-hidden="true"></i>
         </button>
-        <button class="fd-button fd-button--transparent fd-list__button" aria-label="Decline">
-            <i class="sap-icon--decline"></i>
+        <button class="fd-button fd-button--transparent fd-list__button" aria-label="Delete" title="Delete">
+            <i class="sap-icon--decline" aria-hidden="true"></i>
         </button>
     </li>
-    <li role="listitem" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content">
             <span class="fd-list__title fd-list__title--wrap"
@@ -341,11 +355,11 @@ Byline list items can contain navigation links. To add navigation, add the `fd-l
                     nibh ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</span
                     >
                 </div>
-                <button class="fd-button fd-button--transparent fd-list__button" aria-label="Edit">
-                    <i class="sap-icon--edit"></i>
+                <button class="fd-button fd-button--transparent fd-list__button" aria-label="Edit" title="Edit">
+                    <i class="sap-icon--edit" aria-hidden="true"></i>
                 </button>
-                <button class="fd-button fd-button--transparent fd-list__button" aria-label="Decline">
-                    <i class="sap-icon--decline"></i>
+                <button class="fd-button fd-button--transparent fd-list__button" aria-label="Delete" title="Delete">
+                    <i class="sap-icon--decline" aria-hidden="true"></i>
                 </button>
             </li>
         </ul>
@@ -356,8 +370,8 @@ Byline list items can contain navigation links. To add navigation, add the `fd-l
 The `fd-list__item--interractive` will force list item to handle hover and active states. Usage of this modifier is not needed on `Selection`, `Navigation` and `Action` modes.
 
 ```html
-<ul class="fd-list fd-list--byline" role="list">
-    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive">
+<ul class="fd-list fd-list--byline" role="list" aria-label="Interactive byline list states">
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content">
             <div class="fd-list__title">Title</div>
@@ -414,7 +428,7 @@ The `fd-list__item--interractive` will force list item to handle hover and activ
 If only some of the list items are navigable, you should indicate them with an arrow icon. To display navigation indicators, add the `fd-list--navigation-indication` modifier class to the unordered list element. Do not show indicators if all items are navigable. In this case, use a byline list with navigation (in the example above).
 
 ```html
-<ul class="fd-list fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list">
+<ul class="fd-list fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list" aria-label="Byline navigation indicator list">
     <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link ">
         <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
             <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -425,7 +439,7 @@ If only some of the list items are navigable, you should indicate them with an a
         </a>
     </li>
     <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link is-selected">
-        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
+        <a tabindex="-1" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
             <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
             <div class="fd-list__content">
                 <div class="fd-list__title">List item with no byline</div>
@@ -433,7 +447,7 @@ If only some of the list items are navigable, you should indicate them with an a
         </a>
     </li>
     <li role="listitem" tabindex="-1" class="fd-list__item">
-        <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+        <span role="img" class="fd-image--s fd-list__thumbnail" aria-label="Waterfall in northern Iceland"
             ></span>
             <div class="fd-list__content">
                 <div class="fd-list__title">List item with 2-column byline</div>
@@ -451,7 +465,7 @@ If only some of the list items are navigable, you should indicate them with an a
 To display a borderless byline list, add the `fd-list--no-border` modifier class to the main element.
 
 ```html
-<ul class="fd-list fd-list--no-border fd-list--byline" role="list">
+<ul class="fd-list fd-list--no-border fd-list--byline" role="list" aria-label="Borderless byline list">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content">
@@ -459,14 +473,14 @@ To display a borderless byline list, add the `fd-list--no-border` modifier class
             <div class="fd-list__byline">Byline (description)</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
         <div class="fd-list__content">
             <div class="fd-list__title">list item with no byline</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
-        <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+    <li role="listitem" tabindex="-1" class="fd-list__item">
+        <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
             style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
             <div class="fd-list__content">
                 <div class="fd-list__title">List item with 2-column byline</div>
@@ -476,7 +490,7 @@ To display a borderless byline list, add the `fd-list--no-border` modifier class
                 </div>
             </div>
         </li>
-        <li role="listitem" tabindex="0" class="fd-list__item">
+        <li role="listitem" tabindex="-1" class="fd-list__item">
             <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--world"></i></span>
             <div class="fd-list__content">
                 <div class="fd-list__title fd-list__title--wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</div>
@@ -493,12 +507,14 @@ To display a borderless byline list, add the `fd-list--no-border` modifier class
 
 Byline list items can display checkboxes that users can select from. To display byline list items with selection, add the `fd-list--selection` modifier class to the main element. To create checkbox form items, add the `fd-list__form-item` class within each list element.
 
+**Accessibility:** Use `role="list"` / `role="listitem"` (not `listbox`/`option`). Selection state is carried by the native `<input type="checkbox">`. Each checkbox must be labelled via `aria-labelledby` pointing to the item title's `id`. Do **not** add `aria-selected` to `<li>` elements.
+
 ```html
-<ul class="fd-list fd-list--selection fd-list--byline" role="listbox" aria-labelledby="O09lk9">
-    <li role="option" tabindex="0" class="fd-list__item fd-list__item--wrap is-selected">
+<ul class="fd-list fd-list--selection fd-list--byline" role="list" aria-label="Byline selection list">
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap is-selected">
         <div class="fd-form-item fd-list__form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez6111Z" checked aria-labelledby="O09lk1">
-            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6111Z">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez6111Z" checked tabindex="-1" aria-labelledby="O09lk1">
+            <label class="fd-checkbox__label" for="Ai4ez6111Z">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
             </label>
         </div>
@@ -508,14 +524,14 @@ Byline list items can display checkboxes that users can select from. To display 
             <span class="fd-list__byline">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin elementum sapien vel enim facilisis</span>
         </div>
     </li>
-    <li role="option" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <div class="fd-form-item fd-list__form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez6112X" aria-labelledby="O09lk2">
-            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6112X">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez6112X" tabindex="-1" aria-labelledby="O09lk2">
+            <label class="fd-checkbox__label" for="Ai4ez6112X">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
             </label>
         </div>
-        <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+        <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
             ></span>
             <div class="fd-list__content">
                 <div class="fd-list__title fd-list__title--wrap" id="O09lk2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</div>
@@ -525,10 +541,10 @@ Byline list items can display checkboxes that users can select from. To display 
                 </div>
             </div>
         </li>
-        <li role="option" tabindex="0" class="fd-list__item">
+        <li role="listitem" tabindex="-1" class="fd-list__item">
             <div class="fd-form-item fd-list__form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez6113C" aria-labelledby="O09lk3">
-                <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6113C">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez6113C" tabindex="-1" aria-labelledby="O09lk3">
+                <label class="fd-checkbox__label" for="Ai4ez6113C">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
                 </label>
             </div>
@@ -550,12 +566,12 @@ To display byline list items with selection and navigation, add these following 
 - `fd-list--navigation-indicator`
 
 ```html
-<ul class="fd-list fd-list--selection fd-list--byline fd-list--navigation fd-list--navigation-indication" role="listbox"
-    aria-labelledby="Ki81L1">
-    <li role="option" tabindex="0" class="fd-list__item">
+<ul class="fd-list fd-list--selection fd-list--byline fd-list--navigation fd-list--navigation-indication" role="list"
+    aria-label="Byline selection and navigation list">
+    <li role="listitem" tabindex="0" class="fd-list__item">
         <div class="fd-form-item fd-list__form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez6118N" aria-labelledby="Ki81L2">
-            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6118N">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez6118N" tabindex="-1" aria-labelledby="Ki81L2">
+            <label class="fd-checkbox__label" for="Ai4ez6118N">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
             </label>
         </div>
@@ -565,15 +581,15 @@ To display byline list items with selection and navigation, add these following 
             <span class="fd-list__byline">Byline (description)</span>
         </div>
     </li>
-    <li role="option" tabindex="-1" class="fd-list__item fd-list__item--link is-selected" aria-selected="true">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link is-selected">
         <div class="fd-form-item fd-list__form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez6119N" checked aria-labelledby="Ki81L3">
-            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez6119N">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez6119N" checked tabindex="-1" aria-labelledby="Ki81L3">
+            <label class="fd-checkbox__label" for="Ai4ez6119N">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
             </label>
         </div>
-        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
-            <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+        <a tabindex="-1" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
+            <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
                 ></span>
                 <div class="fd-list__content">
                     <div class="fd-list__title" id="Ki81L3">List item with 2-column byline</div>
@@ -584,14 +600,14 @@ To display byline list items with selection and navigation, add these following 
                 </div>
             </a>
         </li>
-        <li role="option" tabindex="-1" class="fd-list__item fd-list__item--link">
+        <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
             <div class="fd-form-item fd-list__form-item">
-                <input type="checkbox" class="fd-checkbox" id="Ai4ez61110N" aria-labelledby="Ki81L4">
-                <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez61110N">
+                <input type="checkbox" class="fd-checkbox" id="Ai4ez61110N" tabindex="-1" aria-labelledby="Ki81L4">
+                <label class="fd-checkbox__label" for="Ai4ez61110N">
                     <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
                 </label>
             </div>
-            <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
+            <a tabindex="-1" class="fd-list__link fd-list__link--navigation-indicator" href="#">
                 <div class="fd-list__content">
                     <div class="fd-list__title" id="Ki81L4">Text-only list item</div>
                     <div class="fd-list__byline">Byline (description)</div>
@@ -604,7 +620,7 @@ To display byline list items with selection and navigation, add these following 
 ### Byline List with Counter
 
 ```html
-<ul class="fd-list fd-list--byline" role="list">
+<ul class="fd-list fd-list--byline" role="list" aria-label="Byline list with item counter">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content">
@@ -613,15 +629,15 @@ To display byline list items with selection and navigation, add these following 
         </div>
         <span class="fd-list__item-counter">123</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
         <div class="fd-list__content">
             <div class="fd-list__title">List item with no byline</div>
         </div>
         <span class="fd-list__item-counter">456</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
-        <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+    <li role="listitem" tabindex="-1" class="fd-list__item">
+        <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
             style="background-image: url('assets/images/backgrounds/Godafoss_waterfall_in_northern_Iceland.jpg'); background-size:cover;"></span>
             <div class="fd-list__content">
                 <div class="fd-list__title">List item with 2-column byline</div>
@@ -632,7 +648,7 @@ To display byline list items with selection and navigation, add these following 
             </div>
             <span class="fd-list__item-counter">12345</span>
         </li>
-        <li role="listitem" tabindex="0" class="fd-list__item">
+        <li role="listitem" tabindex="-1" class="fd-list__item">
             <div class="fd-list__content">
                 <div class="fd-list__title">Text-only list item</div>
                 <div class="fd-list__byline">Byline (description)</div>
@@ -674,8 +690,8 @@ By default, long title and byline text is truncated with an ellipsis. Wrapping c
 When more than 100 characters for small screens or 300 characters for medium to large screens are used, a clickable "MORE" link should be displayed to reveal the entire contents of the text.
 
 ```html
-<p class="fd-form-label">Default — truncation</p>
-<ul class="fd-list fd-list--byline" role="list">
+<p id="byline-long-text-default-label" class="fd-form-label">Default — truncation</p>
+<ul class="fd-list fd-list--byline" role="list" aria-labelledby="byline-long-text-default-label">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content">
@@ -685,8 +701,8 @@ When more than 100 characters for small screens or 300 characters for medium to 
     </li>
 </ul>
 
-<p class="fd-form-label">List level — <code>fd-list--wrap</code></p>
-<ul class="fd-list fd-list--byline fd-list--wrap" role="list">
+<p id="byline-long-text-list-level-label" class="fd-form-label">List level — <code>fd-list--wrap</code></p>
+<ul class="fd-list fd-list--byline fd-list--wrap" role="list" aria-labelledby="byline-long-text-list-level-label">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
         <div class="fd-list__content">
@@ -696,10 +712,10 @@ When more than 100 characters for small screens or 300 characters for medium to 
     </li>
 </ul>
 
-<p class="fd-form-label">Item level — <code>fd-list__item--wrap</code> (collapsed and expanded states)</p>
+<p id="byline-long-text-item-level-label" class="fd-form-label">Item level — <code>fd-list__item--wrap</code> (collapsed and expanded states)</p>
 <!-- The fd-list__link--more element is placed outside fd-list__title so it stays
 visible even when the title truncates. -->
-<ul class="fd-list fd-list--byline" role="list">
+<ul class="fd-list fd-list--byline" role="list" aria-labelledby="byline-long-text-item-level-label">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
         <div class="fd-list__content">
@@ -708,7 +724,7 @@ visible even when the title truncates. -->
             <div class="fd-list__byline">Byline truncated, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--wrap">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
         <div class="fd-list__content">
             <div class="fd-list__title">Expanded — fd-list__item--wrap applied, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. <a href="#" class="fd-link fd-list__link--more" aria-expanded="true" tabindex="0"><span class="fd-link__content">Less</span></a></div>
@@ -718,8 +734,8 @@ visible even when the title truncates. -->
 </ul>
 
 <div>
-    <p class="fd-form-label">Element level — <code>fd-list__title--wrap</code> / <code>fd-list__byline--wrap</code></p>
-    <ul class="fd-list fd-list--byline" role="list">
+    <p id="byline-long-text-element-level-label" class="fd-form-label">Element level — <code>fd-list__title--wrap</code> / <code>fd-list__byline--wrap</code></p>
+    <ul class="fd-list fd-list--byline" role="list" aria-labelledby="byline-long-text-element-level-label">
         <li role="listitem" tabindex="0" class="fd-list__item">
             <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
                 ></span>
@@ -737,11 +753,17 @@ visible even when the title truncates. -->
 
 ### With Group Header
 
+Group headers are flat `listitem` siblings inside the same `role="list"`. They are **not** interactive and are excluded from the roving-tabindex sequence. Add heading semantics to the title span:
 ```html
-<h4>Standard size</h4>
-<ul class="fd-list fd-list--byline" role="list">
+<span class="fd-list__title" role="heading" aria-level="2" aria-roledescription="Group Header">Group header 1</span>
+```
+Choose `aria-level` to reflect the heading depth on the surrounding page.
+
+```html
+<h4 id="byline-group-header-size-heading">Standard size</h4>
+<ul class="fd-list fd-list--byline" role="list" aria-labelledby="byline-group-header-size-heading">
     <li role="listitem" class="fd-list__group-header">
-        <span class="fd-list__title">Group header 1</span>
+        <span class="fd-list__title" role="heading" aria-level="2" aria-roledescription="Group Header">Group header 1</span>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
@@ -750,14 +772,14 @@ visible even when the title truncates. -->
             <div class="fd-list__byline">Byline (description)</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
         <div class="fd-list__content">
             <div class="fd-list__title">List item with no byline</div>
         </div>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
-        <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+    <li role="listitem" tabindex="-1" class="fd-list__item">
+        <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
             ></span>
             <div class="fd-list__content">
                 <div class="fd-list__title">List item with 2-column byline</div>
@@ -768,16 +790,16 @@ visible even when the title truncates. -->
             </div>
         </li>
         <li role="listitem" class="fd-list__group-header">
-            <span class="fd-list__title">Group header 2</span>
+            <span class="fd-list__title" role="heading" aria-level="2" aria-roledescription="Group Header">Group header 2</span>
         </li>
-        <li role="listitem" tabindex="0" class="fd-list__item">
+        <li role="listitem" tabindex="-1" class="fd-list__item">
             <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
             <div class="fd-list__content">
                 <div class="fd-list__title">List item with no byline</div>
             </div>
         </li>
-        <li role="listitem" tabindex="0" class="fd-list__item">
-            <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+        <li role="listitem" tabindex="-1" class="fd-list__item">
+            <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
                 ></span>
                 <div class="fd-list__content">
                     <div class="fd-list__title">List item with 2-column byline</div>
@@ -787,7 +809,7 @@ visible even when the title truncates. -->
                     </div>
                 </div>
             </li>
-            <li role="listitem" tabindex="0" class="fd-list__item">
+            <li role="listitem" tabindex="-1" class="fd-list__item">
                 <div class="fd-list__content">
                     <div class="fd-list__title">Text-only list item</div>
                     <div class="fd-list__byline">Byline (description)</div>
@@ -802,8 +824,8 @@ visible even when the title truncates. -->
 
 ```html
 <h4 id="O09lk8">Standard</h4>
-<ul class="fd-list fd-list--byline fd-list--unread-indicator" role="listbox" aria-labelledby="O09lk9">
-    <li role="option" tabindex="0" class="fd-list__item fd-list__item--unread is-selected">
+<ul class="fd-list fd-list--byline fd-list--unread-indicator" role="list" aria-labelledby="O09lk8">
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--unread is-selected">
         <span class="sap-icon--circle-task-2 fd-list__notification"></span>
         <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--activate"></i></span>
         <div class="fd-list__content">
@@ -811,40 +833,40 @@ visible even when the title truncates. -->
             <span class="fd-list__byline">Byline (description)</span>
         </div>
     </li>
-    <li role="option" tabindex="0" class="fd-list__item fd-list__item--unread">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--unread">
         <span class="sap-icon--circle-task-2 fd-list__notification"></span>
-        <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+        <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
             ></span>
             <div class="fd-list__content">
-                <div class="fd-list__title" id="O09lk2">List item with 2-column byline</div>
+                <div class="fd-list__title">List item with 2-column byline</div>
                 <div class="fd-list__byline fd-list__byline--2-col">
                     <div class="fd-list__byline-left">First text item in byline (standard text)</div>
                     <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
                 </div>
             </div>
         </li>
-        <li role="option" tabindex="0" class="fd-list__item">
-            <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+        <li role="listitem" tabindex="-1" class="fd-list__item">
+            <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
                 ></span>
                 <div class="fd-list__content">
-                    <div class="fd-list__title" id="O09lk2sdf">List item with 2-column byline</div>
+                    <div class="fd-list__title">List item with 2-column byline</div>
                     <div class="fd-list__byline fd-list__byline--2-col">
                         <div class="fd-list__byline-left">First text item in byline (standard text)</div>
                         <div class="fd-list__byline-right">Second text item in byline (can be semantic)</div>
                     </div>
                 </div>
             </li>
-            <li role="option" tabindex="0" class="fd-list__item fd-list__item--unread">
+            <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--unread">
                 <span class="sap-icon--circle-task-2 fd-list__notification"></span>
                 <div class="fd-list__content">
-                    <div class="fd-list__title" id="O09lk3">Text-only list item</div>
+                    <div class="fd-list__title">Text-only list item</div>
                     <div class="fd-list__byline">Byline (description)</div>
                 </div>
             </li>
         </ul>
 
         <h4 id="O09lk9">Navigation</h4>
-        <ul class="fd-list fd-list--byline fd-list--navigation fd-list--unread-indicator" role="list">
+        <ul class="fd-list fd-list--byline fd-list--navigation fd-list--unread-indicator" role="list" aria-labelledby="O09lk9">
             <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link fd-list__item--unread">
                 <span class="sap-icon--circle-task-2 fd-list__notification"></span>
                 <a tabindex="0" class="fd-list__link" href="#">
@@ -857,7 +879,7 @@ visible even when the title truncates. -->
             </li>
             <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link fd-list__item--unread is-selected">
                 <span class="sap-icon--circle-task-2 fd-list__notification"></span>
-                <a tabindex="0" class="fd-list__link" href="#">
+                <a tabindex="-1" class="fd-list__link" href="#">
                     <span class="fd-list__thumbnail"><i role="presentation" class="sap-icon--employee"></i></span>
                     <div class="fd-list__content">
                         <div class="fd-list__title">List item with no byline</div>
@@ -865,8 +887,8 @@ visible even when the title truncates. -->
                 </a>
             </li>
             <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
-                <a tabindex="0" class="fd-list__link" href="#">
-                    <span class="fd-image--s fd-list__thumbnail" aria-label="Godafoss waterfall in northern Iceland"
+                <a tabindex="-1" class="fd-list__link" href="#">
+                    <span class="fd-image--s fd-list__thumbnail" role="img" aria-label="Godafoss waterfall in northern Iceland"
                         ></span>
                         <div class="fd-list__content">
                             <div class="fd-list__title">List item with 2-column byline</div>
@@ -878,7 +900,7 @@ visible even when the title truncates. -->
                     </a>
                 </li>
                 <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
-                    <a tabindex="0" class="fd-list__link" href="#">
+                    <a tabindex="-1" class="fd-list__link" href="#">
                         <div class="fd-list__content">
                             <div class="fd-list__title">Text-only list item</div>
                             <div class="fd-list__byline">Byline (description)</div>

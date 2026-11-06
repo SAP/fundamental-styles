@@ -45,6 +45,10 @@ The byline list consists of a few extra elements to add additional text and sema
 | \`fd-list__byline-left\` | The left side is best suited for standard text, and occupies 60% of the available space. |
 | \`fd-list__byline-right\` | The right side is best suited for supplemental information (can be a semantic status), and occupies 40% of the available space. |
 | \`fd-list__byline-right--*\` | To represent a semantic status, replace the * with either: _neutral_, _positive_, _negative_, _critical_ or _informative_. |
+
+## Accessibility
+
+Every \`<ul role="list">\` must carry an accessible name (\`aria-label\` or \`aria-labelledby\`). The container uses \`role="list"\` and each item uses \`role="listitem"\`. The first interactive item has \`tabindex="0"\`; all other items have \`tabindex="-1"\` (roving tabindex — arrow-key JS is the consumer's responsibility).
 `,
     tags: []
   }
@@ -74,6 +78,8 @@ Navigation.parameters = {
     description: {
       story: `
 Byline list items can contain navigation links. To add navigation, add the \`fd-list--navigation\` modifier class to the list and the \`fd-list__item--link\` modifier class to the list elements that contain links. All items should be navigable.
+
+**Accessibility:** Navigation links (\`<a class="fd-list__link">\`) must have a real \`href\` attribute. \`is-selected\` and \`is-navigated\` are visual-only classes; do not add \`aria-selected\` to \`listitem\` elements — it is an invalid attribute on that role.
 `
     }
   }
@@ -83,6 +89,13 @@ Buttons.parameters = {
   docs: {
     description: {
       story: `
+Byline list items can contain action buttons. Icon-only buttons **must** have an \`aria-label\` and a \`title\` attribute, and the icon element must carry \`aria-hidden="true"\`.
+
+\`\`\`html
+<button class="fd-button fd-button--transparent fd-list__button" aria-label="Edit" title="Edit">
+  <i class="sap-icon--edit" aria-hidden="true"></i>
+</button>
+\`\`\`
 `
     }
   }
@@ -121,6 +134,8 @@ Selection.parameters = {
     description: {
       story: `
 Byline list items can display checkboxes that users can select from. To display byline list items with selection, add the \`fd-list--selection\` modifier class to the main element. To create checkbox form items, add the \`fd-list__form-item\` class within each list element.
+
+**Accessibility:** Use \`role="list"\` / \`role="listitem"\` (not \`listbox\`/\`option\`). Selection state is carried by the native \`<input type="checkbox">\`. Each checkbox must be labelled via \`aria-labelledby\` pointing to the item title's \`id\`. Do **not** add \`aria-selected\` to \`<li>\` elements.
     `
     }
   }
@@ -181,6 +196,17 @@ When more than 100 characters for small screens or 300 characters for medium to 
 };
 export const GroupHeader = () => groupHeaderExampleHtml;
 GroupHeader.storyName = 'With Group Header';
+GroupHeader.parameters = {
+  docs: {
+    description: {
+      story: `Group headers are flat \`listitem\` siblings inside the same \`role="list"\`. They are **not** interactive and are excluded from the roving-tabindex sequence. Add heading semantics to the title span:
+\`\`\`html
+<span class="fd-list__title" role="heading" aria-level="2" aria-roledescription="Group Header">Group header 1</span>
+\`\`\`
+Choose \`aria-level\` to reflect the heading depth on the surrounding page.`
+    }
+  }
+};
 
 export const UnreadNotification = () => unreadNotificationExampleHtml;
 UnreadNotification.parameters = {

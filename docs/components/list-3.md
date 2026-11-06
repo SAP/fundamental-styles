@@ -28,6 +28,16 @@ In SAP, we distinguish between tables and lists. Both usually contain homogeneou
 - You want to manage complex datasets that need to be extensively sorted, grouped, filtered, or edited. In this case, use a **Table**.
 - You work with complex hierarchies. In this case, use a **Tree**.
 
+## Accessibility
+
+Every `<ul role="list">` must carry an accessible name so assistive-technology users know what the list contains. Supply one of:
+- `aria-label="…"` — for lists that have no visible heading, or
+- `aria-labelledby="headingId"` — when a visible heading already identifies the list.
+
+**Focus model:** The examples use a *roving tabindex* pattern. The first interactive item has `tabindex="0"`; all other items have `tabindex="-1"`. Keyboard users Tab into the list, then move between items with the Arrow keys (arrow-key JS is the consumer's responsibility).
+
+**Role model:** The container uses `role="list"` and each item uses `role="listitem"`. Do **not** use `role="listbox"`/`role="option"` for standard or selection lists — those roles are reserved for combobox-popup patterns.
+
 ## Usage Guidelines
 
 **Use the standard list if:**
@@ -58,17 +68,17 @@ npm install fundamental-styles
 ## Basic Usage
 
 ```html
-<ul class="fd-list" role="list">
+<ul class="fd-list" role="list" aria-label="Standard list">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__title">List item 1</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 2</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 3</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 4</span>
     </li>
 </ul>
@@ -142,17 +152,17 @@ This component uses the following BEM elements:
 The default standard list displays list items in the standard size, which is ideal for mobile. To display the standard list in compact mode (for desktop), add the `is-compact` modifier class to the main element.
 
 ```html
-<ul class="fd-list" role="list">
+<ul class="fd-list" role="list" aria-label="Standard list">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__title">List item 1</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 2</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 3</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 4</span>
     </li>
 </ul>
@@ -163,18 +173,18 @@ The default standard list displays list items in the standard size, which is ide
 The `fd-list__item--unread` modifier will change the font weight to bold for easier legibility.
 
 ```html
-<h4>Unread Options</h4>
-<ul class="fd-list" role="list">
+<h4 id="list-unread-options-heading">Unread Options</h4>
+<ul class="fd-list" role="list" aria-labelledby="list-unread-options-heading">
     <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--unread">
         <span class="fd-list__title">List item 1 Unread</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--unread">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--unread">
         <span class="fd-list__title">List item 2 Unread</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 3 Read</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 4 Read</span>
     </li>
 </ul>
@@ -187,26 +197,26 @@ Usage of this modifier is not needed on `Selection`, `Navigation` and `Action` m
 
 ```html
 <h4>Interactive Items</h4>
-<ul class="fd-list" role="list">
+<ul class="fd-list" role="list" aria-label="Interactive items list">
     <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive">
         <span class="fd-list__title">Regular State</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive is-hover">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive is-hover">
         <span class="fd-list__title">Hover State</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive is-active">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive is-active">
         <span class="fd-list__title">Down/Active State</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive is-selected">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive is-selected">
         <span class="fd-list__title">Selected State</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive is-hover is-selected">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive is-hover is-selected">
         <span class="fd-list__title">Hover on Selected State</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive is-focus">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive is-focus">
         <span class="fd-list__title">Focus State</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--interractive is-focus is-selected">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--interractive is-focus is-selected">
         <span class="fd-list__title">Focus Selected State</span>
     </li>
 </ul>
@@ -216,21 +226,23 @@ Usage of this modifier is not needed on `Selection`, `Navigation` and `Action` m
 
 Standard list items can contain navigation links. To add navigation, add the `fd-list—navigation` modifier class to the list and the `fd-list__item--link` modifier class to the list elements that contain links. All items should be navigable.
 
+**Accessibility:** Navigation links (`<a class="fd-list__link">`) must have a real `href` attribute so they are operable as links and announced correctly by screen readers. The `::after` arrow glyph is decorative. `is-selected` is a visual-only class (no `aria-selected`). `is-navigated` marks the last-visited item and is also visual only.
+
 ```html
-<ul class="fd-list fd-list--navigation" role="list">
+<ul class="fd-list fd-list--navigation" role="list" aria-label="Navigation list">
     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-        <a tabindex="0" class="fd-list__link">
+        <a tabindex="0" class="fd-list__link" href="#">
             <span class="fd-list__title">List item 1</span>
         </a>
     </li>
     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-        <a tabindex="0" class="fd-list__link">
+        <a tabindex="-1" class="fd-list__link" href="#">
             <i role="presentation" class="fd-list__icon sap-icon--history"></i>
             <span class="fd-list__title">List item 2</span>
         </a>
     </li>
     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-        <a tabindex="0" class="fd-list__link">
+        <a tabindex="-1" class="fd-list__link" href="#">
             <span class="fd-list__title">List item 3</span>
             <i role="presentation" class="fd-list__icon sap-icon--map"></i>
         </a>
@@ -240,27 +252,35 @@ Standard list items can contain navigation links. To add navigation, add the `fd
 
 ### Buttons
 
+List items can contain action buttons. Icon-only buttons **must** have an `aria-label` and a `title` attribute that describes the action, and the icon element must carry `aria-hidden="true"` so screen readers do not announce the raw icon name.
+
 ```html
-<ul class="fd-list" role="list">
-    <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--wrap">
+<button class="fd-button fd-button--transparent fd-list__button" aria-label="Edit" title="Edit">
+  <i class="sap-icon--edit" aria-hidden="true"></i>
+</button>
+```
+
+```html
+<ul class="fd-list" role="list" aria-label="List with action buttons">
+    <li tabindex="0" role="listitem" class="fd-list__item fd-list__item--wrap">
         <span class="fd-list__title">List item 1 that wraps. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident</span>
-        <button class="fd-button fd-button--transparent fd-list__button">
-            <i class="sap-icon--edit"></i>
+        <button class="fd-button fd-button--transparent fd-list__button" aria-label="Edit" title="Edit">
+            <i class="sap-icon--edit" aria-hidden="true"></i>
         </button>
     </li>
     <li tabindex="-1" role="listitem" class="fd-list__item">
         <span class="fd-list__title fd-list__title--wrap">List item 2 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
-        <button class="fd-button fd-button--transparent fd-list__button">
-            <i class="sap-icon--decline"></i>
+        <button class="fd-button fd-button--transparent fd-list__button" aria-label="Delete" title="Delete">
+            <i class="sap-icon--decline" aria-hidden="true"></i>
         </button>
     </li>
     <li tabindex="-1" role="listitem" class="fd-list__item">
         <span class="fd-list__title">List item 3</span>
-        <button class="fd-button fd-button--transparent fd-list__button">
-            <i class="sap-icon--edit"></i>
+        <button class="fd-button fd-button--transparent fd-list__button" aria-label="Edit" title="Edit">
+            <i class="sap-icon--edit" aria-hidden="true"></i>
         </button>
-        <button class="fd-button fd-button--transparent fd-list__button">
-            <i class="sap-icon--decline"></i>
+        <button class="fd-button fd-button--transparent fd-list__button" aria-label="Delete" title="Delete">
+            <i class="sap-icon--decline" aria-hidden="true"></i>
         </button>
     </li>
 </ul>
@@ -271,34 +291,34 @@ Standard list items can contain navigation links. To add navigation, add the `fd
 If only a subset of the list items is navigable you should indicate them with an arrow icon. To display navigation indicators, add the `fd-list--navigation-indication` modifier class to the unordered list element. Do not show indicators if all items are navigable. In this case, use a standard list with navigation (in the example above).
 
 ```html
-<ul class="fd-list fd-list--navigation fd-list--navigation-indication" role="list">
+<ul class="fd-list fd-list--navigation fd-list--navigation-indication" role="list" aria-label="Navigation indicator list">
     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--wrap fd-list__item--link">
         <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator" href="#">
             <span class="fd-list__title">List item 1 that wraps. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident</span>
         </a>
     </li>
     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-selected" href="#">
+        <a tabindex="-1" class="fd-list__link fd-list__link--navigation-indicator is-selected" href="#">
             <i role="presentation" class="fd-list__icon sap-icon--history"></i>
-            <span class="fd-list__title fd-list__title--wrap">List item 2 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident. Sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+            <span class="fd-list__title fd-list__title--wrap">List item 2 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
         </a>
     </li>
-    <li tabindex="0" role="listitem" class="fd-list__item">
+    <li tabindex="-1" role="listitem" class="fd-list__item">
         <i role="presentation" class="fd-list__icon sap-icon--history"></i>
         <span class="fd-list__title">List item 3</span>
     </li>
-    <li tabindex="0" role="listitem" class="fd-list__item">
+    <li tabindex="-1" role="listitem" class="fd-list__item">
         <span class="fd-list__title">List item 4</span>
         <i role="presentation" class="fd-list__icon sap-icon--map"></i>
     </li>
     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link">
-        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
+        <a tabindex="-1" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
             <span class="fd-list__title">List item 4</span>
             <i role="presentation" class="fd-list__icon sap-icon--map"></i>
         </a>
     </li>
     <li tabindex="-1" role="listitem" class="fd-list__item fd-list__item--link is-selected">
-        <a tabindex="0" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
+        <a tabindex="-1" class="fd-list__link fd-list__link--navigation-indicator is-navigated" href="#">
             <span class="fd-list__title">List item 5</span>
             <i role="presentation" class="fd-list__icon sap-icon--map"></i>
         </a>
@@ -310,50 +330,52 @@ If only a subset of the list items is navigable you should indicate them with an
 
 Standard list items can display actions that users can choose from. To display actions, add the `fd-list__item--action` modifier class to the list elements.
 
+**Accessibility (growing / "More"):** The growing item's trigger must have a descriptive accessible name (e.g. `aria-label="More — load additional items"`). The consumer toggles `aria-busy` on the button — `"true"` while items are loading, `"false"` otherwise — and the busy indicator stays `aria-hidden="true"`. Newly loaded rows should be announced to screen readers via an `aria-live="polite"` status region owned by the consuming application.
+
 ```html
-<h4>Standard</h4>
-<ul class="fd-list" role="list">
-    <li role="listitem" class="fd-list__item fd-list__item--action">
+<h4 id="action-list-standard-title">Standard</h4>
+<ul class="fd-list" role="list" aria-labelledby="action-list-standard-title">
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--action">
         <button class="fd-list__title">Forward</button>
     </li>
-    <li role="listitem" class="fd-list__item fd-list__item--action">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--action">
         <button class="fd-list__title">Save</button>
     </li>
-    <li role="listitem" class="fd-list__item fd-list__item--action">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--action">
         <button class="fd-list__title">Action</button>
     </li>
 </ul>
 
-<h4>Action List item with other list items </h4>
-<ul class="fd-list" role="list">
-    <li role="listitem" class="fd-list__item">
+<h4 id="action-list-mixed-title">Action List item with other list items </h4>
+<ul class="fd-list" role="list" aria-labelledby="action-list-mixed-title">
+    <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__title">List Item 1</span>
     </li>
-    <li role="listitem" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List Item 2</span>
     </li>
-    <li role="listitem" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List Item 3</span>
     </li>
-    <li role="listitem" class="fd-list__item fd-list__item--action">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--action">
         <button class="fd-list__title">Action</button>
     </li>
 </ul>
 
-<h4>Growing List Item with Busy Indicator </h4>
-<ul class="fd-list" role="list">
-    <li role="listitem" class="fd-list__item">
+<h4 id="action-list-growing-title">Growing List Item with Busy Indicator </h4>
+<ul class="fd-list" role="list" aria-labelledby="action-list-growing-title">
+    <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__title">List Item 1</span>
     </li>
-    <li role="listitem" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List Item 2</span>
     </li>
-    <li role="listitem" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List Item 3</span>
     </li>
-    <li role="listitem" class="fd-list__item fd-list__item--action fd-list__item--growing">
-        <button class="fd-list__title">
-            <span class="fd-busy-indicator--m" aria-hidden="false" aria-label="Loading">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--action fd-list__item--growing">
+        <button class="fd-list__title" aria-label="More — load additional items" aria-busy="true">
+            <span class="fd-busy-indicator--m" aria-hidden="true">
                 <span class="fd-busy-indicator__circle"></span>
                 <span class="fd-busy-indicator__circle"></span>
                 <span class="fd-busy-indicator__circle"></span>
@@ -377,24 +399,24 @@ To display secondary data in standard list items, add a span element with `fd-li
 | Informative | `fd-list__secondary fd-list__secondary--informative` |
 
 ```html
-<ul class="fd-list" role="list">
+<ul class="fd-list" role="list" aria-label="Secondary data list">
     <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap">
         <span class="fd-list__title">List item 1 that wraps. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</span>
         <span class="fd-list__secondary">Neutral Status</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title fd-list__title--wrap">List item 2 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
         <span class="fd-list__secondary fd-list__secondary--positive">Positive Status</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 3</span>
         <span class="fd-list__secondary fd-list__secondary--critical">Critical Status</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 4</span>
         <span class="fd-list__secondary fd-list__secondary--negative">Negative Status</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">Wrapping Rules for Long Text lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
         <span class="fd-list__secondary fd-list__secondary--informative">Informative Status Wrapping Rules for Long Text lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
     </li>
@@ -406,21 +428,21 @@ To display secondary data in standard list items, add a span element with `fd-li
 The item counter is vertically aligned within the list item, to the right. The maximum number of digits is 5. In case of more digits, the formatting and the transformation is left to the applications. It's recommended to avoid combining item counter to other list variations and status texts.
 
 ```html
-<ul class="fd-list" role="list">
+<ul class="fd-list" role="list" aria-label="Item counter list">
     <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap">
         <span class="fd-list__title">List item 1 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
         <span class="fd-list__item-counter">12345</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title fd-list__title--wrap">List item 2</span>
         <span class="fd-list__item-counter">12345</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <i role="presentation" class="fd-list__icon sap-icon--lightbulb"></i>
         <span class="fd-list__title fd-list__title--wrap">List item 3 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
         <span class="fd-list__item-counter">12345</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
         <span class="fd-list__title">List item 4</span>
         <span class="fd-list__item-counter">12345</span>
@@ -433,20 +455,20 @@ The item counter is vertically aligned within the list item, to the right. The m
 To display an icon inside standard list items, add the `fd-list__icon` class along with the icon within the list elements. For example, `fd-list__icon sap-icon—lightbulb`.
 
 ```html
-<ul class="fd-list" role="list">
+<ul class="fd-list" role="list" aria-label="Icons list">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <i role="presentation" class="fd-list__icon sap-icon--cart"></i>
         <span class="fd-list__title">List item 1</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--wrap">
         <i role="presentation" class="fd-list__icon sap-icon--wrench"></i>
         <span class="fd-list__title">List item 2 that wraps. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 3</span>
         <i role="presentation" class="fd-list__icon sap-icon--lightbulb"></i>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title fd-list__title--wrap">List item 4 that wraps. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
         <i role="presentation" class="fd-list__icon sap-icon--history"></i>
     </li>
@@ -457,30 +479,36 @@ To display an icon inside standard list items, add the `fd-list__icon` class alo
 
 Standard list items can be displayed with headers, separating the items into groups. To add group headers, add the `fd-list__group-header` class to the list elements.
 
+**Accessibility:** Group headers are flat `listitem` siblings inside the same `role="list"`. They are **not** interactive and are excluded from the roving-tabindex sequence (no `tabindex` on the group-header `<li>`). Heading semantics are added to the title span:
 ```html
-<ul class="fd-list" role="list">
+<span class="fd-list__title" role="heading" aria-level="2" aria-roledescription="Group Header">Group header 1</span>
+```
+Choose `aria-level` to reflect the heading depth on the surrounding page. This lets screen-reader users navigate between groups using heading shortcuts without DOM nesting.
+
+```html
+<ul class="fd-list" role="list" aria-label="Grouped list">
     <li role="listitem" class="fd-list__group-header">
-        <span class="fd-list__title">Group header 1</span>
+        <span class="fd-list__title" role="heading" aria-level="2" aria-roledescription="Group Header">Group header 1</span>
     </li>
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__title">List item 1</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 2</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 3</span>
     </li>
     <li role="listitem" class="fd-list__group-header">
-        <span class="fd-list__title">Group header 2</span>
+        <span class="fd-list__title" role="heading" aria-level="2" aria-roledescription="Group Header">Group header 2</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 4</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 5</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 6</span>
     </li>
 </ul>
@@ -488,26 +516,26 @@ Standard list items can be displayed with headers, separating the items into gro
 
 ### Footer
 
-The standard list can display a footer by adding a span element with an `fd-list__footer` class after the unordered list element.
+The standard list can display a footer by placing a `<span class="fd-list__footer">` element directly after the closing `</ul>` tag.
+
+**Accessibility:** The footer is a non-item region kept **outside** the `<ul>`. The footer carries no list-item semantics or interaction, so keeping it out of `role="list"` avoids announcing a non-item as a `listitem`.
 
 ```html
-<ul class="fd-list" role="list">
+<ul class="fd-list" role="list" aria-label="List with footer">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__title">List item 1</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 2</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 3</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 4</span>
     </li>
 </ul>
-<span class="fd-list__footer">
-    Footer text
-</span>
+<span class="fd-list__footer">Footer text</span>
 ```
 
 ### Borderless
@@ -515,52 +543,56 @@ The standard list can display a footer by adding a span element with an `fd-list
 To display a borderless standard list, add the `fd-list--no-border` modifier class to the main element.
 
 ```html
-<ul class="fd-list fd-list--no-border" role="list">
+<ul class="fd-list fd-list--no-border" role="list" aria-label="Borderless list">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__title">List item 1</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 2</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 3</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 4</span>
     </li>
 </ul>
 ```
 
-### Selection
+### Single selection
 
 Standard list items can display checkboxes that users can select from. To display standard list items with selection, add the `fd-list--selection` modifier class to the main element. To create checkbox form items, add the `fd-list__form-item` class within each list element.
 
 When items contain wrapping text (via `fd-list__item--wrap` or `fd-list__title--wrap`), the checkbox is **centered by default**. To top-align the checkbox instead, add `fd-list__item--wrap-top-aligned` to the `<li>` element.
 
+**Accessibility:** Selection lists use `role="list"` / `role="listitem"` (not `listbox`/`option`). Selection state is carried entirely by the native `<input type="checkbox">` (or `<input type="radio">` for single-select). Each checkbox must be labelled via `aria-labelledby` pointing to the item title's `id` — this gives AT users a complete announcement ("checkbox, checked, List item title"). Do **not** add `aria-selected` to list items; it is an invalid attribute on `listitem` role.
+
+**Focus model:** The list item (`<li role="listitem">`) is the single roving focus target; the nested `<input>` carries `tabindex="-1"` so it is not a competing tab/arrow stop. Per the Keyboard Interaction spec, Arrow keys move between items and `Space`/`Enter` toggles selection on the focused item (consumer JS). See the **Single Selection** story for the radio-based single-select pattern.
+
 ```html
-<ul class="fd-list fd-list--selection" role="listbox" aria-labelledby="XezW11">
-    <li role="option" tabindex="0" class="fd-list__item fd-list__item--wrap">
+<ul class="fd-list fd-list--selection" role="list" aria-label="Selection list">
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap">
         <div class="fd-form-item fd-list__form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez1" aria-labelledby="Az0bg1">
-            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez1">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez1" tabindex="-1" aria-labelledby="Az0bg1">
+            <label class="fd-checkbox__label" for="Ai4ez1">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
             </label>
         </div>
         <span class="fd-list__title" id="Az0bg1">List item 1 that wraps with a centered checkbox. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</span>
     </li>
-    <li role="option" tabindex="0" class="fd-list__item is-selected fd-list__item--wrap fd-list__item--wrap-top-aligned" aria-selected="true">
+    <li role="listitem" tabindex="-1" class="fd-list__item is-selected fd-list__item--wrap fd-list__item--wrap-top-aligned">
         <div class="fd-form-item fd-list__form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez2" checked aria-labelledby="Az0bg2">
-            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez2">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez2" checked tabindex="-1" aria-labelledby="Az0bg2">
+            <label class="fd-checkbox__label" for="Ai4ez2">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
             </label>
         </div>
         <span class="fd-list__title fd-list__title--wrap" id="Az0bg2">List item 2 that wraps with a top-aligned checkbox. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</span>
     </li>
-    <li role="option" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <div class="fd-form-item fd-list__form-item">
-            <input type="checkbox" class="fd-checkbox" id="Ai4ez3" aria-labelledby="Az0bg3">
-            <label tabindex="-1" class="fd-checkbox__label" for="Ai4ez3">
+            <input type="checkbox" class="fd-checkbox" id="Ai4ez3" tabindex="-1" aria-labelledby="Az0bg3">
+            <label class="fd-checkbox__label" for="Ai4ez3">
                 <span class="fd-checkbox__checkmark" aria-hidden="true"></span>
             </label>
         </div>
@@ -569,29 +601,63 @@ When items contain wrapping text (via `fd-list__item--wrap` or `fd-list__title--
 </ul>
 ```
 
+### Single selection
+
+Single-selection lists let the user pick exactly one item. Use native `<input type="radio">` controls that share the same `name` attribute (the browser enforces the single-select constraint), instead of checkboxes.
+
+The accessibility model matches the multi-select `Selection` story: container `role="list"`, items `role="listitem"`, each radio labelled via `aria-labelledby` pointing to the item title's `id`, and `tabindex="-1"` on the radio so the `<li>` is the sole roving focus target. Do **not** add `aria-selected` to the list items.
+
+```html
+<ul class="fd-list fd-list--selection" role="list" aria-label="Single-selection list">
+    <li role="listitem" tabindex="0" class="fd-list__item">
+        <div class="fd-form-item fd-list__form-item">
+            <input type="radio" class="fd-radio" id="single-select-1" name="single-select-list" tabindex="-1" aria-labelledby="single-select-title-1">
+            <label class="fd-radio__label" for="single-select-1"></label>
+        </div>
+        <span class="fd-list__title" id="single-select-title-1">List item 1</span>
+    </li>
+    <li role="listitem" tabindex="-1" class="fd-list__item is-selected">
+        <div class="fd-form-item fd-list__form-item">
+            <input type="radio" class="fd-radio" id="single-select-2" name="single-select-list" checked tabindex="-1" aria-labelledby="single-select-title-2">
+            <label class="fd-radio__label" for="single-select-2"></label>
+        </div>
+        <span class="fd-list__title" id="single-select-title-2">List item 2</span>
+    </li>
+    <li role="listitem" tabindex="-1" class="fd-list__item">
+        <div class="fd-form-item fd-list__form-item">
+            <input type="radio" class="fd-radio" id="single-select-3" name="single-select-list" tabindex="-1" aria-labelledby="single-select-title-3">
+            <label class="fd-radio__label" for="single-select-3"></label>
+        </div>
+        <span class="fd-list__title" id="single-select-title-3">List item 3</span>
+    </li>
+</ul>
+```
+
 ### Inactive
 
 Some list item can be made inactive, to make it non-clickable.
 
+**Accessibility:** An inactive item must be removed from the keyboard tab order — its link carries `tabindex="-1"` and `aria-disabled="true"`, and it is never the roving entry point. The `tabindex="0"` entry stop is placed on the first **active** item instead.
+
 ```html
-<ul class="fd-list fd-list--navigation" role="list">
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--link fd-list__item--inactive">
-        <a tabindex="0" class="fd-list__link">
+<ul class="fd-list fd-list--navigation" role="list" aria-label="Navigation list with inactive item">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link fd-list__item--inactive">
+        <a tabindex="-1" aria-disabled="true" class="fd-list__link" href="#">
             <span class="fd-list__title">List item 1 - Inactive</span>
         </a>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--link">
-        <a tabindex="0" class="fd-list__link">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
+        <a tabindex="0" class="fd-list__link" href="#">
             <span class="fd-list__title">List item 2</span>
         </a>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--link">
-        <a tabindex="0" class="fd-list__link">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
+        <a tabindex="-1" class="fd-list__link" href="#">
             <span class="fd-list__title">List item 3</span>
         </a>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--link">
-        <a tabindex="0" class="fd-list__link">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--link">
+        <a tabindex="-1" class="fd-list__link" href="#">
             <span class="fd-list__title">List item 4</span>
         </a>
     </li>
@@ -603,41 +669,41 @@ Some list item can be made inactive, to make it non-clickable.
 If height for list is fixed and there are more list otem to show, then we should be able to scroll to next list items.
 
 ```html
-<ul class="fd-list fd-list__infinite-scroll fddocs-list-height" role="list">
+<ul class="fd-list fd-list__infinite-scroll fddocs-list-height" role="list" aria-label="Scrollable list">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__title">List item 1</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 2</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 3</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 4</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 5</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 6</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 7</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 8</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 9</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 10</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 11</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List item 12</span>
     </li>
 </ul>
@@ -758,7 +824,7 @@ By default, long title and secondary text is truncated with an ellipsis. Wrappin
 
 ```html
 <p class="fd-form-label">Default — truncation</p>
-<ul class="fd-list" role="list">
+<ul class="fd-list" role="list" aria-label="Long text list — truncation">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__title">Annual Budget Review for Q3 and Q4 — please review the attached documents and provide your feedback before the end of the fiscal quarter to ensure timely processing.</span>
         <span class="fd-list__secondary">Finance · Updated 2 hours ago by Michael Thompson, Senior Analyst, Global Finance Division</span>
@@ -766,12 +832,12 @@ By default, long title and secondary text is truncated with an ellipsis. Wrappin
 </ul>
 
 <p class="fd-form-label">List level — <code>fd-list--wrap</code></p>
-<ul class="fd-list fd-list--wrap" role="list">
+<ul class="fd-list fd-list--wrap" role="list" aria-label="Long text list — wrap all">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__title">All titles wrap at list level, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</span>
         <span class="fd-list__secondary">Secondary text wraps too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid soluta aperiam.</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">Second item also wraps, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
     </li>
 </ul>
@@ -780,31 +846,31 @@ By default, long title and secondary text is truncated with an ellipsis. Wrappin
 <!-- In the collapsed state fd-list__link--more is a right-aligned sibling so it
 stays visible when the title truncates. In the expanded state (fd-list__item--wrap
 applied) the title is fully visible so the Less link can sit inline at the end. -->
-<ul class="fd-list" role="list">
+<ul class="fd-list" role="list" aria-label="Long text list — item-level wrap">
     <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__title">This item truncates normally, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">Collapsed — title truncated, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</span>
         <a href="#" class="fd-link fd-list__link--more" aria-expanded="false" tabindex="0"><span class="fd-link__content">More</span></a>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--wrap">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--wrap">
         <span class="fd-list__title">Expanded — fd-list__item--wrap applied, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. <a href="#" class="fd-link fd-list__link--more" aria-expanded="true" tabindex="0"><span class="fd-link__content">Less</span></a></span>
         <span class="fd-list__secondary">Secondary text wraps too, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe doloribus nulla aliquid.</span>
     </li>
-    <li role="listitem" tabindex="0" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">This item truncates normally again, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</span>
     </li>
 </ul>
 
 <div>
     <p class="fd-form-label">Element level — <code>fd-list__title--wrap</code> / <code>fd-list__secondary--wrap</code></p>
-    <ul class="fd-list" role="list">
+    <ul class="fd-list" role="list" aria-label="Long text list — element-level wrap">
         <li role="listitem" tabindex="0" class="fd-list__item">
             <span class="fd-list__title fd-list__title--wrap">Only the title wraps here, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</span>
             <span class="fd-list__secondary">Secondary still truncates, Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
         </li>
-        <li role="listitem" tabindex="0" class="fd-list__item">
+        <li role="listitem" tabindex="-1" class="fd-list__item">
             <span class="fd-list__title">Title still truncates, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
             <span class="fd-list__secondary fd-list__secondary--wrap">Only the secondary wraps here, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
         </li>

@@ -10,7 +10,12 @@ import '../../../../../src/button.scss';
 import '../../../../../src/info-label.scss';
 
 export default {
-  title: 'Components/List/Subline'
+  title: 'Components/List/Subline',
+  parameters: {
+    description: `
+The subline list extends a standard list item with additional subline rows. Each \`<ul role="list">\` must carry an accessible name (\`aria-label\` or \`aria-labelledby\`). The container uses \`role="list"\` and each item uses \`role="listitem"\`. The first interactive item has \`tabindex="0"\`; all other items have \`tabindex="-1"\` (roving tabindex).
+`
+  }
 };
 export const Standard = () => standardExampleHtml;
 Standard.storyName = 'Custom List Item with Subline';

@@ -1,6 +1,7 @@
 import scrollExampleHtml from "./scroll.example.html?raw";
 import inactiveExampleHtml from "./inactive.example.html?raw";
 import selectionExampleHtml from "./selection.example.html?raw";
+import singleSelectionExampleHtml from "./single-selection.example.html?raw";
 import borderlessExampleHtml from "./borderless.example.html?raw";
 import footerExampleHtml from "./footer.example.html?raw";
 import longTextExampleHtml from "./long-text.example.html?raw";
@@ -19,6 +20,7 @@ import searchResultsExampleHtml from "./search-results.example.html?raw";
 import '../../../../../src/list.scss';
 import '../../../../../src/icon.scss';
 import '../../../../../src/checkbox.scss';
+import '../../../../../src/radio.scss';
 import '../../../../../src/link.scss';
 import '../../../../../src/button.scss';
 import '../../../../../src/busy-indicator.scss';
@@ -45,6 +47,16 @@ In SAP, we distinguish between tables and lists. Both usually contain homogeneou
 
 - You want to manage complex datasets that need to be extensively sorted, grouped, filtered, or edited. In this case, use a **Table**.
 - You work with complex hierarchies. In this case, use a **Tree**.
+
+## Accessibility
+
+Every \`<ul role="list">\` must carry an accessible name so assistive-technology users know what the list contains. Supply one of:
+- \`aria-label="…"\` — for lists that have no visible heading, or
+- \`aria-labelledby="headingId"\` — when a visible heading already identifies the list.
+
+**Focus model:** The examples use a *roving tabindex* pattern. The first interactive item has \`tabindex="0"\`; all other items have \`tabindex="-1"\`. Keyboard users Tab into the list, then move between items with the Arrow keys (arrow-key JS is the consumer's responsibility).
+
+**Role model:** The container uses \`role="list"\` and each item uses \`role="listitem"\`. Do **not** use \`role="listbox"\`/\`role="option"\` for standard or selection lists — those roles are reserved for combobox-popup patterns.
 
 `,
     tags: []
@@ -86,6 +98,8 @@ Navigation.parameters = {
     description: {
       story: `
 Standard list items can contain navigation links. To add navigation, add the \`fd-list—navigation\` modifier class to the list and the \`fd-list__item--link\` modifier class to the list elements that contain links. All items should be navigable.
+
+**Accessibility:** Navigation links (\`<a class="fd-list__link">\`) must have a real \`href\` attribute so they are operable as links and announced correctly by screen readers. The \`::after\` arrow glyph is decorative. \`is-selected\` is a visual-only class (no \`aria-selected\`). \`is-navigated\` marks the last-visited item and is also visual only.
 `
     }
   }
@@ -95,6 +109,13 @@ Buttons.parameters = {
   docs: {
     description: {
       story: `
+List items can contain action buttons. Icon-only buttons **must** have an \`aria-label\` and a \`title\` attribute that describes the action, and the icon element must carry \`aria-hidden="true"\` so screen readers do not announce the raw icon name.
+
+\`\`\`html
+<button class="fd-button fd-button--transparent fd-list__button" aria-label="Edit" title="Edit">
+  <i class="sap-icon--edit" aria-hidden="true"></i>
+</button>
+\`\`\`
 `
     }
   }
@@ -117,6 +138,8 @@ ActionList.parameters = {
     description: {
       story: `
 Standard list items can display actions that users can choose from. To display actions, add the \`fd-list__item--action\` modifier class to the list elements.
+
+**Accessibility (growing / "More"):** The growing item's trigger must have a descriptive accessible name (e.g. \`aria-label="More — load additional items"\`). The consumer toggles \`aria-busy\` on the button — \`"true"\` while items are loading, \`"false"\` otherwise — and the busy indicator stays \`aria-hidden="true"\`. Newly loaded rows should be announced to screen readers via an \`aria-live="polite"\` status region owned by the consuming application.
 `
     }
   }
@@ -165,6 +188,12 @@ Groups.parameters = {
   docs: {
     description: {
       story: `Standard list items can be displayed with headers, separating the items into groups. To add group headers, add the \`fd-list__group-header\` class to the list elements.
+
+**Accessibility:** Group headers are flat \`listitem\` siblings inside the same \`role="list"\`. They are **not** interactive and are excluded from the roving-tabindex sequence (no \`tabindex\` on the group-header \`<li>\`). Heading semantics are added to the title span:
+\`\`\`html
+<span class="fd-list__title" role="heading" aria-level="2" aria-roledescription="Group Header">Group header 1</span>
+\`\`\`
+Choose \`aria-level\` to reflect the heading depth on the surrounding page. This lets screen-reader users navigate between groups using heading shortcuts without DOM nesting.
         `
     }
   }
@@ -173,7 +202,9 @@ export const Footer = () => footerExampleHtml;
 Footer.parameters = {
   docs: {
     description: {
-      story: `The standard list can display a footer by adding a span element with an \`fd-list__footer\` class after the unordered list element.
+      story: `The standard list can display a footer by placing a \`<span class="fd-list__footer">\` element directly after the closing \`</ul>\` tag.
+
+**Accessibility:** The footer is a non-item region kept **outside** the \`<ul>\`. The footer carries no list-item semantics or interaction, so keeping it out of \`role="list"\` avoids announcing a non-item as a \`listitem\`.
         `
     }
   }
@@ -194,6 +225,22 @@ Selection.parameters = {
       story: `Standard list items can display checkboxes that users can select from. To display standard list items with selection, add the \`fd-list--selection\` modifier class to the main element. To create checkbox form items, add the \`fd-list__form-item\` class within each list element.
 
 When items contain wrapping text (via \`fd-list__item--wrap\` or \`fd-list__title--wrap\`), the checkbox is **centered by default**. To top-align the checkbox instead, add \`fd-list__item--wrap-top-aligned\` to the \`<li>\` element.
+
+**Accessibility:** Selection lists use \`role="list"\` / \`role="listitem"\` (not \`listbox\`/\`option\`). Selection state is carried entirely by the native \`<input type="checkbox">\` (or \`<input type="radio">\` for single-select). Each checkbox must be labelled via \`aria-labelledby\` pointing to the item title's \`id\` — this gives AT users a complete announcement ("checkbox, checked, List item title"). Do **not** add \`aria-selected\` to list items; it is an invalid attribute on \`listitem\` role.
+
+**Focus model:** The list item (\`<li role="listitem">\`) is the single roving focus target; the nested \`<input>\` carries \`tabindex="-1"\` so it is not a competing tab/arrow stop. Per the Keyboard Interaction spec, Arrow keys move between items and \`Space\`/\`Enter\` toggles selection on the focused item (consumer JS). See the **Single Selection** story for the radio-based single-select pattern.
+`
+    }
+  }
+};
+export const SingleSelection = () => singleSelectionExampleHtml;
+SingleSelection.storyName = 'Single selection';
+SingleSelection.parameters = {
+  docs: {
+    description: {
+      story: `Single-selection lists let the user pick exactly one item. Use native \`<input type="radio">\` controls that share the same \`name\` attribute (the browser enforces the single-select constraint), instead of checkboxes.
+
+The accessibility model matches the multi-select \`Selection\` story: container \`role="list"\`, items \`role="listitem"\`, each radio labelled via \`aria-labelledby\` pointing to the item title's \`id\`, and \`tabindex="-1"\` on the radio so the \`<li>\` is the sole roving focus target. Do **not** add \`aria-selected\` to the list items.
 `
     }
   }
@@ -203,6 +250,8 @@ Inactive.parameters = {
   docs: {
     description: {
       story: `Some list item can be made inactive, to make it non-clickable.
+
+**Accessibility:** An inactive item must be removed from the keyboard tab order — its link carries \`tabindex="-1"\` and \`aria-disabled="true"\`, and it is never the roving entry point. The \`tabindex="0"\` entry stop is placed on the first **active** item instead.
 `
     }
   }

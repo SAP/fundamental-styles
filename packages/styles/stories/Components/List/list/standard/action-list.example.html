@@ -1,46 +1,46 @@
-<h4>Standard</h4>
-<ul class="fd-list" role="list">
-    <li role="listitem" class="fd-list__item fd-list__item--action">
+<h4 id="action-list-standard-title">Standard</h4>
+<ul class="fd-list" role="list" aria-labelledby="action-list-standard-title">
+    <li role="listitem" tabindex="0" class="fd-list__item fd-list__item--action">
         <button class="fd-list__title">Forward</button>
     </li>
-    <li role="listitem" class="fd-list__item fd-list__item--action">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--action">
         <button class="fd-list__title">Save</button>
     </li>
-    <li role="listitem" class="fd-list__item fd-list__item--action">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--action">
         <button class="fd-list__title">Action</button>
     </li>
 </ul>
 
-<h4>Action List item with other list items </h4>
-<ul class="fd-list" role="list">
-    <li role="listitem" class="fd-list__item">
+<h4 id="action-list-mixed-title">Action List item with other list items </h4>
+<ul class="fd-list" role="list" aria-labelledby="action-list-mixed-title">
+    <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__title">List Item 1</span>
     </li>
-    <li role="listitem" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List Item 2</span>
     </li>
-    <li role="listitem" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List Item 3</span>
     </li>
-    <li role="listitem" class="fd-list__item fd-list__item--action">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--action">
         <button class="fd-list__title">Action</button>
     </li>
 </ul>
 
-<h4>Growing List Item with Busy Indicator </h4>
-<ul class="fd-list" role="list">
-    <li role="listitem" class="fd-list__item">
+<h4 id="action-list-growing-title">Growing List Item with Busy Indicator </h4>
+<ul class="fd-list" role="list" aria-labelledby="action-list-growing-title">
+    <li role="listitem" tabindex="0" class="fd-list__item">
         <span class="fd-list__title">List Item 1</span>
     </li>
-    <li role="listitem" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List Item 2</span>
     </li>
-    <li role="listitem" class="fd-list__item">
+    <li role="listitem" tabindex="-1" class="fd-list__item">
         <span class="fd-list__title">List Item 3</span>
     </li>
-    <li role="listitem" class="fd-list__item fd-list__item--action fd-list__item--growing">
-        <button class="fd-list__title">
-            <span class="fd-busy-indicator--m" aria-hidden="false" aria-label="Loading">
+    <li role="listitem" tabindex="-1" class="fd-list__item fd-list__item--action fd-list__item--growing">
+        <button class="fd-list__title" aria-label="More — load additional items" aria-busy="true">
+            <span class="fd-busy-indicator--m" aria-hidden="true">
                 <span class="fd-busy-indicator__circle"></span>
                 <span class="fd-busy-indicator__circle"></span>
                 <span class="fd-busy-indicator__circle"></span>
