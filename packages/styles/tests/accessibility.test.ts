@@ -28,7 +28,9 @@ const stories = glob.sync('packages/styles/stories/**/*.stories.+(ts|js|jsx|tsx)
             'side-navigation',
             'multi-combo-box',
             'generic-tile',
-            'dynamic-page'
+            'dynamic-page',
+            'tree',
+            'variant-management'
         ].map((name) => `packages/styles/stories/**/${name}.stories.*`),
         'packages/styles/stories/**/utils/**/*.*'
     ]
