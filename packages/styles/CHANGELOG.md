@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.42.1-rc.13](https://github.com/SAP/fundamental-styles/compare/v0.42.1-rc.12...v0.42.1-rc.13) (2026-11-06)
+
+### Bug Fixes
+
+- **docs:** match progress indicator example value to fill ([#6435](https://github.com/SAP/fundamental-styles/issues/6435)) ([fe5c8c2](https://github.com/SAP/fundamental-styles/commit/fe5c8c25737bf89c7d3b33cf75f7b43c7dfe7e79))
+
 ## [0.42.1-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.42.1-rc.11...v0.42.1-rc.12) (2026-11-06)
 
 ### Bug Fixes
