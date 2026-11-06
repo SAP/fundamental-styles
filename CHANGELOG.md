@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.42.1-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.42.1-rc.10...v0.42.1-rc.11) (2026-11-06)
+
+### Bug Fixes
+
+- **docs:** bind independent tree labels to their own checkboxes ([#6436](https://github.com/SAP/fundamental-styles/issues/6436)) ([e17a03a](https://github.com/SAP/fundamental-styles/commit/e17a03a0df0a75e35b55fd3a61d6fef399f26b75))
+
 ## [0.42.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.42.1-rc.9...v0.42.1-rc.10) (2026-11-06)
 
 ### Bug Fixes
