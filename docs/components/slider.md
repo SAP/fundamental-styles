@@ -41,6 +41,7 @@ To ensure that both the standard and range sliders are accessible, a div element
 
 - `tabindex="0"`
 - `role="slider"`
+- `aria-orientation`: set to `"vertical"` for vertical sliders (using `fd-slider--vertical`), or `"horizontal"` for horizontal sliders (can be omitted as horizontal is the default)
 - `aria-label`: a string that labels the element
 - `aria-labelledby`: an ID reference to a visible element that labels the slider, used if `aria-label` isn't provided
 - `aria-valuemin`: the decimal value representing the minimum allowed value of the slider
