@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.42.1-rc.12](https://github.com/SAP/fundamental-styles/compare/v0.42.1-rc.11...v0.42.1-rc.12) (2026-11-06)
+
+### Bug Fixes
+
+- **docs:** name AI loading bar progress indicators ([#6431](https://github.com/SAP/fundamental-styles/issues/6431)) ([78e996a](https://github.com/SAP/fundamental-styles/commit/78e996a7c59634c539a9752d6d9188dee14d66b1))
+
 ## [0.42.1-rc.11](https://github.com/SAP/fundamental-styles/compare/v0.42.1-rc.10...v0.42.1-rc.11) (2026-11-06)
 
 ### Bug Fixes
