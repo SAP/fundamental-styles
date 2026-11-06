@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.42.1-rc.10](https://github.com/SAP/fundamental-styles/compare/v0.42.1-rc.9...v0.42.1-rc.10) (2026-11-06)
+
+### Bug Fixes
+
+- **styles:** shellbar overflow should have margin before user menu [ci visual] ([#6437](https://github.com/SAP/fundamental-styles/issues/6437)) ([af52bc0](https://github.com/SAP/fundamental-styles/commit/af52bc0bc7e444afbda268551bf734fd46111f33))
+
 ## [0.42.1-rc.9](https://github.com/SAP/fundamental-styles/compare/v0.42.1-rc.8...v0.42.1-rc.9) (2026-11-03)
 
 **Note:** Version bump only for package fundamental-styles
