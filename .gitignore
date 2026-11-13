@@ -43,3 +43,6 @@ docs/schemas/
 
 .nx/polygraph
 .nx/self-healing
+
+# Local Graphify graph, reports, visualization and extraction cache
+/graphify-out/

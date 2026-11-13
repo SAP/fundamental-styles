@@ -2,6 +2,8 @@
 
 This document explains how AI coding assistants (LLMs, coding agents, MCP servers) can discover and use fundamental-styles documentation.
 
+For contributor codebase exploration, follow [AGENTS.md](../AGENTS.md) and the [Graphify guide](GRAPHIFY.md). The local graph connects source code, SCSS dependencies, CSS tokens and Storybook HTML examples. Component documentation below remains the source for generating markup.
+
 ## Overview
 
 fundamental-styles provides **AI-consumable documentation** extracted from Storybook stories. This enables AI agents to generate correct HTML/CSS markup without needing to parse TypeScript or run build tools.
