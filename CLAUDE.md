@@ -4,6 +4,8 @@ CSS component library for SAP Design System. Framework-agnostic, works with any 
 
 ## For AI Agents
 
+**Repository exploration:** Use the local Graphify graph to locate styles, mixins, tokens and Storybook examples before broad source searches. Follow [AGENTS.md](AGENTS.md) and [.claude/skills/graphify/SKILL.md](.claude/skills/graphify/SKILL.md); setup and queries are in [docs/GRAPHIFY.md](docs/GRAPHIFY.md). Build or refresh with node .claude/skills/graphify/scripts/build.mjs (local, no API key). Verify graph results against source and use targeted searches when Graphify is unavailable or has no match.
+
 **Component documentation is auto-generated from Storybook stories and available in structured markdown:**
 
 - **📚 Complete Component Index**: [docs/components/README.md](docs/components/README.md) - All 140+ components

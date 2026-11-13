@@ -8,6 +8,10 @@ Skills are specialized knowledge modules that provide Claude with deep expertise
 
 ## Available Skills
 
+### graphify
+
+Explore source relationships, Sass imports and mixins, CSS tokens, and Storybook HTML examples. See [graphify/SKILL.md](graphify/SKILL.md) for agent instructions and [the contributor guide](../../docs/GRAPHIFY.md) for setup and queries. Build or refresh with node .claude/skills/graphify/scripts/build.mjs.
+
 ### 📋 scss-style-guide
 
 **Purpose:** Comprehensive SCSS/CSS coding standards and patterns for fundamental-styles components.
