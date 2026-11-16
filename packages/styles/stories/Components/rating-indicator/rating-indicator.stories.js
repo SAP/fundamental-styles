@@ -182,8 +182,8 @@ Tooltip.parameters = {
   docs: {
     description: {
       story: `
-When no visible label is present, add a \`title\` attribute to the \`fd-rating-indicator__container\`
-to provide both a native browser tooltip (shown on hover) and an accessible name for screen readers.
+When no visible label is present, use \`aria-label\` on the \`fd-rating-indicator__container\` as the
+accessible name. Add \`title\` with the same value to also show a native browser tooltip on hover.
 `
     }
   }
