@@ -6,8 +6,8 @@ selector: fd-rating-indicator
 cssFile: rating-indicator.css
 sourcePath: packages/styles/stories/Components/rating-indicator/rating-indicator.stories.js
 tags: []
-dependencies: ["icon","rating-indicator"]
-relatedComponents: ["icon","rating-indicator"]
+dependencies: ["form-item","form-label","icon","rating-indicator"]
+relatedComponents: ["form-item","form-label","icon","rating-indicator"]
 stability: stable
 ---
 
@@ -52,6 +52,8 @@ Use the rating indicator in forms, tables, or in a dialog box.
 
 This component depends on the following CSS files:
 
+- `form-item.css`
+- `form-label.css`
 - `icon.css`
 - `rating-indicator.css`
 
@@ -69,6 +71,8 @@ npm install fundamental-styles
 <link href="node_modules/fundamental-styles/dist/rating-indicator.css" rel="stylesheet">
 
 <!-- Include dependencies -->
+<link href="node_modules/fundamental-styles/dist/form-item.css" rel="stylesheet">
+<link href="node_modules/fundamental-styles/dist/form-label.css" rel="stylesheet">
 <link href="node_modules/fundamental-styles/dist/icon.css" rel="stylesheet">
 <link href="node_modules/fundamental-styles/dist/rating-indicator.css" rel="stylesheet">
 ```
@@ -277,6 +281,8 @@ The `fd-rating-indicator__container` is the single accessible element.
 
 This component works with or depends on:
 
+- `form-item`
+- `form-label`
 - `icon`
 - `rating-indicator`
 
@@ -661,6 +667,61 @@ fully selected (both spans `--selected`); stars above are fully unselected (both
 </div>
 ```
 
+### Required
+
+To mark the rating indicator as required, use `aria-describedby` on the `fd-rating-indicator__container`
+pointing to a visually hidden element containing the text "required".
+Pair this with a visible label using `fd-form-label--required` (renders the required asterisk `*`) and
+reference it via `aria-labelledby` so screen readers announce: _label → role → roledescription → value → required_.
+
+The visually hidden description element uses the `sap-sr-only` utility class from `@fundamental-styles/common-css`.
+The `fd-form-label--required` modifier adds the asterisk via a CSS `::after` pseudo-element, keeping the
+label text clean for `aria-labelledby` references.
+
+```html
+<div class="fd-form-item">
+    <label class="fd-form-label fd-form-label--required" id="required-rating-label">Product rating:</label>
+    <span id="required-rating-desc" class="sap-sr-only">required</span>
+    <div class="fd-rating-indicator">
+        <div
+            class="fd-rating-indicator__container"
+            role="slider"
+            tabindex="0"
+            aria-labelledby="required-rating-label"
+            aria-describedby="required-rating-desc"
+            aria-roledescription="Rating Indicator"
+            aria-valuemin="0"
+            aria-valuemax="5"
+            aria-valuenow="2"
+            aria-valuetext="2 of 5 stars"
+            >
+            <ul class="fd-rating-indicator__list" aria-hidden="true">
+                <li class="fd-rating-indicator__item">
+                    <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                    <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                </li>
+                <li class="fd-rating-indicator__item">
+                    <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                    <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                </li>
+                <li class="fd-rating-indicator__item">
+                    <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                    <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                </li>
+                <li class="fd-rating-indicator__item">
+                    <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                    <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                </li>
+                <li class="fd-rating-indicator__item">
+                    <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                    <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+```
+
 ### Disabled
 
 To disable the rating indicator, add `aria-disabled="true"` to both the outer `fd-rating-indicator`
@@ -668,13 +729,14 @@ element and the `fd-rating-indicator__container`. The outer attribute triggers t
 (reduced opacity, no hover effect, no focus ring); the container attribute communicates the disabled
 state to assistive technology via the `role="slider"`.
 
+A disabled rating indicator is **not keyboard-focusable** — omit `tabindex` from the container.
+
 ```html
 <div class="example-container">
     <div class="fd-rating-indicator" aria-disabled="true">
         <div
             class="fd-rating-indicator__container"
             role="slider"
-            tabindex="0"
             aria-label="Star Rating"
             aria-roledescription="Rating Indicator"
             aria-valuemin="0"
@@ -717,7 +779,8 @@ Use display mode for any read-only rating — display-only forms, object headers
 inline running text. Add `.fd-rating-indicator--display-mode` and `.is-readonly` to the
 outer element. Keep `role="slider"` on the `__container` and add `aria-readonly="true"` so the
 value and read-only state are both communicated to assistive technology. The `tabindex="0"` keeps
-the element reachable by keyboard for screen reader navigation.
+the element reachable by keyboard for screen reader navigation — a read-only rating indicator
+**receives keyboard focus**.
 
 In display mode, unselected icons are rendered at 75% of the selected icon size.
 This size reduction is a visual-only accessibility aid — it allows selected and unselected ratings to be distinguished by shape rather than color alone.
@@ -882,6 +945,102 @@ The smaller icons are scaled from their center and offset with additional margin
         </ul>
     </div>
     <span class="fd-rating-indicator__dynamic-text">(2 of 5)</span>
+</div>
+```
+
+### Display-only
+
+Use the display-only state when a rating is presented as a purely informational data point where the user should neither interact with
+nor navigate to the rating.
+
+Add `fd-rating-indicator--display-mode` and `is-readonly` to the outer element so the visual rendering
+matches the read-only variant (unselected icons are smaller). On the `fd-rating-indicator__container`,
+set `aria-disabled="true"` (instead of `aria-readonly`) so assistive technology announces the disabled
+state. Omit `tabindex` from the container — a display-only rating indicator is **not keyboard-focusable**.
+
+Keeping `aria-disabled` only on the container (not on the outer element) preserves the full-opacity
+display-mode appearance; putting it on the outer wrapper would also trigger the disabled CSS opacity.
+
+```html
+<div class="fd-rating-indicator fd-rating-indicator--display-mode is-readonly">
+    <div
+        class="fd-rating-indicator__container"
+        role="slider"
+        aria-label="Average rating"
+        aria-roledescription="Rating Indicator"
+        aria-valuemin="0"
+        aria-valuemax="5"
+        aria-valuenow="3"
+        aria-valuetext="3 of 5 stars"
+        aria-disabled="true"
+        >
+        <ul class="fd-rating-indicator__list" aria-hidden="true">
+            <li class="fd-rating-indicator__item">
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+            </li>
+            <li class="fd-rating-indicator__item">
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+            </li>
+            <li class="fd-rating-indicator__item">
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+            </li>
+            <li class="fd-rating-indicator__item">
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+            </li>
+            <li class="fd-rating-indicator__item">
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+            </li>
+        </ul>
+    </div>
+</div>
+```
+
+### With tooltip
+
+When no visible label is present, add a `title` attribute to the `fd-rating-indicator__container`
+to provide both a native browser tooltip (shown on hover) and an accessible name for screen readers.
+
+```html
+<div class="fd-rating-indicator">
+    <div
+        class="fd-rating-indicator__container"
+        role="slider"
+        tabindex="0"
+        title="Rate"
+        aria-roledescription="Rating Indicator"
+        aria-valuemin="0"
+        aria-valuemax="5"
+        aria-valuenow="4"
+        aria-valuetext="4 of 5 stars"
+        >
+        <ul class="fd-rating-indicator__list" aria-hidden="true">
+            <li class="fd-rating-indicator__item">
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+            </li>
+            <li class="fd-rating-indicator__item">
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+            </li>
+            <li class="fd-rating-indicator__item">
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+            </li>
+            <li class="fd-rating-indicator__item">
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+                <span class="sap-icon sap-icon--favorite fd-rating-indicator__icon fd-rating-indicator__icon--selected"></span>
+            </li>
+            <li class="fd-rating-indicator__item">
+                <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+                <span class="sap-icon sap-icon--unfavorite fd-rating-indicator__icon fd-rating-indicator__icon--unselected"></span>
+            </li>
+        </ul>
+    </div>
 </div>
 ```
 
