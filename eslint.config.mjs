@@ -15,6 +15,7 @@ const compat = new FlatCompat({
 export default [
     {
         ignores: [
+            'graphify-out/**',
             '.nx/**',
             '.storybook/static/**',
             'dist/**',

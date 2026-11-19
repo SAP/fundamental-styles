@@ -7,6 +7,12 @@
   "repository": "https://github.com/SAP/fundamental-styles",
   "skills": [
     {
+      "name": "graphify",
+      "path": "graphify/SKILL.md",
+      "description": "Explore source code, SCSS dependencies, CSS tokens and Storybook HTML examples with the local Graphify graph",
+      "publishable": false
+    },
+    {
       "name": "scss-style-guide",
       "path": "scss-style-guide/SKILL.md",
       "description": "SCSS/CSS coding standards and patterns for fundamental-styles project",

@@ -285,8 +285,11 @@ yarn run start:prod
 - Git
 - [Node.js](https://nodejs.org/) v24.11.1 (see `.nvmrc` — run `nvm use` to switch automatically)
 - [Yarn](https://yarnpkg.com/)
+- Optional for source graph exploration: [Graphify prerequisites and setup](docs/GRAPHIFY.md#prerequisites) — Python 3.10+, a Python tool manager, and the tested Graphify CLI.
 
 ### 🤝 Contributing
+
+- [Explore code, styles and examples with Graphify](docs/GRAPHIFY.md) — local setup, useful queries and an interactive source graph.
 
 - [SAP Contribution Guidelines](https://github.com/SAP/.github/blob/main/CONTRIBUTING.md)
 - [Contribution Guidelines](https://github.com/SAP/fundamental-styles/wiki/Contribution-Guidelines)

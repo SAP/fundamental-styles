@@ -1,0 +1,9 @@
+# Generated component metadata duplicates the source stories.
+/docs/*.json
+/docs/schemas/
+/graphify-out/
+/tmp/
+/.nx/
+/.yarn/
+/stories/Visuals/
+/CHANGELOG.md
