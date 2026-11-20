@@ -2237,7 +2237,9 @@
           "name": "aria-label",
           "purpose": "Accessible name when no visible text",
           "exampleValues": [
-            "Star Rating"
+            "Star Rating",
+            "Average rating",
+            "Rate"
           ]
         },
         {
@@ -2268,6 +2270,7 @@
           "purpose": "See WAI-ARIA specification",
           "exampleValues": [
             "2",
+            "3",
             "2.5"
           ]
         },
@@ -2294,6 +2297,13 @@
           "purpose": "Indicates read-only field",
           "exampleValues": [
             "true"
+          ]
+        },
+        {
+          "name": "aria-describedby",
+          "purpose": "References description element",
+          "exampleValues": [
+            "required-rating-desc"
           ]
         }
       ],
