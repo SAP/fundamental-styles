@@ -321,7 +321,7 @@ $block: #{$fd-namespace}-switch;
     }
   }
 
-  &--semantic {
+  &:where(.#{$block}--semantic) {
     --fdSwitch_Icon_Display: flex;
     --fdSwitch_Width: var(--fdSwitch_Semantic_Width);
     --fdSwitch_Height: var(--fdSwitch_Semantic_Height);
@@ -380,7 +380,7 @@ $block: #{$fd-namespace}-switch;
     }
   }
 
-  &--text {
+  &:where(.#{$block}--text) {
     @include fd-slider-track-position(map.get($fd-switch-handle-offset, "text", "ltr", "off"), map.get($fd-switch-handle-offset, "text", "ltr", "on"));
 
     --fdSwitch_Width: var(--fdSwitch_Text_Width);
@@ -400,6 +400,33 @@ $block: #{$fd-namespace}-switch;
       @include fd-compact-or-condensed() {
         @include fd-slider-track-position(map.get($fd-switch-handle-offset, "compactText", "rtl", "off"), map.get($fd-switch-handle-offset, "compactText", "rtl", "on"));
       }
+    }
+  }
+
+  // Readonly state - overrides all variants (independent of order due to :where() on modifiers)
+  @include fd-readonly() {
+    --fdSwitch_Track_Background: var(--sapField_ReadOnly_Background);
+    --fdSwitch_Border_Color: var(--sapField_ReadOnly_BorderColor);
+    --fdSwitch_Border: 0.0625rem var(--sapField_Selector_ReadOnly_BorderStyle) var(--sapField_ReadOnly_BorderColor);
+    --fdSwitch_Shadow: none;
+    --fdSwitch_Handle_Background: var(--sapField_ReadOnly_Background);
+    --fdSwitch_Handle_Border_Color: var(--sapButton_Track_BorderColor);
+    --fdSwitch_Handle_Border_Width: 0.0625rem;
+    --fdSwitch_Handle_Active_Color: var(--sapButton_Handle_TextColor);
+    --fdSwitch_Handle_Inactive_Color: var(--sapButton_Handle_TextColor);
+    --fdSwitch_Text_Active_Color: var(--sapButton_Handle_TextColor);
+    --fdSwitch_Text_Inactive_Color: var(--sapButton_Handle_TextColor);
+
+    pointer-events: none;
+    cursor: auto;
+
+    .#{$block}__input:checked + .#{$block}__slider {
+      --fdSwitch_Track_Background: var(--sapField_ReadOnly_Background);
+      --fdSwitch_Border_Color: var(--sapField_ReadOnly_BorderColor);
+      --fdSwitch_Border: 0.0625rem var(--sapField_Selector_ReadOnly_BorderStyle) var(--sapField_ReadOnly_BorderColor);
+      --fdSwitch_Shadow: none;
+      --fdSwitch_Handle_Background: var(--sapField_ReadOnly_Background);
+      --fdSwitch_Handle_Border_Color: var(--sapButton_Track_BorderColor);
     }
   }
 }
