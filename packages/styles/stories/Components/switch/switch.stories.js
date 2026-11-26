@@ -1,6 +1,7 @@
 import semanticSwitchExampleHtml from "./semantic-switch.example.html?raw";
 import withTextExampleHtml from "./with-text.example.html?raw";
 import basicExampleHtml from "./basic.example.html?raw";
+import readonlyExampleHtml from "./readonly.example.html?raw";
 import '../../../src/form-label.scss';
 import '../../../src/switch.scss';
 import '../../../src/icon.scss';
@@ -55,6 +56,16 @@ WithText.parameters = {
   docs: {
     description: {
       story: `For technical compatibility reasons, it is also possible – although not advised – to have a switch that contains a text element, instead of an icon. Add the \`fd-switch--text\` modifier class to the main element.`
+    }
+  }
+};
+
+export const Readonly = () => readonlyExampleHtml;
+Readonly.storyName = 'Read-only';
+Readonly.parameters = {
+  docs: {
+    description: {
+      story: `The switch can be displayed in a read-only state to indicate that the value cannot be changed but can still be viewed. To display a read-only switch, add the \`is-readonly\` state class and the \`aria-readonly="true"\` attribute. Read-only switches use a dashed border style on the track and maintain interactivity indicators while preventing user interaction.`
     }
   }
 };

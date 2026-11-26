@@ -127,6 +127,7 @@ npm install fundamental-styles
 | Class | Description |
 |-------|-------------|
 | `is-disabled` | Disabled state |
+| `is-readonly` | Readonly state |
 
 ## Related Components
 
@@ -265,6 +266,156 @@ For technical compatibility reasons, it is also possible – although not advise
                         <span class="fd-switch__text fd-switch__text--on">on</span>
                         <span class="fd-switch__handle" role="presentation"></span>
                         <span class="fd-switch__text fd-switch__text--off">off</span>
+                    </div>
+                </div>
+            </span>
+        </label>
+    </div>
+</div>
+```
+
+### Read-only
+
+The switch can be displayed in a read-only state to indicate that the value cannot be changed but can still be viewed. To display a read-only switch, add the `is-readonly` state class and the `aria-readonly="true"` attribute. Read-only switches use a dashed border style on the track and maintain interactivity indicators while preventing user interaction.
+
+```html
+<div class="fd-form-group">
+    <div class="fd-form-item">
+        <div class="fd-form-label" id="label-readonly-1">Read-only Switch (Inactive)</div>
+        <label class="fd-switch is-readonly">
+            <span class="fd-switch__control">
+                <input
+                class="fd-switch__input"
+                type="checkbox"
+                name=""
+                value=""
+                aria-labelledby="label-readonly-1"
+                aria-readonly="true"
+                id="readonly-switch-1"
+                />
+                <div class="fd-switch__slider">
+                    <div class="fd-switch__track">
+                        <i role="presentation" class="fd-switch__icon fd-switch__icon--on sap-icon--accept"></i>
+                        <span class="fd-switch__handle" role="presentation"></span>
+                        <i role="presentation" class="fd-switch__icon fd-switch__icon--off sap-icon--less"></i>
+                    </div>
+                </div>
+            </span>
+        </label>
+    </div>
+    <div class="fd-form-item">
+        <div class="fd-form-label" id="label-readonly-2">Read-only Switch (Active)</div>
+        <label class="fd-switch is-readonly">
+            <span class="fd-switch__control">
+                <input
+                class="fd-switch__input"
+                type="checkbox"
+                name=""
+                value=""
+                checked
+                aria-labelledby="label-readonly-2"
+                aria-readonly="true"
+                id="readonly-switch-2"
+                />
+                <div class="fd-switch__slider">
+                    <div class="fd-switch__track">
+                        <i role="presentation" class="fd-switch__icon fd-switch__icon--on sap-icon--accept"></i>
+                        <span class="fd-switch__handle" role="presentation"></span>
+                        <i role="presentation" class="fd-switch__icon fd-switch__icon--off sap-icon--less"></i>
+                    </div>
+                </div>
+            </span>
+        </label>
+    </div>
+    <div class="fd-form-item">
+        <div class="fd-form-label" id="label-readonly-3">Read-only Semantic Switch (Inactive)</div>
+        <label class="fd-switch fd-switch--semantic is-readonly">
+            <span class="fd-switch__control">
+                <input
+                class="fd-switch__input"
+                type="checkbox"
+                name=""
+                value=""
+                aria-labelledby="label-readonly-3"
+                aria-readonly="true"
+                id="readonly-switch-3"
+                />
+                <div class="fd-switch__slider">
+                    <div class="fd-switch__track">
+                        <i role="presentation" class="fd-switch__icon fd-switch__icon--on sap-icon--accept"></i>
+                        <span class="fd-switch__handle" role="presentation"></span>
+                        <i role="presentation" class="fd-switch__icon fd-switch__icon--off sap-icon--decline"></i>
+                    </div>
+                </div>
+            </span>
+        </label>
+    </div>
+    <div class="fd-form-item">
+        <div class="fd-form-label" id="label-readonly-4">Read-only Semantic Switch (Active)</div>
+        <label class="fd-switch fd-switch--semantic is-readonly">
+            <span class="fd-switch__control">
+                <input
+                class="fd-switch__input"
+                type="checkbox"
+                name=""
+                value=""
+                checked
+                aria-labelledby="label-readonly-4"
+                aria-readonly="true"
+                id="readonly-switch-4"
+                />
+                <div class="fd-switch__slider">
+                    <div class="fd-switch__track">
+                        <i role="presentation" class="fd-switch__icon fd-switch__icon--on sap-icon--accept"></i>
+                        <span class="fd-switch__handle" role="presentation"></span>
+                        <i role="presentation" class="fd-switch__icon fd-switch__icon--off sap-icon--decline"></i>
+                    </div>
+                </div>
+            </span>
+        </label>
+    </div>
+    <div class="fd-form-item">
+        <div class="fd-form-label" id="label-readonly-5">Read-only Text Switch (Inactive)</div>
+        <label class="fd-switch fd-switch--text is-readonly">
+            <span class="fd-switch__control">
+                <input
+                class="fd-switch__input"
+                type="checkbox"
+                name=""
+                value=""
+                aria-labelledby="label-readonly-5"
+                aria-readonly="true"
+                id="readonly-switch-5"
+                />
+                <div class="fd-switch__slider">
+                    <div class="fd-switch__track">
+                        <span class="fd-switch__text fd-switch__text--on">On</span>
+                        <span class="fd-switch__handle" role="presentation"></span>
+                        <span class="fd-switch__text fd-switch__text--off">Off</span>
+                    </div>
+                </div>
+            </span>
+        </label>
+    </div>
+    <div class="fd-form-item">
+        <div class="fd-form-label" id="label-readonly-6">Read-only Text Switch (Active)</div>
+        <label class="fd-switch fd-switch--text is-readonly">
+            <span class="fd-switch__control">
+                <input
+                class="fd-switch__input"
+                type="checkbox"
+                name=""
+                value=""
+                checked
+                aria-labelledby="label-readonly-6"
+                aria-readonly="true"
+                id="readonly-switch-6"
+                />
+                <div class="fd-switch__slider">
+                    <div class="fd-switch__track">
+                        <span class="fd-switch__text fd-switch__text--on">On</span>
+                        <span class="fd-switch__handle" role="presentation"></span>
+                        <span class="fd-switch__text fd-switch__text--off">Off</span>
                     </div>
                 </div>
             </span>
