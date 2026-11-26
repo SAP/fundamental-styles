@@ -418,12 +418,11 @@ $block: #{$fd-namespace}-switch;
     --fdSwitch_Text_Inactive_Color: var(--sapButton_Handle_TextColor);
 
     pointer-events: none;
-    cursor: auto;
+    cursor: default;
 
     .#{$block}__input:checked + .#{$block}__slider {
       --fdSwitch_Track_Background: var(--sapField_ReadOnly_Background);
       --fdSwitch_Border_Color: var(--sapField_ReadOnly_BorderColor);
-      --fdSwitch_Border: 0.0625rem var(--sapField_Selector_ReadOnly_BorderStyle) var(--sapField_ReadOnly_BorderColor);
       --fdSwitch_Shadow: none;
       --fdSwitch_Handle_Background: var(--sapField_ReadOnly_Background);
       --fdSwitch_Handle_Border_Color: var(--sapButton_Track_BorderColor);
